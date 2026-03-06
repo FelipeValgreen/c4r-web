@@ -6,13 +6,19 @@ import TrackedLink from "@/components/TrackedLink";
 
 type CheckState = "green" | "yellow" | "red";
 
-type VehicleData = {
-  brand: string;
-  model: string;
-  year: number;
-  mileage: number;
-  price: number;
+type ScoreApiResponse = {
+  plate: string;
+  score: number;
+  label: "Excelente" | "Bueno" | "Regular" | "Bajo";
+  vehicle: {
+    brand: string;
+    model: string;
+    year: number;
+    mileage: number;
+    price: number;
+  };
   checks: Record<string, CheckState>;
+  highlights: string[];
 };
 
 const benefits = [
@@ -53,61 +59,79 @@ const testimonials = [
   },
 ];
 
-function randomState(score: number, high: number, medium: number): CheckState {
-  if (score >= high) return "green";
-  if (score >= medium) return "yellow";
-  return "red";
+const checkLabels: Record<string, string> = {
+  multas: "Multas",
+  prendas: "Prendas",
+  siniestros: "Siniestros",
+  tag: "TAG",
+  revision: "Revision tecnica",
+  emisiones: "Emisiones",
+};
+
+function formatPlate(value: string) {
+  const cleaned = value.replace(/[^A-Za-z0-9]/g, "").toUpperCase();
+
+  if (cleaned.length <= 4) {
+    return cleaned;
+  }
+
+  if (cleaned.length <= 6) {
+    return `${cleaned.slice(0, 4)}-${cleaned.slice(4)}`;
+  }
+
+  return `${cleaned.slice(0, 4)}-${cleaned.slice(4, 6)}`;
 }
 
 export default function C4RScoreClient() {
   const [licensePlate, setLicensePlate] = useState("");
-  const [score, setScore] = useState<number | null>(null);
   const [loading, setLoading] = useState(false);
-  const [vehicleData, setVehicleData] = useState<VehicleData | null>(null);
+  const [error, setError] = useState("");
+  const [notice, setNotice] = useState("");
+  const [scoreData, setScoreData] = useState<ScoreApiResponse | null>(null);
 
-  const verifyScore = () => {
+  const verifyScore = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
     if (!licensePlate.trim()) {
+      setError("Ingresa una patente valida para continuar.");
       return;
     }
 
     setLoading(true);
+    setError("");
+    setNotice("");
 
-    setTimeout(() => {
-      const generatedScore = Math.floor(Math.random() * 100) + 1;
-      setScore(generatedScore);
-      setVehicleData({
-        brand: "Toyota",
-        model: "Corolla",
-        year: 2022,
-        mileage: 25000,
-        price: 18500000,
-        checks: {
-          multas: randomState(generatedScore, 80, 50),
-          prendas: randomState(generatedScore, 70, 40),
-          siniestros: randomState(generatedScore, 75, 45),
-          tag: randomState(generatedScore, 85, 55),
-          revision: randomState(generatedScore, 90, 60),
-          emisiones: randomState(generatedScore, 80, 50),
-        },
+    try {
+      const response = await fetch("/api/score", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ plate: licensePlate }),
       });
+
+      const data = (await response.json()) as ScoreApiResponse | { error: string };
+
+      if (!response.ok || "error" in data) {
+        setScoreData(null);
+        setError("error" in data ? data.error : "No fue posible calcular el score.");
+        return;
+      }
+
+      setScoreData(data);
+      setNotice("Score generado correctamente.");
+    } catch {
+      setScoreData(null);
+      setError("Error de conexion. Intenta nuevamente en unos segundos.");
+    } finally {
       setLoading(false);
-    }, 1200);
+    }
   };
 
   const scoreColor = useMemo(() => {
-    if (score === null) return "text-ink";
-    if (score >= 80) return "text-success";
-    if (score >= 60) return "text-warning";
+    if (!scoreData) return "text-ink";
+    if (scoreData.score >= 80) return "text-success";
+    if (scoreData.score >= 60) return "text-warning";
     return "text-error";
-  }, [score]);
-
-  const scoreLabel = useMemo(() => {
-    if (score === null) return "";
-    if (score >= 80) return "Excelente";
-    if (score >= 60) return "Bueno";
-    if (score >= 40) return "Regular";
-    return "Bajo";
-  }, [score]);
+  }, [scoreData]);
 
   const checkIcon = (status: CheckState) => {
     if (status === "green") return <CheckCircle2 className="h-5 w-5 text-success" />;
@@ -139,36 +163,47 @@ export default function C4RScoreClient() {
               Conoce el riesgo general de un vehiculo antes de comprar o vender.
             </p>
 
-            <div className="mx-auto mt-10 max-w-2xl rounded-2xl border border-platinum bg-white p-6 shadow-sm sm:p-8">
+            <form onSubmit={verifyScore} className="mx-auto mt-10 max-w-2xl rounded-2xl border border-platinum bg-white p-6 shadow-sm sm:p-8">
               <h2 className="font-heading text-2xl font-semibold text-ink">Verifica una patente</h2>
               <div className="mt-5 flex flex-col gap-3 sm:flex-row">
                 <input
                   type="text"
                   placeholder="Ingresa la patente (ej: ABC123)"
                   value={licensePlate}
-                  onChange={(event) => setLicensePlate(event.target.value.toUpperCase())}
-                  className="h-12 flex-1 rounded-lg border border-platinum px-4 text-ink outline-none transition focus-visible:ring-2 focus-visible:ring-khaki"
+                  onChange={(event) => {
+                    setLicensePlate(formatPlate(event.target.value));
+                    if (error) {
+                      setError("");
+                    }
+                  }}
+                  className="h-12 flex-1 rounded-lg border border-platinum px-4 text-ink uppercase tracking-wide outline-none transition focus-visible:ring-2 focus-visible:ring-khaki"
+                  maxLength={7}
                 />
                 <button
-                  type="button"
-                  onClick={verifyScore}
+                  type="submit"
                   disabled={loading || !licensePlate.trim()}
                   className="inline-flex h-12 items-center justify-center rounded-lg bg-khaki px-8 text-sm font-semibold text-ink transition-colors hover:bg-khaki-dark disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   {loading ? "Verificando..." : "Verificar"}
                 </button>
               </div>
+              {error ? <p className="mt-3 text-sm font-medium text-error">{error}</p> : null}
+              {notice ? <p className="mt-3 text-sm font-medium text-success">{notice}</p> : null}
+              <p className="mt-2 text-xs text-gray-500">Prueba con: `ABCD12`, `XYZ123` o `DEF456`.</p>
 
-              {score !== null && vehicleData && (
+              {scoreData ? (
                 <div className="mt-8 text-center">
-                  <p className={`text-6xl font-bold ${scoreColor}`}>{score}</p>
-                  <p className="mt-2 text-xl font-semibold text-ink">C4R Score: {scoreLabel}</p>
+                  <p className={`text-6xl font-bold ${scoreColor}`}>{scoreData.score}</p>
+                  <p className="mt-2 text-xl font-semibold text-ink">C4R Score: {scoreData.label}</p>
                   <p className="mt-1 text-sm text-gray-600">
-                    {vehicleData.brand} {vehicleData.model} {vehicleData.year}
+                    {scoreData.vehicle.brand} {scoreData.vehicle.model} {scoreData.vehicle.year} • {scoreData.vehicle.mileage.toLocaleString("es-CL")} km
+                  </p>
+                  <p className="mt-1 text-sm font-semibold text-ink">
+                    Referencia mercado: {scoreData.vehicle.price.toLocaleString("es-CL", { style: "currency", currency: "CLP", minimumFractionDigits: 0 })}
                   </p>
                 </div>
-              )}
-            </div>
+              ) : null}
+            </form>
           </div>
         </div>
       </section>
@@ -180,19 +215,30 @@ export default function C4RScoreClient() {
             <p className="mt-4 text-lg text-gray-600">Consolidamos factores legales y operativos en una lectura simple.</p>
           </div>
 
-          {vehicleData && (
-            <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
-              {Object.entries(vehicleData.checks).map(([check, status]) => (
-                <article key={check} className="rounded-xl border border-platinum bg-white p-5 text-center shadow-sm">
-                  <div className="mx-auto flex w-fit items-center justify-center">{checkIcon(status)}</div>
-                  <h3 className="mt-3 font-heading text-lg font-semibold capitalize text-ink">{check}</h3>
-                  <span className={`mt-3 inline-flex rounded-full px-3 py-1 text-xs font-semibold ${checkBadgeClass(status)}`}>
-                    {checkLabel(status)}
-                  </span>
-                </article>
-              ))}
-            </div>
-          )}
+          {scoreData ? (
+            <>
+              <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+                {Object.entries(scoreData.checks).map(([check, status]) => (
+                  <article key={check} className="rounded-xl border border-platinum bg-white p-5 text-center shadow-sm">
+                    <div className="mx-auto flex w-fit items-center justify-center">{checkIcon(status)}</div>
+                    <h3 className="mt-3 font-heading text-lg font-semibold text-ink">{checkLabels[check] ?? check}</h3>
+                    <span className={`mt-3 inline-flex rounded-full px-3 py-1 text-xs font-semibold ${checkBadgeClass(status)}`}>
+                      {checkLabel(status)}
+                    </span>
+                  </article>
+                ))}
+              </div>
+
+              <div className="mt-8 rounded-2xl border border-platinum bg-white p-6 shadow-sm">
+                <h3 className="font-heading text-xl font-semibold text-ink">Resumen rapido</h3>
+                <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-ink/80">
+                  {scoreData.highlights.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            </>
+          ) : null}
         </div>
       </section>
 
