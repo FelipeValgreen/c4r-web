@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Manrope, Space_Grotesk } from "next/font/google";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
+import { siteUrl } from "@/lib/site";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -13,8 +15,6 @@ const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
   subsets: ["latin"],
 });
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://v0-c4-r.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -76,6 +76,7 @@ export default function RootLayout({
         <SiteHeader />
         {children}
         <SiteFooter />
+        <GoogleAnalytics />
       </body>
     </html>
   );

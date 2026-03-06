@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import MarketingPlaceholder from "@/components/MarketingPlaceholder";
+import { marketingSlugs } from "@/lib/site";
 
-const pageMap: Record<string, { title: string; description: string }> = {
+type MarketingSlug = (typeof marketingSlugs)[number];
+
+const pageMap: Record<MarketingSlug, { title: string; description: string }> = {
   "compra-segura": {
     title: "Compra segura en C4R",
     description:
@@ -70,12 +73,13 @@ const pageMap: Record<string, { title: string; description: string }> = {
   },
 };
 
-const staticSlugs = Object.keys(pageMap);
+const isMarketingSlug = (value: string): value is MarketingSlug =>
+  marketingSlugs.includes(value as MarketingSlug);
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return staticSlugs.map((slug) => ({ slug }));
+  return marketingSlugs.map((slug) => ({ slug }));
 }
 
 type PageProps = {
@@ -84,13 +88,14 @@ type PageProps = {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const page = pageMap[slug];
 
-  if (!page) {
+  if (!isMarketingSlug(slug)) {
     return {
       title: "C4R",
     };
   }
+
+  const page = pageMap[slug];
 
   return {
     title: `${page.title} | C4R`,
@@ -123,11 +128,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function GenericPage({ params }: PageProps) {
   const { slug } = await params;
-  const page = pageMap[slug];
 
-  if (!page) {
+  if (!isMarketingSlug(slug)) {
     notFound();
   }
+
+  const page = pageMap[slug];
 
   return <MarketingPlaceholder title={page.title} description={page.description} />;
 }
