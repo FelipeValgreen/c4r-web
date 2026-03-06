@@ -1,4 +1,4 @@
-const fallbackSiteUrl = "https://v0-c4-r.vercel.app";
+const fallbackSiteUrl = "https://c4r-web.vercel.app";
 
 export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? fallbackSiteUrl).replace(/\/+$/, "");
 
