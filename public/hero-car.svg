@@ -1,0 +1,27 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="1020" y1="50" x2="160" y2="740" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFE9D7"/>
+      <stop offset="1" stop-color="#D7D0B8"/>
+    </linearGradient>
+    <linearGradient id="car" x1="195" y1="505" x2="980" y2="505" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#262626"/>
+      <stop offset="1" stop-color="#3A3A3A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="1020" cy="150" r="190" fill="#B0A16E" fill-opacity="0.22"/>
+  <circle cx="220" cy="700" r="240" fill="#B0A16E" fill-opacity="0.18"/>
+  <path d="M195 500C216 438 280 394 358 388H726C786 388 840 420 868 468L923 500V590H195V500Z" fill="url(#car)"/>
+  <path d="M286 450C302 422 332 404 365 404H710C753 404 789 432 805 470L286 470V450Z" fill="#4A4A4A"/>
+  <rect x="322" y="414" width="138" height="54" rx="18" fill="#89A9C9" fill-opacity="0.6"/>
+  <rect x="474" y="414" width="230" height="54" rx="18" fill="#89A9C9" fill-opacity="0.6"/>
+  <circle cx="350" cy="590" r="74" fill="#171717"/>
+  <circle cx="350" cy="590" r="34" fill="#D5D5D5"/>
+  <circle cx="770" cy="590" r="74" fill="#171717"/>
+  <circle cx="770" cy="590" r="34" fill="#D5D5D5"/>
+  <rect x="510" y="278" width="180" height="72" rx="36" fill="#1E9B62"/>
+  <text x="600" y="322" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="30" font-weight="700" text-anchor="middle">
+    C4R CHECK
+  </text>
+</svg>

@@ -1,0 +1,26 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="70" y1="45" x2="730" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFEADE"/>
+      <stop offset="1" stop-color="#D9D4C4"/>
+    </linearGradient>
+    <linearGradient id="car" x1="120" y1="355" x2="690" y2="355" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2E2E2E"/>
+      <stop offset="1" stop-color="#444444"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="664" cy="96" r="96" fill="#B0A16E" fill-opacity="0.28"/>
+  <path d="M120 360C136 306 191 265 261 262H517C577 262 631 296 659 348L690 360V426H120V360Z" fill="url(#car)"/>
+  <path d="M186 315C205 283 239 264 276 264H503C549 264 589 294 602 332H186V315Z" fill="#595959"/>
+  <rect x="228" y="274" width="102" height="52" rx="16" fill="#96B2CA" fill-opacity="0.65"/>
+  <rect x="344" y="274" width="170" height="52" rx="16" fill="#96B2CA" fill-opacity="0.65"/>
+  <circle cx="244" cy="426" r="53" fill="#1C1C1C"/>
+  <circle cx="244" cy="426" r="24" fill="#E3E3E3"/>
+  <circle cx="570" cy="426" r="53" fill="#1C1C1C"/>
+  <circle cx="570" cy="426" r="24" fill="#E3E3E3"/>
+  <rect x="534" y="56" width="170" height="50" rx="25" fill="#1E9B62"/>
+  <text x="619" y="88" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle">
+    VERIFICADO
+  </text>
+</svg>
