@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { dealerContracts } from "@/app/dealers/_data";
 
 export const metadata = {
@@ -47,10 +48,10 @@ export default function DealersContractsPage() {
                     </span>
                   </td>
                   <td className="px-4 py-3 text-ink/80">
-                    {contract.fileLabel ? (
-                      <a href="#" className="font-semibold text-khaki hover:text-khaki-dark">
+                    {contract.fileLabel && contract.requestHref ? (
+                      <Link href={contract.requestHref} className="font-semibold text-khaki hover:text-khaki-dark">
                         {contract.fileLabel}
-                      </a>
+                      </Link>
                     ) : (
                       "Sin archivo"
                     )}

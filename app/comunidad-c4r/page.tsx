@@ -84,14 +84,14 @@ const blogHighlights = [
     excerpt: "Guia para compradores primerizos con checklist legal y de inspeccion.",
     author: "Maria Gonzalez",
     date: "15 Ene 2026",
-    image: "https://images.unsplash.com/photo-1558618049-25e814ad819c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80",
+    image: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80",
   },
   {
     title: "Financiamiento inteligente en 2026",
     excerpt: "Comparativa de opciones para financiar tu proximo vehiculo sin sobrecostos.",
     author: "Carlos Ruiz",
     date: "12 Ene 2026",
-    image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80",
+    image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80",
   },
   {
     title: "Historia real: compra segura en una semana",
@@ -112,7 +112,7 @@ const socialTiles = [
     caption: "Modelos clasicos revisados por C4R Check",
   },
   {
-    image: "https://images.unsplash.com/photo-1549399902-5ec21ed764ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    image: "https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
     caption: "Sedanes listos para compra segura",
   },
   {

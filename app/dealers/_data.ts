@@ -327,6 +327,7 @@ export type DealerContract = {
   order: string;
   status: "borrador" | "firmado" | "revision";
   fileLabel?: string;
+  requestHref?: string;
 };
 
 export const dealerContracts: DealerContract[] = [
@@ -336,18 +337,21 @@ export const dealerContracts: DealerContract[] = [
     order: "ORD-2041",
     status: "firmado",
     fileLabel: "Contrato ORD-2041.pdf",
+    requestHref: "/dealers/solicitud/sol-1001",
   },
   {
     id: "ctr-02",
     type: "Garantia extendida",
     order: "ORD-2042",
     status: "revision",
+    requestHref: "/dealers/solicitud/sol-1002",
   },
   {
     id: "ctr-03",
     type: "Reserva unidad",
     order: "ORD-2043",
     status: "borrador",
+    requestHref: "/dealers/solicitud/sol-1003",
   },
 ];
 

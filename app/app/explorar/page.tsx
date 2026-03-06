@@ -8,7 +8,7 @@ const vehicles = [
     price: "$12.500.000",
     city: "Santiago",
     km: "45.000 km",
-    image: "https://images.unsplash.com/photo-1549399902-5ec21ed764ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
+    image: "https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
   },
   {
     model: "Kia Sportage 2021",
