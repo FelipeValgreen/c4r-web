@@ -262,7 +262,7 @@ const pages: Record<MarketingSlug, PageContent> = {
         title: "Toyota Corolla 2020",
         description: "Historial limpio, 45.000 km y verificacion legal al dia.",
         image:
-          "https://images.unsplash.com/photo-1549399902-5ec21ed764ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
+          "https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
         href: "/app/explorar",
         cta: "Ver en catalogo",
       },
@@ -512,7 +512,7 @@ const pages: Record<MarketingSlug, PageContent> = {
         title: "Inventario con trazabilidad completa",
         description: "Estado por unidad, revisiones y embudo comercial en una sola vista.",
         image:
-          "https://images.unsplash.com/photo-1549921296-3ecf9f07f31e?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
+          "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
         href: "/contacto",
         cta: "Solicitar implementacion",
       },
@@ -520,7 +520,7 @@ const pages: Record<MarketingSlug, PageContent> = {
         title: "Leads B2B priorizados",
         description: "Calificacion y seguimiento para reducir tiempo de cierre.",
         image:
-          "https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
+          "https://images.unsplash.com/photo-1549317336-206569e8475c?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
         href: "/contacto",
         cta: "Hablar con ventas B2B",
       },
@@ -528,7 +528,7 @@ const pages: Record<MarketingSlug, PageContent> = {
         title: "Analitica para gerencia",
         description: "Indicadores diarios de performance comercial por canal y sucursal.",
         image:
-          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
+          "https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
         href: "/precios",
         cta: "Comparar planes",
       },
@@ -633,7 +633,7 @@ const pages: Record<MarketingSlug, PageContent> = {
         title: "C4R Check",
         description: "Reporte legal y tecnico por patente para tomar decisiones informadas.",
         image:
-          "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
+          "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
         href: "/c4r-check",
         cta: "Consultar reporte",
       },
@@ -641,7 +641,7 @@ const pages: Record<MarketingSlug, PageContent> = {
         title: "C4R Score",
         description: "Indice de riesgo para priorizar revisiones y detectar alertas tempranas.",
         image:
-          "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
+          "https://images.unsplash.com/photo-1549317336-206569e8475c?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
         href: "/c4r-score",
         cta: "Calcular score",
       },
@@ -867,7 +867,7 @@ const pages: Record<MarketingSlug, PageContent> = {
         title: "Checklist de compra segura",
         description: "Documento practico para evaluar un auto usado antes de cerrar trato.",
         image:
-          "https://images.unsplash.com/photo-1558618049-25e814ad819c?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
+          "https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
         href: "/blog",
         cta: "Ver contenido",
       },
@@ -875,7 +875,7 @@ const pages: Record<MarketingSlug, PageContent> = {
         title: "Guia de financiamiento",
         description: "Comparativa de alternativas para decidir con menos costo total.",
         image:
-          "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
+          "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
         href: "/blog",
         cta: "Leer guia",
       },
@@ -942,7 +942,7 @@ const pages: Record<MarketingSlug, PageContent> = {
         category: "Compra segura",
         date: "15 Ene 2026",
         image:
-          "https://images.unsplash.com/photo-1558618049-25e814ad819c?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
+          "https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
         cta: {
           href: "/contacto",
           label: "Solicitar guia completa",
@@ -956,7 +956,7 @@ const pages: Record<MarketingSlug, PageContent> = {
         category: "Venta inteligente",
         date: "12 Ene 2026",
         image:
-          "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
+          "https://images.unsplash.com/photo-1549317336-206569e8475c?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
         cta: {
           href: "/contacto",
           label: "Hablar con un asesor",
@@ -984,7 +984,7 @@ const pages: Record<MarketingSlug, PageContent> = {
         category: "Legal y documentacion",
         date: "08 Ene 2026",
         image:
-          "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
+          "https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
         cta: {
           href: "/c4r-check",
           label: "Probar C4R Check",
