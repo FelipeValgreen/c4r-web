@@ -3,12 +3,48 @@ import type { Metadata } from "next";
 import TrackedLink from "@/components/TrackedLink";
 
 const vehicles = [
-  { model: "Toyota Corolla 2020", price: "$12.500.000", city: "Santiago", km: "45.000 km" },
-  { model: "Kia Sportage 2021", price: "$16.900.000", city: "Concepción", km: "38.000 km" },
-  { model: "Mazda CX-5 2019", price: "$15.200.000", city: "Valparaíso", km: "59.000 km" },
-  { model: "Hyundai Tucson 2020", price: "$14.750.000", city: "Viña del Mar", km: "51.000 km" },
-  { model: "Peugeot 3008 2021", price: "$18.300.000", city: "La Serena", km: "28.000 km" },
-  { model: "Subaru XV 2019", price: "$13.990.000", city: "Temuco", km: "63.000 km" },
+  {
+    model: "Toyota Corolla 2020",
+    price: "$12.500.000",
+    city: "Santiago",
+    km: "45.000 km",
+    image: "https://images.unsplash.com/photo-1549399902-5ec21ed764ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
+  },
+  {
+    model: "Kia Sportage 2021",
+    price: "$16.900.000",
+    city: "Concepción",
+    km: "38.000 km",
+    image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
+  },
+  {
+    model: "Mazda CX-5 2019",
+    price: "$15.200.000",
+    city: "Valparaíso",
+    km: "59.000 km",
+    image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
+  },
+  {
+    model: "Hyundai Tucson 2020",
+    price: "$14.750.000",
+    city: "Viña del Mar",
+    km: "51.000 km",
+    image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
+  },
+  {
+    model: "Peugeot 3008 2021",
+    price: "$18.300.000",
+    city: "La Serena",
+    km: "28.000 km",
+    image: "https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
+  },
+  {
+    model: "Subaru XV 2019",
+    price: "$13.990.000",
+    city: "Temuco",
+    km: "63.000 km",
+    image: "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
+  },
 ];
 
 export const metadata: Metadata = {
@@ -83,7 +119,7 @@ export default function ExplorePage() {
             >
               <div className="relative aspect-[4/3] bg-[linear-gradient(145deg,#f7f7f4,#e6e4db)]">
                 <Image
-                  src="/car-placeholder.svg"
+                  src={vehicle.image}
                   alt={vehicle.model}
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"

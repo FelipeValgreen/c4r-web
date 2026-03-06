@@ -24,12 +24,42 @@ const trustPillars = [
 ];
 
 const catalog = [
-  { model: "Toyota Corolla 2020", price: "$12.500.000", km: "45.000 km" },
-  { model: "Kia Sportage 2021", price: "$16.900.000", km: "38.000 km" },
-  { model: "Mazda CX-5 2019", price: "$15.200.000", km: "59.000 km" },
-  { model: "Hyundai Tucson 2020", price: "$14.750.000", km: "51.000 km" },
-  { model: "Peugeot 3008 2021", price: "$18.300.000", km: "28.000 km" },
-  { model: "Subaru XV 2019", price: "$13.990.000", km: "63.000 km" },
+  {
+    model: "Toyota Corolla 2020",
+    price: "$12.500.000",
+    km: "45.000 km",
+    image: "https://images.unsplash.com/photo-1549399902-5ec21ed764ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
+  },
+  {
+    model: "Kia Sportage 2021",
+    price: "$16.900.000",
+    km: "38.000 km",
+    image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
+  },
+  {
+    model: "Mazda CX-5 2019",
+    price: "$15.200.000",
+    km: "59.000 km",
+    image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
+  },
+  {
+    model: "Hyundai Tucson 2020",
+    price: "$14.750.000",
+    km: "51.000 km",
+    image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
+  },
+  {
+    model: "Peugeot 3008 2021",
+    price: "$18.300.000",
+    km: "28.000 km",
+    image: "https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
+  },
+  {
+    model: "Subaru XV 2019",
+    price: "$13.990.000",
+    km: "63.000 km",
+    image: "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
+  },
 ];
 
 const testimonials = [
@@ -85,7 +115,7 @@ export default function Home() {
             <div className="reveal reveal-delay-1 flex items-center justify-center">
               <div className="relative">
                 <Image
-                  src="/hero-car.svg"
+                  src="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800&q=80"
                   alt="Auto verificado con sello C4R Shield"
                   width={620}
                   height={420}
@@ -189,7 +219,7 @@ export default function Home() {
                 >
                   <div className="relative aspect-[4/3] bg-[linear-gradient(145deg,#f7f7f4,#e6e4db)]">
                     <Image
-                      src="/car-placeholder.svg"
+                      src={car.image}
                       alt={car.model}
                       fill
                       sizes="(max-width: 768px) 100vw, 33vw"

@@ -84,29 +84,41 @@ const blogHighlights = [
     excerpt: "Guia para compradores primerizos con checklist legal y de inspeccion.",
     author: "Maria Gonzalez",
     date: "15 Ene 2026",
-    image: "/car-placeholder.svg",
+    image: "https://images.unsplash.com/photo-1558618049-25e814ad819c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80",
   },
   {
     title: "Financiamiento inteligente en 2026",
     excerpt: "Comparativa de opciones para financiar tu proximo vehiculo sin sobrecostos.",
     author: "Carlos Ruiz",
     date: "12 Ene 2026",
-    image: "/hero-car.svg",
+    image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80",
   },
   {
     title: "Historia real: compra segura en una semana",
     excerpt: "Paso a paso de una transaccion validada de punta a punta con C4R.",
     author: "Ana Lopez",
     date: "10 Ene 2026",
-    image: "/car-placeholder.svg",
+    image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80",
   },
 ];
 
 const socialTiles = [
-  { image: "/avatar-camila.svg", caption: "Miembros celebrando su compra verificada" },
-  { image: "/avatar-javier.svg", caption: "Historias de venta segura" },
-  { image: "/hero-car.svg", caption: "Vehiculos con reporte completo" },
-  { image: "/car-placeholder.svg", caption: "Comunidad activa y colaborativa" },
+  {
+    image: "https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    caption: "SUV verificado con historial completo",
+  },
+  {
+    image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    caption: "Modelos clasicos revisados por C4R Check",
+  },
+  {
+    image: "https://images.unsplash.com/photo-1549399902-5ec21ed764ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    caption: "Sedanes listos para compra segura",
+  },
+  {
+    image: "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600&q=80",
+    caption: "Autos familiares con inspeccion vigente",
+  },
 ];
 
 export const metadata: Metadata = {
