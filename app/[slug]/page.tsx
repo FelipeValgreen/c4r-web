@@ -454,13 +454,13 @@ const pages: Record<MarketingSlug, PageContent> = {
       "https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800&q=80",
     heroAlt: "Gestion profesional de inventario para dealers",
     primaryCta: {
-      href: "/contacto",
-      label: "Solicitar demo comercial",
+      href: "/dealers",
+      label: "Abrir dashboard dealers",
       eventName: "dealers_hub_primary_cta",
     },
     secondaryCta: {
-      href: "/precios",
-      label: "Ver plan Pro y Enterprise",
+      href: "/dealers/registro",
+      label: "Iniciar registro dealer",
       eventName: "dealers_hub_secondary_cta",
     },
     metrics: [
@@ -513,24 +513,24 @@ const pages: Record<MarketingSlug, PageContent> = {
         description: "Estado por unidad, revisiones y embudo comercial en una sola vista.",
         image:
           "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
-        href: "/contacto",
-        cta: "Solicitar implementacion",
+        href: "/dealers/inventory",
+        cta: "Ver inventario dealers",
       },
       {
         title: "Leads B2B priorizados",
         description: "Calificacion y seguimiento para reducir tiempo de cierre.",
         image:
           "https://images.unsplash.com/photo-1549317336-206569e8475c?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
-        href: "/contacto",
-        cta: "Hablar con ventas B2B",
+        href: "/dealers/leads",
+        cta: "Abrir gestion de leads",
       },
       {
         title: "Analitica para gerencia",
         description: "Indicadores diarios de performance comercial por canal y sucursal.",
         image:
           "https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
-        href: "/precios",
-        cta: "Comparar planes",
+        href: "/dealers/reports",
+        cta: "Revisar reportes",
       },
     ],
     faqTitle: "Preguntas frecuentes para dealers",
@@ -559,13 +559,13 @@ const pages: Record<MarketingSlug, PageContent> = {
     finalDescription:
       "Transforma tu operacion de ventas con una plataforma enfocada en confianza, trazabilidad y conversion.",
     finalPrimary: {
-      href: "/contacto",
-      label: "Agendar demo B2B",
+      href: "/dealers",
+      label: "Entrar al dashboard",
       eventName: "dealers_hub_final_primary",
     },
     finalSecondary: {
-      href: "/faq",
-      label: "Ver preguntas frecuentes",
+      href: "/dealers/registro",
+      label: "Crear cuenta dealer",
       eventName: "dealers_hub_final_secondary",
     },
   },

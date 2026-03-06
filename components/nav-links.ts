@@ -1,7 +1,7 @@
 export const navLinks = [
   { href: "/compra-segura", label: "Comprar" },
   { href: "/vende-rapido", label: "Vender" },
-  { href: "/dealers-hub", label: "Dealers" },
+  { href: "/dealers", label: "Dealers" },
   { href: "/como-funciona", label: "Cómo funciona" },
   { href: "/precios", label: "Precios" },
   { href: "/comunidad-c4r", label: "Comunidad" },
