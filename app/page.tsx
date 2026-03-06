@@ -311,7 +311,7 @@ export default function Home() {
                 Explorar autos verificados
               </TrackedLink>
               <TrackedLink
-                href="/comunidad"
+                href="/comunidad-c4r"
                 eventName="home_final_cta_community"
                 eventParams={{ location: "final_section_secondary" }}
                 className="inline-flex h-11 items-center justify-center rounded-md border border-ink px-6 text-sm font-semibold text-ink transition-colors hover:bg-ink hover:text-white"

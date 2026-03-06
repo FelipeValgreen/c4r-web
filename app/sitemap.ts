@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { marketingRoutes, siteUrl } from "@/lib/site";
 
-const coreRoutes = ["/", "/app/explorar"];
+const coreRoutes = ["/", "/app/explorar", "/c4r-check", "/c4r-score", "/comunidad-c4r"];
 const allRoutes = [...coreRoutes, ...marketingRoutes];
 
 export default function sitemap(): MetadataRoute.Sitemap {

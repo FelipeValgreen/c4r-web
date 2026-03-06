@@ -4,7 +4,7 @@ export const navLinks = [
   { href: "/dealers-hub", label: "Dealers" },
   { href: "/como-funciona", label: "Cómo funciona" },
   { href: "/precios", label: "Precios" },
-  { href: "/comunidad", label: "Comunidad" },
+  { href: "/comunidad-c4r", label: "Comunidad" },
   { href: "/blog", label: "Blog" },
   { href: "/contacto", label: "Contacto" },
 ];
@@ -40,8 +40,10 @@ export const footerColumns = [
   {
     title: "Confianza",
     links: [
+      { href: "/c4r-check", label: "C4R Check" },
+      { href: "/c4r-score", label: "C4R Score" },
       { href: "/como-funciona", label: "C4R Shield" },
-      { href: "/comunidad", label: "Comunidad" },
+      { href: "/comunidad-c4r", label: "Comunidad" },
       { href: "/faq", label: "FAQ" },
       { href: "/contacto", label: "Contacto" },
     ],
