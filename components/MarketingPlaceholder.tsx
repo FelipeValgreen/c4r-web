@@ -1,4 +1,4 @@
-import Link from "next/link";
+import TrackedLink from "@/components/TrackedLink";
 
 type MarketingPlaceholderProps = {
   title: string;
@@ -17,18 +17,22 @@ export default function MarketingPlaceholder({ title, description }: MarketingPl
           <h1 className="mt-5 font-heading text-4xl font-bold tracking-tight text-ink sm:text-5xl">{title}</h1>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-gray-600">{description}</p>
           <div className="mt-10 flex flex-wrap gap-4">
-            <Link
+            <TrackedLink
               href="/app/explorar"
+              eventName="placeholder_cta_explore"
+              eventParams={{ location: "placeholder_primary", page: title }}
               className="inline-flex h-11 items-center justify-center rounded-md bg-khaki px-6 text-sm font-semibold text-ink transition-colors hover:bg-khaki-dark"
             >
               Explorar autos verificados
-            </Link>
-            <Link
+            </TrackedLink>
+            <TrackedLink
               href="/contacto"
+              eventName="placeholder_cta_contact"
+              eventParams={{ location: "placeholder_secondary", page: title }}
               className="inline-flex h-11 items-center justify-center rounded-md border border-ink px-6 text-sm font-semibold text-ink transition-colors hover:bg-ink hover:text-white"
             >
               Hablar con el equipo
-            </Link>
+            </TrackedLink>
           </div>
         </div>
       </section>

@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
+import type { Metadata } from "next";
+import TrackedLink from "@/components/TrackedLink";
 
 const vehicles = [
   { model: "Toyota Corolla 2020", price: "$12.500.000", city: "Santiago", km: "45.000 km" },
@@ -10,9 +11,32 @@ const vehicles = [
   { model: "Subaru XV 2019", price: "$13.990.000", city: "Temuco", km: "63.000 km" },
 ];
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Explorar autos verificados | C4R",
   description: "Catálogo de vehículos verificados con chequeo oficial y pago protegido.",
+  alternates: {
+    canonical: "/app/explorar",
+  },
+  openGraph: {
+    title: "Explorar autos verificados | C4R",
+    description: "Catálogo de vehículos verificados con chequeo oficial y pago protegido.",
+    url: "/app/explorar",
+    type: "website",
+    images: [
+      {
+        url: "/og-c4r.svg",
+        width: 1200,
+        height: 630,
+        alt: "C4R - Explorar autos verificados",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "Explorar autos verificados | C4R",
+    description: "Catálogo de vehículos verificados con chequeo oficial y pago protegido.",
+    images: ["/og-c4r.svg"],
+  },
 };
 
 export default function ExplorePage() {
@@ -26,12 +50,14 @@ export default function ExplorePage() {
               Cada publicación en C4R incluye validación técnica y legal para que compres con confianza.
             </p>
           </div>
-          <Link
+          <TrackedLink
             href="/vende-rapido"
+            eventName="explore_cta_publish"
+            eventParams={{ location: "explore_header" }}
             className="inline-flex h-10 items-center justify-center rounded-md bg-khaki px-5 text-sm font-semibold text-ink transition-colors hover:bg-khaki-dark"
           >
             Publicar mi auto
-          </Link>
+          </TrackedLink>
         </div>
 
         <div className="mt-8 flex flex-wrap gap-3">

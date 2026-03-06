@@ -2,11 +2,76 @@
 
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { type KeyboardEvent as ReactKeyboardEvent, useEffect, useRef, useState } from "react";
 import { navLinks } from "@/components/nav-links";
+import TrackedLink from "@/components/TrackedLink";
 
 export default function SiteHeader() {
   const [isOpen, setIsOpen] = useState(false);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
+  const toggleButtonRef = useRef<HTMLButtonElement>(null);
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
+  useEffect(() => {
+    if (!isOpen) {
+      return;
+    }
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    const focusableElements = mobileMenuRef.current?.querySelectorAll<HTMLElement>(
+      'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])',
+    );
+    focusableElements?.[0]?.focus();
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        closeMenu();
+        toggleButtonRef.current?.focus();
+      }
+    };
+
+    document.addEventListener("keydown", onKeyDown);
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, [isOpen]);
+
+  const handleMobileMenuKeyDown = (event: ReactKeyboardEvent<HTMLDivElement>) => {
+    if (event.key !== "Tab") {
+      return;
+    }
+
+    const focusableElements = mobileMenuRef.current?.querySelectorAll<HTMLElement>(
+      'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])',
+    );
+
+    if (!focusableElements || focusableElements.length === 0) {
+      return;
+    }
+
+    const firstElement = focusableElements[0];
+    const lastElement = focusableElements[focusableElements.length - 1];
+    const activeElement = document.activeElement as HTMLElement | null;
+
+    if (event.shiftKey && activeElement === firstElement) {
+      event.preventDefault();
+      lastElement.focus();
+      return;
+    }
+
+    if (!event.shiftKey && activeElement === lastElement) {
+      event.preventDefault();
+      firstElement.focus();
+    }
+  };
 
   return (
     <header className="sticky top-0 z-50 border-b border-platinum bg-white/95 backdrop-blur">
@@ -23,9 +88,12 @@ export default function SiteHeader() {
 
         <div className="flex lg:hidden">
           <button
+            ref={toggleButtonRef}
             type="button"
             className="-m-2.5 rounded-md p-2.5 text-ink"
             aria-label={isOpen ? "Cerrar menú" : "Abrir menú principal"}
+            aria-expanded={isOpen}
+            aria-controls="mobile-navigation"
             onClick={() => setIsOpen((prev) => !prev)}
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -45,35 +113,45 @@ export default function SiteHeader() {
         </div>
 
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link
+          <TrackedLink
             href="/app/explorar"
+            eventName="header_cta_explore"
+            eventParams={{ location: "header_desktop" }}
             className="inline-flex h-10 items-center justify-center rounded-md bg-khaki px-4 py-2 text-sm font-semibold text-ink transition-colors hover:bg-khaki-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-khaki focus-visible:ring-offset-2"
           >
             Explorar autos verificados
-          </Link>
+          </TrackedLink>
         </div>
       </nav>
 
       {isOpen && (
-        <div className="border-t border-platinum lg:hidden">
+        <div
+          id="mobile-navigation"
+          ref={mobileMenuRef}
+          className="border-t border-platinum lg:hidden"
+          aria-label="Navegación móvil"
+          onKeyDown={handleMobileMenuKeyDown}
+        >
           <div className="space-y-2 px-6 py-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 transition-colors hover:bg-platinum/60"
-                onClick={() => setIsOpen(false)}
+                onClick={closeMenu}
               >
                 {link.label}
               </Link>
             ))}
-            <Link
+            <TrackedLink
               href="/app/explorar"
+              eventName="header_cta_explore"
+              eventParams={{ location: "header_mobile" }}
               className="mt-4 inline-flex w-full items-center justify-center rounded-md bg-khaki px-4 py-2 text-sm font-semibold text-ink transition-colors hover:bg-khaki-dark"
-              onClick={() => setIsOpen(false)}
+              onClick={closeMenu}
             >
               Explorar autos verificados
-            </Link>
+            </TrackedLink>
           </div>
         </div>
       )}

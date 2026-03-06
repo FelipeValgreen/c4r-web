@@ -1,0 +1,35 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="1140" y1="40" x2="70" y2="590" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F1EDDF"/>
+      <stop offset="1" stop-color="#DAD2BC"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1080" cy="120" r="150" fill="#B0A16E" fill-opacity="0.2"/>
+  <circle cx="130" cy="560" r="170" fill="#B0A16E" fill-opacity="0.14"/>
+
+  <text x="96" y="176" fill="#2C2C2C" font-family="Arial, sans-serif" font-size="74" font-weight="700">
+    C4R
+  </text>
+  <text x="96" y="258" fill="#2C2C2C" font-family="Arial, sans-serif" font-size="58" font-weight="700">
+    Compra y vende autos usados
+  </text>
+  <text x="96" y="330" fill="#2C2C2C" font-family="Arial, sans-serif" font-size="58" font-weight="700">
+    sin miedo a estafas.
+  </text>
+  <text x="96" y="390" fill="#4B5563" font-family="Arial, sans-serif" font-size="34" font-weight="500">
+    Chequeo oficial, pago protegido y garantía de 7 días.
+  </text>
+
+  <rect x="96" y="454" width="300" height="68" rx="34" fill="#147A4C"/>
+  <text x="246" y="498" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="30" font-weight="700">
+    C4R Shield
+  </text>
+
+  <path d="M740 420C763 360 822 316 893 312H1036C1091 312 1140 339 1166 383L1200 420V500H740V420Z" fill="#2F2F2F"/>
+  <circle cx="858" cy="500" r="52" fill="#1B1B1B"/>
+  <circle cx="858" cy="500" r="24" fill="#DFDFDF"/>
+  <circle cx="1083" cy="500" r="52" fill="#1B1B1B"/>
+  <circle cx="1083" cy="500" r="24" fill="#DFDFDF"/>
+</svg>

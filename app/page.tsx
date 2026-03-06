@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import { ArrowRight, CheckCircle2, CreditCard, Shield } from "lucide-react";
+import TrackedLink from "@/components/TrackedLink";
 
 const trustPillars = [
   {
@@ -63,18 +63,22 @@ export default function Home() {
                 Con C4R cada vehículo pasa por chequeo oficial, pago protegido y garantía de 7 días.
               </p>
               <div className="mt-10 flex flex-wrap items-center gap-4">
-                <Link
+                <TrackedLink
                   href="/app/explorar"
+                  eventName="home_cta_explore"
+                  eventParams={{ location: "hero_primary" }}
                   className="inline-flex h-11 items-center justify-center rounded-md bg-khaki px-8 text-sm font-semibold text-ink transition-colors hover:bg-khaki-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-khaki focus-visible:ring-offset-2"
                 >
                   Explorar autos verificados
-                </Link>
-                <Link
+                </TrackedLink>
+                <TrackedLink
                   href="/como-funciona"
+                  eventName="home_cta_how_it_works"
+                  eventParams={{ location: "hero_secondary" }}
                   className="inline-flex h-11 items-center justify-center rounded-md border border-ink px-6 text-sm font-semibold text-ink transition-colors hover:bg-ink hover:text-white"
                 >
                   Cómo funciona
-                </Link>
+                </TrackedLink>
               </div>
             </div>
 
@@ -208,13 +212,15 @@ export default function Home() {
             </div>
 
             <div className="mt-14 text-center">
-              <Link
+              <TrackedLink
                 href="/app/explorar"
+                eventName="home_catalog_explore"
+                eventParams={{ location: "catalog_section" }}
                 className="inline-flex h-11 items-center justify-center rounded-md bg-khaki px-8 text-sm font-semibold text-ink transition-colors hover:bg-khaki-dark"
               >
                 Explorar más autos verificados
                 <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
+              </TrackedLink>
             </div>
           </div>
         </section>
@@ -263,12 +269,14 @@ export default function Home() {
               Publica gratis en C4R y recibe ofertas reales con pago protegido.
             </p>
             <div className="mt-10">
-              <Link
+              <TrackedLink
                 href="/vende-rapido"
+                eventName="home_cta_sell"
+                eventParams={{ location: "sell_section" }}
                 className="inline-flex h-11 items-center justify-center rounded-md bg-khaki px-8 text-sm font-semibold text-ink transition-colors hover:bg-khaki-dark"
               >
                 Publicar mi auto ahora
-              </Link>
+              </TrackedLink>
             </div>
           </div>
         </section>
@@ -294,18 +302,22 @@ export default function Home() {
               Compra, vende y financia tu auto en un solo lugar seguro.
             </h2>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-              <Link
+              <TrackedLink
                 href="/app/explorar"
+                eventName="home_final_cta_explore"
+                eventParams={{ location: "final_section_primary" }}
                 className="inline-flex h-11 items-center justify-center rounded-md border border-ink px-8 text-sm font-semibold text-ink transition-colors hover:bg-ink hover:text-white"
               >
                 Explorar autos verificados
-              </Link>
-              <Link
+              </TrackedLink>
+              <TrackedLink
                 href="/comunidad"
+                eventName="home_final_cta_community"
+                eventParams={{ location: "final_section_secondary" }}
                 className="inline-flex h-11 items-center justify-center rounded-md border border-ink px-6 text-sm font-semibold text-ink transition-colors hover:bg-ink hover:text-white"
               >
                 Unirme a la comunidad C4R
-              </Link>
+              </TrackedLink>
             </div>
           </div>
         </section>

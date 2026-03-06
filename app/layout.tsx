@@ -14,12 +14,18 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://v0-c4-r.vercel.app";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "C4R - Compra y vende autos usados sin miedo a estafas",
   description:
     "Con C4R cada vehículo pasa por chequeo oficial, pago protegido y garantía de 7 días. El marketplace automotriz más seguro de Chile.",
   generator: "C4R",
   authors: [{ name: "C4R Team" }],
+  alternates: {
+    canonical: "/",
+  },
   keywords: [
     "autos usados",
     "compra segura",
@@ -31,14 +37,29 @@ export const metadata: Metadata = {
     title: "C4R - Compra y vende autos usados sin miedo a estafas",
     description:
       "Con C4R cada vehículo pasa por chequeo oficial, pago protegido y garantía de 7 días.",
+    url: "/",
+    siteName: "C4R",
     type: "website",
     locale: "es_CL",
+    images: [
+      {
+        url: "/og-c4r.svg",
+        width: 1200,
+        height: 630,
+        alt: "C4R - Compra y vende autos usados sin miedo a estafas",
+      },
+    ],
   },
   twitter: {
     card: "summary",
     title: "C4R - Compra y vende autos usados sin miedo a estafas",
     description:
       "Con C4R cada vehículo pasa por chequeo oficial, pago protegido y garantía de 7 días.",
+    images: ["/og-c4r.svg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 

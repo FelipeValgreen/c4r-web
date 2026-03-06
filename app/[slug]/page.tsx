@@ -70,6 +70,14 @@ const pageMap: Record<string, { title: string; description: string }> = {
   },
 };
 
+const staticSlugs = Object.keys(pageMap);
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return staticSlugs.map((slug) => ({ slug }));
+}
+
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
@@ -87,6 +95,29 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${page.title} | C4R`,
     description: page.description,
+    alternates: {
+      canonical: `/${slug}`,
+    },
+    openGraph: {
+      title: `${page.title} | C4R`,
+      description: page.description,
+      url: `/${slug}`,
+      type: "website",
+      images: [
+        {
+          url: "/og-c4r.svg",
+          width: 1200,
+          height: 630,
+          alt: "C4R",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary",
+      title: `${page.title} | C4R`,
+      description: page.description,
+      images: ["/og-c4r.svg"],
+    },
   };
 }
 
