@@ -22,7 +22,11 @@ import {
 } from "@/app/dealers/_data";
 
 const STORE_VERSION = 1;
-const STORE_FILE = path.join(process.cwd(), "data", "dealers-store.json");
+const STORE_FILE =
+  normalizeText(process.env.DEALERS_STORE_FILE) ||
+  (process.env.VERCEL
+    ? path.join("/tmp", "c4r", "dealers-store.json")
+    : path.join(process.cwd(), "data", "dealers-store.json"));
 
 export const DEFAULT_DEALER_ID = "DLR-C4R-DEMO";
 
