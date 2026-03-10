@@ -1,10 +1,14 @@
+import { revalidatePath } from "next/cache";
 import Link from "next/link";
-import { dealerLeads, formatDate } from "@/app/dealers/_data";
+import { formatDate, type LeadStage } from "@/app/dealers/_data";
+import { getDealerSnapshot, updateDealerLeadStage } from "@/lib/dealers-store";
 
 export const metadata = {
   title: "Leads Dealers | C4R",
   description: "Seguimiento de oportunidades comerciales de dealers.",
 };
+
+export const dynamic = "force-dynamic";
 
 function stagePill(stage: string) {
   if (stage === "cerrado") {
@@ -22,7 +26,29 @@ function stagePill(stage: string) {
   return "bg-slate-200 text-slate-700";
 }
 
-export default function DealersLeadsPage() {
+async function updateLeadStageAction(formData: FormData) {
+  "use server";
+
+  const leadId = String(formData.get("leadId") ?? "").trim();
+  const stage = String(formData.get("stage") ?? "").trim() as LeadStage;
+
+  if (!leadId || !["nuevo", "contactado", "oferta", "cerrado"].includes(stage)) {
+    return;
+  }
+
+  await updateDealerLeadStage(leadId, stage);
+
+  revalidatePath("/dealers");
+  revalidatePath("/dealers/leads");
+  revalidatePath("/dealers/inventory");
+  revalidatePath("/dealers/contracts");
+  revalidatePath("/dealers/payments");
+}
+
+export default async function DealersLeadsPage() {
+  const snapshot = await getDealerSnapshot();
+  const dealerLeads = snapshot.leads;
+
   return (
     <div className="space-y-6">
       <section className="rounded-2xl border border-platinum bg-white p-6">
@@ -61,12 +87,34 @@ export default function DealersLeadsPage() {
                   <td className="px-4 py-3 text-ink/80">{lead.assignedTo}</td>
                   <td className="px-4 py-3 text-ink/80">{formatDate(lead.createdAt)}</td>
                   <td className="px-4 py-3">
-                    <Link
-                      href={lead.requestId ? `/dealers/solicitud/${lead.requestId}` : "/dealers/tasks"}
-                      className="rounded-lg border border-platinum px-3 py-2 text-xs font-semibold text-ink hover:bg-platinum"
-                    >
-                      {lead.requestId ? "Ver solicitud" : "Gestionar"}
-                    </Link>
+                    <div className="flex flex-wrap items-center gap-2">
+                      <form action={updateLeadStageAction} className="flex items-center gap-2">
+                        <input type="hidden" name="leadId" value={lead.id} />
+                        <select
+                          name="stage"
+                          defaultValue={lead.stage}
+                          className="h-8 rounded-md border border-platinum px-2 text-xs text-ink outline-none ring-khaki/40 focus:ring-2"
+                        >
+                          <option value="nuevo">nuevo</option>
+                          <option value="contactado">contactado</option>
+                          <option value="oferta">oferta</option>
+                          <option value="cerrado">cerrado</option>
+                        </select>
+                        <button
+                          type="submit"
+                          className="rounded-md border border-platinum px-2 py-1 text-xs font-semibold text-ink hover:bg-platinum"
+                        >
+                          Guardar
+                        </button>
+                      </form>
+
+                      <Link
+                        href={lead.requestId ? `/dealers/solicitud/${lead.requestId}` : `/dealers/solicitud/${lead.id}`}
+                        className="rounded-lg border border-platinum px-3 py-2 text-xs font-semibold text-ink hover:bg-platinum"
+                      >
+                        Ver solicitud
+                      </Link>
+                    </div>
                   </td>
                 </tr>
               ))}

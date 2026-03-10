@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { c4rVehicles } from "@/lib/chileautos-vehicles";
+import { createLeadFromWebIntent } from "@/lib/dealers-store";
 
 type ReserveRequest = {
   vehicleId?: string;
@@ -57,11 +58,20 @@ export async function POST(request: Request) {
   }
 
   const reference = generateReference("RSV");
+  const dealerLead = await createLeadFromWebIntent({
+    vehicleId: vehicle.id,
+    vehicleTitle: vehicle.title,
+    fullName,
+    email,
+    phone,
+    source: "reserva",
+  });
 
   return NextResponse.json(
     {
       success: true,
       reference,
+      dealerLeadId: dealerLead.id,
       message: `Reserva enviada para ${vehicle.title}.`,
       nextStep: "Te contactaremos por WhatsApp y correo en menos de 2 horas habiles para confirmar la visita.",
       data: {

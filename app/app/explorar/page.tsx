@@ -316,13 +316,13 @@ export default async function ExplorePage({ searchParams }: PageProps) {
             {paginatedVehicles.map((vehicle) => (
               <article
                 key={vehicle.id}
-                className="overflow-hidden rounded-2xl border border-platinum bg-white shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg"
+                className="flex h-full flex-col overflow-hidden rounded-2xl border border-platinum bg-white shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg"
               >
                 <TrackedLink
                   href={`/app/explorar/${vehicle.slug}`}
                   eventName="explore_vehicle_open"
                   eventParams={{ location: "explore_card", vehicleId: vehicle.id }}
-                  className="group block"
+                  className="group flex flex-1 flex-col"
                 >
                   <div className="relative aspect-[4/3] bg-[radial-gradient(circle_at_top,#f8f8f5,#e8e5db)] p-4">
                     <Image
@@ -334,18 +334,22 @@ export default async function ExplorePage({ searchParams }: PageProps) {
                       unoptimized
                     />
                   </div>
-                  <div className="p-6">
+                  <div className="flex flex-1 flex-col p-6">
                     <div className="flex items-start justify-between gap-3">
-                      <h2 className="font-heading text-xl font-semibold text-ink">{vehicle.title}</h2>
+                      <h2 className="min-h-[5.4rem] overflow-hidden font-heading text-xl font-semibold text-ink [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:3]">
+                        {vehicle.title}
+                      </h2>
                       <span className="rounded-full bg-success px-3 py-1 text-xs font-semibold text-white">Verificado</span>
                     </div>
-                    <p className="mt-3 text-base font-semibold text-ink">{formatCurrencyClp(vehicle.priceClp)}</p>
-                    <p className="mt-1 text-sm text-gray-500">
-                      {formatKm(vehicle.km)} • {vehicle.location}
-                    </p>
-                    <p className="mt-1 text-xs font-medium uppercase tracking-wide text-gray-500">
-                      {vehicle.bodyStyle} • {vehicle.fuelType} • {vehicle.transmission}
-                    </p>
+                    <div className="mt-auto pt-3">
+                      <p className="text-base font-semibold text-ink">{formatCurrencyClp(vehicle.priceClp)}</p>
+                      <p className="mt-1 text-sm text-gray-500">
+                        {formatKm(vehicle.km)} • {vehicle.location}
+                      </p>
+                      <p className="mt-1 text-xs font-medium uppercase tracking-wide text-gray-500">
+                        {vehicle.bodyStyle} • {vehicle.fuelType} • {vehicle.transmission}
+                      </p>
+                    </div>
                   </div>
                 </TrackedLink>
 
@@ -421,7 +425,7 @@ export default async function ExplorePage({ searchParams }: PageProps) {
         )}
 
         <p className="mt-8 text-sm text-gray-500">
-          Datos referenciales extraidos de {c4rVehicles[0]?.source ?? "Chileautos"}. Verifica disponibilidad, version y condiciones comerciales en cada ficha.
+          Datos referenciales extraidos de Chileautos y FullMotor. Verifica disponibilidad, version y condiciones comerciales en cada ficha.
         </p>
       </div>
     </main>

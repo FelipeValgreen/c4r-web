@@ -1,12 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
+import { revalidatePath } from "next/cache";
 import { Filter, Plus, Search } from "lucide-react";
-import { dealerVehicles, formatClp, formatDate } from "@/app/dealers/_data";
+import { formatClp, formatDate, type VehicleStatus } from "@/app/dealers/_data";
+import {
+  createDealerVehicle,
+  getDealerSnapshot,
+  updateDealerVehicleStatus,
+} from "@/lib/dealers-store";
 
 export const metadata = {
   title: "Inventario Dealers | C4R",
   description: "Gestion de inventario para concesionarios en C4R.",
 };
+
+export const dynamic = "force-dynamic";
 
 type InventoryStatus = "all" | "disponible" | "reservado" | "vendido";
 
@@ -45,7 +53,65 @@ function getStatusLabel(status: InventoryStatus) {
   return "Vendidos";
 }
 
+function toPositiveNumber(value: FormDataEntryValue | null): number {
+  const parsed = Number(String(value ?? "").replace(/[^0-9.-]/g, ""));
+  if (!Number.isFinite(parsed) || parsed < 0) {
+    return 0;
+  }
+
+  return Math.round(parsed);
+}
+
+async function createInventoryVehicleAction(formData: FormData) {
+  "use server";
+
+  const brand = String(formData.get("brand") ?? "").trim();
+  const model = String(formData.get("model") ?? "").trim();
+  const year = toPositiveNumber(formData.get("year"));
+  const km = toPositiveNumber(formData.get("km"));
+  const price = toPositiveNumber(formData.get("price"));
+  const image = String(formData.get("image") ?? "").trim();
+
+  if (!brand || !model || year < 1990 || year > 2030 || price <= 0) {
+    return;
+  }
+
+  await createDealerVehicle({
+    brand,
+    model,
+    year,
+    km,
+    price,
+    image,
+    status: "disponible",
+  });
+
+  revalidatePath("/dealers");
+  revalidatePath("/dealers/inventory");
+}
+
+async function updateInventoryVehicleStatusAction(formData: FormData) {
+  "use server";
+
+  const vehicleId = String(formData.get("vehicleId") ?? "").trim();
+  const status = String(formData.get("status") ?? "").trim() as VehicleStatus;
+
+  if (!vehicleId || !["disponible", "reservado", "vendido"].includes(status)) {
+    return;
+  }
+
+  await updateDealerVehicleStatus(vehicleId, status);
+
+  revalidatePath("/dealers");
+  revalidatePath("/dealers/inventory");
+  revalidatePath("/dealers/leads");
+  revalidatePath(`/dealers/solicitud/${vehicleId}`);
+}
+
 export default async function DealersInventoryPage({ searchParams }: PageProps) {
+  const snapshot = await getDealerSnapshot();
+  const dealerVehicles = snapshot.vehicles;
+
   const resolvedSearchParams = await searchParams;
   const query = (resolvedSearchParams.q ?? "").trim();
   const rawStatus = (resolvedSearchParams.status ?? "all").toLowerCase();
@@ -80,19 +146,67 @@ export default async function DealersInventoryPage({ searchParams }: PageProps) 
           <div>
             <h1 className="font-heading text-3xl font-bold text-ink">Inventario de vehiculos</h1>
             <p className="mt-2 text-sm text-ink/70">
-              Controla estado de unidades, precio publicado y flujo de venta.
+              Controla estado de unidades, precio publicado y flujo de venta en tiempo real.
             </p>
           </div>
-          <div className="flex flex-wrap gap-3">
-            <Link
-              href="/dealers/registro"
-              className="inline-flex items-center gap-2 rounded-lg bg-khaki px-4 py-2 text-sm font-semibold text-ink hover:bg-khaki-dark"
-            >
-              <Plus className="h-4 w-4" />
-              Publicar vehiculo
-            </Link>
-          </div>
+          <span className="inline-flex w-fit items-center gap-2 rounded-full bg-khaki-light px-3 py-1 text-xs font-semibold uppercase tracking-wide text-ink">
+            <Plus className="h-3.5 w-3.5" />
+            Alta operativa habilitada
+          </span>
         </div>
+
+        <form action={createInventoryVehicleAction} className="mt-5 grid gap-3 rounded-xl border border-platinum p-4 md:grid-cols-2 xl:grid-cols-6">
+          <input
+            name="brand"
+            required
+            placeholder="Marca"
+            className="h-10 rounded-lg border border-platinum px-3 text-sm text-ink outline-none ring-khaki/40 focus:ring-2"
+          />
+          <input
+            name="model"
+            required
+            placeholder="Modelo"
+            className="h-10 rounded-lg border border-platinum px-3 text-sm text-ink outline-none ring-khaki/40 focus:ring-2"
+          />
+          <input
+            name="year"
+            required
+            type="number"
+            min={1990}
+            max={2030}
+            placeholder="Ano"
+            className="h-10 rounded-lg border border-platinum px-3 text-sm text-ink outline-none ring-khaki/40 focus:ring-2"
+          />
+          <input
+            name="km"
+            required
+            type="number"
+            min={0}
+            placeholder="Kilometraje"
+            className="h-10 rounded-lg border border-platinum px-3 text-sm text-ink outline-none ring-khaki/40 focus:ring-2"
+          />
+          <input
+            name="price"
+            required
+            type="number"
+            min={1}
+            placeholder="Precio CLP"
+            className="h-10 rounded-lg border border-platinum px-3 text-sm text-ink outline-none ring-khaki/40 focus:ring-2"
+          />
+          <div className="flex gap-2">
+            <input
+              name="image"
+              placeholder="URL imagen (opcional)"
+              className="h-10 min-w-0 flex-1 rounded-lg border border-platinum px-3 text-sm text-ink outline-none ring-khaki/40 focus:ring-2"
+            />
+            <button
+              type="submit"
+              className="inline-flex h-10 items-center justify-center rounded-lg bg-khaki px-4 text-sm font-semibold text-ink transition-colors hover:bg-khaki-dark"
+            >
+              Publicar
+            </button>
+          </div>
+        </form>
       </section>
 
       <section className="rounded-2xl border border-platinum bg-white p-5">
@@ -173,6 +287,7 @@ export default async function DealersInventoryPage({ searchParams }: PageProps) 
                   width={900}
                   height={650}
                   className="h-48 w-full object-cover"
+                  unoptimized
                 />
                 <div className="space-y-3 p-5">
                   <div className="flex items-start justify-between gap-2">
@@ -191,6 +306,25 @@ export default async function DealersInventoryPage({ searchParams }: PageProps) 
                   <div className="space-y-1 text-sm text-ink/70">
                     <p>Kilometraje: {vehicle.km.toLocaleString("es-CL")} km</p>
                     <p>Publicado: {formatDate(vehicle.publishedAt)}</p>
+                  </div>
+
+                  <div className="grid grid-cols-3 gap-2 pt-2">
+                    {(["disponible", "reservado", "vendido"] as VehicleStatus[]).map((nextStatus) => (
+                      <form key={`${vehicle.id}-${nextStatus}`} action={updateInventoryVehicleStatusAction}>
+                        <input type="hidden" name="vehicleId" value={vehicle.id} />
+                        <input type="hidden" name="status" value={nextStatus} />
+                        <button
+                          type="submit"
+                          className={`w-full rounded-lg border px-2 py-2 text-xs font-semibold transition-colors ${
+                            vehicle.status === nextStatus
+                              ? "border-khaki bg-khaki-light text-ink"
+                              : "border-platinum bg-white text-ink/80 hover:bg-platinum"
+                          }`}
+                        >
+                          {nextStatus}
+                        </button>
+                      </form>
+                    ))}
                   </div>
 
                   <div className="flex gap-2 pt-2">

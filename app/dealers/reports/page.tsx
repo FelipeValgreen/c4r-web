@@ -1,18 +1,31 @@
-const reportBlocks = [
-  "Ventas por mes",
-  "Rotacion de stock",
-  "Margen bruto",
-  "Tiempo promedio de cierre",
-  "Top asesores",
-  "Fuentes de leads",
-];
+import { formatClp } from "@/app/dealers/_data";
+import { getDealerSnapshot } from "@/lib/dealers-store";
 
 export const metadata = {
   title: "Reportes Dealers | C4R",
   description: "Metricas clave de operacion y conversion para dealers.",
 };
 
-export default function DealersReportsPage() {
+export const dynamic = "force-dynamic";
+
+export default async function DealersReportsPage() {
+  const snapshot = await getDealerSnapshot();
+
+  const totalStock = snapshot.vehicles.filter((vehicle) => vehicle.status !== "vendido").length;
+  const sold = snapshot.vehicles.filter((vehicle) => vehicle.status === "vendido");
+  const soldCount = sold.length;
+  const soldRevenue = sold.reduce((acc, vehicle) => acc + vehicle.price, 0);
+  const activeLeads = snapshot.leads.filter((lead) => lead.stage !== "cerrado").length;
+  const closedLeads = snapshot.leads.filter((lead) => lead.stage === "cerrado").length;
+  const conversion = snapshot.leads.length > 0 ? Math.round((closedLeads / snapshot.leads.length) * 100) : 0;
+
+  const cards = [
+    { title: "Stock activo", value: String(totalStock), detail: "vehiculos listos para venta" },
+    { title: "Leads activos", value: String(activeLeads), detail: "con seguimiento en curso" },
+    { title: "Ventas cerradas", value: String(soldCount), detail: `conversion ${conversion}%` },
+    { title: "Ingresos confirmados", value: formatClp(soldRevenue), detail: "facturacion acumulada" },
+  ];
+
   return (
     <div className="space-y-6">
       <section className="rounded-2xl border border-platinum bg-white p-6">
@@ -20,21 +33,12 @@ export default function DealersReportsPage() {
         <p className="mt-2 text-sm text-ink/70">Vista ejecutiva de volumen, conversion y rentabilidad.</p>
       </section>
 
-      <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-        {reportBlocks.map((title, index) => (
-          <article key={title} className="rounded-2xl border border-platinum bg-white p-5">
-            <p className="text-sm font-semibold text-ink">{title}</p>
-            <div className="mt-4 h-40 rounded-xl bg-platinum/50 p-4">
-              <div className="flex h-full items-end gap-2">
-                {[42, 58, 37, 66, 49, 72].map((height, barIndex) => (
-                  <div
-                    key={`${index}-${barIndex}`}
-                    className="w-full rounded-t bg-khaki/70"
-                    style={{ height: `${height}%` }}
-                  />
-                ))}
-              </div>
-            </div>
+      <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        {cards.map((card) => (
+          <article key={card.title} className="rounded-2xl border border-platinum bg-white p-5">
+            <p className="text-xs font-semibold uppercase tracking-wide text-ink/60">{card.title}</p>
+            <p className="mt-2 text-2xl font-bold text-ink">{card.value}</p>
+            <p className="mt-1 text-xs text-ink/60">{card.detail}</p>
           </article>
         ))}
       </section>

@@ -18,6 +18,18 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "latam-editorial.pxcrush.net",
       },
+      {
+        protocol: "https",
+        hostname: "www.fullmotor.cl",
+      },
+      {
+        protocol: "https",
+        hostname: "www.rtautomotriz.com",
+      },
+      {
+        protocol: "https",
+        hostname: "rtautomotriz.com",
+      },
     ],
   },
 };

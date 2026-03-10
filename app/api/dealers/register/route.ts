@@ -1,4 +1,7 @@
 import { type NextRequest, NextResponse } from "next/server";
+import { registerDealer, getDealerSnapshot } from "@/lib/dealers-store";
+
+export const dynamic = "force-dynamic";
 
 type DealerRegistrationInput = {
   companyName?: string;
@@ -7,18 +10,6 @@ type DealerRegistrationInput = {
   phone?: string;
   address?: string;
 };
-
-type DealerRegistration = {
-  id: string;
-  companyName: string;
-  companyRut: string;
-  email: string;
-  phone: string;
-  address: string;
-  createdAt: string;
-};
-
-const registrations: DealerRegistration[] = [];
 
 function normalizeText(value?: string): string {
   return (value ?? "").trim();
@@ -71,17 +62,13 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Direccion invalida." }, { status: 400 });
     }
 
-    const registration: DealerRegistration = {
-      id: `DLR-${Date.now().toString().slice(-6)}`,
+    const registration = await registerDealer({
       companyName,
       companyRut,
       email,
       phone,
       address,
-      createdAt: new Date().toISOString(),
-    };
-
-    registrations.unshift(registration);
+    });
 
     return NextResponse.json(
       {
@@ -91,14 +78,21 @@ export async function POST(request: NextRequest) {
       },
       { status: 201 },
     );
-  } catch {
-    return NextResponse.json({ error: "Error interno del servidor." }, { status: 500 });
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "Error interno del servidor.";
+    const status = message.includes("Ya existe") ? 409 : 500;
+    return NextResponse.json({ error: message }, { status });
   }
 }
 
 export async function GET() {
-  return NextResponse.json({
-    count: registrations.length,
-    registrations: registrations.slice(0, 20),
-  });
+  try {
+    const snapshot = await getDealerSnapshot();
+    return NextResponse.json({
+      count: snapshot.registrations.length,
+      registrations: snapshot.registrations.slice(0, 50),
+    });
+  } catch {
+    return NextResponse.json({ error: "Error interno del servidor." }, { status: 500 });
+  }
 }

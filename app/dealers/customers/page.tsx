@@ -1,11 +1,16 @@
-import { dealerCustomers } from "@/app/dealers/_data";
+import { getDealerSnapshot } from "@/lib/dealers-store";
 
 export const metadata = {
   title: "Clientes Dealers | C4R",
   description: "Base de clientes de dealers con historial de compras.",
 };
 
-export default function DealersCustomersPage() {
+export const dynamic = "force-dynamic";
+
+export default async function DealersCustomersPage() {
+  const snapshot = await getDealerSnapshot();
+  const dealerCustomers = snapshot.customers;
+
   return (
     <div className="space-y-6">
       <section className="rounded-2xl border border-platinum bg-white p-6">

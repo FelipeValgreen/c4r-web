@@ -1,10 +1,12 @@
 import Link from "next/link";
-import { dealerContracts } from "@/app/dealers/_data";
+import { getDealerSnapshot } from "@/lib/dealers-store";
 
 export const metadata = {
   title: "Contratos Dealers | C4R",
   description: "Estado documental de cada operacion comercial.",
 };
+
+export const dynamic = "force-dynamic";
 
 function statusPill(status: string) {
   if (status === "firmado") {
@@ -18,7 +20,10 @@ function statusPill(status: string) {
   return "bg-slate-200 text-slate-700";
 }
 
-export default function DealersContractsPage() {
+export default async function DealersContractsPage() {
+  const snapshot = await getDealerSnapshot();
+  const dealerContracts = snapshot.contracts;
+
   return (
     <div className="space-y-6">
       <section className="rounded-2xl border border-platinum bg-white p-6">

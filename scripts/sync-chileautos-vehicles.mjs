@@ -1,6 +1,9 @@
 import fs from "node:fs/promises";
 
-const BASE_URL = "https://www.chileautos.cl";
+const CHILEAUTOS_BASE_URL = "https://www.chileautos.cl";
+const FULLMOTOR_BASE_URL = "https://www.fullmotor.cl";
+const FULLMOTOR_AUTOMOBILE_TYPE = "1";
+const FULLMOTOR_PAGE_LIMIT = 120;
 const OUTPUT_FILE = new URL("../lib/chileautos-vehicles.ts", import.meta.url);
 
 const seedPaths = [
@@ -22,20 +25,50 @@ const seedPaths = [
 
 const fallbackCities = [
   "Santiago",
-  "Valparaíso",
-  "Concepción",
+  "Valparaiso",
+  "Concepcion",
   "La Serena",
   "Temuco",
   "Antofagasta",
-  "Viña del Mar",
+  "Vina del Mar",
   "Rancagua",
   "Talca",
   "Puerto Montt",
   "Iquique",
   "Calama",
-  "Copiapó",
+  "Copiapo",
   "Arica",
 ];
+
+const searchableLocations = [
+  "Santiago",
+  "Vitacura",
+  "Las Condes",
+  "Providencia",
+  "Lo Barnechea",
+  "Maipu",
+  "Nunoa",
+  "La Florida",
+  "Puente Alto",
+  "Vina del Mar",
+  "Valparaiso",
+  "Concepcion",
+  "Talcahuano",
+  "Chillan",
+  "La Serena",
+  "Coquimbo",
+  "Antofagasta",
+  "Iquique",
+  "Calama",
+  "Temuco",
+  "Puerto Montt",
+  "Rancagua",
+  "Talca",
+  "Arica",
+  "Copiapo",
+];
+
+const heroBodyStyleFallback = "Automovil";
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -48,6 +81,7 @@ async function fetchText(url, retries = 3) {
         headers: {
           "user-agent":
             "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+          accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
         },
       });
 
@@ -69,35 +103,35 @@ async function fetchText(url, retries = 3) {
 }
 
 function decodeHtml(input) {
-  return input
+  return String(input ?? "")
     .replace(/&#(\d+);/g, (_match, value) => String.fromCharCode(Number(value)))
     .replace(/&#x([0-9a-fA-F]+);/g, (_match, value) => String.fromCharCode(parseInt(value, 16)))
-    .replace(/&aacute;/g, "á")
-    .replace(/&eacute;/g, "é")
-    .replace(/&iacute;/g, "í")
-    .replace(/&oacute;/g, "ó")
-    .replace(/&uacute;/g, "ú")
-    .replace(/&Aacute;/g, "Á")
-    .replace(/&Eacute;/g, "É")
-    .replace(/&Iacute;/g, "Í")
-    .replace(/&Oacute;/g, "Ó")
-    .replace(/&Uacute;/g, "Ú")
-    .replace(/&ntilde;/g, "ñ")
-    .replace(/&Ntilde;/g, "Ñ")
-    .replace(/&uuml;/g, "ü")
-    .replace(/&Uuml;/g, "Ü")
+    .replace(/&aacute;/g, "a")
+    .replace(/&eacute;/g, "e")
+    .replace(/&iacute;/g, "i")
+    .replace(/&oacute;/g, "o")
+    .replace(/&uacute;/g, "u")
+    .replace(/&Aacute;/g, "A")
+    .replace(/&Eacute;/g, "E")
+    .replace(/&Iacute;/g, "I")
+    .replace(/&Oacute;/g, "O")
+    .replace(/&Uacute;/g, "U")
+    .replace(/&ntilde;/g, "n")
+    .replace(/&Ntilde;/g, "N")
+    .replace(/&uuml;/g, "u")
+    .replace(/&Uuml;/g, "U")
     .replace(/&amp;/g, "&")
     .replace(/&quot;/g, '"')
     .replace(/&apos;/g, "'")
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">")
     .replace(/&nbsp;/g, " ")
-    .replace(/&iexcl;/g, "¡")
-    .replace(/&iquest;/g, "¿")
-    .replace(/&reg;/g, "®")
-    .replace(/&deg;/g, "°")
-    .replace(/&rdquo;/g, "”")
-    .replace(/&ldquo;/g, "“");
+    .replace(/&iexcl;/g, "!")
+    .replace(/&iquest;/g, "?")
+    .replace(/&reg;/g, "R")
+    .replace(/&deg;/g, " grados")
+    .replace(/&rdquo;/g, '"')
+    .replace(/&ldquo;/g, '"');
 }
 
 function stripHtml(input) {
@@ -124,6 +158,62 @@ function normalizeKey(value) {
     .trim();
 }
 
+function escapeRegex(value) {
+  return String(value ?? "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function toTitleCase(input) {
+  const base = stripHtml(input)
+    .toLowerCase()
+    .replace(/\b([a-z])/g, (letter) => letter.toUpperCase());
+
+  return base
+    .replace(/\b(4x4|4x2|awd|4wd|fwd|rwd|dsg|cvt|mt|at)\b/gi, (value) => value.toUpperCase())
+    .replace(/\b(tfsi|tsi|gti|hdi|tdi|v6|v8|v10|ev|phev)\b/gi, (value) => value.toUpperCase());
+}
+
+function normalizeAbsoluteUrl(url, baseUrl) {
+  const value = decodeHtml(url).trim();
+  if (!value) {
+    return null;
+  }
+
+  const normalized = value.startsWith("//") ? `https:${value}` : value;
+
+  try {
+    const parsed = normalized.startsWith("http") ? new URL(normalized) : new URL(normalized, baseUrl);
+    return parsed.toString();
+  } catch {
+    return null;
+  }
+}
+
+function normalizeImageFingerprint(url) {
+  const normalized = normalizeAbsoluteUrl(url, CHILEAUTOS_BASE_URL);
+  if (!normalized) {
+    return "";
+  }
+
+  try {
+    const parsed = new URL(normalized);
+    parsed.search = "";
+    parsed.hash = "";
+    return parsed.toString().toLowerCase();
+  } catch {
+    return normalized.toLowerCase();
+  }
+}
+
+function parseInteger(value) {
+  const digits = String(value ?? "").replace(/[^0-9]/g, "");
+  if (!digits) {
+    return null;
+  }
+
+  const parsed = Number(digits);
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
 function parsePrice(version) {
   const values = [];
 
@@ -143,19 +233,8 @@ function parsePrice(version) {
 }
 
 function cleanImageUrl(url) {
-  if (typeof url !== "string") {
-    return null;
-  }
-
-  if (url.startsWith("//")) {
-    return `https:${url}`;
-  }
-
-  if (url.startsWith("http")) {
-    return url;
-  }
-
-  return null;
+  const normalized = normalizeAbsoluteUrl(url, CHILEAUTOS_BASE_URL);
+  return normalized;
 }
 
 function resolveVersionUrl(detailUrl, versionId) {
@@ -182,7 +261,7 @@ function extractCardData(html) {
     const image = decodeHtml(match[2]);
 
     cards.push({
-      detailUrl: href.startsWith("http") ? href : `${BASE_URL}${href}`,
+      detailUrl: href.startsWith("http") ? href : `${CHILEAUTOS_BASE_URL}${href}`,
       cardImage: cleanImageUrl(image),
     });
   }
@@ -251,7 +330,7 @@ function pickCoverAndGallery(version, cardImage) {
   const gallery = [preferredCover, ...normalized.map((photo) => photo.url), cardImage]
     .filter(Boolean)
     .filter((url, index, source) => source.indexOf(url) === index)
-    .slice(0, 10);
+    .slice(0, 14);
 
   return {
     coverImage: preferredCover ?? gallery[0] ?? null,
@@ -312,7 +391,7 @@ function buildHighlights(version) {
     .map((attribute) => stripHtml(attribute?.displayName ?? attribute?.name ?? ""))
     .filter(Boolean)
     .filter((value, index, source) => source.indexOf(value) === index)
-    .slice(0, 10);
+    .slice(0, 12);
 }
 
 function buildPriceBreakdown(version) {
@@ -328,8 +407,8 @@ function buildPriceBreakdown(version) {
 
 function vehicleQualityScore(vehicle) {
   let score = 0;
-  score += Math.min(vehicle.highlights.length, 10);
-  score += Math.min(vehicle.gallery.length, 10);
+  score += Math.min(vehicle.highlights.length, 12);
+  score += Math.min(vehicle.gallery.length, 14);
   score += vehicle.description.length > 120 ? 4 : vehicle.description.length > 60 ? 2 : 0;
   score += vehicle.fuelCombined !== null ? 2 : 0;
   score += vehicle.engineCc !== null ? 1 : 0;
@@ -357,45 +436,42 @@ function pickPreferredVehicle(left, right) {
   return left.id.localeCompare(right.id, "es") <= 0 ? left : right;
 }
 
-function dedupeVehiclesByTitle(vehicles) {
-  const dedupedByTitle = new Map();
+function dedupeVehicleCollection(vehicles) {
+  const dedupedById = new Map();
 
   for (const vehicle of vehicles) {
-    const key = normalizeKey(vehicle.title);
-    const current = dedupedByTitle.get(key);
-
+    const key = normalizeKey(vehicle.id);
+    const current = dedupedById.get(key);
     if (!current) {
-      dedupedByTitle.set(key, vehicle);
+      dedupedById.set(key, vehicle);
       continue;
     }
 
-    dedupedByTitle.set(key, pickPreferredVehicle(current, vehicle));
+    dedupedById.set(key, pickPreferredVehicle(current, vehicle));
   }
 
-  return Array.from(dedupedByTitle.values());
-}
+  const dedupedByVisualKey = new Map();
 
-function dedupeVehiclesByModelPrice(vehicles) {
-  const dedupedByModelPrice = new Map();
-
-  for (const vehicle of vehicles) {
+  for (const vehicle of dedupedById.values()) {
+    const visualFingerprint = normalizeImageFingerprint(vehicle.coverImage);
     const key = [
       normalizeKey(vehicle.make),
       normalizeKey(vehicle.model),
       String(vehicle.year),
       String(vehicle.priceClp),
+      visualFingerprint,
     ].join("|");
-    const current = dedupedByModelPrice.get(key);
 
+    const current = dedupedByVisualKey.get(key);
     if (!current) {
-      dedupedByModelPrice.set(key, vehicle);
+      dedupedByVisualKey.set(key, vehicle);
       continue;
     }
 
-    dedupedByModelPrice.set(key, pickPreferredVehicle(current, vehicle));
+    dedupedByVisualKey.set(key, pickPreferredVehicle(current, vehicle));
   }
 
-  return Array.from(dedupedByModelPrice.values());
+  return Array.from(dedupedByVisualKey.values());
 }
 
 async function mapWithConcurrency(items, concurrency, mapper) {
@@ -419,78 +495,324 @@ async function mapWithConcurrency(items, concurrency, mapper) {
   return results;
 }
 
-function createTsFileContent(vehicles) {
-  const json = JSON.stringify(vehicles, null, 2);
-
-  return `export type VehiclePriceItem = {
-  type: string;
-  amount: number;
-};
-
-export type C4RVehicle = {
-  id: string;
-  slug: string;
-  sourceUrl: string;
-  make: string;
-  model: string;
-  year: number;
-  badge: string | null;
-  title: string;
-  bodyStyle: string;
-  fuelType: string;
-  transmission: string;
-  drive: string;
-  engine: string | null;
-  engineCc: number | null;
-  fuelCombined: number | null;
-  doors: number | null;
-  condition: "Nuevo" | "Usado";
-  km: number | null;
-  priceClp: number;
-  reservationFeeClp: number;
-  estimatedMonthlyClp: number;
-  versionsAvailable: number;
-  dealer: string;
-  location: string;
-  coverImage: string;
-  gallery: string[];
-  description: string;
-  highlights: string[];
-  priceBreakdown: VehiclePriceItem[];
-  source: string;
-};
-
-export const c4rVehicles: C4RVehicle[] = ${json};
-
-export function getVehicleBySlug(slug: string): C4RVehicle | null {
-  return c4rVehicles.find((vehicle) => vehicle.slug === slug) ?? null;
+function extractMetaContent(html, itemprop) {
+  const regex = new RegExp(`itemprop=["']${escapeRegex(itemprop)}["'][^>]*content=["']([^"']+)["']`, "i");
+  const match = html.match(regex);
+  return match ? stripHtml(match[1]) : "";
 }
 
-export function formatCurrencyClp(value: number): string {
-  return new Intl.NumberFormat("es-CL", {
-    style: "currency",
-    currency: "CLP",
-    maximumFractionDigits: 0,
-  }).format(value);
+function getBodyStyleFallback() {
+  return heroBodyStyleFallback;
 }
 
-export function formatKm(value: number | null): string {
-  if (value === null) {
-    return "Kilometraje por confirmar";
+function removeMakeFromModel(makeModel, make) {
+  const normalizedMakeModel = normalizeKey(makeModel);
+  const normalizedMake = normalizeKey(make);
+
+  if (!normalizedMakeModel || !normalizedMake) {
+    return makeModel;
   }
 
-  return \`${"${new Intl.NumberFormat(\"es-CL\").format(value)} km"}\`;
+  const prefixRegex = new RegExp(`^${escapeRegex(make)}\\s+`, "i");
+  if (prefixRegex.test(makeModel)) {
+    return makeModel.replace(prefixRegex, "").trim();
+  }
+
+  return makeModel;
 }
 
-export const vehicleCategories = Array.from(new Set(c4rVehicles.map((vehicle) => vehicle.bodyStyle))).sort();
-`;
+function detectTransmission(text) {
+  const normalized = normalizeKey(text);
+
+  if (/\b(automatico|automatica|auto|at|cvt|dsg|stronic|tiptronic)\b/.test(normalized)) {
+    return "automatico";
+  }
+
+  if (/\b(manual|mecanica|mecanico|mt|mec)\b/.test(normalized)) {
+    return "manual";
+  }
+
+  return "Por confirmar";
 }
 
-async function main() {
+function detectFuelType(text) {
+  const normalized = normalizeKey(text);
+
+  if (/\b(diesel|dsl|tdi|hdi)\b/.test(normalized)) {
+    return "Diesel";
+  }
+
+  if (/\b(hibrido|hybrid|hev|phev)\b/.test(normalized)) {
+    return "Hibrido";
+  }
+
+  if (/\b(electrico|electrica|ev)\b/.test(normalized)) {
+    return "Electrico";
+  }
+
+  return "Bencina";
+}
+
+function detectDrive(text) {
+  const normalized = normalizeKey(text);
+
+  if (/\b(4x4|4wd|awd)\b/.test(normalized)) {
+    return "4x4";
+  }
+
+  if (/\b(4x2|fwd|rwd)\b/.test(normalized)) {
+    return "4x2";
+  }
+
+  return "Por confirmar";
+}
+
+function parseEngineInfo(text) {
+  const normalized = stripHtml(text);
+
+  const ccMatch = normalized.match(/\b(\d{3,4})\s*cc\b/i);
+  if (ccMatch) {
+    const engineCc = Number(ccMatch[1]);
+    if (Number.isFinite(engineCc)) {
+      const liters = (engineCc / 1000).toFixed(1).replace(/\.0$/, "");
+      return { engine: `${liters}L`, engineCc };
+    }
+  }
+
+  const literMatch = normalized.match(/\b([0-9](?:[\.,][0-9])?)\s*(?:l|lt|turbo|tsi|tfsi|v6|v8|hdi|tdi)\b/i);
+  if (literMatch) {
+    const litersValue = Number(literMatch[1].replace(",", "."));
+    if (Number.isFinite(litersValue) && litersValue > 0 && litersValue <= 9) {
+      const engineCc = Math.round(litersValue * 1000);
+      return { engine: `${literMatch[1].replace(",", ".")}L`, engineCc };
+    }
+  }
+
+  return { engine: null, engineCc: null };
+}
+
+function parseLocationFromText(text) {
+  const normalized = normalizeKey(text);
+
+  for (const location of searchableLocations) {
+    if (normalized.includes(normalizeKey(location))) {
+      return location;
+    }
+  }
+
+  return null;
+}
+
+function parseFullmotorTotalPages(html) {
+  const nextMatch = html.match(/class="jp-next"[^>]*href="stock\/(\d+)"/i);
+  if (nextMatch) {
+    const parsed = Number(nextMatch[1]);
+    if (Number.isFinite(parsed) && parsed > 0) {
+      return Math.min(parsed, FULLMOTOR_PAGE_LIMIT);
+    }
+  }
+
+  const pageMatches = Array.from(html.matchAll(/href="stock\/(\d+)"/gi)).map((match) => Number(match[1]));
+  const maxPage = Math.max(1, ...pageMatches.filter((value) => Number.isFinite(value)));
+  return Math.min(maxPage, FULLMOTOR_PAGE_LIMIT);
+}
+
+function extractFullmotorCards(html) {
+  const cards = [];
+  const cardRegex = /<a[^>]*href="(ficha\/\d+\/[^"]+)"[^>]*>([\s\S]*?)<\/a>/g;
+
+  let match;
+  while ((match = cardRegex.exec(html))) {
+    const block = match[2];
+    if (!block.includes("celdaauto") || !block.includes('itemprop="price"')) {
+      continue;
+    }
+
+    const sourcePath = decodeHtml(match[1]).trim();
+    const idMatch = sourcePath.match(/ficha\/(\d+)\//);
+    if (!idMatch) {
+      continue;
+    }
+
+    const id = `FM-${idMatch[1]}`;
+    const sourceUrl = normalizeAbsoluteUrl(sourcePath, FULLMOTOR_BASE_URL);
+    if (!sourceUrl) {
+      continue;
+    }
+
+    const rawName = extractMetaContent(block, "name");
+    const rawBrand = extractMetaContent(block, "brand");
+    const rawPrice = extractMetaContent(block, "price");
+    const priceClp = parseInteger(rawPrice);
+    if (!priceClp || priceClp <= 0) {
+      continue;
+    }
+
+    const coverImage = normalizeAbsoluteUrl(extractMetaContent(block, "image"), FULLMOTOR_BASE_URL);
+    if (!coverImage) {
+      continue;
+    }
+
+    const makeModel = toTitleCase((block.match(/<b>([\s\S]*?)<\/b>/i) ?? [])[1] ?? rawName);
+    const badgePrimary = toTitleCase(stripHtml((block.match(/<\/b>([\s\S]*?)<br/i) ?? [])[1] ?? ""));
+    const badgeSecondary = toTitleCase(stripHtml((block.match(/id=["']segundalinea["'][^>]*>([\s\S]*?)<\/label>/i) ?? [])[1] ?? ""));
+    const badge = [badgePrimary, badgeSecondary].filter(Boolean).join(" ").trim() || null;
+
+    const make = toTitleCase(rawBrand || makeModel.split(" ")[0] || "Auto");
+    const model = removeMakeFromModel(makeModel, make) || makeModel;
+
+    const kmsText = stripHtml((block.match(/<span class="kms">([\s\S]*?)<\/span>/i) ?? [])[1] ?? "");
+    const yearText = stripHtml((block.match(/<span class="agno">([\s\S]*?)<\/span>/i) ?? [])[1] ?? "");
+    const km = parseInteger(kmsText);
+    const year = parseInteger(yearText);
+    if (!year) {
+      continue;
+    }
+
+    const searchableText = [rawName, makeModel, badge, block].map((value) => stripHtml(value)).join(" ");
+
+    if (/\bvendid[oa]\b/i.test(searchableText)) {
+      continue;
+    }
+
+    const transmission =
+      /class="automatico"/i.test(block) || /\bautomatico\b/i.test(searchableText)
+        ? "automatico"
+        : detectTransmission(searchableText);
+
+    let fuelType = detectFuelType(searchableText);
+    if (/class="diesel"/i.test(block)) {
+      fuelType = "Diesel";
+    }
+
+    const drive = detectDrive(searchableText);
+    const { engine, engineCc } = parseEngineInfo([badgePrimary, badgeSecondary, rawName].join(" "));
+
+    const title = [make, model, String(year), badge].filter(Boolean).join(" ");
+    const slug = slugify(`${make}-${model}-${year}-${id}`);
+
+    const currentYear = new Date().getFullYear();
+    const condition = year >= currentYear && (km === null || km <= 150) ? "Nuevo" : "Usado";
+
+    cards.push({
+      id,
+      slug,
+      sourcePath,
+      sourceUrl,
+      make,
+      model,
+      year,
+      badge,
+      title,
+      bodyStyle: getBodyStyleFallback(),
+      fuelType,
+      transmission,
+      drive,
+      engine,
+      engineCc,
+      fuelCombined: null,
+      doors: null,
+      condition,
+      km,
+      priceClp,
+      reservationFeeClp: estimateReservationFee(priceClp),
+      estimatedMonthlyClp: estimateMonthly(priceClp),
+      versionsAvailable: 1,
+      dealer: "FullMotor",
+      location: null,
+      coverImage,
+      gallery: [coverImage],
+      description: badgeSecondary || "Vehiculo publicado en FullMotor.",
+      highlights: [],
+      priceBreakdown: [{ type: "Publicacion", amount: priceClp }],
+      source: "FullMotor stock",
+      sourceName: rawName,
+    });
+  }
+
+  return cards;
+}
+
+function parseFullmotorDetail(html) {
+  const gallery = [];
+  const galleryRegex = /<a[^>]*href="([^"]+)"[^>]*class="glightbox"[^>]*data-gallery="auto-zoom"/gi;
+  let galleryMatch;
+
+  while ((galleryMatch = galleryRegex.exec(html))) {
+    const image = normalizeAbsoluteUrl(galleryMatch[1], FULLMOTOR_BASE_URL);
+    if (!image) {
+      continue;
+    }
+
+    if (!gallery.includes(image)) {
+      gallery.push(image);
+    }
+  }
+
+  const fallbackMainImage = normalizeAbsoluteUrl(extractMetaContent(html, "image"), FULLMOTOR_BASE_URL);
+  if (fallbackMainImage && !gallery.includes(fallbackMainImage)) {
+    gallery.unshift(fallbackMainImage);
+  }
+
+  const descriptionBlock = (html.match(/<h4 class="subtitulo">DESCRIP[^<]*<\/h4>[\s\S]*?<p>([\s\S]*?)<\/p>/i) ?? [])[1] ?? "";
+  const sellerRaw = (descriptionBlock.match(/class=['"]vendedor['"][^>]*>\s*VENDE:\s*([^<]+)/i) ?? [])[1] ?? "";
+  const seller = toTitleCase(stripHtml(sellerRaw));
+
+  const descriptionWithoutSeller = descriptionBlock.replace(/<font[^>]*class=['"]vendedor['"][\s\S]*?<\/font>/gi, " ");
+  const description = stripHtml(descriptionWithoutSeller);
+
+  const r4Raw = stripHtml((html.match(/<h4\s+class=['"]r4['"][^>]*>([\s\S]*?)<\/h4>/i) ?? [])[1] ?? "");
+  const transmission = detectTransmission(r4Raw);
+  const km = parseInteger((r4Raw.match(/([0-9\.\,]+)\s*km/i) ?? [])[1] ?? "");
+
+  const priceFromTags = parseInteger((html.match(/<div class="tags price r1">[\s\S]*?\$\s*([^<\s]+(?:\.[^<\s]+)*)/i) ?? [])[1] ?? "");
+  const locationFromSection = stripHtml(
+    (html.match(/<section class="ubicacion-sucursal">[\s\S]*?<h4 class="subtitulo">([\s\S]*?)<\/h4>/i) ?? [])[1] ?? "",
+  );
+
+  const locationFromPopup = stripHtml((html.match(/<td[^>]*>\s*([^<]*?\-\s*Chile)\s*<\/td>/i) ?? [])[1] ?? "");
+  const location = parseLocationFromText(`${locationFromSection} ${locationFromPopup} ${description}`);
+
+  return {
+    gallery: gallery.slice(0, 20),
+    description,
+    seller,
+    transmission,
+    km,
+    priceFromTags,
+    location,
+  };
+}
+
+function buildFullmotorHighlights(vehicle) {
+  const highlights = [];
+
+  if (vehicle.transmission && vehicle.transmission !== "Por confirmar") {
+    highlights.push(`Transmision ${vehicle.transmission}`);
+  }
+
+  if (vehicle.fuelType && vehicle.fuelType !== "Por confirmar") {
+    highlights.push(`Combustible ${vehicle.fuelType}`);
+  }
+
+  if (vehicle.drive && vehicle.drive !== "Por confirmar") {
+    highlights.push(`Traccion ${vehicle.drive}`);
+  }
+
+  if (vehicle.km !== null) {
+    highlights.push(`${new Intl.NumberFormat("es-CL").format(vehicle.km)} km informados`);
+  }
+
+  highlights.push("Galeria de fotos reales del vehiculo");
+
+  return highlights.filter(Boolean).slice(0, 8);
+}
+
+async function collectChileautosVehicles() {
   const urlToCardImage = new Map();
 
   for (const seedPath of seedPaths) {
-    const pageUrl = `${BASE_URL}${seedPath}`;
+    const pageUrl = `${CHILEAUTOS_BASE_URL}${seedPath}`;
     const html = await fetchText(pageUrl);
     const cards = extractCardData(html);
 
@@ -503,7 +825,7 @@ async function main() {
   }
 
   const detailUrls = Array.from(urlToCardImage.keys());
-  console.log(`Modelos detectados: ${detailUrls.length}`);
+  console.log(`Chileautos modelos detectados: ${detailUrls.length}`);
 
   const detailResults = await mapWithConcurrency(detailUrls, 8, async (detailUrl) => {
     try {
@@ -615,29 +937,226 @@ async function main() {
     }
   }
 
-  const vehicles = dedupeVehiclesByModelPrice(dedupeVehiclesByTitle(Array.from(vehiclesById.values()))).sort(
-    (left, right) => {
-      if (left.year !== right.year) {
-        return right.year - left.year;
-      }
+  return Array.from(vehiclesById.values());
+}
 
-      if (left.priceClp !== right.priceClp) {
-        return left.priceClp - right.priceClp;
-      }
+async function collectFullmotorVehicles() {
+  const stockFirstPageUrl = `${FULLMOTOR_BASE_URL}/stock?tipo=${FULLMOTOR_AUTOMOBILE_TYPE}`;
+  const firstHtml = await fetchText(stockFirstPageUrl);
+  const totalPages = parseFullmotorTotalPages(firstHtml);
+  const pageNumbers = Array.from({ length: totalPages }, (_item, index) => index + 1);
 
-      return left.title.localeCompare(right.title, "es");
-    },
-  );
+  console.log(`FullMotor paginas detectadas: ${totalPages}`);
+
+  const pageResults = await mapWithConcurrency(pageNumbers, 6, async (pageNumber) => {
+    const pageUrl =
+      pageNumber === 1
+        ? `${FULLMOTOR_BASE_URL}/stock?tipo=${FULLMOTOR_AUTOMOBILE_TYPE}`
+        : `${FULLMOTOR_BASE_URL}/stock/${pageNumber}?tipo=${FULLMOTOR_AUTOMOBILE_TYPE}`;
+
+    try {
+      const html = pageNumber === 1 ? firstHtml : await fetchText(pageUrl);
+      return extractFullmotorCards(html);
+    } catch {
+      return [];
+    }
+  });
+
+  const cardsById = new Map();
+  for (const cards of pageResults) {
+    for (const card of cards) {
+      const current = cardsById.get(card.id);
+      if (!current || current.gallery.length < card.gallery.length) {
+        cardsById.set(card.id, card);
+      }
+    }
+  }
+
+  const cards = Array.from(cardsById.values());
+  console.log(`FullMotor fichas base detectadas: ${cards.length}`);
+
+  const detailed = await mapWithConcurrency(cards, 6, async (card) => {
+    try {
+      const html = await fetchText(card.sourceUrl);
+      const detail = parseFullmotorDetail(html);
+
+      const combinedText = [card.sourceName, card.badge, detail.description].filter(Boolean).join(" ");
+      const transmission =
+        detail.transmission !== "Por confirmar" ? detail.transmission : detectTransmission(combinedText) || card.transmission;
+      const fuelType = card.fuelType !== "Bencina" ? card.fuelType : detectFuelType(combinedText);
+      const drive = card.drive !== "Por confirmar" ? card.drive : detectDrive(combinedText);
+      const { engine, engineCc } = parseEngineInfo([combinedText, detail.description].join(" "));
+
+      const km = detail.km ?? card.km;
+      const currentYear = new Date().getFullYear();
+      const condition = card.year >= currentYear && (km === null || km <= 150) ? "Nuevo" : "Usado";
+      const coverImage = detail.gallery[0] ?? card.coverImage;
+      const gallery = [coverImage, ...detail.gallery, ...card.gallery]
+        .map((url) => normalizeAbsoluteUrl(url, FULLMOTOR_BASE_URL))
+        .filter(Boolean)
+        .filter((url, index, source) => source.indexOf(url) === index)
+        .slice(0, 20);
+
+      const location = detail.location ?? card.location;
+      const fallbackLocationIndex = parseInteger(card.id) ?? 0;
+
+      const priceClp = detail.priceFromTags ?? card.priceClp;
+
+      const vehicle = {
+        id: card.id,
+        slug: card.slug,
+        sourceUrl: card.sourceUrl,
+        make: card.make,
+        model: card.model,
+        year: card.year,
+        badge: card.badge,
+        title: card.title,
+        bodyStyle: card.bodyStyle,
+        fuelType,
+        transmission,
+        drive,
+        engine: engine ?? card.engine,
+        engineCc: engineCc ?? card.engineCc,
+        fuelCombined: null,
+        doors: null,
+        condition,
+        km,
+        priceClp,
+        reservationFeeClp: estimateReservationFee(priceClp),
+        estimatedMonthlyClp: estimateMonthly(priceClp),
+        versionsAvailable: 1,
+        dealer: detail.seller || card.dealer,
+        location: location || fallbackCities[fallbackLocationIndex % fallbackCities.length],
+        coverImage,
+        gallery,
+        description: detail.description || card.description,
+        highlights: buildFullmotorHighlights({
+          transmission,
+          fuelType,
+          drive,
+          km,
+        }),
+        priceBreakdown: [{ type: "Publicacion", amount: priceClp }],
+        source: "FullMotor stock",
+      };
+
+      return vehicle;
+    } catch {
+      return {
+        ...card,
+        highlights: buildFullmotorHighlights(card),
+      };
+    }
+  });
+
+  return detailed
+    .filter((vehicle) => vehicle.coverImage && vehicle.gallery.length > 0)
+    .filter((vehicle) => !/\bvendid[oa]\b/i.test(normalizeKey(vehicle.title)));
+}
+
+function createTsFileContent(vehicles) {
+  const json = JSON.stringify(vehicles, null, 2);
+
+  return `export type VehiclePriceItem = {
+  type: string;
+  amount: number;
+};
+
+export type C4RVehicle = {
+  id: string;
+  slug: string;
+  sourceUrl: string;
+  make: string;
+  model: string;
+  year: number;
+  badge: string | null;
+  title: string;
+  bodyStyle: string;
+  fuelType: string;
+  transmission: string;
+  drive: string;
+  engine: string | null;
+  engineCc: number | null;
+  fuelCombined: number | null;
+  doors: number | null;
+  condition: "Nuevo" | "Usado";
+  km: number | null;
+  priceClp: number;
+  reservationFeeClp: number;
+  estimatedMonthlyClp: number;
+  versionsAvailable: number;
+  dealer: string;
+  location: string;
+  coverImage: string;
+  gallery: string[];
+  description: string;
+  highlights: string[];
+  priceBreakdown: VehiclePriceItem[];
+  source: string;
+};
+
+export const c4rVehicles: C4RVehicle[] = ${json};
+
+export function getVehicleBySlug(slug: string): C4RVehicle | null {
+  return c4rVehicles.find((vehicle) => vehicle.slug === slug) ?? null;
+}
+
+export function formatCurrencyClp(value: number): string {
+  return new Intl.NumberFormat("es-CL", {
+    style: "currency",
+    currency: "CLP",
+    maximumFractionDigits: 0,
+  }).format(value);
+}
+
+export function formatKm(value: number | null): string {
+  if (value === null) {
+    return "Kilometraje por confirmar";
+  }
+
+  return \`${"${new Intl.NumberFormat(\"es-CL\").format(value)} km"}\`;
+}
+
+export const vehicleCategories = Array.from(new Set(c4rVehicles.map((vehicle) => vehicle.bodyStyle))).sort();
+`;
+}
+
+async function main() {
+  const chileautosVehicles = await collectChileautosVehicles();
+  const fullmotorVehicles = await collectFullmotorVehicles();
+
+  console.log(`Chileautos vehiculos: ${chileautosVehicles.length}`);
+  console.log(`FullMotor vehiculos: ${fullmotorVehicles.length}`);
+
+  const vehicles = dedupeVehicleCollection([...chileautosVehicles, ...fullmotorVehicles]).sort((left, right) => {
+    if (left.year !== right.year) {
+      return right.year - left.year;
+    }
+
+    if (left.priceClp !== right.priceClp) {
+      return left.priceClp - right.priceClp;
+    }
+
+    return left.title.localeCompare(right.title, "es");
+  });
 
   const tsFile = createTsFileContent(vehicles);
   await fs.writeFile(OUTPUT_FILE, tsFile, "utf8");
 
   const categories = new Map();
+  const sources = new Map();
+
   for (const vehicle of vehicles) {
     categories.set(vehicle.bodyStyle, (categories.get(vehicle.bodyStyle) ?? 0) + 1);
+    sources.set(vehicle.source, (sources.get(vehicle.source) ?? 0) + 1);
   }
 
   console.log(`Vehiculos generados: ${vehicles.length}`);
+  console.log("Fuentes:");
+  for (const [source, count] of [...sources.entries()].sort((a, b) => b[1] - a[1])) {
+    console.log(`- ${source}: ${count}`);
+  }
+
   console.log("Categorias:");
   for (const [category, count] of [...categories.entries()].sort((a, b) => b[1] - a[1])) {
     console.log(`- ${category}: ${count}`);

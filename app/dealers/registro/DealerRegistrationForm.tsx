@@ -68,6 +68,9 @@ export default function DealerRegistrationForm() {
         <div className="mb-5 rounded-2xl border border-success/30 bg-success/10 p-4">
           <p className="text-sm font-semibold text-success">{success.message}</p>
           <p className="mt-1 text-xs text-ink/80">ID: {success.registrationId}</p>
+          <p className="mt-1 text-xs text-ink/80">
+            Estado inicial: pendiente de validacion comercial y legal.
+          </p>
         </div>
       ) : null}
 

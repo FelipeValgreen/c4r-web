@@ -1,9 +1,12 @@
-import { dealerPayments, formatClp, formatDate } from "@/app/dealers/_data";
+import { formatClp, formatDate } from "@/app/dealers/_data";
+import { getDealerSnapshot } from "@/lib/dealers-store";
 
 export const metadata = {
   title: "Pagos Dealers | C4R",
   description: "Historial de cobros y pagos de operaciones en C4R.",
 };
+
+export const dynamic = "force-dynamic";
 
 function statusPill(status: string) {
   if (status === "confirmado") {
@@ -13,7 +16,10 @@ function statusPill(status: string) {
   return "bg-amber-100 text-amber-700";
 }
 
-export default function DealersPaymentsPage() {
+export default async function DealersPaymentsPage() {
+  const snapshot = await getDealerSnapshot();
+  const dealerPayments = snapshot.payments;
+
   return (
     <div className="space-y-6">
       <section className="rounded-2xl border border-platinum bg-white p-6">

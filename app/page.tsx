@@ -3,6 +3,8 @@ import { ArrowRight, CheckCircle2, CreditCard, Shield } from "lucide-react";
 import TrackedLink from "@/components/TrackedLink";
 import { c4rVehicles, formatCurrencyClp, formatKm } from "@/lib/chileautos-vehicles";
 
+type VehicleItem = (typeof c4rVehicles)[number];
+
 const trustPillars = [
   {
     title: "Chequeo obligatorio con C4R Check",
@@ -49,7 +51,18 @@ function normalizeValue(value: string) {
     .replace(/[\u0300-\u036f]/g, "");
 }
 
-function getHeroScore(vehicle: (typeof c4rVehicles)[number]) {
+function normalizeImageFingerprint(url: string) {
+  try {
+    const parsed = new URL(url);
+    parsed.search = "";
+    parsed.hash = "";
+    return parsed.toString().toLowerCase();
+  } catch {
+    return url.toLowerCase();
+  }
+}
+
+function getHeroScore(vehicle: VehicleItem) {
   const make = normalizeValue(vehicle.make);
   const body = normalizeValue(vehicle.bodyStyle);
   const transmission = normalizeValue(vehicle.transmission);
@@ -85,6 +98,42 @@ function getHeroScore(vehicle: (typeof c4rVehicles)[number]) {
   return score;
 }
 
+function pickFeaturedVehicles(vehicles: VehicleItem[], limit: number) {
+  const selected: VehicleItem[] = [];
+  const usedModelYear = new Set<string>();
+  const usedImages = new Set<string>();
+
+  for (const vehicle of vehicles) {
+    const modelYearKey = `${normalizeValue(vehicle.make)}|${normalizeValue(vehicle.model)}|${vehicle.year}`;
+    const imageKey = normalizeImageFingerprint(vehicle.coverImage);
+
+    if (usedModelYear.has(modelYearKey) || usedImages.has(imageKey)) {
+      continue;
+    }
+
+    selected.push(vehicle);
+    usedModelYear.add(modelYearKey);
+    usedImages.add(imageKey);
+
+    if (selected.length >= limit) {
+      return selected;
+    }
+  }
+
+  for (const vehicle of vehicles) {
+    if (selected.some((entry) => entry.id === vehicle.id)) {
+      continue;
+    }
+
+    selected.push(vehicle);
+    if (selected.length >= limit) {
+      return selected;
+    }
+  }
+
+  return selected;
+}
+
 const heroPool = c4rVehicles.filter((vehicle) => !blockedHeroBodyStyles.has(vehicle.bodyStyle));
 const sortedHeroPool = [...(heroPool.length > 0 ? heroPool : c4rVehicles)].sort((left, right) => {
   const scoreDiff = getHeroScore(right) - getHeroScore(left);
@@ -100,7 +149,7 @@ const sortedHeroPool = [...(heroPool.length > 0 ? heroPool : c4rVehicles)].sort(
 });
 
 const heroVehicle = sortedHeroPool[0] ?? c4rVehicles[0];
-const featuredCatalog = sortedHeroPool.slice(0, 6);
+const featuredCatalog = pickFeaturedVehicles(sortedHeroPool, 6);
 
 const testimonials = [
   {
@@ -152,16 +201,18 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="reveal reveal-delay-1 flex items-center justify-center">
-              <div className="relative">
-                <Image
-                  src={heroVehicle.coverImage}
-                  alt={`${heroVehicle.title} verificado con sello C4R Shield`}
-                  width={620}
-                  height={420}
-                  priority
-                  className="w-full max-w-xl rounded-2xl border border-platinum shadow-[0_25px_70px_-30px_rgba(44,44,44,0.45)]"
-                />
+            <div className="reveal reveal-delay-1 flex items-center justify-center lg:justify-end">
+              <div className="relative w-full max-w-2xl overflow-hidden rounded-2xl border border-platinum shadow-[0_25px_70px_-30px_rgba(44,44,44,0.45)]">
+                <div className="relative aspect-[16/10] w-full">
+                  <Image
+                    src={heroVehicle.coverImage}
+                    alt={`${heroVehicle.title} verificado con sello C4R Shield`}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 46vw"
+                    priority
+                    className="scale-[1.08] object-cover object-center"
+                  />
+                </div>
                 <span className="absolute -right-3 -top-3 inline-flex items-center rounded-full bg-success px-4 py-2 text-sm font-semibold text-white shadow-lg">
                   C4R Shield
                 </span>

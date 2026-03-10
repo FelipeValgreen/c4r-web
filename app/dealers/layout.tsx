@@ -32,7 +32,7 @@ export default function DealersLayout({ children }: { children: ReactNode }) {
             </nav>
 
             <p className="mt-5 rounded-xl bg-khaki-light/40 p-3 text-xs text-ink/80">
-              Demo navegable sin login. Datos de ejemplo para validar disenio y flujo.
+              Panel operativo con datos persistentes para gestion comercial diaria.
             </p>
           </aside>
 

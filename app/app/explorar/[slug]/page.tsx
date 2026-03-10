@@ -76,6 +76,8 @@ export default async function VehicleDetailPage({ params }: PageProps) {
     { label: "Kilometraje", value: formatKm(vehicle.km) },
   ];
 
+  const sourceLabel = vehicle.source.toLowerCase().includes("fullmotor") ? "FullMotor" : "Chileautos";
+
   return (
     <main className="min-h-screen bg-white pb-16">
       <section className="border-b border-platinum bg-[radial-gradient(circle_at_top,_rgba(176,161,110,0.22),transparent_55%)] py-10">
@@ -236,7 +238,7 @@ export default async function VehicleDetailPage({ params }: PageProps) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Ver en Chileautos
+                Ver en {sourceLabel}
               </TrackedLink>
             </section>
           </aside>

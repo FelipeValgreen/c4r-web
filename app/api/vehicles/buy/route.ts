@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { c4rVehicles } from "@/lib/chileautos-vehicles";
+import { createLeadFromWebIntent } from "@/lib/dealers-store";
 
 type BuyRequest = {
   vehicleId?: string;
@@ -65,11 +66,20 @@ export async function POST(request: Request) {
   }
 
   const reference = generateReference("BUY");
+  const dealerLead = await createLeadFromWebIntent({
+    vehicleId: vehicle.id,
+    vehicleTitle: vehicle.title,
+    fullName,
+    email,
+    phone,
+    source: "compra",
+  });
 
   return NextResponse.json(
     {
       success: true,
       reference,
+      dealerLeadId: dealerLead.id,
       message: `Solicitud de compra enviada para ${vehicle.title}.`,
       nextStep: "Un asesor C4R te contactara para validar forma de pago, firma y fecha estimada de entrega.",
       data: {

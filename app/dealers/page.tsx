@@ -9,18 +9,15 @@ import {
   Users,
   Wrench,
 } from "lucide-react";
-import {
-  dealerLeads,
-  dealerTasks,
-  dealerVehicles,
-  formatClp,
-  formatDate,
-} from "@/app/dealers/_data";
+import { formatClp, formatDate } from "@/app/dealers/_data";
+import { getDealerSnapshot } from "@/lib/dealers-store";
 
 export const metadata = {
   title: "Dashboard Dealers | C4R",
   description: "Panel operativo para concesionarios y equipos comerciales.",
 };
+
+export const dynamic = "force-dynamic";
 
 function statusPill(status: string) {
   if (status === "disponible" || status === "aprobada" || status === "cerrado") {
@@ -38,7 +35,12 @@ function statusPill(status: string) {
   return "bg-blue-100 text-blue-700";
 }
 
-export default function DealersDashboardPage() {
+export default async function DealersDashboardPage() {
+  const snapshot = await getDealerSnapshot();
+  const dealerVehicles = snapshot.vehicles;
+  const dealerLeads = snapshot.leads;
+  const dealerTasks = snapshot.tasks;
+
   const totalStock = dealerVehicles.filter((vehicle) => vehicle.status !== "vendido").length;
   const activeLeads = dealerLeads.filter((lead) => lead.stage !== "cerrado").length;
   const monthSales = dealerVehicles.filter((vehicle) => vehicle.status === "vendido").length;
@@ -103,6 +105,12 @@ export default function DealersDashboardPage() {
             </Link>
           </div>
         </div>
+        <p className="mt-4 text-xs text-ink/65">
+          Registros dealer pendientes:{" "}
+          <span className="font-semibold text-ink">
+            {snapshot.registrations.filter((registration) => registration.status === "pendiente").length}
+          </span>
+        </p>
       </section>
 
       <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">

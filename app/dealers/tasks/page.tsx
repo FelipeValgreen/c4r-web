@@ -1,9 +1,11 @@
-import { dealerTasks } from "@/app/dealers/_data";
+import { getDealerSnapshot } from "@/lib/dealers-store";
 
 export const metadata = {
   title: "Tareas Dealers | C4R",
   description: "Plan de seguimiento y tareas del equipo comercial.",
 };
+
+export const dynamic = "force-dynamic";
 
 function taskPill(status: string) {
   if (status === "completada") {
@@ -17,7 +19,10 @@ function taskPill(status: string) {
   return "bg-blue-100 text-blue-700";
 }
 
-export default function DealersTasksPage() {
+export default async function DealersTasksPage() {
+  const snapshot = await getDealerSnapshot();
+  const dealerTasks = snapshot.tasks;
+
   return (
     <div className="space-y-6">
       <section className="rounded-2xl border border-platinum bg-white p-6">

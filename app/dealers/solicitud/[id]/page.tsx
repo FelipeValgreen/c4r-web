@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { dealerLeads, dealerVehicles, formatClp, formatDate } from "@/app/dealers/_data";
+import { formatClp, formatDate } from "@/app/dealers/_data";
+import { getDealerSnapshot } from "@/lib/dealers-store";
 
 type PageProps = {
   params: Promise<{ id: string }>;
@@ -16,14 +17,18 @@ export async function generateMetadata({ params }: PageProps) {
   };
 }
 
+export const dynamic = "force-dynamic";
+
 export default async function DealerRequestDetailPage({ params }: PageProps) {
   const { id } = await params;
-  const leadById = dealerLeads.find((item) => item.id === id);
-  const leadByRequest = dealerLeads.find((item) => item.requestId === id);
+  const snapshot = await getDealerSnapshot();
+
+  const leadById = snapshot.leads.find((item) => item.id === id);
+  const leadByRequest = snapshot.leads.find((item) => item.requestId === id);
   const lead = leadById ?? leadByRequest;
 
-  const vehicleById = dealerVehicles.find((item) => item.id === id);
-  const vehicleByLead = lead?.requestId ? dealerVehicles.find((item) => item.id === lead.requestId) : null;
+  const vehicleById = snapshot.vehicles.find((item) => item.id === id);
+  const vehicleByLead = lead?.requestId ? snapshot.vehicles.find((item) => item.id === lead.requestId) : null;
   const vehicle = vehicleById ?? vehicleByLead;
 
   if (!vehicle && !lead) {
@@ -50,6 +55,7 @@ export default async function DealerRequestDetailPage({ params }: PageProps) {
             width={900}
             height={650}
             className="h-52 w-full rounded-xl object-cover lg:h-full"
+            unoptimized
           />
           <div className="space-y-3">
             <p className="text-sm text-ink/70">
@@ -83,6 +89,12 @@ export default async function DealerRequestDetailPage({ params }: PageProps) {
             </p>
             <p>
               Fecha: <span className="font-semibold text-ink">{formatDate(lead.createdAt)}</span>
+            </p>
+            <p>
+              Etapa: <span className="font-semibold capitalize text-ink">{lead.stage}</span>
+            </p>
+            <p>
+              Origen: <span className="font-semibold capitalize text-ink">{lead.source}</span>
             </p>
           </div>
         </section>
