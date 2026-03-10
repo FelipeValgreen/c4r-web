@@ -24,8 +24,83 @@ const trustPillars = [
   },
 ];
 
-const featuredCatalog = c4rVehicles.slice(0, 6);
-const heroVehicle = featuredCatalog[1] ?? c4rVehicles[0];
+const heroPriorityMakes = [
+  "audi",
+  "bmw",
+  "mercedes-benz",
+  "lexus",
+  "volvo",
+  "kia",
+  "toyota",
+  "hyundai",
+  "nissan",
+  "volkswagen",
+  "chevrolet",
+  "peugeot",
+  "opel",
+];
+
+const blockedHeroBodyStyles = new Set(["Media Barandas", "Chasis Cabina", "Furgón", "Van", "Pick-up"]);
+
+function normalizeValue(value: string) {
+  return value
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
+
+function getHeroScore(vehicle: (typeof c4rVehicles)[number]) {
+  const make = normalizeValue(vehicle.make);
+  const body = normalizeValue(vehicle.bodyStyle);
+  const transmission = normalizeValue(vehicle.transmission);
+
+  let score = 0;
+
+  const makeRank = heroPriorityMakes.indexOf(make);
+  if (makeRank >= 0) {
+    score += 40 - makeRank;
+  }
+
+  if (body.includes("suv")) {
+    score += 26;
+  } else if (body.includes("sedan")) {
+    score += 18;
+  } else if (body.includes("hatchback")) {
+    score += 14;
+  }
+
+  if (transmission.includes("auto")) {
+    score += 12;
+  }
+
+  if (vehicle.year >= 2025) {
+    score += 10;
+  } else if (vehicle.year >= 2024) {
+    score += 6;
+  }
+
+  score += Math.min(Math.round(vehicle.priceClp / 1_000_000), 80);
+  score += Math.min(vehicle.gallery.length, 10);
+
+  return score;
+}
+
+const heroPool = c4rVehicles.filter((vehicle) => !blockedHeroBodyStyles.has(vehicle.bodyStyle));
+const sortedHeroPool = [...(heroPool.length > 0 ? heroPool : c4rVehicles)].sort((left, right) => {
+  const scoreDiff = getHeroScore(right) - getHeroScore(left);
+  if (scoreDiff !== 0) {
+    return scoreDiff;
+  }
+
+  if (right.year !== left.year) {
+    return right.year - left.year;
+  }
+
+  return right.priceClp - left.priceClp;
+});
+
+const heroVehicle = sortedHeroPool[0] ?? c4rVehicles[0];
+const featuredCatalog = sortedHeroPool.slice(0, 6);
 
 const testimonials = [
   {
