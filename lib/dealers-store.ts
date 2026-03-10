@@ -24,7 +24,12 @@ import {
   type DealerPayment,
   type DealerTask,
   type DealerVehicle,
+  type FinancingDocument,
+  type FinancingDocumentStatus,
+  type FinancingOffer,
+  type FinancingProductType,
   type FinancingRequest,
+  type FinancingStatus,
   type LeadStage,
   type VehicleStatus,
 } from "@/app/dealers/_data";
@@ -151,6 +156,14 @@ type CreateFinancingRequestInput = {
   customer: string;
   vehicle: string;
   amount: number;
+  rut?: string;
+  email?: string;
+  phone?: string;
+  monthlyIncome?: number;
+  downPayment?: number;
+  termMonths?: number;
+  productType?: FinancingProductType;
+  assignedExecutive?: string;
 };
 
 let writeLock: Promise<void> = Promise.resolve();
@@ -210,6 +223,131 @@ function normalizeLeadStage(value: string): LeadStage {
   }
 
   return "nuevo";
+}
+
+function normalizeFinancingStatus(value: string): FinancingStatus {
+  if (
+    value === "borrador" ||
+    value === "enviada" ||
+    value === "evaluando" ||
+    value === "ofertas" ||
+    value === "aprobada" ||
+    value === "rechazada"
+  ) {
+    return value;
+  }
+
+  return "borrador";
+}
+
+function normalizeFinancingDocumentStatus(value: string): FinancingDocumentStatus {
+  if (value === "cargado" || value === "validado") {
+    return value;
+  }
+
+  return "pendiente";
+}
+
+function normalizeFinancingProductType(value: string): FinancingProductType {
+  if (value === "inteligente" || value === "leasing") {
+    return value;
+  }
+
+  return "convencional";
+}
+
+function defaultFinancingDocuments(): FinancingDocument[] {
+  return [
+    { id: "doc-id", label: "Cedula de identidad", status: "pendiente" },
+    { id: "doc-income", label: "Liquidaciones y cotizaciones", status: "pendiente" },
+    { id: "doc-address", label: "Comprobante de domicilio", status: "pendiente" },
+    { id: "doc-credit", label: "Pre-evaluacion crediticia", status: "pendiente" },
+  ];
+}
+
+function calculatePaperworkScore(documents: FinancingDocument[]): number {
+  if (documents.length === 0) {
+    return 0;
+  }
+
+  const weights = {
+    pendiente: 0,
+    cargado: 0.6,
+    validado: 1,
+  } as const;
+
+  const completed = documents.reduce((sum, doc) => sum + weights[doc.status], 0);
+  return Math.round((completed / documents.length) * 100);
+}
+
+function createFinancingOffers(requestId: string, amount: number, termMonths: number, downPayment: number): FinancingOffer[] {
+  const lenders = ["Banco Andino", "Banco Pacifico", "CrediMovil"];
+  const financedAmount = Math.max(500000, amount - downPayment);
+  const baseRate = amount <= 15000000 ? 10.8 : 11.9;
+
+  return lenders.map((lender, index) => {
+    const annualRate = Number((baseRate + index * 0.9).toFixed(1));
+    const factor = 1 + annualRate / 100 * (termMonths / 12);
+    const monthlyFee = Math.round((financedAmount * factor) / termMonths);
+    const approvedAmount = Math.round(financedAmount * (index === 2 ? 0.95 : 1));
+
+    return {
+      id: `${requestId}-off-${index + 1}`,
+      lender,
+      approvedAmount,
+      termMonths,
+      annualRate,
+      monthlyFee,
+      status: index === 0 ? "aprobada" : "preaprobada",
+    };
+  });
+}
+
+function ensureFinancingRequestShape(request: DealerStoreFinancingRequest): DealerStoreFinancingRequest {
+  const normalizedDocs = (request.documents ?? defaultFinancingDocuments()).map((document, index) => ({
+    id: normalizeText(document.id) || `doc-${index + 1}`,
+    label: normalizeText(document.label) || "Documento",
+    status: normalizeFinancingDocumentStatus(document.status),
+  }));
+
+  const normalizedOffers = (request.offers ?? []).map((offer, index) => {
+    const normalizedStatus: FinancingOffer["status"] =
+      offer.status === "rechazada" ? "rechazada" : offer.status === "aprobada" ? "aprobada" : "preaprobada";
+
+    return {
+      id: normalizeText(offer.id) || `offer-${index + 1}`,
+      lender: normalizeText(offer.lender) || "Financiera",
+      approvedAmount: Math.max(0, Number(offer.approvedAmount) || 0),
+      termMonths: Math.max(12, Number(offer.termMonths) || 36),
+      annualRate: Math.max(0, Number(offer.annualRate) || 0),
+      monthlyFee: Math.max(0, Number(offer.monthlyFee) || 0),
+      status: normalizedStatus,
+    };
+  });
+
+  const normalizedTerm = Math.max(12, Number(request.termMonths) || 36);
+  const normalizedDownPayment = Math.max(0, Number(request.downPayment) || 0);
+  const normalizedIncome = Math.max(0, Number(request.monthlyIncome) || 0);
+  const normalizedAmount = Math.max(1, Number(request.amount) || 1);
+  const selectedOfferId = normalizeText(request.selectedOfferId ?? "") || null;
+
+  return {
+    ...request,
+    amount: normalizedAmount,
+    status: normalizeFinancingStatus(request.status),
+    rut: normalizeText(request.rut ?? ""),
+    email: normalizeText(request.email ?? ""),
+    phone: normalizeText(request.phone ?? ""),
+    monthlyIncome: normalizedIncome,
+    downPayment: normalizedDownPayment,
+    termMonths: normalizedTerm,
+    productType: normalizeFinancingProductType(request.productType ?? "convencional"),
+    assignedExecutive: normalizeText(request.assignedExecutive ?? "") || "Equipo Credito C4R",
+    paperworkScore: calculatePaperworkScore(normalizedDocs),
+    selectedOfferId,
+    documents: normalizedDocs,
+    offers: normalizedOffers,
+  };
 }
 
 function createId(prefix: string): string {
@@ -275,11 +413,13 @@ function createInitialStoreState(): DealerStoreState {
       createdAt: now,
       updatedAt: now,
     })),
-    financingRequests: seedFinancing.map((request) => ({
-      ...request,
-      dealerId: DEFAULT_DEALER_ID,
-      updatedAt: now,
-    })),
+    financingRequests: seedFinancing.map((request) =>
+      ensureFinancingRequestShape({
+        ...request,
+        dealerId: DEFAULT_DEALER_ID,
+        updatedAt: now,
+      }),
+    ),
     payments: seedPayments.map((payment) => ({
       ...payment,
       dealerId: DEFAULT_DEALER_ID,
@@ -494,6 +634,7 @@ export async function getDealerSnapshot(dealerId: string = DEFAULT_DEALER_ID): P
       .sort((left, right) => right.updatedAt.localeCompare(left.updatedAt)),
     financingRequests: state.financingRequests
       .filter((request) => request.dealerId === dealerId)
+      .map((request) => ensureFinancingRequestShape(request))
       .slice()
       .sort(byMostRecentDate),
     payments: state.payments
@@ -693,24 +834,193 @@ export async function createFinancingRequest(
 ): Promise<DealerStoreFinancingRequest> {
   const customer = normalizeText(input.customer);
   const vehicle = normalizeText(input.vehicle);
-  const amount = Number(input.amount);
+  const amount = Math.max(1, Number(input.amount) || 0);
+  const rut = normalizeRut(normalizeText(input.rut ?? ""));
+  const email = normalizeText(input.email ?? "").toLowerCase();
+  const phone = normalizeText(input.phone ?? "");
+  const monthlyIncome = Math.max(0, Number(input.monthlyIncome) || 0);
+  const downPayment = Math.max(0, Number(input.downPayment) || 0);
+  const termMonths = Math.max(12, Number(input.termMonths) || 36);
+  const productType = normalizeFinancingProductType(normalizeText(input.productType ?? "convencional"));
+  const assignedExecutive = normalizeText(input.assignedExecutive ?? "") || "Equipo Credito C4R";
+  const financingId = createId("fin");
 
   const nextState = await mutateStore((state) => {
-    state.financingRequests.unshift({
-      id: createId("fin"),
+    const request = ensureFinancingRequestShape({
+      id: financingId,
       dealerId,
       customer,
       vehicle,
       amount,
-      status: "enviada",
+      status: "borrador",
       createdAt: toYmdNow(),
+      rut,
+      email,
+      phone,
+      monthlyIncome,
+      downPayment,
+      termMonths,
+      productType,
+      assignedExecutive,
+      selectedOfferId: null,
+      documents: defaultFinancingDocuments(),
+      offers: [],
       updatedAt: toIsoNow(),
     });
+
+    state.financingRequests.unshift(request);
 
     return state;
   });
 
-  return nextState.financingRequests[0];
+  const created = nextState.financingRequests.find((request) => request.id === financingId);
+  if (!created) {
+    throw new Error("No fue posible crear la solicitud de credito.");
+  }
+
+  return ensureFinancingRequestShape(created);
+}
+
+export async function completeFinancingPaperwork(requestId: string): Promise<DealerStoreFinancingRequest | null> {
+  const nextState = await mutateStore((state) => {
+    const existing = state.financingRequests.find((request) => request.id === requestId);
+    if (!existing) {
+      return state;
+    }
+
+    const request = ensureFinancingRequestShape(existing);
+    request.documents = (request.documents ?? defaultFinancingDocuments()).map((document) => ({
+      ...document,
+      status: "validado",
+    }));
+    request.paperworkScore = 100;
+    if (request.status !== "aprobada" && request.status !== "rechazada") {
+      request.status = "enviada";
+    }
+    request.updatedAt = toIsoNow();
+
+    const requestIndex = state.financingRequests.findIndex((entry) => entry.id === requestId);
+    state.financingRequests[requestIndex] = request;
+
+    return state;
+  });
+
+  const updated = nextState.financingRequests.find((request) => request.id === requestId);
+  return updated ? ensureFinancingRequestShape(updated) : null;
+}
+
+export async function sendFinancingRequestToNetwork(requestId: string): Promise<DealerStoreFinancingRequest | null> {
+  const nextState = await mutateStore((state) => {
+    const existing = state.financingRequests.find((request) => request.id === requestId);
+    if (!existing) {
+      return state;
+    }
+
+    const request = ensureFinancingRequestShape(existing);
+    const paperworkScore = request.paperworkScore ?? calculatePaperworkScore(request.documents ?? defaultFinancingDocuments());
+
+    if (paperworkScore < 75) {
+      request.status = "evaluando";
+      request.offers = [];
+      request.updatedAt = toIsoNow();
+      const requestIndex = state.financingRequests.findIndex((entry) => entry.id === requestId);
+      state.financingRequests[requestIndex] = request;
+      return state;
+    }
+
+    request.offers = createFinancingOffers(request.id, request.amount, request.termMonths ?? 36, request.downPayment ?? 0);
+    request.status = "ofertas";
+    request.updatedAt = toIsoNow();
+    request.selectedOfferId = null;
+
+    const requestIndex = state.financingRequests.findIndex((entry) => entry.id === requestId);
+    state.financingRequests[requestIndex] = request;
+
+    const hasTask = state.tasks.some(
+      (task) => task.dealerId === request.dealerId && task.title.includes(request.customer) && task.title.includes("financiamiento"),
+    );
+    if (!hasTask) {
+      state.tasks.unshift({
+        id: createId("task"),
+        dealerId: request.dealerId,
+        title: `Validar oferta de financiamiento para ${request.customer}`,
+        dueLabel: "Hoy 17:00",
+        owner: request.assignedExecutive || "Equipo Credito C4R",
+        status: "pendiente",
+        createdAt: toIsoNow(),
+        updatedAt: toIsoNow(),
+      });
+    }
+
+    return state;
+  });
+
+  const updated = nextState.financingRequests.find((request) => request.id === requestId);
+  return updated ? ensureFinancingRequestShape(updated) : null;
+}
+
+export async function selectFinancingOffer(
+  requestId: string,
+  offerId: string,
+): Promise<DealerStoreFinancingRequest | null> {
+  const nextState = await mutateStore((state) => {
+    const existing = state.financingRequests.find((request) => request.id === requestId);
+    if (!existing) {
+      return state;
+    }
+
+    const request = ensureFinancingRequestShape(existing);
+    const offerExists = (request.offers ?? []).some((offer) => offer.id === offerId);
+    if (!offerExists) {
+      return state;
+    }
+
+    request.offers = (request.offers ?? []).map((offer) => {
+      if (offer.status === "rechazada") {
+        return offer;
+      }
+
+      if (offer.id === offerId) {
+        return { ...offer, status: "aprobada" };
+      }
+
+      return { ...offer, status: "preaprobada" };
+    });
+
+    request.selectedOfferId = offerId;
+    request.status = "aprobada";
+    request.updatedAt = toIsoNow();
+
+    const requestIndex = state.financingRequests.findIndex((entry) => entry.id === requestId);
+    state.financingRequests[requestIndex] = request;
+
+    return state;
+  });
+
+  const updated = nextState.financingRequests.find((request) => request.id === requestId);
+  return updated ? ensureFinancingRequestShape(updated) : null;
+}
+
+export async function rejectFinancingRequest(requestId: string): Promise<DealerStoreFinancingRequest | null> {
+  const nextState = await mutateStore((state) => {
+    const existing = state.financingRequests.find((request) => request.id === requestId);
+    if (!existing) {
+      return state;
+    }
+
+    const request = ensureFinancingRequestShape(existing);
+    request.status = "rechazada";
+    request.selectedOfferId = null;
+    request.updatedAt = toIsoNow();
+
+    const requestIndex = state.financingRequests.findIndex((entry) => entry.id === requestId);
+    state.financingRequests[requestIndex] = request;
+
+    return state;
+  });
+
+  const updated = nextState.financingRequests.find((request) => request.id === requestId);
+  return updated ? ensureFinancingRequestShape(updated) : null;
 }
 
 export async function createLeadFromWebIntent(input: WebLeadInput): Promise<DealerStoreLead> {

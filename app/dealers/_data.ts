@@ -244,7 +244,29 @@ export const dealerTasks: DealerTask[] = [
   },
 ];
 
-export type FinancingStatus = "enviada" | "evaluando" | "aprobada" | "rechazada";
+export type FinancingStatus = "borrador" | "enviada" | "evaluando" | "ofertas" | "aprobada" | "rechazada";
+
+export type FinancingDocumentStatus = "pendiente" | "cargado" | "validado";
+
+export type FinancingDocument = {
+  id: string;
+  label: string;
+  status: FinancingDocumentStatus;
+};
+
+export type FinancingOfferStatus = "preaprobada" | "aprobada" | "rechazada";
+
+export type FinancingOffer = {
+  id: string;
+  lender: string;
+  approvedAmount: number;
+  termMonths: number;
+  annualRate: number;
+  monthlyFee: number;
+  status: FinancingOfferStatus;
+};
+
+export type FinancingProductType = "convencional" | "inteligente" | "leasing";
 
 export type FinancingRequest = {
   id: string;
@@ -253,6 +275,18 @@ export type FinancingRequest = {
   amount: number;
   status: FinancingStatus;
   createdAt: string;
+  rut?: string;
+  email?: string;
+  phone?: string;
+  monthlyIncome?: number;
+  downPayment?: number;
+  termMonths?: number;
+  productType?: FinancingProductType;
+  assignedExecutive?: string;
+  paperworkScore?: number;
+  selectedOfferId?: string | null;
+  documents?: FinancingDocument[];
+  offers?: FinancingOffer[];
 };
 
 export const financingRequests: FinancingRequest[] = [
@@ -263,14 +297,86 @@ export const financingRequests: FinancingRequest[] = [
     amount: 9900000,
     status: "aprobada",
     createdAt: "2026-03-02",
+    rut: "16.234.987-5",
+    email: "jrojas@email.com",
+    phone: "+56 9 7255 6320",
+    monthlyIncome: 2350000,
+    downPayment: 2500000,
+    termMonths: 36,
+    productType: "convencional",
+    assignedExecutive: "Camila",
+    paperworkScore: 100,
+    selectedOfferId: "off-001-a",
+    documents: [
+      { id: "doc-id", label: "Cedula de identidad", status: "validado" },
+      { id: "doc-income", label: "Liquidaciones y cotizaciones", status: "validado" },
+      { id: "doc-address", label: "Comprobante de domicilio", status: "validado" },
+      { id: "doc-credit", label: "Pre-evaluacion crediticia", status: "validado" },
+    ],
+    offers: [
+      {
+        id: "off-001-a",
+        lender: "Banco Andino",
+        approvedAmount: 7400000,
+        termMonths: 36,
+        annualRate: 11.2,
+        monthlyFee: 268000,
+        status: "aprobada",
+      },
+      {
+        id: "off-001-b",
+        lender: "Financiera Ruta",
+        approvedAmount: 7200000,
+        termMonths: 36,
+        annualRate: 12.4,
+        monthlyFee: 277000,
+        status: "preaprobada",
+      },
+    ],
   },
   {
     id: "fin-002",
     customer: "Maria Lopez",
     vehicle: "Hyundai Tucson 2020",
     amount: 11800000,
-    status: "evaluando",
+    status: "ofertas",
     createdAt: "2026-03-04",
+    rut: "17.445.280-1",
+    email: "mlopez@email.com",
+    phone: "+56 9 6102 9008",
+    monthlyIncome: 2100000,
+    downPayment: 1800000,
+    termMonths: 48,
+    productType: "inteligente",
+    assignedExecutive: "Felipe",
+    paperworkScore: 100,
+    selectedOfferId: null,
+    documents: [
+      { id: "doc-id", label: "Cedula de identidad", status: "validado" },
+      { id: "doc-income", label: "Liquidaciones y cotizaciones", status: "validado" },
+      { id: "doc-address", label: "Comprobante de domicilio", status: "validado" },
+      { id: "doc-credit", label: "Pre-evaluacion crediticia", status: "validado" },
+    ],
+    offers: [
+      {
+        id: "off-002-a",
+        lender: "Banco Pacifico",
+        approvedAmount: 9800000,
+        termMonths: 48,
+        annualRate: 12.9,
+        monthlyFee: 254000,
+        status: "preaprobada",
+      },
+      {
+        id: "off-002-b",
+        lender: "CrediMovil",
+        approvedAmount: 10000000,
+        termMonths: 48,
+        annualRate: 13.5,
+        monthlyFee: 261000,
+        status: "preaprobada",
+      },
+    ],
   },
   {
     id: "fin-003",
@@ -279,6 +385,23 @@ export const financingRequests: FinancingRequest[] = [
     amount: 13100000,
     status: "enviada",
     createdAt: "2026-03-05",
+    rut: "18.331.764-9",
+    email: "smartinez@email.com",
+    phone: "+56 9 9482 1130",
+    monthlyIncome: 1750000,
+    downPayment: 1600000,
+    termMonths: 48,
+    productType: "convencional",
+    assignedExecutive: "Felipe",
+    paperworkScore: 75,
+    selectedOfferId: null,
+    documents: [
+      { id: "doc-id", label: "Cedula de identidad", status: "validado" },
+      { id: "doc-income", label: "Liquidaciones y cotizaciones", status: "cargado" },
+      { id: "doc-address", label: "Comprobante de domicilio", status: "cargado" },
+      { id: "doc-credit", label: "Pre-evaluacion crediticia", status: "pendiente" },
+    ],
+    offers: [],
   },
   {
     id: "fin-004",
@@ -287,6 +410,33 @@ export const financingRequests: FinancingRequest[] = [
     amount: 10200000,
     status: "rechazada",
     createdAt: "2026-02-27",
+    rut: "14.998.450-2",
+    email: "rpino@email.com",
+    phone: "+56 9 6630 9921",
+    monthlyIncome: 1050000,
+    downPayment: 1000000,
+    termMonths: 60,
+    productType: "leasing",
+    assignedExecutive: "Camila",
+    paperworkScore: 85,
+    selectedOfferId: null,
+    documents: [
+      { id: "doc-id", label: "Cedula de identidad", status: "validado" },
+      { id: "doc-income", label: "Liquidaciones y cotizaciones", status: "validado" },
+      { id: "doc-address", label: "Comprobante de domicilio", status: "validado" },
+      { id: "doc-credit", label: "Pre-evaluacion crediticia", status: "validado" },
+    ],
+    offers: [
+      {
+        id: "off-004-a",
+        lender: "Banco Andino",
+        approvedAmount: 0,
+        termMonths: 60,
+        annualRate: 0,
+        monthlyFee: 0,
+        status: "rechazada",
+      },
+    ],
   },
 ];
 

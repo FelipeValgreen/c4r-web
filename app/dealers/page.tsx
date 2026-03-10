@@ -24,11 +24,15 @@ function statusPill(status: string) {
     return "bg-green-100 text-green-700";
   }
 
-  if (status === "reservado" || status === "evaluando" || status === "en progreso") {
+  if (status === "reservado" || status === "evaluando" || status === "en progreso" || status === "ofertas" || status === "enviada") {
     return "bg-amber-100 text-amber-700";
   }
 
   if (status === "vendido" || status === "rechazada" || status === "completada") {
+    return "bg-slate-200 text-slate-700";
+  }
+
+  if (status === "borrador") {
     return "bg-slate-200 text-slate-700";
   }
 
