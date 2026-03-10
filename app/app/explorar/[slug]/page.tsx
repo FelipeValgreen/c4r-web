@@ -107,17 +107,25 @@ export default async function VehicleDetailPage({ params }: PageProps) {
         <div className="mx-auto grid max-w-7xl gap-8 px-6 lg:grid-cols-[minmax(0,1.3fr)_380px] lg:px-8">
           <div>
             <div className="overflow-hidden rounded-2xl border border-platinum bg-[radial-gradient(circle_at_top,_#f9f8f4,_#e7e3d8)] p-4">
-              <div className="relative aspect-[16/10] w-full">
-                <Image
-                  src={vehicle.coverImage}
-                  alt={vehicle.title}
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 70vw"
-                  className="object-contain object-center"
-                  priority
-                  unoptimized
-                />
-              </div>
+              <a
+                href={vehicle.coverImage}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block"
+                aria-label={`Abrir imagen principal de ${vehicle.title}`}
+              >
+                <div className="relative aspect-[16/10] w-full">
+                  <Image
+                    src={vehicle.coverImage}
+                    alt={vehicle.title}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 70vw"
+                    className="object-contain object-center transition-transform duration-200 group-hover:scale-[1.01]"
+                    priority
+                    unoptimized
+                  />
+                </div>
+              </a>
             </div>
 
             <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
@@ -126,16 +134,24 @@ export default async function VehicleDetailPage({ params }: PageProps) {
                   key={image}
                   className="overflow-hidden rounded-xl border border-platinum bg-[radial-gradient(circle_at_top,_#faf9f6,_#ece7da)] p-3"
                 >
-                  <div className="relative aspect-[4/3] w-full">
-                    <Image
-                      src={image}
-                      alt={`Galeria ${index + 2} ${vehicle.title}`}
-                      fill
-                      sizes="(max-width: 768px) 50vw, 240px"
-                      className="object-contain object-center"
-                      unoptimized
-                    />
-                  </div>
+                  <a
+                    href={image}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group block"
+                    aria-label={`Abrir imagen ${index + 2} de ${vehicle.title}`}
+                  >
+                    <div className="relative aspect-[4/3] w-full">
+                      <Image
+                        src={image}
+                        alt={`Galeria ${index + 2} ${vehicle.title}`}
+                        fill
+                        sizes="(max-width: 768px) 50vw, 240px"
+                        className="object-contain object-center transition-transform duration-200 group-hover:scale-[1.02]"
+                        unoptimized
+                      />
+                    </div>
+                  </a>
                 </div>
               ))}
             </div>

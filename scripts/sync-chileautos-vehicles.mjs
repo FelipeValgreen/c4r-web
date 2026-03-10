@@ -375,6 +375,29 @@ function dedupeVehiclesByTitle(vehicles) {
   return Array.from(dedupedByTitle.values());
 }
 
+function dedupeVehiclesByModelPrice(vehicles) {
+  const dedupedByModelPrice = new Map();
+
+  for (const vehicle of vehicles) {
+    const key = [
+      normalizeKey(vehicle.make),
+      normalizeKey(vehicle.model),
+      String(vehicle.year),
+      String(vehicle.priceClp),
+    ].join("|");
+    const current = dedupedByModelPrice.get(key);
+
+    if (!current) {
+      dedupedByModelPrice.set(key, vehicle);
+      continue;
+    }
+
+    dedupedByModelPrice.set(key, pickPreferredVehicle(current, vehicle));
+  }
+
+  return Array.from(dedupedByModelPrice.values());
+}
+
 async function mapWithConcurrency(items, concurrency, mapper) {
   const results = [];
   const queue = [...items];
@@ -592,17 +615,19 @@ async function main() {
     }
   }
 
-  const vehicles = dedupeVehiclesByTitle(Array.from(vehiclesById.values())).sort((left, right) => {
-    if (left.year !== right.year) {
-      return right.year - left.year;
-    }
+  const vehicles = dedupeVehiclesByModelPrice(dedupeVehiclesByTitle(Array.from(vehiclesById.values()))).sort(
+    (left, right) => {
+      if (left.year !== right.year) {
+        return right.year - left.year;
+      }
 
-    if (left.priceClp !== right.priceClp) {
-      return left.priceClp - right.priceClp;
-    }
+      if (left.priceClp !== right.priceClp) {
+        return left.priceClp - right.priceClp;
+      }
 
-    return left.title.localeCompare(right.title, "es");
-  });
+      return left.title.localeCompare(right.title, "es");
+    },
+  );
 
   const tsFile = createTsFileContent(vehicles);
   await fs.writeFile(OUTPUT_FILE, tsFile, "utf8");
