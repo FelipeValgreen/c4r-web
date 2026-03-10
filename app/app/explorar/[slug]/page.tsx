@@ -106,14 +106,36 @@ export default async function VehicleDetailPage({ params }: PageProps) {
       <section className="py-10">
         <div className="mx-auto grid max-w-7xl gap-8 px-6 lg:grid-cols-[minmax(0,1.3fr)_380px] lg:px-8">
           <div>
-            <div className="relative overflow-hidden rounded-2xl border border-platinum">
-              <Image src={vehicle.coverImage} alt={vehicle.title} width={1400} height={900} className="h-auto w-full object-cover" priority />
+            <div className="overflow-hidden rounded-2xl border border-platinum bg-[radial-gradient(circle_at_top,_#f9f8f4,_#e7e3d8)] p-4">
+              <div className="relative aspect-[16/10] w-full">
+                <Image
+                  src={vehicle.coverImage}
+                  alt={vehicle.title}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 70vw"
+                  className="object-contain object-center"
+                  priority
+                  unoptimized
+                />
+              </div>
             </div>
 
             <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
-              {vehicle.gallery.slice(1).map((image) => (
-                <div key={image} className="relative overflow-hidden rounded-xl border border-platinum bg-white">
-                  <Image src={image} alt={`Galeria ${vehicle.title}`} width={500} height={320} className="h-auto w-full object-cover" />
+              {vehicle.gallery.slice(1).map((image, index) => (
+                <div
+                  key={image}
+                  className="overflow-hidden rounded-xl border border-platinum bg-[radial-gradient(circle_at_top,_#faf9f6,_#ece7da)] p-3"
+                >
+                  <div className="relative aspect-[4/3] w-full">
+                    <Image
+                      src={image}
+                      alt={`Galeria ${index + 2} ${vehicle.title}`}
+                      fill
+                      sizes="(max-width: 768px) 50vw, 240px"
+                      className="object-contain object-center"
+                      unoptimized
+                    />
+                  </div>
                 </div>
               ))}
             </div>
