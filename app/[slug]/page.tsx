@@ -1446,6 +1446,11 @@ function CtaButton({
 }
 
 function renderStandardPage(page: StandardPageContent, slug: MarketingSlug) {
+  const stepsDesktopColsClass =
+    page.steps.length <= 2 ? "lg:grid-cols-2" : page.steps.length === 3 ? "lg:grid-cols-3" : "lg:grid-cols-4";
+  const stepsMaxWidthClass =
+    page.steps.length <= 2 ? "max-w-4xl" : page.steps.length === 3 ? "max-w-5xl" : "max-w-6xl";
+
   return (
     <main className="min-h-screen bg-white">
       <section className="relative overflow-hidden bg-white py-16 sm:py-24">
@@ -1498,11 +1503,14 @@ function renderStandardPage(page: StandardPageContent, slug: MarketingSlug) {
       </section>
 
       <section className="py-16">
-        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+        <div className={`mx-auto ${stepsMaxWidthClass} px-6 lg:px-8`}>
           <h2 className="text-center font-heading text-3xl font-bold text-ink">{page.stepsTitle}</h2>
-          <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div className={`mt-10 grid grid-cols-1 justify-items-center gap-6 md:grid-cols-2 ${stepsDesktopColsClass}`}>
             {page.steps.map((step, index) => (
-              <article key={step.title} className="rounded-xl border border-platinum bg-white p-6 shadow-sm">
+              <article
+                key={step.title}
+                className="h-full w-full max-w-[380px] rounded-xl border border-platinum bg-white p-6 shadow-sm"
+              >
                 <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-khaki text-sm font-semibold text-ink">
                   {index + 1}
                 </span>
