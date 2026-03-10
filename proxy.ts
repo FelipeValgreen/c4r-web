@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
-import { DEALER_SESSION_COOKIE, normalizeDealerNextPath, verifyDealerSessionToken } from "@/lib/dealer-auth";
+import { DEALER_SESSION_COOKIE, normalizeDealerNextPath } from "@/lib/dealer-auth";
 
-export async function proxy(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname, search } = request.nextUrl;
   const isDealerPath = pathname.startsWith("/dealers");
   const isDealerLoginPath = pathname === "/dealer-login";
@@ -11,17 +11,15 @@ export async function proxy(request: NextRequest) {
   }
 
   const sessionToken = request.cookies.get(DEALER_SESSION_COOKIE)?.value ?? "";
-  const session = sessionToken ? await verifyDealerSessionToken(sessionToken) : null;
+  const hasSessionCookie = sessionToken.trim().length > 0;
 
   if (isDealerLoginPath) {
-    if (session?.valid) {
-      return NextResponse.redirect(new URL("/dealers", request.url));
-    }
-
+    // Mantener /dealer-login siempre disponible evita loops por discrepancias
+    // de runtime; la validacion fuerte se hace dentro de las rutas /dealers.
     return NextResponse.next();
   }
 
-  if (session?.valid) {
+  if (hasSessionCookie) {
     return NextResponse.next();
   }
 

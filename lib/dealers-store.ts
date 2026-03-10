@@ -3,6 +3,7 @@ import "server-only";
 import { createHash } from "node:crypto";
 import fs from "node:fs/promises";
 import path from "node:path";
+import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 import {
   BlobNotFoundError,
   del as delBlob,
@@ -50,7 +51,17 @@ const STORE_FILE =
   (process.env.VERCEL
     ? path.join("/tmp", "c4r", "dealers-store.json")
     : path.join(process.cwd(), "data", "dealers-store.json"));
-const USE_BLOB_STORE = STORE_BLOB_TOKEN.length > 0;
+const STORE_PROVIDER = normalizeText(process.env.DEALERS_STORE_PROVIDER).toLowerCase() || "auto";
+const SUPABASE_URL =
+  normalizeText(process.env.SUPABASE_URL) || normalizeText(process.env.NEXT_PUBLIC_SUPABASE_URL);
+const SUPABASE_SERVICE_ROLE_KEY = normalizeText(process.env.SUPABASE_SERVICE_ROLE_KEY);
+const SUPABASE_TABLE = normalizeText(process.env.DEALERS_STORE_SUPABASE_TABLE) || "dealer_store_state";
+const SUPABASE_ROW_ID = normalizeText(process.env.DEALERS_STORE_SUPABASE_ROW_ID) || "primary";
+const SUPABASE_READY = SUPABASE_URL.length > 0 && SUPABASE_SERVICE_ROLE_KEY.length > 0;
+const USE_SUPABASE_STORE =
+  (STORE_PROVIDER === "supabase" || STORE_PROVIDER === "auto") && SUPABASE_READY;
+const USE_BLOB_STORE =
+  (STORE_PROVIDER === "blob" || (STORE_PROVIDER === "auto" && !USE_SUPABASE_STORE)) && STORE_BLOB_TOKEN.length > 0;
 const DEFAULT_PORTAL_USERNAME =
   normalizeText(process.env.DEALERS_DEMO_PORTAL_USER) || "demo@dealer.c4r.cl";
 const DEFAULT_PORTAL_PASSWORD =
@@ -207,8 +218,32 @@ type CreateFinancingRequestInput = {
   assignedExecutive?: string;
 };
 
+declare global {
+  var __c4rDealerSupabaseClient: SupabaseClient | undefined;
+}
+
 let writeLock: Promise<void> = Promise.resolve();
 let mutationLock: Promise<void> = Promise.resolve();
+
+function getSupabaseAdminClient(): SupabaseClient | null {
+  if (!USE_SUPABASE_STORE) {
+    return null;
+  }
+
+  if (globalThis.__c4rDealerSupabaseClient) {
+    return globalThis.__c4rDealerSupabaseClient;
+  }
+
+  const client = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, {
+    auth: {
+      persistSession: false,
+      autoRefreshToken: false,
+    },
+  });
+
+  globalThis.__c4rDealerSupabaseClient = client;
+  return client;
+}
 
 function cloneState<T>(value: T): T {
   return JSON.parse(JSON.stringify(value)) as T;
@@ -651,6 +686,18 @@ function normalizeStoreState(state: DealerStoreState): DealerStoreState {
 }
 
 async function ensureStore(): Promise<DealerStoreState> {
+  if (USE_SUPABASE_STORE) {
+    const supabaseState = await readStoreFromSupabase();
+    if (supabaseState) {
+      const normalized = normalizeStoreState(supabaseState);
+      return cloneState(normalized);
+    }
+
+    const initial = normalizeStoreState(createInitialStoreState());
+    await persistStore(initial);
+    return cloneState(initial);
+  }
+
   if (USE_BLOB_STORE) {
     const blobState = await readStoreFromBlob();
     if (blobState) {
@@ -676,6 +723,34 @@ async function ensureStore(): Promise<DealerStoreState> {
     await persistStore(initial);
     return cloneState(initial);
   }
+}
+
+async function readStoreFromSupabase(): Promise<DealerStoreState | null> {
+  const client = getSupabaseAdminClient();
+  if (!client) {
+    return null;
+  }
+
+  const { data, error } = await client
+    .from(SUPABASE_TABLE)
+    .select("data")
+    .eq("id", SUPABASE_ROW_ID)
+    .maybeSingle();
+
+  if (error) {
+    throw new Error(`No fue posible leer el estado de dealers desde Supabase: ${error.message}`);
+  }
+
+  if (!data || typeof data.data === "undefined") {
+    return null;
+  }
+
+  const parsed = data.data as unknown;
+  if (!isStoreState(parsed)) {
+    return null;
+  }
+
+  return cloneState(parsed);
 }
 
 async function readStoreFromBlob(): Promise<DealerStoreState | null> {
@@ -734,6 +809,28 @@ async function readStoreFromBlob(): Promise<DealerStoreState | null> {
 
 async function persistStore(nextState: DealerStoreState): Promise<void> {
   const currentWrite = writeLock.catch(() => undefined).then(async () => {
+    if (USE_SUPABASE_STORE) {
+      const client = getSupabaseAdminClient();
+      if (!client) {
+        throw new Error("No fue posible inicializar cliente Supabase para dealers.");
+      }
+
+      const { error } = await client.from(SUPABASE_TABLE).upsert(
+        {
+          id: SUPABASE_ROW_ID,
+          data: nextState,
+          updated_at: new Date().toISOString(),
+        },
+        { onConflict: "id" },
+      );
+
+      if (error) {
+        throw new Error(`No fue posible persistir dealers en Supabase: ${error.message}`);
+      }
+
+      return;
+    }
+
     if (USE_BLOB_STORE) {
       await putBlob(`${STORE_BLOB_PREFIX}${Date.now()}.json`, JSON.stringify(nextState, null, 2), {
         access: STORE_BLOB_ACCESS,
