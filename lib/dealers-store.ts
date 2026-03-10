@@ -2,7 +2,14 @@ import "server-only";
 
 import fs from "node:fs/promises";
 import path from "node:path";
-import { BlobNotFoundError, get as getBlob, put as putBlob } from "@vercel/blob";
+import {
+  BlobNotFoundError,
+  del as delBlob,
+  get as getBlob,
+  head as headBlob,
+  list as listBlob,
+  put as putBlob,
+} from "@vercel/blob";
 import {
   dealerContracts as seedContracts,
   dealerCustomers as seedCustomers,
@@ -24,7 +31,11 @@ import {
 
 const STORE_VERSION = 1;
 const STORE_BLOB_PATH = normalizeText(process.env.DEALERS_STORE_BLOB_PATH) || "dealers/dealers-store.json";
+const STORE_BLOB_PREFIX =
+  normalizeText(process.env.DEALERS_STORE_BLOB_PREFIX) || "dealers/dealers-store-";
 const STORE_BLOB_TOKEN = normalizeText(process.env.BLOB_READ_WRITE_TOKEN);
+const STORE_BLOB_ACCESS =
+  normalizeText(process.env.DEALERS_STORE_BLOB_ACCESS).toLowerCase() === "private" ? "private" : "public";
 const STORE_FILE =
   normalizeText(process.env.DEALERS_STORE_FILE) ||
   (process.env.VERCEL
@@ -147,6 +158,26 @@ let mutationLock: Promise<void> = Promise.resolve();
 
 function cloneState<T>(value: T): T {
   return JSON.parse(JSON.stringify(value)) as T;
+}
+
+function isStoreState(value: unknown): value is DealerStoreState {
+  if (!value || typeof value !== "object") {
+    return false;
+  }
+
+  const candidate = value as Partial<DealerStoreState>;
+
+  return (
+    candidate.version === STORE_VERSION &&
+    Array.isArray(candidate.registrations) &&
+    Array.isArray(candidate.vehicles) &&
+    Array.isArray(candidate.leads) &&
+    Array.isArray(candidate.customers) &&
+    Array.isArray(candidate.tasks) &&
+    Array.isArray(candidate.financingRequests) &&
+    Array.isArray(candidate.payments) &&
+    Array.isArray(candidate.contracts)
+  );
 }
 
 function toIsoNow(): string {
@@ -276,8 +307,8 @@ async function ensureStore(): Promise<DealerStoreState> {
 
   try {
     const raw = await fs.readFile(STORE_FILE, "utf8");
-    const parsed = JSON.parse(raw) as DealerStoreState;
-    if (parsed.version !== STORE_VERSION) {
+    const parsed = JSON.parse(raw) as unknown;
+    if (!isStoreState(parsed)) {
       throw new Error("Unsupported store version");
     }
     return cloneState(parsed);
@@ -290,20 +321,47 @@ async function ensureStore(): Promise<DealerStoreState> {
 
 async function readStoreFromBlob(): Promise<DealerStoreState | null> {
   try {
-    const blob = await getBlob(STORE_BLOB_PATH, {
-      access: "private",
-      useCache: false,
-      token: STORE_BLOB_TOKEN,
-    });
+    let blobUrl: string | null = null;
+    const history = await listBlob({ prefix: STORE_BLOB_PREFIX, token: STORE_BLOB_TOKEN, limit: 100 });
+
+    if (history.blobs.length > 0) {
+      const latest = history.blobs
+        .slice()
+        .sort((left, right) => right.uploadedAt.getTime() - left.uploadedAt.getTime())[0];
+      blobUrl = latest?.url ?? null;
+    } else {
+      try {
+        const legacyBlob = await headBlob(STORE_BLOB_PATH, {
+          token: STORE_BLOB_TOKEN,
+        });
+        blobUrl = legacyBlob.url;
+      } catch (error) {
+        if (error instanceof BlobNotFoundError) {
+          return null;
+        }
+        throw error;
+      }
+    }
+
+    if (!blobUrl) {
+      return null;
+    }
+
+    const getOptions =
+      STORE_BLOB_ACCESS === "private"
+        ? { access: "private" as const, useCache: false, token: STORE_BLOB_TOKEN }
+        : { access: "public" as const, token: STORE_BLOB_TOKEN };
+
+    const blob = await getBlob(blobUrl, getOptions);
 
     if (!blob || blob.statusCode !== 200 || !blob.stream) {
       return null;
     }
 
     const raw = await new Response(blob.stream).text();
-    const parsed = JSON.parse(raw) as DealerStoreState;
-    if (parsed.version !== STORE_VERSION) {
-      throw new Error("Unsupported store version");
+    const parsed = JSON.parse(raw) as unknown;
+    if (!isStoreState(parsed)) {
+      return null;
     }
 
     return cloneState(parsed);
@@ -318,14 +376,31 @@ async function readStoreFromBlob(): Promise<DealerStoreState | null> {
 async function persistStore(nextState: DealerStoreState): Promise<void> {
   const currentWrite = writeLock.catch(() => undefined).then(async () => {
     if (USE_BLOB_STORE) {
-      await putBlob(STORE_BLOB_PATH, JSON.stringify(nextState, null, 2), {
-        access: "private",
+      await putBlob(`${STORE_BLOB_PREFIX}${Date.now()}.json`, JSON.stringify(nextState, null, 2), {
+        access: STORE_BLOB_ACCESS,
         addRandomSuffix: false,
-        allowOverwrite: true,
         contentType: "application/json",
         token: STORE_BLOB_TOKEN,
         cacheControlMaxAge: 60,
       });
+
+      try {
+        const history = await listBlob({ prefix: STORE_BLOB_PREFIX, token: STORE_BLOB_TOKEN, limit: 100 });
+        if (history.blobs.length > 20) {
+          const stale = history.blobs
+            .slice()
+            .sort((left, right) => left.uploadedAt.getTime() - right.uploadedAt.getTime())
+            .slice(0, history.blobs.length - 20)
+            .map((blob) => blob.pathname);
+
+          if (stale.length > 0) {
+            await delBlob(stale, { token: STORE_BLOB_TOKEN });
+          }
+        }
+      } catch {
+        // keep flow resilient if cleanup fails
+      }
+
       return;
     }
 
