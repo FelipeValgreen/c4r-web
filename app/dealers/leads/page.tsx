@@ -62,10 +62,10 @@ export default function DealersLeadsPage() {
                   <td className="px-4 py-3 text-ink/80">{formatDate(lead.createdAt)}</td>
                   <td className="px-4 py-3">
                     <Link
-                      href="/dealers/tasks"
+                      href={lead.requestId ? `/dealers/solicitud/${lead.requestId}` : "/dealers/tasks"}
                       className="rounded-lg border border-platinum px-3 py-2 text-xs font-semibold text-ink hover:bg-platinum"
                     >
-                      Gestionar
+                      {lead.requestId ? "Ver solicitud" : "Gestionar"}
                     </Link>
                   </td>
                 </tr>

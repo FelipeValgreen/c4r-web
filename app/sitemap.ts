@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { marketingRoutes, siteUrl } from "@/lib/site";
+import { blogPosts } from "@/lib/blog-posts";
 
 const coreRoutes = ["/", "/app/explorar", "/c4r-check", "/c4r-score", "/comunidad-c4r"];
 const dealersRoutes = [
@@ -15,7 +16,8 @@ const dealersRoutes = [
   "/dealers/reports",
   "/dealers/registro",
 ];
-const allRoutes = [...coreRoutes, ...dealersRoutes, ...marketingRoutes];
+const blogPostRoutes = blogPosts.map((post) => `/blog/${post.slug}`);
+const allRoutes = [...coreRoutes, ...dealersRoutes, ...marketingRoutes, ...blogPostRoutes];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

@@ -23,8 +23,10 @@ import {
   Upload,
   Users,
 } from "lucide-react";
+import ContactForm from "@/components/contact/ContactForm";
 import TrackedLink from "@/components/TrackedLink";
 import { marketingSlugs } from "@/lib/site";
+import { blogCategories, blogPosts } from "@/lib/blog-posts";
 
 type MarketingSlug = (typeof marketingSlugs)[number];
 
@@ -927,99 +929,19 @@ const pages: Record<MarketingSlug, PageContent> = {
     description:
       "Guias, noticias y casos reales para comprar y vender autos usados con menos riesgo y mejor informacion.",
     badge: "Contenido C4R",
-    categories: [
-      "Compra segura",
-      "Venta inteligente",
-      "Financiamiento",
-      "Legal y documentacion",
-      "Mercado automotriz",
-    ],
-    posts: [
-      {
-        title: "Checklist para comprar un auto usado sin sorpresas",
-        excerpt:
-          "Una guia paso a paso para validar documentos, estado mecanico y condiciones de pago antes de cerrar.",
-        category: "Compra segura",
-        date: "15 Ene 2026",
-        image:
-          "https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
-        cta: {
-          href: "/contacto",
-          label: "Solicitar guia completa",
-          eventName: "blog_post_checklist",
-        },
+    categories: blogCategories,
+    posts: blogPosts.map((post) => ({
+      title: post.title,
+      excerpt: post.excerpt,
+      category: post.category,
+      date: post.date,
+      image: post.image,
+      cta: {
+        href: `/blog/${post.slug}`,
+        label: "Leer articulo completo",
+        eventName: `blog_post_${post.slug}`,
       },
-      {
-        title: "Como vender en menos tiempo sin bajar demasiado el precio",
-        excerpt:
-          "Estrategias de publicacion, fotos y negociacion para mejorar conversion manteniendo margen.",
-        category: "Venta inteligente",
-        date: "12 Ene 2026",
-        image:
-          "https://images.unsplash.com/photo-1549317336-206569e8475c?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
-        cta: {
-          href: "/contacto",
-          label: "Hablar con un asesor",
-          eventName: "blog_post_vender_rapido",
-        },
-      },
-      {
-        title: "Errores comunes al financiar un auto usado",
-        excerpt:
-          "Que variables comparar para no comprometer flujo de caja y evitar costos ocultos en el credito.",
-        category: "Financiamiento",
-        date: "10 Ene 2026",
-        image:
-          "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
-        cta: {
-          href: "/precios",
-          label: "Revisar planes y costos",
-          eventName: "blog_post_financiamiento",
-        },
-      },
-      {
-        title: "Documentacion critica antes de transferir",
-        excerpt:
-          "Resumen de revisiones legales para evitar rechazos, multas pendientes o conflictos posteriores.",
-        category: "Legal y documentacion",
-        date: "08 Ene 2026",
-        image:
-          "https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
-        cta: {
-          href: "/c4r-check",
-          label: "Probar C4R Check",
-          eventName: "blog_post_legal",
-        },
-      },
-      {
-        title: "Tendencias 2026 en autos usados en Chile",
-        excerpt:
-          "Modelos con mayor demanda, variaciones de precio y señales para anticipar mejores oportunidades.",
-        category: "Mercado automotriz",
-        date: "05 Ene 2026",
-        image:
-          "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
-        cta: {
-          href: "/app/explorar",
-          label: "Ver catalogo actual",
-          eventName: "blog_post_mercado",
-        },
-      },
-      {
-        title: "Caso real: compra protegida resuelta en 7 dias",
-        excerpt:
-          "Como un comprador uso C4R Check, escrow y garantia para cerrar una compra con total respaldo.",
-        category: "Compra segura",
-        date: "03 Ene 2026",
-        image:
-          "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
-        cta: {
-          href: "/como-funciona",
-          label: "Ver el proceso completo",
-          eventName: "blog_post_caso_real",
-        },
-      },
-    ],
+    })),
     finalTitle: "Recibe contenido util para tus proximas decisiones",
     finalDescription:
       "Te enviamos guias practicas y novedades para comprar o vender autos usados con mas criterio.",
@@ -1080,8 +1002,8 @@ const pages: Record<MarketingSlug, PageContent> = {
     finalDescription:
       "Deja el contexto de tu caso y el equipo correcto se comunicara contigo en menos de 24 horas habiles.",
     finalPrimary: {
-      href: "mailto:soporte@c4r.com?subject=Contacto%20desde%20c4r-web",
-      label: "Enviar correo ahora",
+      href: "/contacto#formulario-contacto",
+      label: "Completar formulario",
       eventName: "contact_final_primary",
     },
     finalSecondary: {
@@ -1832,6 +1754,8 @@ function renderContactPage(page: ContactPageContent) {
           ))}
         </div>
       </section>
+
+      <ContactForm />
 
       <section className="bg-platinum py-14">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">

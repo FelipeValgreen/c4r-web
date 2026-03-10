@@ -1,5 +1,2 @@
-import { redirect } from "next/navigation";
-
-export default function DealersDashboardAliasPage() {
-  redirect("/dealers");
-}
+export { metadata } from "@/app/dealers/page";
+export { default } from "@/app/dealers/page";

@@ -18,8 +18,13 @@ export async function generateMetadata({ params }: PageProps) {
 
 export default async function DealerRequestDetailPage({ params }: PageProps) {
   const { id } = await params;
-  const vehicle = dealerVehicles.find((item) => item.id === id);
-  const lead = dealerLeads.find((item) => item.id === id);
+  const leadById = dealerLeads.find((item) => item.id === id);
+  const leadByRequest = dealerLeads.find((item) => item.requestId === id);
+  const lead = leadById ?? leadByRequest;
+
+  const vehicleById = dealerVehicles.find((item) => item.id === id);
+  const vehicleByLead = lead?.requestId ? dealerVehicles.find((item) => item.id === lead.requestId) : null;
+  const vehicle = vehicleById ?? vehicleByLead;
 
   if (!vehicle && !lead) {
     notFound();

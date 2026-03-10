@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { Award, Calendar, CheckCircle2, MessageCircle, Shield, Star, TrendingUp, Users } from "lucide-react";
 import TrackedLink from "@/components/TrackedLink";
 
@@ -85,6 +86,7 @@ const blogHighlights = [
     author: "Maria Gonzalez",
     date: "15 Ene 2026",
     image: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80",
+    href: "/blog/checklist-compra-auto-usado",
   },
   {
     title: "Financiamiento inteligente en 2026",
@@ -92,6 +94,7 @@ const blogHighlights = [
     author: "Carlos Ruiz",
     date: "12 Ene 2026",
     image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80",
+    href: "/blog/errores-financiar-auto-usado",
   },
   {
     title: "Historia real: compra segura en una semana",
@@ -99,6 +102,7 @@ const blogHighlights = [
     author: "Ana Lopez",
     date: "10 Ene 2026",
     image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80",
+    href: "/blog/caso-real-compra-protegida-7-dias",
   },
 ];
 
@@ -296,17 +300,19 @@ export default function ComunidadC4RPage() {
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
             {blogHighlights.map((post) => (
               <article key={post.title} className="overflow-hidden rounded-xl border border-platinum bg-white shadow-sm">
-                <div className="relative aspect-[4/3]">
-                  <Image src={post.image} alt={post.title} fill className="object-cover" />
-                </div>
-                <div className="p-5">
-                  <h3 className="font-heading text-lg font-semibold text-ink">{post.title}</h3>
-                  <p className="mt-2 text-sm text-gray-600">{post.excerpt}</p>
-                  <div className="mt-4 flex items-center justify-between text-xs text-gray-500">
-                    <span>{post.author}</span>
-                    <span>{post.date}</span>
+                <Link href={post.href} className="group block">
+                  <div className="relative aspect-[4/3]">
+                    <Image src={post.image} alt={post.title} fill className="object-cover transition-transform duration-300 group-hover:scale-105" />
                   </div>
-                </div>
+                  <div className="p-5">
+                    <h3 className="font-heading text-lg font-semibold text-ink group-hover:text-khaki">{post.title}</h3>
+                    <p className="mt-2 text-sm text-gray-600">{post.excerpt}</p>
+                    <div className="mt-4 flex items-center justify-between text-xs text-gray-500">
+                      <span>{post.author}</span>
+                      <span>{post.date}</span>
+                    </div>
+                  </div>
+                </Link>
               </article>
             ))}
           </div>

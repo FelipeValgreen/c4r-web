@@ -109,6 +109,7 @@ export type LeadStage = "nuevo" | "contactado" | "oferta" | "cerrado";
 
 export type DealerLead = {
   id: string;
+  requestId?: string;
   customer: string;
   phone: string;
   interestVehicle: string;
@@ -120,6 +121,7 @@ export type DealerLead = {
 export const dealerLeads: DealerLead[] = [
   {
     id: "lead-3001",
+    requestId: "sol-1002",
     customer: "Sofia Martinez",
     phone: "+56 9 9482 1130",
     interestVehicle: "Kia Sportage 2021",
@@ -129,6 +131,7 @@ export const dealerLeads: DealerLead[] = [
   },
   {
     id: "lead-3002",
+    requestId: "sol-1001",
     customer: "Javier Rojas",
     phone: "+56 9 7255 6320",
     interestVehicle: "Toyota Corolla 2020",
@@ -138,6 +141,7 @@ export const dealerLeads: DealerLead[] = [
   },
   {
     id: "lead-3003",
+    requestId: "sol-1003",
     customer: "Maria Lopez",
     phone: "+56 9 6102 9008",
     interestVehicle: "Hyundai Tucson 2020",
@@ -147,6 +151,7 @@ export const dealerLeads: DealerLead[] = [
   },
   {
     id: "lead-3004",
+    requestId: "sol-1005",
     customer: "Diego Acuna",
     phone: "+56 9 4520 8841",
     interestVehicle: "Nissan Qashqai 2022",
