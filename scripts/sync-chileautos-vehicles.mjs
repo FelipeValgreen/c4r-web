@@ -115,6 +115,15 @@ function slugify(value) {
     .replace(/(^-|-$)/g, "");
 }
 
+function normalizeKey(value) {
+  return String(value ?? "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function parsePrice(version) {
   const values = [];
 
@@ -317,6 +326,55 @@ function buildPriceBreakdown(version) {
     .filter((entry) => Number.isFinite(entry.amount) && entry.amount > 0);
 }
 
+function vehicleQualityScore(vehicle) {
+  let score = 0;
+  score += Math.min(vehicle.highlights.length, 10);
+  score += Math.min(vehicle.gallery.length, 10);
+  score += vehicle.description.length > 120 ? 4 : vehicle.description.length > 60 ? 2 : 0;
+  score += vehicle.fuelCombined !== null ? 2 : 0;
+  score += vehicle.engineCc !== null ? 1 : 0;
+  score += vehicle.priceBreakdown.length > 0 ? 1 : 0;
+  return score;
+}
+
+function pickPreferredVehicle(left, right) {
+  if (left.priceClp !== right.priceClp) {
+    return left.priceClp < right.priceClp ? left : right;
+  }
+
+  const leftScore = vehicleQualityScore(left);
+  const rightScore = vehicleQualityScore(right);
+  if (leftScore !== rightScore) {
+    return leftScore > rightScore ? left : right;
+  }
+
+  const leftAutomatic = normalizeKey(left.transmission).includes("auto");
+  const rightAutomatic = normalizeKey(right.transmission).includes("auto");
+  if (leftAutomatic !== rightAutomatic) {
+    return leftAutomatic ? left : right;
+  }
+
+  return left.id.localeCompare(right.id, "es") <= 0 ? left : right;
+}
+
+function dedupeVehiclesByTitle(vehicles) {
+  const dedupedByTitle = new Map();
+
+  for (const vehicle of vehicles) {
+    const key = normalizeKey(vehicle.title);
+    const current = dedupedByTitle.get(key);
+
+    if (!current) {
+      dedupedByTitle.set(key, vehicle);
+      continue;
+    }
+
+    dedupedByTitle.set(key, pickPreferredVehicle(current, vehicle));
+  }
+
+  return Array.from(dedupedByTitle.values());
+}
+
 async function mapWithConcurrency(items, concurrency, mapper) {
   const results = [];
   const queue = [...items];
@@ -443,14 +501,18 @@ async function main() {
       };
     }
   });
+  detailResults.sort((left, right) => left.detailUrl.localeCompare(right.detailUrl, "en"));
 
   const vehiclesById = new Map();
   let fallbackIndex = 0;
 
   for (const detail of detailResults) {
     const versionsAvailable = detail.versions.length;
+    const sortedVersions = [...detail.versions].sort((left, right) =>
+      String(left?.id ?? "").localeCompare(String(right?.id ?? ""), "en"),
+    );
 
-    for (const version of detail.versions) {
+    for (const version of sortedVersions) {
       const id = stripHtml(version?.id ?? "");
       if (!id) {
         continue;
@@ -530,7 +592,7 @@ async function main() {
     }
   }
 
-  const vehicles = Array.from(vehiclesById.values()).sort((left, right) => {
+  const vehicles = dedupeVehiclesByTitle(Array.from(vehiclesById.values())).sort((left, right) => {
     if (left.year !== right.year) {
       return right.year - left.year;
     }

@@ -61,7 +61,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 130000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Santiago",
+    "location": "La Serena",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77108952024/tfg16lb3xmqowc6gwa0zwfac7.jpg?watermark=c376a63c33ba64ea9b63c7ca90f1f716",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77108952024/tfg16lb3xmqowc6gwa0zwfac7.jpg?watermark=c376a63c33ba64ea9b63c7ca90f1f716",
@@ -124,7 +124,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 130000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Valparaíso",
+    "location": "Concepción",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77108942024/1cf99qwdx4vbkab3365cy8og5.jpg?watermark=585e2c909feaf1485c5badef4c99d156",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77108942024/1cf99qwdx4vbkab3365cy8og5.jpg?watermark=585e2c909feaf1485c5badef4c99d156",
@@ -187,7 +187,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 170000,
     "versionsAvailable": 1,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "La Serena",
+    "location": "Antofagasta",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81768672023/pbrsift36ri6jf1juurgdugu5.jpg?watermark=fd94ee260cbe883d43baa01ca380084f",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81768672023/pbrsift36ri6jf1juurgdugu5.jpg?watermark=fd94ee260cbe883d43baa01ca380084f",
@@ -250,7 +250,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 180000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Rancagua",
+    "location": "Temuco",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83988272024/g4yeq0dh69x6lpzuoi3cptot8.jpg?watermark=20fcabaeff1c4a2450f5f64435d25431",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83988272024/g4yeq0dh69x6lpzuoi3cptot8.jpg?watermark=20fcabaeff1c4a2450f5f64435d25431",
@@ -290,69 +290,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-82926342025",
-    "slug": "chevrolet-sail-2025-ltz-342025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Sed%C3%A1n/Chevrolet/Sail/CL-JATO-ITM-82926342025",
-    "make": "Chevrolet",
-    "model": "Sail",
-    "year": 2025,
-    "badge": "LTZ",
-    "title": "Chevrolet Sail 2025 LTZ",
-    "bodyStyle": "Sedán",
-    "fuelType": "Bencina",
-    "transmission": "manual",
-    "drive": "delantera",
-    "engine": "1.5L",
-    "engineCc": 1485,
-    "fuelCombined": 15,
-    "doors": 4,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 9990000,
-    "reservationFeeClp": 200000,
-    "estimatedMonthlyClp": 180000,
-    "versionsAvailable": 3,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Talca",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82926342024/p95zbv4jnjxfbip7nuo5h7x7c.jpg?watermark=36c3024ee6857f4d16e0548625a940e8",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82926342024/p95zbv4jnjxfbip7nuo5h7x7c.jpg?watermark=36c3024ee6857f4d16e0548625a940e8",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82926342024/eu3pomc9urqq9e9lm0mky9o38.jpg?watermark=d5fc6e73334edf03e2a57211fae5dec8",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82926342024/r62gume9y40roymp9u8unma01.png?watermark=1976d4f18cf4659ed06943b54e08129e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82926342024/zsoxtx2ypenua4u1bshkup8zd.png?watermark=22120d211ff3761cffbd42785288de9a",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82926342024/4yffxa2hhwv6096ott7u6f6c.jpg?watermark=5cbc0b4cc1f51759ab51a39ec6b17cdd",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82926342024/yi1ndqdhng3sfkg4vggjy5fw.jpg?watermark=681291d839cb04846a6d044a2952283e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82926342024/f0o3bp5fod9w6nvpvwqmp8gae.jpg?watermark=5035623ec6a1a346b1d7841bf0548cc9",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82926342024/c9ayqpyer5lqphp1agawsflv3.jpg?watermark=da6a365761a94cd7623b1034dbadcb2d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82926342024/1m5yx1cfuqpt5websfdnn2i26.jpg?watermark=73e208f711c0ea257fcf15c4b888ac21",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82926342024/1s2bf9nuc9jdr49u7hj71sms8.jpg?watermark=9d00b0dfadc0ad7ab01d75f6c283bba2"
-    ],
-    "description": "El preferido de Chile, en su mejor versión. El nuevo Chevrolet Sail 2024 llega en su mejor versión, con un diseño atractivo, excelente equipamiento en seguridad y gran espacio en maletero. Estás en tu mejor momento y quieres disfrutarlo con los tuyos. El nuevo Chevrolet Sail 2024 está listo para acaparar la atención. Nuevo Chevrolet Sail 2024 renueva el significado de comodidad y espacio interior: con gran maletero, amplio habitáculo interior y asientos abatibles 100% con división 60/40.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)",
-      "Potencia - Potencia máxima HP",
-      "Torque"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 11690000
-      },
-      {
-        "type": "JATO",
-        "amount": 12390000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-83988282025",
     "slug": "chevrolet-sail-2025-ltz-282025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Sed%C3%A1n/Chevrolet/Sail/CL-JATO-ITM-83988282025",
@@ -376,7 +313,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 180000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Puerto Montt",
+    "location": "Antofagasta",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83988282024/i8mqe01k6bmqzxardhja7hod5.jpg?watermark=d7cd896b2590c059ed1ce86cde82dd33",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83988282024/i8mqe01k6bmqzxardhja7hod5.jpg?watermark=d7cd896b2590c059ed1ce86cde82dd33",
@@ -439,7 +376,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 190000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Copiapó",
+    "location": "Viña del Mar",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83865392024/q8udh1hy0by6iv2jvep6jwg2c.jpg?watermark=9434c9b0ab9a6580eb55182a70bfa513",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83865392024/q8udh1hy0by6iv2jvep6jwg2c.jpg?watermark=9434c9b0ab9a6580eb55182a70bfa513",
@@ -502,7 +439,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 190000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Arica",
+    "location": "Rancagua",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83865402024/ids59dtlx69p4k59mdd5i3ty5.jpg?watermark=acd9a327e195d8d93ddd8a637ec77659",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83865402024/ids59dtlx69p4k59mdd5i3ty5.jpg?watermark=acd9a327e195d8d93ddd8a637ec77659",
@@ -565,7 +502,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 190000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Santiago",
+    "location": "Talca",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83865412024/aiwbq960u9loxb6ga6dehppsb.jpg?watermark=e831e2a51975c37b401726e4f7c2873d",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83865412024/aiwbq960u9loxb6ga6dehppsb.jpg?watermark=e831e2a51975c37b401726e4f7c2873d",
@@ -628,7 +565,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 190000,
     "versionsAvailable": 6,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Calama",
+    "location": "Antofagasta",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73729372024/w5jm1br1fl1833k54zg8368w7.jpg?watermark=c67bc94802f0108c36de9e483162e48e",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73729372024/w5jm1br1fl1833k54zg8368w7.jpg?watermark=c67bc94802f0108c36de9e483162e48e",
@@ -687,7 +624,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 190000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Iquique",
+    "location": "La Serena",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76330032023/y5uvv0wdeuypnnbaonrh3zhm5.png?watermark=5a69b4555028d153772097c0a09b1c3a",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76330032023/y5uvv0wdeuypnnbaonrh3zhm5.png?watermark=5a69b4555028d153772097c0a09b1c3a",
@@ -750,7 +687,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 190000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Calama",
+    "location": "Concepción",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73951592023/stma6ow27gpobgley0hdiumt9.png?watermark=42b5a5b8e41ccb445cbb7aa6ad14820b",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73951592023/stma6ow27gpobgley0hdiumt9.png?watermark=42b5a5b8e41ccb445cbb7aa6ad14820b",
@@ -790,65 +727,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-78324302025",
-    "slug": "suzuki-celerio-2025-glx-sport-302025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Hatchback/Suzuki/Celerio/CL-JATO-ITM-78324302025",
-    "make": "Suzuki",
-    "model": "Celerio",
-    "year": 2025,
-    "badge": "GLX Sport",
-    "title": "Suzuki Celerio 2025 GLX Sport",
-    "bodyStyle": "Hatchback",
-    "fuelType": "Bencina",
-    "transmission": "manual",
-    "drive": "delantera",
-    "engine": "1.0L",
-    "engineCc": 998,
-    "fuelCombined": 22.8,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 10390000,
-    "reservationFeeClp": 210000,
-    "estimatedMonthlyClp": 190000,
-    "versionsAvailable": 3,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Copiapó",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78324302023/ldmtwtc2fdzdjxorhyrwx2jo8.png?watermark=b3dbf1d2e5d91ab2533e7f7b2b559d6e",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78324302023/ldmtwtc2fdzdjxorhyrwx2jo8.png?watermark=b3dbf1d2e5d91ab2533e7f7b2b559d6e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78324302023/rs7bemd7v9s0qsd11rr3jq928.png?watermark=805ee15c9d7fc1ec42dcb2e4b20f3fc7",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78324302023/plyu4d65nltpy3wxkp4zdhpo2.png?watermark=993ececa6ffd603829f296fb969276d4",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78324302023/o73gtul25k8i36m3gygz9fdn2.png?watermark=c6d085391f2c9e15845a74f3ef3230db",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78324302023/elfpp84rf15nxdzo79uhjlaw8.jpeg?watermark=8323df59051babb81f43f45bc8e75c00",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78324302023/xelbmvin3p8euvpn00zf7ro23.jpeg?watermark=be9fada52cdc4f6429f42efbdf97c6f1",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78324302023/qvo5air96by35drwoq2iu44d7.jpeg?watermark=c43174bb0336e9e8acefe5f3f421832c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78324302023/vpsmt0wtic8lqtbvub70uvcw.jpeg?watermark=e5bac39c6637e1f73ac78ccc712c605e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78324302023/mkzav0ywgirjwmdy3j5pabst.jpeg?watermark=1f118bf0fb9551949119b902a7077cf7",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78324302023/ub14d12b1950l10tn1gy8lble.jpeg?watermark=da122fd91e86e26a677c186400716b2b"
-    ],
-    "description": "¿Quieres transformar cualquier aventura en algo único? ¡Vive en grande cada momento en un Suzuki Celerio! Experimenta la sensación de libertad cada vez que estás detrás del volante en un auto que lo tiene todo: eficiencia de combustible, diseño y comodidad. Disfruta del sistema Start-Stop, maleta de 295 lt., sensor de retroceso y un consumo extraurbano de hasta 25,4 km/lt para llegar a cualquier lugar.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)",
-      "Potencia - Potencia máxima HP",
-      "Torque"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 12190000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-82630432025",
     "slug": "changan-alsvin-2025-comfort-432025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Sed%C3%A1n/Changan/Alsvin/CL-JATO-ITM-82630432025",
@@ -872,7 +750,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 190000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Puerto Montt",
+    "location": "Iquique",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82630432023/a15kepu6sk6qtapwdm7tvot23.jpg?watermark=3d846a741fa2229c0c6c8d694d547f5f",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82630432023/a15kepu6sk6qtapwdm7tvot23.jpg?watermark=3d846a741fa2229c0c6c8d694d547f5f",
@@ -935,7 +813,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 200000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Iquique",
+    "location": "Calama",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82630442023/5189q0uuj0i2y9f5hm3eiokh4.jpg?watermark=b28f777b7cf748bdc0ffc275d960f3fc",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82630442023/5189q0uuj0i2y9f5hm3eiokh4.jpg?watermark=b28f777b7cf748bdc0ffc275d960f3fc",
@@ -975,65 +853,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-83773692025",
-    "slug": "kia-morning-2025-ex-692025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Hatchback/Kia/Morning/CL-JATO-ITM-83773692025",
-    "make": "Kia",
-    "model": "Morning",
-    "year": 2025,
-    "badge": "EX",
-    "title": "Kia Morning 2025 EX",
-    "bodyStyle": "Hatchback",
-    "fuelType": "Bencina",
-    "transmission": "manual",
-    "drive": "delantera",
-    "engine": "1.2L",
-    "engineCc": 1248,
-    "fuelCombined": 18.6,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 10890000,
-    "reservationFeeClp": 220000,
-    "estimatedMonthlyClp": 200000,
-    "versionsAvailable": 6,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Copiapó",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773692024/cuuxr4x9eul9yg4yu3w30162f.jpg?watermark=69c9061aa89b91e19e23b90f78f8b7ad",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773692024/cuuxr4x9eul9yg4yu3w30162f.jpg?watermark=69c9061aa89b91e19e23b90f78f8b7ad",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773692024/ouuoozoxmgiv0jms1aiy4bd57.jpg?watermark=2caf2e50bfecfee1c0e24918bba65bec",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773692024/5po35299hakygcuwqbij76ov4.png?watermark=dcefee86a16b497f16e3bd3da27ded44",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773692024/d4aaitvy4pkif6rkb071v6aq3.png?watermark=7d87792d52bbb53cc1dee98e3dca72ea",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773692024/64e3ss7umt883pkzl9178eos7.jpg?watermark=80627f315a614201868ee322f843e87c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773692024/u6zfl0awlyj6flc442abif568.jpg?watermark=137e58a55f49087b9a5be869d418b326",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773692024/rzt4cwly7vxaeq01ms4wzykt2.jpg?watermark=a70411d8a7da3b13c108326f1cdf838e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773692024/thv97fouduxoekzi2cg2441d5.jpg?watermark=749798c387dd134d67722a581c3387b5",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773692024/6jj7wjk2edd7y3sncyfsb819a.jpg?watermark=74f4a0cf7f9efe58d2e9b7088cc08482",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773692024/tn9utengtcb370iu333bkwmg8.jpg?watermark=921d366fb73ec215f0e9e957b6a1b086"
-    ],
-    "description": "El Kia Morning 2024 es un automóvil compacto diseñado para conquistar la ciudad con estilo, conectividad y seguridad. Seguridad y estilo es lo que aportan los neblineros delanteros a Kia Morning. Los espejos incorporan señalizadores laterales para entregar más estilo aún. Con el fin de entregar mayor seguridad y evitar posible accidentes, se incorpora a la radio touch, la cámara de retroceso con líneas adaptativas. Todas las versiones de Kia Morning incorporan frenos ABS.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)",
-      "Potencia - Potencia máxima HP"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 10890000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-84258402025",
     "slug": "chevrolet-sail-hb-2025-lt-402025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Hatchback/Chevrolet/Sail%20Hb/CL-JATO-ITM-84258402025",
@@ -1057,7 +876,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 200000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Santiago",
+    "location": "Puerto Montt",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84258402024/j1qmjjcr1ysrtemxlbt91mmf8.jpg?watermark=c7230c0e26a732bc48883e9d2efebd6a",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84258402024/j1qmjjcr1ysrtemxlbt91mmf8.jpg?watermark=c7230c0e26a732bc48883e9d2efebd6a",
@@ -1097,69 +916,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-84258412025",
-    "slug": "chevrolet-sail-hb-2025-ltz-412025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Hatchback/Chevrolet/Sail%20Hb/CL-JATO-ITM-84258412025",
-    "make": "Chevrolet",
-    "model": "Sail Hb",
-    "year": 2025,
-    "badge": "LTZ",
-    "title": "Chevrolet Sail Hb 2025 LTZ",
-    "bodyStyle": "Hatchback",
-    "fuelType": "Bencina",
-    "transmission": "manual",
-    "drive": "delantera",
-    "engine": "1.5L",
-    "engineCc": 1485,
-    "fuelCombined": 15,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 10990000,
-    "reservationFeeClp": 220000,
-    "estimatedMonthlyClp": 200000,
-    "versionsAvailable": 3,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Valparaíso",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84258412024/um6y13k4m8rmaoapq6gc6dqd.jpg?watermark=bdfa7eed0c16f2f85f1ad72f3db90310",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84258412024/um6y13k4m8rmaoapq6gc6dqd.jpg?watermark=bdfa7eed0c16f2f85f1ad72f3db90310",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84258412024/i7b5f32x8tt5rtadctzwl1343.jpg?watermark=2a4faca1c08bff0ea9457cfeb219ef13",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84258412024/ee5mo9o4srruxdzmz09rsjj45.png?watermark=2099b889e04f8283e131a75dc70da1b3",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84258412024/tcpyus274ekhdm7actp7g08x1.png?watermark=bf26b002875db7be373430ae9549a644",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84258412024/g3kl0tj3tpk59xwxb8jdp6n3e.jpg?watermark=dc4e124da41473220fe827855bc61d55",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84258412024/zj5h9zq2rttyqynxniush2tge.jpg?watermark=f598484d0fffaa7ae87cd55e2aac4035",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84258412024/5qfemvpaaljaxy18nus5zl9td.jpg?watermark=bcfed9d0759fdf0d8e8666e57b15a429",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84258412024/plfx2uki3f8bmtx505aff5092.jpg?watermark=0501fef8944a2463363433e477695dd3",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84258412024/x1p196yoytd1p1phpwf1qujr5.jpg?watermark=a64f4d73050ece0037585ba06dd40d5e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84258412024/edjr6silaoyk2r1tr2s4a24y9.jpg?watermark=9b0a90888b5f7f8f46cb5bc6ad0b54ff"
-    ],
-    "description": "Sail Hatchback 2024, reinterpretamos nuestro camino. El Chevrolet Sail Hatchback 2024, totalmente rediseñado, llega en su mejor versión, con un diseño atractivo, conectividad, excelente equipamiento de seguridad y por primera vez en Chile, una versión Hatchback. No es solo un auto, reinventamos la forma de ver la vida. Te ves bien y te sientes todavía mejor. El Chevrolet Sail Hatchback 2024, totalmente rediseñado, es el reflejo de esa versión de ti que siempre soñaste: libre, vibrante y único.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)",
-      "Potencia - Potencia máxima HP",
-      "Torque"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 12090000
-      },
-      {
-        "type": "JATO",
-        "amount": 12690000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-84258422025",
     "slug": "chevrolet-sail-hb-2025-ltz-422025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Hatchback/Chevrolet/Sail%20Hb/CL-JATO-ITM-84258422025",
@@ -1183,7 +939,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 200000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Concepción",
+    "location": "Calama",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84258422024/tym0xq44uyeqjbuejd4chftk.jpg?watermark=4eea274f848d3048010a808ac46a302a",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84258422024/tym0xq44uyeqjbuejd4chftk.jpg?watermark=4eea274f848d3048010a808ac46a302a",
@@ -1246,7 +1002,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 200000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Antofagasta",
+    "location": "Santiago",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773732024/zis6mabu0v7vfq87eqheyvf02.jpg?watermark=ee363dff55d0322236e9a67f2a6a9839",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773732024/zis6mabu0v7vfq87eqheyvf02.jpg?watermark=ee363dff55d0322236e9a67f2a6a9839",
@@ -1305,7 +1061,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 210000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Antofagasta",
+    "location": "Santiago",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83854402024/cx76c9go0pwetap60pi263mr5.jpg?watermark=4a5dcb5b07a4c6b6c9dfe9ea8bc1af2f",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83854402024/cx76c9go0pwetap60pi263mr5.jpg?watermark=4a5dcb5b07a4c6b6c9dfe9ea8bc1af2f",
@@ -1341,65 +1097,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-83773702025",
-    "slug": "kia-morning-2025-ex-702025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Hatchback/Kia/Morning/CL-JATO-ITM-83773702025",
-    "make": "Kia",
-    "model": "Morning",
-    "year": 2025,
-    "badge": "EX",
-    "title": "Kia Morning 2025 EX",
-    "bodyStyle": "Hatchback",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.2L",
-    "engineCc": 1248,
-    "fuelCombined": 17.2,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 11890000,
-    "reservationFeeClp": 240000,
-    "estimatedMonthlyClp": 210000,
-    "versionsAvailable": 6,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Puerto Montt",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773702024/ygjerkd6u881ie2di9s0n75db.jpg?watermark=4422233ef3eaeb4ab7cf96512e05adb7",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773702024/ygjerkd6u881ie2di9s0n75db.jpg?watermark=4422233ef3eaeb4ab7cf96512e05adb7",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773702024/emttkjznbak4yo4dgrungx2m9.jpg?watermark=299915e3f7f660db8b106f43f5ad19b9",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773702024/nlpk5rcdfb6h5a3le3cpq1hk2.png?watermark=37dd1537558ff7f631d55bc85344f62d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773702024/ji4sv69psk54iw564yeh8e0z1.png?watermark=0b968ff2ab8a0da815ba827478eb22de",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773702024/w28ejihtney1pdq8ygiwjpv2e.jpg?watermark=fbad7535d7006efdfce621f3cce99114",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773702024/adolv6boi1c9n7z6dp5h0t94e.jpg?watermark=2a858f30d14eabdfaebeb209d1fdcbd1",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773702024/pzfjr7rraqhlfpfimqo78sum6.jpg?watermark=54e80a7339e4bac81884d779bb641c6b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773702024/wck7anihd9nt2ancg8151wf45.jpg?watermark=a0436afa2597f51842f534839cc71f97",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773702024/gcyny6tewoptup63bhxy9qxs9.jpg?watermark=c2d9a7ff90250c1cc3c3b36d8a03788e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773702024/s2fc64qd73007i7o6x1tcurc7.jpg?watermark=e856f2336b707bfd8ac93578e6fc65a4"
-    ],
-    "description": "El Kia Morning 2024 es un automóvil compacto diseñado para conquistar la ciudad con estilo, conectividad y seguridad. Seguridad y estilo es lo que aportan los neblineros delanteros a Kia Morning. Los espejos incorporan señalizadores laterales para entregar más estilo aún. Con el fin de entregar mayor seguridad y evitar posible accidentes, se incorpora a la radio touch, la cámara de retroceso con líneas adaptativas. Todas las versiones de Kia Morning incorporan frenos ABS.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)",
-      "Potencia - Potencia máxima HP"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 11890000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-73729392025",
     "slug": "kia-morning-2025-ex-full-392025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Hatchback/Kia/Morning/CL-JATO-ITM-73729392025",
@@ -1423,7 +1120,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 210000,
     "versionsAvailable": 6,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Iquique",
+    "location": "Rancagua",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73729392024/qzgfqzz9xl3y5vqw93t3x4epc.jpg?watermark=0773bdcb91dfcbd39ab0b45f397c7c7f",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73729392024/qzgfqzz9xl3y5vqw93t3x4epc.jpg?watermark=0773bdcb91dfcbd39ab0b45f397c7c7f",
@@ -1482,7 +1179,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 220000,
     "versionsAvailable": 1,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Antofagasta",
+    "location": "Arica",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83866062024/2gl8vb1mdfrw82scos2yjsqs5.jpg?watermark=e06392e44f63124db4956e19fad1623a",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83866062024/2gl8vb1mdfrw82scos2yjsqs5.jpg?watermark=e06392e44f63124db4956e19fad1623a",
@@ -1545,7 +1242,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 220000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Arica",
+    "location": "Puerto Montt",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82987502023/h3f7jl1oc94nxz3ddmnm00oe7.jpg?watermark=5c475520c6da96f63a72b207c06b5680",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82987502023/h3f7jl1oc94nxz3ddmnm00oe7.jpg?watermark=5c475520c6da96f63a72b207c06b5680",
@@ -1585,69 +1282,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-73556932025",
-    "slug": "suzuki-swift-2025-gl-sport-932025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Hatchback/Suzuki/Swift/CL-JATO-ITM-73556932025",
-    "make": "Suzuki",
-    "model": "Swift",
-    "year": 2025,
-    "badge": "GL Sport",
-    "title": "Suzuki Swift 2025 GL Sport",
-    "bodyStyle": "Hatchback",
-    "fuelType": "Bencina",
-    "transmission": "manual",
-    "drive": "delantera",
-    "engine": "1.2L",
-    "engineCc": 1197,
-    "fuelCombined": 18.4,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 11990000,
-    "reservationFeeClp": 240000,
-    "estimatedMonthlyClp": 220000,
-    "versionsAvailable": 4,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Santiago",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73556932023/kglfhvxaqyopci4eebkb9ybk1.jpg?watermark=369b5845cbfe498cba76002c8322e371",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73556932023/kglfhvxaqyopci4eebkb9ybk1.jpg?watermark=369b5845cbfe498cba76002c8322e371",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73556932023/8cku6fpdgys47s749z7hdxe79.png?watermark=cf905adc92b6de387e6d39b9aa06196c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73556932023/0lllhxv76y3m5g2mqk2e30787.png?watermark=5268a41d7900c69af2874c74af8a7cc8",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73556932023/sw933l85idngo2apdfkrhu4y8.png?watermark=509e38b38cbc4148163b03353d7fbdaa",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73556932023/q4nzza6jmz09c3vp9f6gvkt8d.jpeg?watermark=6728696ee491d99e87b2d5b8cc3b990b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73556932023/kc761ar6kx20lnqka022fs5ub.jpeg?watermark=f5ca9265aab5683c94be1040853c40fe",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73556932023/n4eu7yha7ja0rmfdzv1uslfzc.jpeg?watermark=62ca94227a8f87aab795d1cb17198343",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73556932023/dwqzqg9bzlzeybqxxujty9yw6.jpeg?watermark=f7fc814defb335993e39c07fe8905bc3",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73556932023/csk3igwg3wyczksfigpbb5jy6.jpeg?watermark=0bd15f30335cba06e93ddc490992c29c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73556932023/qm2hpicm1bvjfiqyl819sk48a.jpeg?watermark=c63ea6080250c0193b15675da65cae10"
-    ],
-    "description": "¿En busca de una nueva aventura? ¡Súbete ya a un Suzuki Swift! Diseño atractivo, increíble rendimiento, amplio maletero, gran conectividad y personalidad deportiva que transforman a este ícono en el compañero perfecto para cualquier destino. Y con su control de estabilidad (ESP), cámara de retroceso, comando de radio al volante y consumo extraurbano de hasta 24,4 Km/lt todos sus viajes serán únicos.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 12590000
-      },
-      {
-        "type": "JATO",
-        "amount": 12590000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-73556922025",
     "slug": "suzuki-swift-2025-gl-sport-922025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Hatchback/Suzuki/Swift/CL-JATO-ITM-73556922025",
@@ -1671,7 +1305,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 220000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Valparaíso",
+    "location": "Viña del Mar",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73556922023/q05xxc2fo6cvfdq0ccpl8w10c.jpg?watermark=39abcec5d0b667429b57c01aa13a5ef2",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73556922023/q05xxc2fo6cvfdq0ccpl8w10c.jpg?watermark=39abcec5d0b667429b57c01aa13a5ef2",
@@ -1734,7 +1368,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 220000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Concepción",
+    "location": "Talca",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82212062023/b72j7o482mgyefli9947vjj47.jpg?watermark=257c492f09686734ddca28011364e961",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82212062023/b72j7o482mgyefli9947vjj47.jpg?watermark=257c492f09686734ddca28011364e961",
@@ -1797,7 +1431,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 220000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Talca",
+    "location": "Arica",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81943092024/bvudrxxid65mjj22gdk0604he.jpg?watermark=3aec970767a4d33a55fe1089a89074ba",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81943092024/bvudrxxid65mjj22gdk0604he.jpg?watermark=3aec970767a4d33a55fe1089a89074ba",
@@ -1860,7 +1494,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 220000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Puerto Montt",
+    "location": "Santiago",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83401832024/4gjbs5gpuady55tmsciub2c3d.jpg?watermark=f89fd167dc69d2b79a8fbde6ed170acf",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83401832024/4gjbs5gpuady55tmsciub2c3d.jpg?watermark=f89fd167dc69d2b79a8fbde6ed170acf",
@@ -1923,7 +1557,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 220000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Iquique",
+    "location": "Valparaíso",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83401842024/q8eidafpxbna1k4588bh7rdp6.jpg?watermark=701081039bbf90e4b98966a888185ef4",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83401842024/q8eidafpxbna1k4588bh7rdp6.jpg?watermark=701081039bbf90e4b98966a888185ef4",
@@ -1986,7 +1620,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 220000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Calama",
+    "location": "Concepción",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83401852024/faiv6kjkh04s9kj2ngb2ymrl2.jpg?watermark=2ebd8700f0fff3a1b49b9438ceeb25b7",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83401852024/faiv6kjkh04s9kj2ngb2ymrl2.jpg?watermark=2ebd8700f0fff3a1b49b9438ceeb25b7",
@@ -2049,7 +1683,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 220000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Temuco",
+    "location": "Concepción",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773752024/dlqqq727cjouzris41eklyeo5.jpg?watermark=eb5ae547545b64213ba8fdc74d41226e",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773752024/dlqqq727cjouzris41eklyeo5.jpg?watermark=eb5ae547545b64213ba8fdc74d41226e",
@@ -2108,7 +1742,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 220000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Copiapó",
+    "location": "Iquique",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82593882023/kpqxblnp1fnmn0zeztrz5ulb2.png?watermark=a1c61e765d95dd7c425ff2c1c6e04b6a",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82593882023/kpqxblnp1fnmn0zeztrz5ulb2.png?watermark=a1c61e765d95dd7c425ff2c1c6e04b6a",
@@ -2171,7 +1805,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 220000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Viña del Mar",
+    "location": "Puerto Montt",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78314582023/6zbengutdnoipeyhz601n9hh5.png?watermark=bfb442c7fffebc012fdb133958424557",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78314582023/6zbengutdnoipeyhz601n9hh5.png?watermark=bfb442c7fffebc012fdb133958424557",
@@ -2234,7 +1868,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 230000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Calama",
+    "location": "Rancagua",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83108782024/f9ro0oppzr0gekz4sukcel0nd.jpg?watermark=27625b88167dc37838ca6c8e7fd0f22e",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83108782024/f9ro0oppzr0gekz4sukcel0nd.jpg?watermark=27625b88167dc37838ca6c8e7fd0f22e",
@@ -2293,7 +1927,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 230000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Calama",
+    "location": "Copiapó",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82876352023/xj1hm8er64n13kca0sq3xrqre.jpg?watermark=827892ffb3981dfa8be1aef7aa59c448",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82876352023/xj1hm8er64n13kca0sq3xrqre.jpg?watermark=827892ffb3981dfa8be1aef7aa59c448",
@@ -2352,7 +1986,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 230000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Rancagua",
+    "location": "Valparaíso",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83854412024/e2bkt5kf022i0yy5haoz5x6m7.jpg?watermark=7b39212f6598fdbb6a20173cd5faaffc",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83854412024/e2bkt5kf022i0yy5haoz5x6m7.jpg?watermark=7b39212f6598fdbb6a20173cd5faaffc",
@@ -2388,65 +2022,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-83854392025",
-    "slug": "hyundai-grand-i10-2025-plus-392025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Sed%C3%A1n/Hyundai/Grand%20I10/CL-JATO-ITM-83854392025",
-    "make": "Hyundai",
-    "model": "Grand I10",
-    "year": 2025,
-    "badge": "Plus",
-    "title": "Hyundai Grand I10 2025 Plus",
-    "bodyStyle": "Sedán",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.2L",
-    "engineCc": 1197,
-    "fuelCombined": 17.9,
-    "doors": 4,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 12790000,
-    "reservationFeeClp": 260000,
-    "estimatedMonthlyClp": 230000,
-    "versionsAvailable": 3,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Viña del Mar",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83854392024/povz72nfgusazd0sc2ctr6lf2.jpg?watermark=e65b028c96d6e1b1f62b7880b852cc23",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83854392024/povz72nfgusazd0sc2ctr6lf2.jpg?watermark=e65b028c96d6e1b1f62b7880b852cc23",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83854392024/ict9b7h5xlx2zimhv9b6s9p2d.jpg?watermark=d7a68f152f625f6548d3d4c91b897470",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83854392024/hdnvf3p51gblze2cir7nycm23.png?watermark=29794d5bdffb5dda402cccd46be92410",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83854392024/0fh51jrswdl986izwwu8xhov5.png?watermark=94924c003f37f9e526f6258647620c8b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83854392024/8atj86tpw0bp63z9x91igigg2.jpg?watermark=148f02e918eec50162154e1903ac503f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83854392024/lot2l50c2q10f5obberyzcb41.jpg?watermark=6976e8d69a5d0ee75a3d27637e27847e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83854392024/brfdbso1anadrdiz8ag4ht3hd.jpg?watermark=50d882967b38cdbc0ac157e554b3d9be",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83854392024/dxsfqzsbw23ebiyscfr0wxq15.jpg?watermark=f8153a2de1c35104ee916b54caa61052",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83854392024/k6iyd40fplxvgbuxayz6fhk27.jpg?watermark=595d4d200e46dd4373b0820c406a2662",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83854392024/67s0gnnjjus20tu07gnbsyrp8.jpg?watermark=f08162032b5ba27de170dba056bd57e0"
-    ],
-    "description": "El nuevo Grand i10 se presenta con un aspecto renovado y lleno de vitalidad que despertará interés en todos los lugares donde tus aventuras te lleven. Su motor de 1,2 litros, ágil y eficiente, indudablemente te retribuirá el placer de conducir. Y para mantenerte conectado en tus viajes, el Grand i10 incluye funciones de conectividad avanzada, como la pantalla táctil de 9 pulgadas compatible con Apple CarPlay & Android Auto, además integra por primera vez un puerto USB Tipo-C.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)",
-      "Potencia - Potencia máxima HP"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 12790000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-78169292025",
     "slug": "changan-cs15-2025-elite-292025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Changan/Cs15/CL-JATO-ITM-78169292025",
@@ -2470,7 +2045,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 230000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Rancagua",
+    "location": "Talca",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78169292023/c4mthomo8pmw8fwzrt5bsj19d.png?watermark=ec5346bdebf2c5b1243e24d4939d2628",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78169292023/c4mthomo8pmw8fwzrt5bsj19d.png?watermark=ec5346bdebf2c5b1243e24d4939d2628",
@@ -2533,7 +2108,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 230000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Arica",
+    "location": "Calama",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82593902023/2qr31m0fn6mc986b2bofkc7ka.png?watermark=f2b6bb45a27548293919e6afb90620e0",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82593902023/2qr31m0fn6mc986b2bofkc7ka.png?watermark=f2b6bb45a27548293919e6afb90620e0",
@@ -2592,7 +2167,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 240000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Antofagasta",
+    "location": "Iquique",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77186842024/b0mkhl4m3uwxrd7dpnmp7wlca.jpg?watermark=e046cd21681c0aadac6994e079a508c6",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77186842024/b0mkhl4m3uwxrd7dpnmp7wlca.jpg?watermark=e046cd21681c0aadac6994e079a508c6",
@@ -2651,7 +2226,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 240000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Valparaíso",
+    "location": "Rancagua",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83402042024/y9no285xusl3v4hrtjgnt8wi7.jpg?watermark=2574d9ee4a90e9525b560269eadc238e",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83402042024/y9no285xusl3v4hrtjgnt8wi7.jpg?watermark=2574d9ee4a90e9525b560269eadc238e",
@@ -2714,7 +2289,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 240000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "La Serena",
+    "location": "Talca",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83776082024/4pxh48mq2jape4g54rgdjmyad.jpg?watermark=89d98a3d4d419ba120e8a28a337946e9",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83776082024/4pxh48mq2jape4g54rgdjmyad.jpg?watermark=89d98a3d4d419ba120e8a28a337946e9",
@@ -2777,7 +2352,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 240000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Concepción",
+    "location": "Viña del Mar",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77469872024/t2mrt5fgkq2f0fhm7qt0y5d7e.jpg?watermark=3f4aab772a740909a66709dd188bac75",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77469872024/t2mrt5fgkq2f0fhm7qt0y5d7e.jpg?watermark=3f4aab772a740909a66709dd188bac75",
@@ -2817,69 +2392,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-77367662025",
-    "slug": "suzuki-baleno-2025-gls-662025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Hatchback/Suzuki/Baleno/CL-JATO-ITM-77367662025",
-    "make": "Suzuki",
-    "model": "Baleno",
-    "year": 2025,
-    "badge": "GLS",
-    "title": "Suzuki Baleno 2025 GLS",
-    "bodyStyle": "Hatchback",
-    "fuelType": "Bencina",
-    "transmission": "manual",
-    "drive": "delantera",
-    "engine": "1.5L",
-    "engineCc": 1462,
-    "fuelCombined": 18,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 13690000,
-    "reservationFeeClp": 270000,
-    "estimatedMonthlyClp": 250000,
-    "versionsAvailable": 4,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Viña del Mar",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77367662023/eew4bvqllivomr969i9ieai3c.png?watermark=1adf0599313ce20e16d2a0d0ff2ca56b",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77367662023/eew4bvqllivomr969i9ieai3c.png?watermark=1adf0599313ce20e16d2a0d0ff2ca56b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77367662023/uauky6yxn5kvbyidmyq1pnf16.png?watermark=6ed179d870297d0eb35093144957669c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77367662023/zyped3lxvzxaj7miqa9cbcbs4.png?watermark=1b3f1fa87afa3b47419ba8dc444263d5",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77367662023/shg7irhsj0usccv09bsvec4sb.png?watermark=1d2a90230a3521c4a8d2c29a4c379151",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77367662023/bhwy445gggzxbgjakgvgv3h85.jpeg?watermark=5df3150fe71bfd07b49630ad3392d52b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77367662023/du5ziu5wvlc2wimqkaf4vi26e.jpg?watermark=dabbe5dfd53bda5146fe27bb32c9c128",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77367662023/754p7xnpq1obhlg11ynsinkqa.jpg?watermark=1c79c7e8ff1ac5c441db12446f3343ad",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77367662023/y9qs9jud1ay6ngf2afpp630e.jpg?watermark=53ace42df4c57c49f4acddd94e6d2560",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77367662023/wzdaifrzfefsrurrrxj7szfrd.jpg?watermark=1a9c5b35b1c43a723485550f2ef1c361",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77367662023/95lozjwk59et8cp6jbd2a947a.jpeg?watermark=24ffa1e2ae77f188493dd76415244a9b"
-    ],
-    "description": "¡Súbete a una nueva forma de ser tú mismo! Descubre el New Suzuki Baleno y potencia tu estilo en cada aventura. Espacio inteligente, diseño renovado, gran rendimiento y equipamiento esperan por ti. Cuenta con climatizador, cámara 360°, Head Up Display (HUD) y consumo extraurbano de hasta 20,5 Km/lt, con los que podrás llevar ese sello único donde quieras.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 13690000
-      },
-      {
-        "type": "JATO",
-        "amount": 13990000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-77367642025",
     "slug": "suzuki-baleno-2025-gls-642025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Hatchback/Suzuki/Baleno/CL-JATO-ITM-77367642025",
@@ -2903,7 +2415,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 250000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Puerto Montt",
+    "location": "Arica",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77367642023/zjn6kunak1xu67tyzo8b8jk23.png?watermark=e22de4061e98a91b8674d546fffbdfc7",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77367642023/zjn6kunak1xu67tyzo8b8jk23.png?watermark=e22de4061e98a91b8674d546fffbdfc7",
@@ -2939,69 +2451,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-77367632025",
-    "slug": "suzuki-baleno-2025-glx-632025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Hatchback/Suzuki/Baleno/CL-JATO-ITM-77367632025",
-    "make": "Suzuki",
-    "model": "Baleno",
-    "year": 2025,
-    "badge": "GLX",
-    "title": "Suzuki Baleno 2025 GLX",
-    "bodyStyle": "Hatchback",
-    "fuelType": "Bencina",
-    "transmission": "manual",
-    "drive": "delantera",
-    "engine": "1.5L",
-    "engineCc": 1462,
-    "fuelCombined": 18,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 13690000,
-    "reservationFeeClp": 270000,
-    "estimatedMonthlyClp": 250000,
-    "versionsAvailable": 4,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Rancagua",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77367632023/y52rz8uppk63ive04lnpjr7sb.png?watermark=75ab3f07be05400f5b3716514613015b",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77367632023/y52rz8uppk63ive04lnpjr7sb.png?watermark=75ab3f07be05400f5b3716514613015b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77367632023/0qxinxpmuunm12jlnk251gmu2.png?watermark=9b0e0bb44a4bbabc6eb643ee2c1e62fe",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77367632023/jjc0phi641owuthjm05p0vr16.png?watermark=4e0bd895e4d63a1277e76ac51cb93f56",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77367632023/zlzdo5pm5eh5r1vlcxpmn88q.png?watermark=05ab33a32924dd557ac78c130c645ac4",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77367632023/hvhnrc98drqc4nv619efcicr7.jpeg?watermark=51e9baad4918d00b1ce9ff867e7f058d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77367632023/w834qi1lezay2kfcdqljl3aq6.jpg?watermark=df5d089843ef03f685f9032a65ed82d2",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77367632023/k8btj77i5cll0q8kgdgb27ync.jpg?watermark=839ded829a5b74a55d4f327cd5c4b8dc",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77367632023/0bosa1lu2hn2bwpdshshtsep2.jpg?watermark=d609a4aead48c794c724f4b65bf7e141",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77367632023/ryqv0brjqhy9stfjrjgp4x5v1.jpg?watermark=55ceefbc671d7892c3bb453e74897e85",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77367632023/5yreyi4o2rwtzecjnihc7dx82.jpeg?watermark=99ab354c642d720f8f24b2d8a1adc07f"
-    ],
-    "description": "¡Súbete a una nueva forma de ser tú mismo! Descubre el New Suzuki Baleno y potencia tu estilo en cada aventura. Espacio inteligente, diseño renovado, gran rendimiento y equipamiento esperan por ti. Cuenta con climatizador, cámara 360°, Head Up Display (HUD) y consumo extraurbano de hasta 20,5 Km/lt, con los que podrás llevar ese sello único donde quieras.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 15690000
-      },
-      {
-        "type": "JATO",
-        "amount": 16190000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-77367652025",
     "slug": "suzuki-baleno-2025-glx-652025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Hatchback/Suzuki/Baleno/CL-JATO-ITM-77367652025",
@@ -3025,7 +2474,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 250000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Talca",
+    "location": "Santiago",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77367652023/fgfzxa8zc6631lex43scct5l8.png?watermark=b55c564064c31b6db7747d5dde25cde4",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77367652023/fgfzxa8zc6631lex43scct5l8.png?watermark=b55c564064c31b6db7747d5dde25cde4",
@@ -3088,7 +2537,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 250000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Puerto Montt",
+    "location": "Santiago",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-71564322024/qt3wcuet6y3i9n1l81id6jni7.jpg?watermark=a59e521893376831120a61249763c255",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-71564322024/qt3wcuet6y3i9n1l81id6jni7.jpg?watermark=a59e521893376831120a61249763c255",
@@ -3147,7 +2596,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 250000,
     "versionsAvailable": 8,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Temuco",
+    "location": "Santiago",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498202024/42vpeft214mnb2r0usjgzvgd2.jpg?watermark=7d143247402dffdf2438f53e4f127fd7",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498202024/42vpeft214mnb2r0usjgzvgd2.jpg?watermark=7d143247402dffdf2438f53e4f127fd7",
@@ -3206,7 +2655,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 250000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Concepción",
+    "location": "Arica",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-6234342024/y8u0kmn9xtofz0a58fn5qkthd.jpg?watermark=b054ab5aa6d96835952a1a2c3da73a90",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-6234342024/y8u0kmn9xtofz0a58fn5qkthd.jpg?watermark=b054ab5aa6d96835952a1a2c3da73a90",
@@ -3242,65 +2691,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-81861742025",
-    "slug": "changan-cs15-2025-elite-742025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Changan/Cs15/CL-JATO-ITM-81861742025",
-    "make": "Changan",
-    "model": "Cs15",
-    "year": 2025,
-    "badge": "Elite",
-    "title": "Changan Cs15 2025 Elite",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.5L",
-    "engineCc": 1480,
-    "fuelCombined": 13.4,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 14040000,
-    "reservationFeeClp": 280000,
-    "estimatedMonthlyClp": 250000,
-    "versionsAvailable": 3,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Talca",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81861742023/fwo748nn9k33ri9sumgh7e1l9.png?watermark=0ea335aa1d1af59bc8b0c8c4bb4b1b06",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81861742023/fwo748nn9k33ri9sumgh7e1l9.png?watermark=0ea335aa1d1af59bc8b0c8c4bb4b1b06",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81861742023/bvkcfz9wtlq1bcny1cuyniv0c.png?watermark=b146656c88e0b394dab0c1257400e721",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81861742023/ptxrjn280ld2jejojvzsx2my3.png?watermark=386eef6eda1a5911fee3b39f69400068",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81861742023/83o2odi7qv58z5ulf38bs6t01.png?watermark=1cb71c8c3986ecd3050f7233e7523800",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81861742023/1fii566q51awd7xw3e9w7r2l3.jpg?watermark=95c4a4d2cde5194001ffe17a1f1692ae",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81861742023/clyjeuk4uw94ywmuotszmhcvb.jpg?watermark=8974b0cfd080b7fb3a46ada4e57e53f7",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81861742023/7jahi53hsejvzmmcl40uj7035.jpg?watermark=2eb7ce7e825687b93725e3f748cac883",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81861742023/5mfex2kl2iwb1d11hrfntntm.jpg?watermark=b8bf39b62400cdf809857501e4753846",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81861742023/ts4w5okyesg4uq2csgfk5d03a.jpg?watermark=9b333f58a7a87fdf1eaa75024816bc74",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81861742023/djqu3y6pd62cx43vlua15pd5e.jpg?watermark=7f5b5352c3f69420b8efe4c00f8c92f3"
-    ],
-    "description": "La tecnología que te hará disfrutar al máximo de tu día tiene un nombre: New CS15. Diseño moderno y juvenil, destaca por sus refinados bordes y formas, dando vida a un SUV que se distingue por su gran rendimiento y eficiencia.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal cuero sintético",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)",
-      "Potencia - Potencia máxima HP"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 14040000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-82497442025",
     "slug": "peugeot-208-2025-active-442025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Hatchback/Peugeot/208/CL-JATO-ITM-82497442025",
@@ -3324,7 +2714,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 250000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Viña del Mar",
+    "location": "Temuco",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82497442024/rk9bifo18xzsm3nlnvgidf9jd.png?watermark=0423cb7b64feff11060fdcf22da36514",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82497442024/rk9bifo18xzsm3nlnvgidf9jd.png?watermark=0423cb7b64feff11060fdcf22da36514",
@@ -3387,7 +2777,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 250000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Rancagua",
+    "location": "Antofagasta",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82574292024/093y83smdacnf3vnsyvt2g7h2.png?watermark=1098f413fa54fd8cb06a3421e8fddbbd",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82574292024/093y83smdacnf3vnsyvt2g7h2.png?watermark=1098f413fa54fd8cb06a3421e8fddbbd",
@@ -3427,69 +2817,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-73983052025",
-    "slug": "opel-corsa-2025-edition-052025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Hatchback/Opel/Corsa/CL-JATO-ITM-73983052025",
-    "make": "Opel",
-    "model": "Corsa",
-    "year": 2025,
-    "badge": "Edition",
-    "title": "Opel Corsa 2025 Edition",
-    "bodyStyle": "Hatchback",
-    "fuelType": "Bencina",
-    "transmission": "manual",
-    "drive": "delantera",
-    "engine": "1.2L",
-    "engineCc": 1199,
-    "fuelCombined": 21.7,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 14290000,
-    "reservationFeeClp": 290000,
-    "estimatedMonthlyClp": 260000,
-    "versionsAvailable": 3,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "La Serena",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73983052024/l5vzq11l0k2c7lkuf93lgm162.jpg?watermark=2938d2e2d44a84b4aff26dd45670e697",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73983052024/l5vzq11l0k2c7lkuf93lgm162.jpg?watermark=2938d2e2d44a84b4aff26dd45670e697",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73983052024/tvvk11tlxm3vofrl1fmdbszd9.jpg?watermark=07aefa53ea427609fb56f72765ae7b04",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73983052024/zqbxao2sd5alv1xgjl5zvozw8.png?watermark=04c594d19099ba33fe24168aec3fc645",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73983052024/bvgut8nmkpl87pse5mbpicth3.png?watermark=d64c6849b12cc0d9c4bb98b18dd5a655",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73983052024/qp13dci0fbaqxgwxttbqr17x.jpg?watermark=074d052acb8868523d72e3b1f44202c0",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73983052024/37oo796favb4hlmn3pbfaj972.jpg?watermark=53b0f60b3dae83cf111c52dadfbb9505",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73983052024/ymkk81euvdzfjjctm6f2z9jh.jpg?watermark=d5dfd2c208ee93be5086c66f52193bfd",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73983052024/k3efskamj0umbeh7a691zdxc5.jpg?watermark=f60362d4bcb0c26a3f031c630772039d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73983052024/qaowjbk58mux6s5xdgay99jib.jpg?watermark=5f1f79446ca5f651aff2c2d5f3d610af",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73983052024/7hptxdv1rkwdh5g3j16acx025.jpg?watermark=889d42eb62c8cbc4669927edcc6c7c85"
-    ],
-    "description": "¡Vuelve la diversión a la conducción! El nuevo Opel Corsa combina la diversión de conducir todos los días con un diseño ganador, tecnología de gran automóvil y opciones eficientes de tren motriz, para emocionarte en cada viaje. Atrevido y puro desde todos los ángulos.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 14290000
-      },
-      {
-        "type": "JATO",
-        "amount": 15990000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-73983042025",
     "slug": "opel-corsa-2025-edition-042025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Hatchback/Opel/Corsa/CL-JATO-ITM-73983042025",
@@ -3513,7 +2840,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 260000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Temuco",
+    "location": "Valparaíso",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73983042024/n2qeif81k2eq05k885uemt383.jpg?watermark=8d46ec611c3b9b8c72bf77ced272b984",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73983042024/n2qeif81k2eq05k885uemt383.jpg?watermark=8d46ec611c3b9b8c72bf77ced272b984",
@@ -3576,7 +2903,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 260000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Antofagasta",
+    "location": "La Serena",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81762942024/a8ohobo4ga48tpi9t1y6qhpb2.jpg?watermark=69fb54b711f553820f47e538be39b355",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81762942024/a8ohobo4ga48tpi9t1y6qhpb2.jpg?watermark=69fb54b711f553820f47e538be39b355",
@@ -3639,7 +2966,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 260000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Santiago",
+    "location": "Copiapó",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82580262024/8c1kc7foei1u57f4w5msnni1f.jpg?watermark=28fecbace3dbcc70a8895b566cd86845",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82580262024/8c1kc7foei1u57f4w5msnni1f.jpg?watermark=28fecbace3dbcc70a8895b566cd86845",
@@ -3698,7 +3025,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 260000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "La Serena",
+    "location": "Iquique",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76895592024/f052vjv6sdgmlbz0x8gztadd4.jpg?watermark=300060f9a49ccf96ac220e2f228674ba",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76895592024/f052vjv6sdgmlbz0x8gztadd4.jpg?watermark=300060f9a49ccf96ac220e2f228674ba",
@@ -3757,7 +3084,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 260000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Santiago",
+    "location": "Talca",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83108792024/tle7qu53bd6i7uo1skv7iu0z7.jpg?watermark=4e23deb8ce9ec923eaf0a470a01fb182",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83108792024/tle7qu53bd6i7uo1skv7iu0z7.jpg?watermark=4e23deb8ce9ec923eaf0a470a01fb182",
@@ -3793,65 +3120,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-78715232025",
-    "slug": "jac-js2-2025-luxury-232025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/JAC/Js2/CL-JATO-ITM-78715232025",
-    "make": "JAC",
-    "model": "Js2",
-    "year": 2025,
-    "badge": "Luxury",
-    "title": "JAC Js2 2025 Luxury",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.5L",
-    "engineCc": 1499,
-    "fuelCombined": 16.1,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 14790000,
-    "reservationFeeClp": 300000,
-    "estimatedMonthlyClp": 270000,
-    "versionsAvailable": 5,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Temuco",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78715232024/s2em700j7znmxx0gx3tnfkvp5.jpg?watermark=0bfdc526830c1b9c44a19e59fa4f6ff9",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78715232024/s2em700j7znmxx0gx3tnfkvp5.jpg?watermark=0bfdc526830c1b9c44a19e59fa4f6ff9",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78715232024/ru7rezw4hg4rdzo214vyv9dj4.jpg?watermark=8cbe9cabf923a6b6c9468ff225230216",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78715232024/n58vk2ijzi5ii3k5q7pyo47ra.jpg?watermark=20bd67b66e7442eb663d61733b406857",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78715232024/q3jjwvdk8tkmsirtc2s564nzd.jpg?watermark=6f5065125848d878027f43078df9ed2b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78715232024/w46opjtd2ye99iwiw23jfibac.jpg?watermark=a077d04280aa08fdb6fdcb4b022de2f1",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78715232024/w08xvvrft35zag9b6iwypphw1.jpg?watermark=3c0f1a9894f71cc5feca13ae5067c60f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78715232024/lmfezqvck0qfxwaaks1pciam1.jpg?watermark=c35fbfce63ebe35b71172c098fee1097",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78715232024/f4cl805ih2oagichrkgnteqje.jpg?watermark=2b3613aa8ea4aad98785d38aa3a5cdfe",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78715232024/f6rztvve738axie6lot2nv1bd.jpg?watermark=a17868deca72872d55b200caafba3408",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78715232024/edl61fbqluwxfpde35x9o2sr2.jpg?watermark=b3a310e5f2b0774787aece360c363b1c"
-    ],
-    "description": "Descubre el JAC JS2, el SUV ideal como primer auto. Equipado con un motor de 1.5 litros VVT que entrega 111 caballos de fuerza y 146 Nm de torque, disponible en transmisión manual y CVT. Su interior sofisticado ofrece espacio para 5 pasajeros y una pantalla táctil compatible con Android Auto y Apple CarPlay. Además, cuenta con luces LED diurnas y neblineros alargados que realzan su aspecto aerodinámico, mientras que su maletero de 450 litros asegura espacio más que suficiente para tus viajes.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal cuero sintético",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)",
-      "Potencia - Potencia máxima HP"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 14790000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-82073952025",
     "slug": "toyota-yaris-2025-e-952025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Sed%C3%A1n/Toyota/Yaris/CL-JATO-ITM-82073952025",
@@ -3875,7 +3143,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 270000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Iquique",
+    "location": "Valparaíso",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82073952024/67tz5ctcpufmxjwrsizywcsg.jpg?watermark=3203edcd64ee1cad10c620ae4679c76a",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82073952024/67tz5ctcpufmxjwrsizywcsg.jpg?watermark=3203edcd64ee1cad10c620ae4679c76a",
@@ -3911,65 +3179,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-5733682025",
-    "slug": "toyota-yaris-sport-2025-e-682025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Hatchback/Toyota/Yaris%20Sport/CL-JATO-ITM-5733682025",
-    "make": "Toyota",
-    "model": "Yaris Sport",
-    "year": 2025,
-    "badge": "E",
-    "title": "Toyota Yaris Sport 2025 E",
-    "bodyStyle": "Hatchback",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.5L",
-    "engineCc": 1496,
-    "fuelCombined": 17.1,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 15290000,
-    "reservationFeeClp": 310000,
-    "estimatedMonthlyClp": 280000,
-    "versionsAvailable": 5,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Santiago",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-5733682024/ry8u0r6qpl2cyvkroeahnaatc.jpg?watermark=e14ec7bcaf1c361558f6ca81c52a23fc",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-5733682024/ry8u0r6qpl2cyvkroeahnaatc.jpg?watermark=e14ec7bcaf1c361558f6ca81c52a23fc",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-5733682024/83hmlwmknjpe0e6ycabjq0mn1.jpg?watermark=c56b14071249219a6e4374e3f0f3bbd2",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-5733682024/z6vy1648zs0j1oiqnjaocee85.png?watermark=5563aae4fe8f8ff7af5753088e6eb544",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-5733682024/4b7hd4r4p8k5o5kii0v466oa5.png?watermark=b790dfe4cf1269c3978fd7dc78ade5f2",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-5733682024/1gau8im1nzbq75eart5qlfsf4.jpg?watermark=2a16db7d9d22cbd1081dbf03b7e84356",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-5733682024/nppenofr10m7op04tmjk1ht44.jpg?watermark=b715559c3c9662d7cc61134ab36daf49",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-5733682024/rhae001eeosmuk1z1v86fr7gd.jpg?watermark=a5127705ecade9d688fbe8c5d5e97e7d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-5733682024/1l17ve4zlv2rzyzsdkdbmx126.jpg?watermark=ed0253cb31f95a0ed0b3786a6ee87ccf",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-5733682024/dxzmxybx1og2ossi9336v4k89.jpg?watermark=35958171e48f16ecaf02b902691ae175",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-5733682024/kj24pn6flk9lh3o3zwh4dv9i3.jpg?watermark=c8d2c3d09fc23842a80efeb2722f40e9"
-    ],
-    "description": "Yaris Sport (Hatchback), está equipado con un completo sistema de seguridad activa y pasiva. Carrocería GOA con deformación programada, ABS + EBD, control de estabilidad (VSC), Asistente de subida en pendiente (HAC) y Cinturones de seguridad con pretensores y limitadores que evitan lesiones producidas por el golpe de latigazo en el cuello en caso de colisión frontal. En todas sus versiones 7 airbags: 2 Frontales, 2 Laterales de cortina, 2 Laterales de asiento, y 1 para rodillas de conductor.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 15290000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-6234332025",
     "slug": "toyota-yaris-sport-2025-sport-332025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Hatchback/Toyota/Yaris%20Sport/CL-JATO-ITM-6234332025",
@@ -3993,7 +3202,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 280000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "La Serena",
+    "location": "Copiapó",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-6234332024/5x0esrqnwjon2ac9ez9biye.jpg?watermark=147ae070b412bdcc6c0618289ddd8d24",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-6234332024/5x0esrqnwjon2ac9ez9biye.jpg?watermark=147ae070b412bdcc6c0618289ddd8d24",
@@ -4052,7 +3261,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 280000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Temuco",
+    "location": "Puerto Montt",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76249372024/xsqv2250y1lhdytahhzr3an2d.jpg?watermark=8ea5faebc65606833f40e6ffd1ca9ff9",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76249372024/xsqv2250y1lhdytahhzr3an2d.jpg?watermark=8ea5faebc65606833f40e6ffd1ca9ff9",
@@ -4088,69 +3297,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-82618782025",
-    "slug": "opel-crossland-2025-edition-782025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Opel/Crossland/CL-JATO-ITM-82618782025",
-    "make": "Opel",
-    "model": "Crossland",
-    "year": 2025,
-    "badge": "Edition",
-    "title": "Opel Crossland 2025 Edition",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "manual",
-    "drive": "delantera",
-    "engine": "1.2L",
-    "engineCc": 1199,
-    "fuelCombined": 19.5,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 15590000,
-    "reservationFeeClp": 310000,
-    "estimatedMonthlyClp": 280000,
-    "versionsAvailable": 3,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Calama",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82618782024/yte8ncd0dd4w93lrfq7dtbql9.jpg?watermark=507de4a63ab92bb4d04dfe3cbd2bce42",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82618782024/yte8ncd0dd4w93lrfq7dtbql9.jpg?watermark=507de4a63ab92bb4d04dfe3cbd2bce42",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82618782024/u8hg01q1k4l2wektev4vgpk05.jpg?watermark=fd228715c72b3327c93398bc32db3978",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82618782024/imuarsop8wr23wh78rgnydni7.png?watermark=3929d6945a0d1f22a6048054e5c159a3",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82618782024/uenye2dtkla7mxwaqspv1fr6a.png?watermark=92a61504c7f4622dddc41d00dda132a5",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82618782024/zhfmbs2b5ubaa1kch7otasw72.jpg?watermark=5757943e5309d3c66901e2bfd1797f3e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82618782024/se5ts8xw15bbnu2xroksoywe3.jpg?watermark=ed0bdf3ee40c3044314a75b1aba4d914",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82618782024/1vhta9xah4e3fjhst9iuno7m9.jpg?watermark=db62a6a4478ecacc94e87b29fb1ff1c9",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82618782024/t952z5iwnze4qm9txvwkudwr7.jpg?watermark=0120df78816be6e635f023d700f759a9",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82618782024/o89371pih5deflhnskempt898.jpg?watermark=974d546fcb2f22200ad1f397caafb42c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82618782024/3mjt9mr3jqpnt6gwx59js158d.jpg?watermark=3caa89640f077f04651c4ee5d200b894"
-    ],
-    "description": "Tu crossover urbano más flexible que nunca renovado con un atractivo y fresco diseño preparado para todo. Desde el distintivo frontal Vizor hasta un interior cómodo y funcional, el Crossland es el SUV perfecto para la versatilidad que necesitas en tu día a día. Nacido en alemania, hecho en españa.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)",
-      "Potencia - Potencia máxima HP"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 15590000
-      },
-      {
-        "type": "JATO",
-        "amount": 18690000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-79950742025",
     "slug": "opel-crossland-2025-edition-742025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Opel/Crossland/CL-JATO-ITM-79950742025",
@@ -4174,7 +3320,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 280000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Copiapó",
+    "location": "Temuco",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79950742024/bolk03ks3zwkbqmso10kuxpf.jpg?watermark=433c44499c0cc0982cedd14aa55ac8b4",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79950742024/bolk03ks3zwkbqmso10kuxpf.jpg?watermark=433c44499c0cc0982cedd14aa55ac8b4",
@@ -4214,187 +3360,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-81015262025",
-    "slug": "opel-crossland-2025-edition-262025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Opel/Crossland/CL-JATO-ITM-81015262025",
-    "make": "Opel",
-    "model": "Crossland",
-    "year": 2025,
-    "badge": "Edition",
-    "title": "Opel Crossland 2025 Edition",
-    "bodyStyle": "SUV",
-    "fuelType": "Diesel",
-    "transmission": "manual",
-    "drive": "delantera",
-    "engine": "1.5L",
-    "engineCc": 1499,
-    "fuelCombined": 26.6,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 15590000,
-    "reservationFeeClp": 310000,
-    "estimatedMonthlyClp": 280000,
-    "versionsAvailable": 3,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Arica",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81015262024/6io5azt6oajqw1nl8ivoyjwjc.jpg?watermark=0bb69b5acef1cb39a08e5539d651d04d",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81015262024/6io5azt6oajqw1nl8ivoyjwjc.jpg?watermark=0bb69b5acef1cb39a08e5539d651d04d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81015262024/u1zh2de0y2500sxoe0jqol6yc.jpg?watermark=2032aa25dbc715b1c17486ea888d1212",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81015262024/96awojkdf9n8z3d6svteerlwa.png?watermark=9842ecb7e6a5815525c3c13b980f5da3",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81015262024/4j80cczv3fdzuw00j2bjck211.png?watermark=df3d9ad5e44a4af7f58679cacff7a5ca",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81015262024/mlfz9837nnknpev635fa8ns74.jpg?watermark=4e3f4087db9c1153ea865533fcbe504d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81015262024/ipkeusq7qoe6dr1m6he3z6d8b.jpg?watermark=8def19915c74f80c347ee02de3f57e2a",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81015262024/kordsw27nhgvjvo5njn4tip84.jpg?watermark=14a45b2de45152e6ddb116dc5dd23309",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81015262024/dyqqcsn0qghsabxewgydv54x6.jpg?watermark=9766d57b7ffa9f4e096a79eedcc029e1",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81015262024/90bw7x1169i9c7sowo1iw3f57.jpg?watermark=33a38a6a01ce4a690366bf2c8141614b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81015262024/o1bhp1kvr1fnncwpyz3x6t2h1.jpg?watermark=d31fe2b100bca0b7bc9642186fe661dc"
-    ],
-    "description": "Tu crossover urbano más flexible que nunca renovado con un atractivo y fresco diseño preparado para todo. Desde el distintivo frontal Vizor hasta un interior cómodo y funcional, el Crossland es el SUV perfecto para la versatilidad que necesitas en tu día a día. Nacido en alemania, hecho en españa.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)",
-      "Potencia - Potencia máxima HP"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 17390000
-      },
-      {
-        "type": "JATO",
-        "amount": 20490000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-83108802025",
-    "slug": "toyota-raize-2025-e-802025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Toyota/Raize/CL-JATO-ITM-83108802025",
-    "make": "Toyota",
-    "model": "Raize",
-    "year": 2025,
-    "badge": "E",
-    "title": "Toyota Raize 2025 E",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.2L",
-    "engineCc": 1198,
-    "fuelCombined": 17.9,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 15590000,
-    "reservationFeeClp": 310000,
-    "estimatedMonthlyClp": 280000,
-    "versionsAvailable": 4,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Copiapó",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83108802024/vyd46f5miuw78ssx219t49a2b.jpg?watermark=e51fae6a7a927312eab0b3e977578871",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83108802024/vyd46f5miuw78ssx219t49a2b.jpg?watermark=e51fae6a7a927312eab0b3e977578871",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83108802024/sgwudifca1jh2zulpd4tz6103.jpg?watermark=dd0170527b6c6ab26fb842753aebdeaf",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83108802024/glr764iqbb39xzifggxuzj0a9.jpg?watermark=3497bba4255c5616303df11f3051b866",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83108802024/mr4se07ibs9m8c99g8hsx0eq8.jpg?watermark=eae4da6895feb65327895b7351c95fc8",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83108802024/exdn70i9xquz7wdu60kz3wc01.jpg?watermark=d5188f1da53880e6b24b004a9558fe80",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83108802024/l731bth27eis6x4egbxekwppe.jpg?watermark=f25ccc0a0f303bd5a8d96f8892058071",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83108802024/i0ftgzkly6exjq8kcfudanr0b.jpg?watermark=40e6324a34f8d297296875c8eb2e87f4",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83108802024/ya57yfhwd4l5gmn1i8biid6l9.jpg?watermark=842e0290bf5595bf28c40967f183c3f0",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83108802024/m95w1qdr83lipt7n69iz8ybda.jpg?watermark=c92d052f7163b8b87713ccf7009b5a08",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83108802024/tgfhp38e313nfvs8wwkxib6u3.jpg?watermark=63c06299d0e9f1a987f2ee1147ce7c8f"
-    ],
-    "description": "Raize sobresale por su diseño y estilo distintivo y agudo. Sumado a esto, aterriza con una amplia gama de llamativos colores, que no pasarán desapercibidos en la ciudad. Uno de los toques atractivos de este modelo, es su apariencia de cabina deportiva y de perfil bajo. Por otro lado, sus esquinas parachoques son cuadradas y su parrilla trapezoidal. En cuanto a su rendimiento, es ideal para ciudad, con 15,4 km/l. En tanto, en carretera alcanza 21,3 km/l, mientras que mixto 18,9 km/l.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)",
-      "Potencia - Potencia máxima HP",
-      "Torque",
-      "Dimensiones exteriores - alto"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 15590000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-83946872025",
-    "slug": "hyundai-accent-2025-plus-872025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Sed%C3%A1n/Hyundai/Accent/CL-JATO-ITM-83946872025",
-    "make": "Hyundai",
-    "model": "Accent",
-    "year": 2025,
-    "badge": "Plus",
-    "title": "Hyundai Accent 2025 Plus",
-    "bodyStyle": "Sedán",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.5L",
-    "engineCc": 1497,
-    "fuelCombined": 16.7,
-    "doors": 4,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 15990000,
-    "reservationFeeClp": 320000,
-    "estimatedMonthlyClp": 290000,
-    "versionsAvailable": 4,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Concepción",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83946872024/vijydiqygljkccbp3sz13jj3f.jpg?watermark=c7aeaed9837c8b22872adceb728dedac",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83946872024/vijydiqygljkccbp3sz13jj3f.jpg?watermark=c7aeaed9837c8b22872adceb728dedac",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83946872024/ig37vthjf0bhibe7dw9o04boe.jpg?watermark=4a11f051dc37bb281aeb816ff9304e52",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83946872024/cl7mua4tuy07zpg1igq47hdy2.png?watermark=09450c8b21ac90baed9a9bc24421a1b2",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83946872024/j9hys42eclkxn5mcbhbsn9ae5.png?watermark=60429abf438b0c780fd697643fb54cb1",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83946872024/4enr1og53qyv9w0jkyxrwcm87.jpg?watermark=720112db008558283924a904198438e1",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83946872024/h3pafdaryacaeup6oe131mtxc.jpg?watermark=8d8c54d86d18fd6b7e4b5cfa52100dd5",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83946872024/ihy15elbbweb9gtzjsmtpbtv7.jpg?watermark=c9bc6df8239fa60dbdac23538933aaa1",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83946872024/yckcczyk5tivhjx9s8tf8poy8.jpg?watermark=f57d14d7c80514ee001cb2b5a3c29caa",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83946872024/o1df9d89687bplr3e822o0mhe.jpg?watermark=2963b0ba5f48513acf1520ca78be1597",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83946872024/prqczaja5e9ncf68u3cbjhky5.jpg?watermark=c32b60020208f4068299c8f0059868b5"
-    ],
-    "description": "Llegó el All New Accent uno de los modelos más populares y exitosos de Hyundai se ha rediseñado por completo, con lo que se incorpora a la era digital con fascinantes novedades como las luces LED horizontales. Para estar bien conectado, el All New Accent viene equipado con un sistema de control multimedia touch compatible con Apple Carplay & Android Auto que interactúa a la perfección con su teléfono inteligente, múltiples puertos USB y USB C de recarga, y mucho más.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 15990000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-84243642025",
     "slug": "jac-e-js1-2025-luxury-642025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Hatchback/JAC/E-Js1/CL-JATO-ITM-84243642025",
@@ -4418,7 +3383,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 290000,
     "versionsAvailable": 1,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Rancagua",
+    "location": "La Serena",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84243642024/5f9ndeyntqu0oomtflnpxenu9.jpg?watermark=76ca9d076922d438c01e60eed2c70506",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84243642024/5f9ndeyntqu0oomtflnpxenu9.jpg?watermark=76ca9d076922d438c01e60eed2c70506",
@@ -4449,128 +3414,6 @@ export const c4rVehicles: C4RVehicle[] = [
       {
         "type": "JATO",
         "amount": 15990000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-71564312025",
-    "slug": "toyota-yaris-2025-e-312025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Sed%C3%A1n/Toyota/Yaris/CL-JATO-ITM-71564312025",
-    "make": "Toyota",
-    "model": "Yaris",
-    "year": 2025,
-    "badge": "E",
-    "title": "Toyota Yaris 2025 E",
-    "bodyStyle": "Sedán",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.5L",
-    "engineCc": 1496,
-    "fuelCombined": 18.5,
-    "doors": 4,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 16190000,
-    "reservationFeeClp": 320000,
-    "estimatedMonthlyClp": 290000,
-    "versionsAvailable": 3,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Calama",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-71564312024/t04mdg4j5r33f460549rbfo38.jpg?watermark=71822b26caf1bfcf5cb84c6bf7c092bd",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-71564312024/t04mdg4j5r33f460549rbfo38.jpg?watermark=71822b26caf1bfcf5cb84c6bf7c092bd",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-71564312024/43mg35atigsd5jpkvpm6cv3ma.jpg?watermark=d4fa8eb9e6534c6ddd340f2bd7b07f0c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-71564312024/kknesceqq6qpxiew2cvhej9ib.png?watermark=edeaaf999b8b7c6ff4d535e64037891d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-71564312024/b3hgq9k550cris6tvnpke3pd2.png?watermark=4c29a2d6c41c63c31e4a1bd526cd740d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-71564312024/484nq2t8jgt44kcmwsohf86g6.jpg?watermark=0e4de6b114a101216b7e06fcfbe558e3",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-71564312024/jqlzdlmpskl6kf0aroo3hawq7.jpg?watermark=86dbf6221770fcc3f3eb3dd303e9b22f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-71564312024/twuhjyjg9pl2rg4ri86w8a2ya.jpg?watermark=966263e2a5195bda35fecb79beaf6264",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-71564312024/ve0idiubonsb6pt2rv3bnzvqe.jpg?watermark=ae704e71f21e83bb375fe3a583ddd282",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-71564312024/dr509jmshdxwzfn3d2lcjegy4.jpg?watermark=12c34bc0d23ad7d4c0cd7b0d127f7e92",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-71564312024/cip2mo0wggu1vypci7nt2tfd8.jpg?watermark=00c4c11856087015f62b8c6b8153a85a"
-    ],
-    "description": "Viaja cómodo y seguro! El nuevo Toyota Yaris está equipado con un completo sistema de seguridad activa y pasiva. carrocería GOA con deformación programada, ABS + EBD, control de estabilidad (VSC), Asistente de subida en pendiente (HAC) y cinturones de seguridad con pretensores y limitadores brindando mayor seguridad a los ocupantes. Toyota Yaris está equipado con 6 airbags frontales de serie.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)",
-      "Potencia - Potencia máxima HP"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 16190000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-82933322025",
-    "slug": "volkswagen-nivus-2025-comfortline-322025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Volkswagen/Nivus/CL-JATO-ITM-82933322025",
-    "make": "Volkswagen",
-    "model": "Nivus",
-    "year": 2025,
-    "badge": "Comfortline",
-    "title": "Volkswagen Nivus 2025 Comfortline",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "manual",
-    "drive": "delantera",
-    "engine": "1.0L",
-    "engineCc": 999,
-    "fuelCombined": 15.2,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 16240000,
-    "reservationFeeClp": 320000,
-    "estimatedMonthlyClp": 290000,
-    "versionsAvailable": 3,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Talca",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82933322023/jrnoffttnlqcf34uocn0a9g91.jpg?watermark=b04c47af8f94e700a13ac66eb98abbd4",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82933322023/jrnoffttnlqcf34uocn0a9g91.jpg?watermark=b04c47af8f94e700a13ac66eb98abbd4",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82933322023/6pod0fljcyx4km21bm0w54ps1.jpg?watermark=a55d60b593501aee2d6927db36b34168",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82933322023/3kfsbvdux37i5m0adnvw9v9hd.png?watermark=048b93e15eeade78125a3e0a46a0331b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82933322023/867x1myottxxvineh0j0eox8a.png?watermark=0b3c7f55a46f14e4f66b407aaf7f4261",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82933322023/ckpo9w3xadodt57mkdjtuly59.jpg?watermark=12a5add632d1dab920c5b39f0c46f967",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82933322023/7q2t3kihzs0ksukorb2j80l0f.jpg?watermark=025ebc1b92d457330c020cf8ac628256",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82933322023/751iipix08gxrozrbgsnb7lfb.jpg?watermark=c6afacc3356737fda397b04ecabe495d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82933322023/0tl0vg99kdvm6z5sbb08cw5q7.jpg?watermark=848258e69ef7423a15230c86cd5f3e9f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82933322023/r09tmx9a186hlyj7qsqp70rve.jpg?watermark=1818555aa2fc8884fb24254d9b6ea7f6",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82933322023/gt5thnqlbrs5mla1jin7wqgod.jpg?watermark=a435dcacb53356b27c5e3168828e39b1"
-    ],
-    "description": "El diseño del VW Nivus no pasa desapercibido en ningún lado. Esto es por su caída de la columna C en su parte trasera, que destaca la deportividad natural , con mucha personalidad. Descubre hoy un SUVW con estilo, seguro y tecnológico. Nivus tiene 5 estrellas de seguridad en LatinNCAP.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 16240000
-      },
-      {
-        "type": "JATO",
-        "amount": 18490000
       }
     ],
     "source": "Chileautos catalogo 0km"
@@ -4725,7 +3568,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 290000,
     "versionsAvailable": 8,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "La Serena",
+    "location": "Concepción",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498222024/atr1slj97wkluh9ipx2gznzad.jpg?watermark=8193824b53c3932d20944cbb961f07d3",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498222024/atr1slj97wkluh9ipx2gznzad.jpg?watermark=8193824b53c3932d20944cbb961f07d3",
@@ -4784,7 +3627,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 290000,
     "versionsAvailable": 1,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Concepción",
+    "location": "Viña del Mar",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81020972024/afcip87hcotqcsek7r774o9zc.jpg?watermark=76928798cb1dfd41da9e54f9bf96febb",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81020972024/afcip87hcotqcsek7r774o9zc.jpg?watermark=76928798cb1dfd41da9e54f9bf96febb",
@@ -4847,7 +3690,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 290000,
     "versionsAvailable": 1,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Viña del Mar",
+    "location": "Rancagua",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81543222024/jyzjy2jfhfyq9oy2ech3yhik4.jpg?watermark=17f317cb5e2ff544b356626a0583dffd",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81543222024/jyzjy2jfhfyq9oy2ech3yhik4.jpg?watermark=17f317cb5e2ff544b356626a0583dffd",
@@ -4910,7 +3753,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 300000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Concepción",
+    "location": "Copiapó",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75846372024/798ap82sco60sphl1kl6nz425.jpg?watermark=4c48e3e5a1854dd5f872369672915204",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75846372024/798ap82sco60sphl1kl6nz425.jpg?watermark=4c48e3e5a1854dd5f872369672915204",
@@ -4973,7 +3816,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 300000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "La Serena",
+    "location": "Arica",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80796882024/faoroa0qn4u0en5zs66x6t1h8.jpg?watermark=80f5d772f9cae6962a8014634d317fa8",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80796882024/faoroa0qn4u0en5zs66x6t1h8.jpg?watermark=80f5d772f9cae6962a8014634d317fa8",
@@ -5036,7 +3879,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 300000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Temuco",
+    "location": "Santiago",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83546762024/3a9fcmcppa263m5dhqt4byi0c.jpg?watermark=15f9b280b238189482ccfef5c73edd35",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83546762024/3a9fcmcppa263m5dhqt4byi0c.jpg?watermark=15f9b280b238189482ccfef5c73edd35",
@@ -5076,65 +3919,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-84240142025",
-    "slug": "hyundai-i20-2025-plus-142025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Hatchback/Hyundai/I20/CL-JATO-ITM-84240142025",
-    "make": "Hyundai",
-    "model": "I20",
-    "year": 2025,
-    "badge": "Plus",
-    "title": "Hyundai I20 2025 Plus",
-    "bodyStyle": "Hatchback",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.4L",
-    "engineCc": 1368,
-    "fuelCombined": 16.5,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 16490000,
-    "reservationFeeClp": 330000,
-    "estimatedMonthlyClp": 300000,
-    "versionsAvailable": 5,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Arica",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84240142024/ep29scm6ntomtkhuyz406trca.jpg?watermark=5d3fe98b46d83f83669f00da0ac6270d",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84240142024/ep29scm6ntomtkhuyz406trca.jpg?watermark=5d3fe98b46d83f83669f00da0ac6270d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84240142024/q204j8nyxaona7dqndbg130f4.jpg?watermark=218ab800e023e7f56dc684da6d6f0628",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84240142024/j5w8tdi9vem5jabt513ftj5p8.png?watermark=c82756672226ae156856c5fcc84f2c88",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84240142024/tbivm3lv8lnspue10rqb213w.png?watermark=7eaad72f1a43c58f5ccc9f82a9248497",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84240142024/e98j3wpf6ilaxs8t4auvwpq3d.jpg?watermark=c47f8f5612212da6067ab863f6c71f00",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84240142024/uf90zzt2knzmczfjja8c6o3m2.jpg?watermark=8863b3b6e8f3d741f16bf06f998938fe",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84240142024/oivhdj1u1hq5tnptynultwig6.jpg?watermark=c239eb46c09caaa990df594401d7728f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84240142024/rhixl4b1hu9uqu9v4zobqic68.jpg?watermark=279670b1d02beb94d05d125e863b6df3",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84240142024/xz21i33rcp4t3yf5jgh0hjqna.jpg?watermark=2f112c4a222ccfa6ede78449efe1e518",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84240142024/moj4xxqr3ejg51pvrwcqpm9l4.jpg?watermark=ea7931ed43845ecc6d66a1e2e1e91cce"
-    ],
-    "description": "Renovado por dentro y fuera, el nuevo i20 es un firme aspirante al título de “El perfecto vehículo urbano”, que ahora ofrece 6 airbags de serie. Los acreditados motores Kappa de comprobada eficacia ofrecen un impresionante ahorro de combustible y ahora incluyen la opción de un nuevo 1.0 GDi turboalimentado con una transmisión de doble embrague de 7 velocidades.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)",
-      "Potencia - Potencia máxima HP"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 16490000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-84127602025",
     "slug": "kia-k3-2025-ex-602025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Sed%C3%A1n/Kia/K3/CL-JATO-ITM-84127602025",
@@ -5158,7 +3942,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 300000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Antofagasta",
+    "location": "Temuco",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127602024/amk0psz5tr8entfmcnf9pcb05.jpg?watermark=77b1f1af6d946f53aae7acaa95b669a0",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127602024/amk0psz5tr8entfmcnf9pcb05.jpg?watermark=77b1f1af6d946f53aae7acaa95b669a0",
@@ -5194,124 +3978,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-73290732025",
-    "slug": "toyota-yaris-sport-2025-sport-732025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Hatchback/Toyota/Yaris%20Sport/CL-JATO-ITM-73290732025",
-    "make": "Toyota",
-    "model": "Yaris Sport",
-    "year": 2025,
-    "badge": "Sport",
-    "title": "Toyota Yaris Sport 2025 Sport",
-    "bodyStyle": "Hatchback",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.5L",
-    "engineCc": 1496,
-    "fuelCombined": 17.1,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 16590000,
-    "reservationFeeClp": 330000,
-    "estimatedMonthlyClp": 300000,
-    "versionsAvailable": 5,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Valparaíso",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73290732024/wpubytv542yl02y0nt0hcrcp9.jpg?watermark=3604f7c534344386f39a7dc711153c1b",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73290732024/wpubytv542yl02y0nt0hcrcp9.jpg?watermark=3604f7c534344386f39a7dc711153c1b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73290732024/lv3xt3wiun6djthjjstpz6pre.jpg?watermark=009fa848d541711830b9e0463f3c5298",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73290732024/evwyztkr4qdaa1cnlmk486458.png?watermark=c2d34fbd1da9062c0873d9d9807d0bc7",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73290732024/3yepctgnnc6mqp5qvh18z3iie.png?watermark=02d1b7ffbe1e1f14ca3642da4bf19a57",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73290732024/2yyf5v0tt7zi9t5zpjhalszj5.jpg?watermark=91268ba944674717a21fb7a835e15a69",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73290732024/7pngf9wt356inravvb6i5yvza.jpg?watermark=aa0e6eeee0340b75958a44090b84c3db",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73290732024/w7jj9ngnx28f1ruf4ycgrnoc7.jpg?watermark=2da2824b991b3f36fe0fc4432776463b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73290732024/y760o6yztallowlfbj9piqz6e.jpg?watermark=e31acad4ad388dab44b49332fed3b84a",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73290732024/3j7an5r3h14ambx9lqgmttlp3.jpg?watermark=750875e06ac2be68d520e9df08cd9fc6",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73290732024/14w9hk8fjij8vkqqg78glggac.jpg?watermark=644fedbdae4f3c7c3a74b0d6233ad504"
-    ],
-    "description": "Yaris Sport (Hatchback), está equipado con un completo sistema de seguridad activa y pasiva. Carrocería GOA con deformación programada, ABS + EBD, control de estabilidad (VSC), Asistente de subida en pendiente (HAC) y Cinturones de seguridad con pretensores y limitadores que evitan lesiones producidas por el golpe de latigazo en el cuello en caso de colisión frontal. En todas sus versiones 7 airbags: 2 Frontales, 2 Laterales de cortina, 2 Laterales de asiento, y 1 para rodillas de conductor.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal cuero sintético",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 16590000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-84127612025",
-    "slug": "kia-k3-2025-ex-612025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Sed%C3%A1n/Kia/K3/CL-JATO-ITM-84127612025",
-    "make": "Kia",
-    "model": "K3",
-    "year": 2025,
-    "badge": "EX",
-    "title": "Kia K3 2025 EX",
-    "bodyStyle": "Sedán",
-    "fuelType": "Bencina",
-    "transmission": "manual",
-    "drive": "delantera",
-    "engine": "1.6L",
-    "engineCc": 1591,
-    "fuelCombined": 15.2,
-    "doors": 4,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 17090000,
-    "reservationFeeClp": 340000,
-    "estimatedMonthlyClp": 310000,
-    "versionsAvailable": 5,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "La Serena",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127612024/wn6tgudx0me1zo3bfx67wxi45.jpg?watermark=ced33aaaca3287480682c08ecc14eb4f",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127612024/wn6tgudx0me1zo3bfx67wxi45.jpg?watermark=ced33aaaca3287480682c08ecc14eb4f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127612024/xd2wgzebzlfw9tx2kyqp0ijo3.jpg?watermark=af0b742786d30ff36721c1aad2a35fd5",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127612024/n3l54avgpt43vucy57tyyhu83.png?watermark=03791bb3f1c0b05a49e82be7fcaccf84",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127612024/kser90oa61bie8vsisjir4n66.png?watermark=6c86e1c3600d2b830b06b5d0c68a5d5e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127612024/shn66m7z4wpj6tgzz99l6563e.jpg?watermark=43bc026eedd75e97a00d5334cf2d0ebe",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127612024/0ui9i44cmkg21n3kqct9wdkp.jpg?watermark=e9308a0af43a47d077aafa95bb90ac30",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127612024/5af6z421bhckew0e9iiqg1zk6.jpg?watermark=a88cba0e67a78f35e3f49226b0ab902f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127612024/gqabl0hv12abz2zgavuwg6ym4.jpg?watermark=232ee1add40b83559b8568f011ccb572",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127612024/gte2shbtaci3etzg0zvbq5yk7.jpg?watermark=3c0f9654055d5b3e93aab2be96eb300c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127612024/xl4jg2l61fggaqsdtrtf13177.jpg?watermark=5ad7c4b1552a137afdefe4872177a3b3"
-    ],
-    "description": "Diseñado para abrir nuevos horizontes, sus contornos deportivos y detalles refinados transmiten una fuerza y compostura que cobran vida en las calles. Los elementos de diseño horizontales enfatizan la amplitud. Las pantallas como sus equipamientos están ubicados de manera óptima para brindar alta visibilidad y fácil acceso. Una combinación precisa de cualidades es esencial para un rendimiento fluido. Haz que tus viajes sean silenciosos, espaciosos y muy cómodos.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 17090000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-83108812025",
     "slug": "toyota-raize-2025-g-812025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Toyota/Raize/CL-JATO-ITM-83108812025",
@@ -5335,7 +4001,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 310000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Arica",
+    "location": "Iquique",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83108812024/esauxxygevn02ygd6093in41d.jpg?watermark=837653649c57c9d8c8d47e874219a48a",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83108812024/esauxxygevn02ygd6093in41d.jpg?watermark=837653649c57c9d8c8d47e874219a48a",
@@ -5394,7 +4060,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 310000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Antofagasta",
+    "location": "Temuco",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81454812024/xpgs97708t8adfhmodvojald.jpg?watermark=2d56e277230084b3e26e417bd1832d2a",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81454812024/xpgs97708t8adfhmodvojald.jpg?watermark=2d56e277230084b3e26e417bd1832d2a",
@@ -5430,65 +4096,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-84195002025",
-    "slug": "hyundai-venue-2025-plus-002025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Hyundai/Venue/CL-JATO-ITM-84195002025",
-    "make": "Hyundai",
-    "model": "Venue",
-    "year": 2025,
-    "badge": "Plus",
-    "title": "Hyundai Venue 2025 Plus",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.6L",
-    "engineCc": 1591,
-    "fuelCombined": 13.4,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 17290000,
-    "reservationFeeClp": 350000,
-    "estimatedMonthlyClp": 310000,
-    "versionsAvailable": 5,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Rancagua",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84195002024/cl7edhpmldy9oggqjmb9mf9u8.jpg?watermark=85a97f75cbf760d999c35f4541b8e7a7",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84195002024/cl7edhpmldy9oggqjmb9mf9u8.jpg?watermark=85a97f75cbf760d999c35f4541b8e7a7",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84195002024/e2f9d2rko4cpack5wo76cyl6c.jpg?watermark=5867af1da75ed970fb2843b6b216fe6d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84195002024/zyss0wda6kvhgjyhi11khbx46.png?watermark=cb72d61a0283703f6d00c5b908ee520d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84195002024/744xaata3bwz7uktgn7sg5grc.png?watermark=b55526bd466f5ca5b950f406edad5777",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84195002024/u1dzaxxs95z5w4loeoyr7rf53.jpg?watermark=22b8aa753fe62ae999a08709749baaf7",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84195002024/7it5npdgj1eppr2rwlx2kt5ue.jpg?watermark=5c9118c430f25cfa13eadb0f20cf237a",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84195002024/spkgg7677gtc8c17etrkrd6uc.jpg?watermark=576c9701c23a39a726baa87b83125014",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84195002024/j8qntz7412x0ja38wtbsw3xv2.jpg?watermark=e9f6d87de9161237534246d8253e3855",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84195002024/pm8uxs0j396xve8w8fhbxt0l6.jpg?watermark=c8dfc99b975f56a2d1a067b48f705273",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84195002024/ynb5ymeggg8gnmxol4gepp4bb.jpg?watermark=2ca077d963ff5243b68dff5d6c38edcd"
-    ],
-    "description": "Es momento de que te muevas a tu propio ritmo. Los días en la ciudad rebosan de ritmos y solo un vehículo que sea capaz de moverse a ese pulso logrará revelar tu verdadero potencial. Explora tu potencial en cada nota de los ritmos urbanos. Con Venue crearás nuevas experiencias y revitalizarás tu vida urbana. Aquí presentamos la primera versión de Venue, un vehículo utilitario urbano con personalidad y estilo sin igual.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 17290000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-84120582025",
     "slug": "hyundai-creta-2025-go-582025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Hyundai/Creta/CL-JATO-ITM-84120582025",
@@ -5512,7 +4119,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 310000,
     "versionsAvailable": 6,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Arica",
+    "location": "Antofagasta",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84120582024/c8twnmmha2zooeigbrffn29de.jpg?watermark=d4a6b0237dad724152b83f5b289159df",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84120582024/c8twnmmha2zooeigbrffn29de.jpg?watermark=d4a6b0237dad724152b83f5b289159df",
@@ -5548,124 +4155,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-81498242025",
-    "slug": "jac-js4-2025-luxury-242025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/JAC/Js4/CL-JATO-ITM-81498242025",
-    "make": "JAC",
-    "model": "Js4",
-    "year": 2025,
-    "badge": "Luxury",
-    "title": "JAC Js4 2025 Luxury",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.5L",
-    "engineCc": 1499,
-    "fuelCombined": 12.4,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 17890000,
-    "reservationFeeClp": 360000,
-    "estimatedMonthlyClp": 320000,
-    "versionsAvailable": 8,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Viña del Mar",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498242024/jpgqe059nrjnp4tz7kd4be64a.jpg?watermark=2db41dcb3ed7d7611d685ce095a0fa3f",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498242024/jpgqe059nrjnp4tz7kd4be64a.jpg?watermark=2db41dcb3ed7d7611d685ce095a0fa3f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498242024/gcm80trfgeppmk3gxmfaw6k02.jpg?watermark=bcbef9ca157fd2cf13ba1b1ab981eacc",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498242024/39w84mddicy129jqjs3m5pi08.jpg?watermark=23e45912ee61342cf698f16bda9d1968",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498242024/t8d7fudg4x8fww1ba8gh05dy7.jpg?watermark=dff3d3a08e7f75d497bc0df4ff773f64",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498242024/2i4ha0qviw87e13p2g8han87a.jpg?watermark=be844211aeffea360f2a9475ff119b88",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498242024/nvplybko0mktlq2us9k53tph9.jpg?watermark=accbb7ed7c23f1633a55c376456d5ad2",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498242024/q4qk8l1ybzvatd8wgdl24yo0d.jpg?watermark=16bf6f7c0b9b987d3ee9b6de152608d3",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498242024/lq4vlu6ozuemd6nzmp5qbhop9.jpg?watermark=83cd92bfacd5c05e0507024ed869d18d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498242024/hy7npdj7r3xebeo83d452m5q9.jpg?watermark=de9eb622784242c4d4df48a00b20d6de",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498242024/kg50lgb235f7xliwxfdx1orr7.jpg?watermark=5499a41c2bf3cef1db4069810ebc755d"
-    ],
-    "description": "Conoce el JAC JS4 y su diseño vanguardista, un SUV ideal para tus aventuras diarias. Equipado con un motor de 1.6 litros que entrega 118 caballos de fuerza y 150 Nm de torque, disponible en transmisión manual y CVT. Su interior combina confort, tecnología y seguridad, ofreciendo espacio para 5 ocupantes, un volante multifunción deportivo, aire acondicionado touch, una pantalla táctil compatible con Android Auto y Apple CarPlay, y hasta 6 airbags para asegurar tu tranquilidad en cada viaje.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal cuero sintético",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 17890000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-84127622025",
-    "slug": "kia-k3-2025-ex-622025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Sed%C3%A1n/Kia/K3/CL-JATO-ITM-84127622025",
-    "make": "Kia",
-    "model": "K3",
-    "year": 2025,
-    "badge": "EX",
-    "title": "Kia K3 2025 EX",
-    "bodyStyle": "Sedán",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.6L",
-    "engineCc": 1591,
-    "fuelCombined": 14.6,
-    "doors": 4,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 18090000,
-    "reservationFeeClp": 360000,
-    "estimatedMonthlyClp": 330000,
-    "versionsAvailable": 5,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Temuco",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127622024/rmcch4n8wvaqt84jz9hkpu1hb.jpg?watermark=7fa529251d952002657b903c82c58293",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127622024/rmcch4n8wvaqt84jz9hkpu1hb.jpg?watermark=7fa529251d952002657b903c82c58293",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127622024/sdnzrtbcn7h2qblx0ccdrheyc.jpg?watermark=7fa15a2eb8089deb4364bd13a686f35e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127622024/7352uxtbs4eucx0nud2jokkz6.png?watermark=f0de4e66073eda1214d930f0b60ebe2a",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127622024/wa2i3yz65wewjbuctkshy1s56.png?watermark=5123663012b456e9fbb3f09eb4a8bfbe",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127622024/6w48xb8rmjx8hec8nc8xk1j76.jpg?watermark=5b5cb4470be136e3c930ddaab64b7e96",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127622024/02b0fru2yfwyxfiu13ex8av4d.jpg?watermark=bf5f347a03392aeedd3126548fd1ca95",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127622024/2aj9lvnubdnsuufhp7f2odwaa.jpg?watermark=9a62e67f7a9c65097d7684fd3ac898d8",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127622024/jd2q6wnv2ydnhh2y4tgkslr49.jpg?watermark=03182ecded40f6eedb324e231d16561f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127622024/4ulaq6sxwjc9t2owtqvlwdcs6.jpg?watermark=85f9fc41406bba48d031d5dd4912a229",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127622024/tgykzj4o0bfo096kt4g7gcxg8.jpg?watermark=88f7adf979be2e18140ce11a360cb393"
-    ],
-    "description": "Diseñado para abrir nuevos horizontes, sus contornos deportivos y detalles refinados transmiten una fuerza y compostura que cobran vida en las calles. Los elementos de diseño horizontales enfatizan la amplitud. Las pantallas como sus equipamientos están ubicados de manera óptima para brindar alta visibilidad y fácil acceso. Una combinación precisa de cualidades es esencial para un rendimiento fluido. Haz que tus viajes sean silenciosos, espaciosos y muy cómodos.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 18090000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-83554012025",
     "slug": "chevrolet-tracker-2025-ltz-012025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Chevrolet/Tracker/CL-JATO-ITM-83554012025",
@@ -5689,7 +4178,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 330000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Iquique",
+    "location": "Rancagua",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83554012024/30cd9ek1ao24yzne75tnow1t4.jpg?watermark=0c75f72e987a9a22424d2bfd349cbadc",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83554012024/30cd9ek1ao24yzne75tnow1t4.jpg?watermark=0c75f72e987a9a22424d2bfd349cbadc",
@@ -5729,128 +4218,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-83886042025",
-    "slug": "chevrolet-tracker-2025-ltz-042025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Chevrolet/Tracker/CL-JATO-ITM-83886042025",
-    "make": "Chevrolet",
-    "model": "Tracker",
-    "year": 2025,
-    "badge": "LTZ",
-    "title": "Chevrolet Tracker 2025 LTZ",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.2L",
-    "engineCc": 1198,
-    "fuelCombined": 14.1,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 18290000,
-    "reservationFeeClp": 370000,
-    "estimatedMonthlyClp": 330000,
-    "versionsAvailable": 4,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Calama",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83886042024/kd5t5lm76ykbs44invebrhls5.jpg?watermark=82cef9271fb0effde003321fec4300d3",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83886042024/kd5t5lm76ykbs44invebrhls5.jpg?watermark=82cef9271fb0effde003321fec4300d3",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83886042024/5672wp7vlc31yamrz3znqlyn2.jpg?watermark=e0305887d24b28b199139ba799e54ed9",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83886042024/2ygxyhghabua3abf30j6yd5kc.png?watermark=20ee9d135194419ccd7c7d524d45e81c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83886042024/bpp5qnnjgiv3eyq981jq8q55a.png?watermark=8b893559c88dac0672268a10646a2b33",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83886042024/cgooc8za02ba8dmgwmmoxv441.jpg?watermark=e4ba691ffbe8d531f3e8c08da2f90f34",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83886042024/w3yavq6d3chgztvpe8vmx7y58.jpg?watermark=4f2e0c9c8fbb9708f8bf721d032da0ad",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83886042024/iwesiyxhri5mtp7n51b1z9au3.jpg?watermark=fcc308d4fb76dc2001dff7354bba3494",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83886042024/0kb0cd69k8018qac2uyl75wo1.jpg?watermark=d974798b3e0fdecd1e9892e8f766b6e6",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83886042024/678a9u1w6aqzyvy6uo278bdk8.jpg?watermark=528e13d354e35d3220e591015fc58bc0",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83886042024/5vquvb0at7jrmtdoh1kf1ql4b.jpg?watermark=8e1e3017dd7ed7fb80638d4a5a417359"
-    ],
-    "description": "Sé dueño de tus nuevos caminos. Cuando sabes lo que quieres, la Chevrolet Tracker te ayuda a lograrlo. Con diseño exterior dinámico y detalles interiores bien pensados, esta SUV es la compañera perfecta para que disfrutes cada momento. Su exterior combina un nuevo diseño, rines de aluminio de 17” y rieles de techo cromado que la hacen sobresalir del resto, mientras que en su interior, el Sunroof panorámico y todo su confort no dejan lugar a dudas: estás en la camioneta perfecta para ti.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal cuero sintético",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 18890000
-      },
-      {
-        "type": "JATO",
-        "amount": 19990000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-82204272025",
-    "slug": "hyundai-accent-2025-design-272025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Sed%C3%A1n/Hyundai/Accent/CL-JATO-ITM-82204272025",
-    "make": "Hyundai",
-    "model": "Accent",
-    "year": 2025,
-    "badge": "Design",
-    "title": "Hyundai Accent 2025 Design",
-    "bodyStyle": "Sedán",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.5L",
-    "engineCc": 1497,
-    "fuelCombined": 16.7,
-    "doors": 4,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 18290000,
-    "reservationFeeClp": 370000,
-    "estimatedMonthlyClp": 330000,
-    "versionsAvailable": 4,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Antofagasta",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82204272024/k3uth7a1r5dqalgbpwhltmgi3.jpg?watermark=0b0474c5ec4600777b84e0162e6deb70",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82204272024/k3uth7a1r5dqalgbpwhltmgi3.jpg?watermark=0b0474c5ec4600777b84e0162e6deb70",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82204272024/9exvt4fe9q93ppwsq2fsytu4e.jpg?watermark=7dc7fe52f048d22c8840ad41eb1b52cf",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82204272024/s36gxo8ra6msiq8fszhyljkq3.png?watermark=4ace538b47569eec5531a0c44e745e70",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82204272024/yfrbx76oj7issg2pcamj1gs76.png?watermark=7063d359fc842efc82fc78848f710457",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82204272024/bgecbe8zgx02ft6bonrps410f.jpg?watermark=28f47af3e05e162afc0345d70e364028",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82204272024/u1m7r308uvjxcrvua9g88jfve.jpg?watermark=3ff03117424febc895aca165078317d8",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82204272024/wgk2kzyxjbngl9htikqnvgd0c.jpg?watermark=02305035ed6d5ec3cb251570745ccd88",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82204272024/2n9dc063zqe8fs9ygmosqgu9c.jpg?watermark=5190dc424dcdb150dbe8cb97f720fe65",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82204272024/o8uhh1lpztif67f6yahh2frne.jpg?watermark=106e1e4d9b7987d4714bafc5a1404f07",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82204272024/sq9cizzkcc3cuezlxmb3qi3c4.jpg?watermark=4b66a65de4ef0c5a198e95a9f87ce463"
-    ],
-    "description": "Llegó el All New Accent uno de los modelos más populares y exitosos de Hyundai se ha rediseñado por completo, con lo que se incorpora a la era digital con fascinantes novedades como las luces LED horizontales. Para estar bien conectado, el All New Accent viene equipado con un sistema de control multimedia touch compatible con Apple Carplay & Android Auto que interactúa a la perfección con su teléfono inteligente, múltiples puertos USB y USB C de recarga, y mucho más.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 18290000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-83952962025",
     "slug": "toyota-yaris-cross-2025-xi-962025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Toyota/Yaris%20Cross/CL-JATO-ITM-83952962025",
@@ -5874,7 +4241,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 330000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Copiapó",
+    "location": "Antofagasta",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83952962024/o5ozipk2419rl9ybe7nq3ps06.jpg?watermark=2066199d51559438bef40d920821b4eb",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83952962024/o5ozipk2419rl9ybe7nq3ps06.jpg?watermark=2066199d51559438bef40d920821b4eb",
@@ -5933,7 +4300,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 340000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Copiapó",
+    "location": "Concepción",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83776052024/96g5c7old8n7bxqy5ugl9fil1.jpg?watermark=ef9665210b4ce3962739f1cbdd64e6d1",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83776052024/96g5c7old8n7bxqy5ugl9fil1.jpg?watermark=ef9665210b4ce3962739f1cbdd64e6d1",
@@ -5996,7 +4363,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 340000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Arica",
+    "location": "La Serena",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83776072024/1n92lxzwzvo1udys9bxhz4xk2.jpg?watermark=fad91560f99e80dfa6d7c09e5a1439f1",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83776072024/1n92lxzwzvo1udys9bxhz4xk2.jpg?watermark=fad91560f99e80dfa6d7c09e5a1439f1",
@@ -6059,7 +4426,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 340000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Iquique",
+    "location": "Calama",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83009532024/1qmumr42faiin8ullblnme737.jpg?watermark=20aac0b5a6e6ba2dc6a7f2ea39084fea",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83009532024/1qmumr42faiin8ullblnme737.jpg?watermark=20aac0b5a6e6ba2dc6a7f2ea39084fea",
@@ -6122,7 +4489,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 340000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Puerto Montt",
+    "location": "Copiapó",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83009542024/lmt4e7acf9y342uxrs9ksd3mb.jpg?watermark=230b5308b0b6e9226a46b33831d499cf",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83009542024/lmt4e7acf9y342uxrs9ksd3mb.jpg?watermark=230b5308b0b6e9226a46b33831d499cf",
@@ -6185,7 +4552,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 340000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Calama",
+    "location": "Arica",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83009562024/8m19uavx1xr200f3cmua54ln7.jpg?watermark=94919a075b6e7f7c396384bb58bef810",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83009562024/8m19uavx1xr200f3cmua54ln7.jpg?watermark=94919a075b6e7f7c396384bb58bef810",
@@ -6248,7 +4615,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 340000,
     "versionsAvailable": 6,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Temuco",
+    "location": "Valparaíso",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81797242024/vms7c5ddsezj5ilczj2cs96b1.jpg?watermark=32cf1305d2400c08d1eb56e053c31377",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81797242024/vms7c5ddsezj5ilczj2cs96b1.jpg?watermark=32cf1305d2400c08d1eb56e053c31377",
@@ -6288,132 +4655,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-81797252025",
-    "slug": "peugeot-2008-2025-allure-252025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Peugeot/2008/CL-JATO-ITM-81797252025",
-    "make": "Peugeot",
-    "model": "2008",
-    "year": 2025,
-    "badge": "Allure",
-    "title": "Peugeot 2008 2025 Allure",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "manual",
-    "drive": "delantera",
-    "engine": "1.2L",
-    "engineCc": 1199,
-    "fuelCombined": 20.8,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 18790000,
-    "reservationFeeClp": 380000,
-    "estimatedMonthlyClp": 340000,
-    "versionsAvailable": 6,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Antofagasta",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81797252024/bdq952bek5e2q0j41olz0lcs8.jpg?watermark=abe01a9864b191e283fc80736d9128d8",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81797252024/bdq952bek5e2q0j41olz0lcs8.jpg?watermark=abe01a9864b191e283fc80736d9128d8",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81797252024/tk5rskhnx1gl07fjzeen92ok8.jpg?watermark=08148facba3e486801cd6ad99627d4df",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81797252024/pjba1xo7w9yfxl6vp7n12866d.png?watermark=4259cb4d5b179123d3e855792dde9887",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81797252024/7l6vlxz0exl5vf7tfrm4mco8b.png?watermark=2beee2c6ebc9ca57e138b15e95982a51",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81797252024/4a8tkyhz1gb2hpgao7oitvws2.jpg?watermark=a639ee83ab73df2b3ecade760fd0c0be",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81797252024/rzl5dvv3f0n1pighbaef17tj6.jpg?watermark=23f98434bc13e0fa052227812b55b122",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81797252024/m95cgdftfbhtd2o4xd6qhdmm.jpg?watermark=326c9389214eee42b5a2ab383b56e970",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81797252024/84ush3ebvrj31j9xiknrk2ya4.jpg?watermark=3507404eb94ce3f3600fe530369c4d96",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81797252024/7a478kucgdu8g4cd52ztea817.jpg?watermark=bd58ffce81479861888bf53ad2cbd651",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81797252024/10cm6pqaxfxm9sbwnfcohglda.jpg?watermark=f416e5a533d010e5c7b1d3b629d7b91a"
-    ],
-    "description": "El New SUV compacto PEUGEOT 2008 llega para reinventar los códigos de los SUV: Nueva firma de luces delantera y trasera, nuevas llantas de aleación De serie según el acabado y una parrilla ensanchada para conseguir un frontal aún más poderoso y atractivo. Elige la versión que refleje tu personalidad y aprovecha las mejores ofertas online o en tu concesionario favorito. Líneas refinadas, materiales de alta gama y nueva tecnología a bordo. El New PEUGEOT 2008 ofrece una experiencia de vanguardia.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 20990000
-      },
-      {
-        "type": "JATO",
-        "amount": 23590000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-81834772025",
-    "slug": "peugeot-2008-2025-allure-772025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Peugeot/2008/CL-JATO-ITM-81834772025",
-    "make": "Peugeot",
-    "model": "2008",
-    "year": 2025,
-    "badge": "Allure",
-    "title": "Peugeot 2008 2025 Allure",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.2L",
-    "engineCc": 1199,
-    "fuelCombined": 19.5,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 18790000,
-    "reservationFeeClp": 380000,
-    "estimatedMonthlyClp": 340000,
-    "versionsAvailable": 6,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Viña del Mar",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81834772024/1g945ogmbqomtln4magqpq3ed.jpg?watermark=405373173e78b50e0c6a34e99b4a27d9",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81834772024/1g945ogmbqomtln4magqpq3ed.jpg?watermark=405373173e78b50e0c6a34e99b4a27d9",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81834772024/g31juirj5qgie7wrm623fiun8.jpg?watermark=a8fc0f3cb351499941c9a3574bacedbd",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81834772024/u3wj7cmxchgwy3yhfkck553ta.png?watermark=215384bd0a17a89ee01da21b4eb5a195",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81834772024/zd2nwqzs1blv5j7luww15unzd.png?watermark=8234d2569a930c70226ef5721c17ad5f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81834772024/grayb74xn5az5l3mwdz63nz4e.jpg?watermark=f4636797b404fae0aeef71757736ae7f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81834772024/d0m2pdjqhh87fderj1qyz1v6e.jpg?watermark=4442a6cacac58613f66f18f47b9731c3",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81834772024/p5iqdvtuuigjj170fppzu1zx7.jpg?watermark=98e08d0af9b2ab82381ef505acf193d2",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81834772024/jkao2yqc79y4ipxuv50ce1ar5.jpg?watermark=634723dcf7ee82faa231aa0ed6365f76",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81834772024/ddgs3uosstcbbmhlw0e5use6.jpg?watermark=27c2dc739d1b548c2fbb5fad0830b573",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81834772024/t3773f2ssj3kr6lgvbijkwdo9.jpg?watermark=5def4939ee4fc9fadfe567a701100354"
-    ],
-    "description": "El New SUV compacto PEUGEOT 2008 llega para reinventar los códigos de los SUV: Nueva firma de luces delantera y trasera, nuevas llantas de aleación De serie según el acabado y una parrilla ensanchada para conseguir un frontal aún más poderoso y atractivo. Elige la versión que refleje tu personalidad y aprovecha las mejores ofertas online o en tu concesionario favorito. Líneas refinadas, materiales de alta gama y nueva tecnología a bordo. El New PEUGEOT 2008 ofrece una experiencia de vanguardia.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 23190000
-      },
-      {
-        "type": "JATO",
-        "amount": 25190000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-80756102025",
     "slug": "peugeot-2008-2025-allure-102025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Peugeot/2008/CL-JATO-ITM-80756102025",
@@ -6437,7 +4678,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 340000,
     "versionsAvailable": 6,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Rancagua",
+    "location": "Santiago",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80756102024/0x81fdz96wg5y4vd2hqx57jx2.jpg?watermark=22925590acd5980ce2bebeb0aa072dd0",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80756102024/0x81fdz96wg5y4vd2hqx57jx2.jpg?watermark=22925590acd5980ce2bebeb0aa072dd0",
@@ -6500,7 +4741,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 340000,
     "versionsAvailable": 6,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Talca",
+    "location": "La Serena",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81797262024/t7k70oajn7b283n5i2zbdk2h9.jpg?watermark=5af02a5378594131ddbae62b53f2029d",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81797262024/t7k70oajn7b283n5i2zbdk2h9.jpg?watermark=5af02a5378594131ddbae62b53f2029d",
@@ -6540,69 +4781,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-83039812025",
-    "slug": "peugeot-2008-2025-gt-812025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Peugeot/2008/CL-JATO-ITM-83039812025",
-    "make": "Peugeot",
-    "model": "2008",
-    "year": 2025,
-    "badge": "GT",
-    "title": "Peugeot 2008 2025 GT",
-    "bodyStyle": "SUV",
-    "fuelType": "Eléctrico",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": null,
-    "engineCc": 0,
-    "fuelCombined": 0,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 18790000,
-    "reservationFeeClp": 380000,
-    "estimatedMonthlyClp": 340000,
-    "versionsAvailable": 6,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Puerto Montt",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83039812024/rfr2eov3h59hjltfxbz395x7.jpg?watermark=40de67364c80172787c2b92d79394c9d",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83039812024/rfr2eov3h59hjltfxbz395x7.jpg?watermark=40de67364c80172787c2b92d79394c9d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83039812024/d735a0fl70vct7wqclpp8c2cc.jpg?watermark=861ee9716ac7414a951ffc1503422d77",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83039812024/yhkh7wk4pye28dvid9878pwl6.png?watermark=3afc8fed931863d15b2dfcacc0b856ee",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83039812024/90p95oqf5jsexo845iqedvid7.png?watermark=202367d14a2dbc4183f5a6a1001c3051",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83039812024/8t9bsbw2yhyu49ckffgf88wq.jpg?watermark=935efd70e084e26173f3fcd9aa6380b6",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83039812024/zh0w0qbumlep0qghdfjkisxnc.jpg?watermark=6ecac7a9a51c42d9e0681b0da4fbc3d5",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83039812024/adjxp9yn2175cnt5sfj2nz2oc.jpg?watermark=a821d038ce9b4379a3ade49c02757446",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83039812024/khm7j5ef4q576428ohobozhb4.jpg?watermark=9336875c6dea1c4ec0c47b45ff25ef06",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83039812024/tly1fx6xn83yno87zqdfrcr49.jpg?watermark=555ff37684d8499a8c33ca698200a49a",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83039812024/ok7uzy5deyu6m606eteax8ef5.jpg?watermark=4dbb0a16bdd81a63d569e5871b96f19e"
-    ],
-    "description": "Descubre el PEUGEOT e-2008, el SUV compacto 100 % eléctrico. Disfruta de las sensaciones inesperadas de la conducción eléctrica desde su interior confortable y silencioso. Puedes conducir hasta 313 km/h a bordo del SUV PEUGEOT e-2008 100 % ELÉCTRICO de acuerdo a los datos de homologación del modelo.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 36690000
-      },
-      {
-        "type": "JATO",
-        "amount": 38490000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-83750502025",
     "slug": "volkswagen-jetta-2025-comfortline-502025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Sed%C3%A1n/Volkswagen/Jetta/CL-JATO-ITM-83750502025",
@@ -6626,7 +4804,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 340000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Temuco",
+    "location": "Antofagasta",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83750502023/r7wogds640z28o4j0npe82p31.jpg?watermark=4d81b4aefd3ddab896221fad35bdf80d",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83750502023/r7wogds640z28o4j0npe82p31.jpg?watermark=4d81b4aefd3ddab896221fad35bdf80d",
@@ -6689,7 +4867,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 340000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Rancagua",
+    "location": "Temuco",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80872372023/a5h6bufcyrsi9pldej91n9xw5.jpg?watermark=69eabb6f2ec0d9577f8a52ab98404090",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80872372023/a5h6bufcyrsi9pldej91n9xw5.jpg?watermark=69eabb6f2ec0d9577f8a52ab98404090",
@@ -6752,7 +4930,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 340000,
     "versionsAvailable": 8,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Antofagasta",
+    "location": "Viña del Mar",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498262024/easnvu464p3vlboef2j0ofwi6.jpg?watermark=e3992b74e54dcc85c9e65f2cd890bbca",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498262024/easnvu464p3vlboef2j0ofwi6.jpg?watermark=e3992b74e54dcc85c9e65f2cd890bbca",
@@ -6874,7 +5052,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 350000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Antofagasta",
+    "location": "Calama",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83464022023/u2dfmeevbv3l5xw0mrcun8s1d.png?watermark=0b6ad77d928ae1bcd7410f273abaaf2e",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83464022023/u2dfmeevbv3l5xw0mrcun8s1d.png?watermark=0b6ad77d928ae1bcd7410f273abaaf2e",
@@ -6933,7 +5111,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 350000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Valparaíso",
+    "location": "Concepción",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84240152024/1khxsyi5hgj9dkl5535u0ggp5.jpg?watermark=e39d64439829cb2beadcf02a742fc282",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84240152024/1khxsyi5hgj9dkl5535u0ggp5.jpg?watermark=e39d64439829cb2beadcf02a742fc282",
@@ -6992,7 +5170,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 350000,
     "versionsAvailable": 6,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Copiapó",
+    "location": "Santiago",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76833132024/zh2eatg7k6kcp7ux6uw8mq9w7.jpg?watermark=ba1b0abbe957aaffcf31126d9542234a",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76833132024/zh2eatg7k6kcp7ux6uw8mq9w7.jpg?watermark=ba1b0abbe957aaffcf31126d9542234a",
@@ -7028,65 +5206,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-83952972025",
-    "slug": "toyota-yaris-cross-2025-xi-972025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Toyota/Yaris%20Cross/CL-JATO-ITM-83952972025",
-    "make": "Toyota",
-    "model": "Yaris Cross",
-    "year": 2025,
-    "badge": "XI",
-    "title": "Toyota Yaris Cross 2025 XI",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.5L",
-    "engineCc": 1496,
-    "fuelCombined": 17.3,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 19490000,
-    "reservationFeeClp": 390000,
-    "estimatedMonthlyClp": 350000,
-    "versionsAvailable": 4,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Iquique",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83952972024/6a9dyp7xrlhzqid5p3onhflzd.jpg?watermark=72a1c0dad4d2da35463cfc7e9f338329",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83952972024/6a9dyp7xrlhzqid5p3onhflzd.jpg?watermark=72a1c0dad4d2da35463cfc7e9f338329",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83952972024/hsbbkfz29s26bgljtwq8lemqd.jpg?watermark=b287e2021d9e9cf6bea2906aabd8803f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83952972024/yqh7fuib6qfhjklnsumk04hwe.png?watermark=a603fa2d6464b5c5caf4ff8c5ac3130b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83952972024/pe1z5487ygazk7mt76tc58eza.png?watermark=125cdea123b8aac77f34b1b40ad83964",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83952972024/lgrix6kc9pei098ukvy6plpk3.jpg?watermark=c4d3688c40c6c884daceda3e76773588",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83952972024/sreevhj8zkmcga9q5izaryn9c.jpg?watermark=5fdda8264cb1a5d07c2ae377fe182dd4",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83952972024/ieod9259n1szcwr2uwthgptr8.jpg?watermark=c849df0e158bce25edd2132372379f1e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83952972024/5vaoxjrzl2b4awe6ad3vev2pa.jpg?watermark=b2c43641260d3a2f90f695491896112e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83952972024/wl8e208shtj8ga9paprrmmqx.jpg?watermark=9bf255404671b9b4a0e3f95e2685b7d0",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83952972024/9k1twnooyrt4x41ftamouaxp4.jpg?watermark=82a82d9c137f8d47e07947dc1b49ca59"
-    ],
-    "description": "Diseño moderno y llamativo con un concepto Sólido y Dinámico para captar la atención en las calles y destacar en el segmento SUV. Ángulos de ataque potentes y robustos para enfrentar plenamente caminos irregulares. La gran silueta trapezoidal, junto con las rejillas trapezoidales superior e inferior de diferentes tamaños, expresa una postura sólida y firmemente plantada. El volumen que se origina en la parrilla superior se enfatiza para dar una impresión de empuje hacia adelante.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 19490000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-84012532025",
     "slug": "opel-movano-2025-2-2-d-l2-chasis-cabina-532025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Chasis%20Cabina/Opel/Movano/CL-JATO-ITM-84012532025",
@@ -7110,7 +5229,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 350000,
     "versionsAvailable": 1,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Calama",
+    "location": "Santiago",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84012532024/czg7iigwu3g6496dkmfo6lxlc.jpg?watermark=a1d8974dd0bc31aaca73089c1490a4b0",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84012532024/czg7iigwu3g6496dkmfo6lxlc.jpg?watermark=a1d8974dd0bc31aaca73089c1490a4b0",
@@ -7150,65 +5269,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-81981682025",
-    "slug": "kia-seltos-2025-ex-682025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Kia/Seltos/CL-JATO-ITM-81981682025",
-    "make": "Kia",
-    "model": "Seltos",
-    "year": 2025,
-    "badge": "EX",
-    "title": "Kia Seltos 2025 EX",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "manual",
-    "drive": "delantera",
-    "engine": "1.5L",
-    "engineCc": 1497,
-    "fuelCombined": 14.7,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 19990000,
-    "reservationFeeClp": 400000,
-    "estimatedMonthlyClp": 360000,
-    "versionsAvailable": 5,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Arica",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81981682024/dqjjwxqmm40ydx1i3yo3tcwk.jpg?watermark=2443743b8698b510fe9bc966c226fc3d",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81981682024/dqjjwxqmm40ydx1i3yo3tcwk.jpg?watermark=2443743b8698b510fe9bc966c226fc3d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81981682024/fokfoxys96t30ljb7m9d0dk4c.jpg?watermark=4c8060a067e2659a0c509daef49e4a3d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81981682024/u65hxendep2xs4t36pqpj51la.png?watermark=3e4b0652584ee09fd1b2a5d587f7ed2d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81981682024/1236s75qv7p2a1h0a6fzzwt3b.png?watermark=da59376babe60b44a6b56aae5c0ec3bd",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81981682024/e7f0y3eqrrnnr79p7ttziiwy4.jpg?watermark=f23237b371a21090c2cdfb44f6496ddf",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81981682024/zonu9q2te3x32oisue5deeyq9.jpg?watermark=025b884c46c5f3eaee6424e145a7c529",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81981682024/aw02btb4dkrjc3vawwb6yw7b7.jpg?watermark=41d3639a17cb4edccb73568026fd7ee3",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81981682024/29pw032d2s2z8w23a76ozb0yc.jpg?watermark=fac72702bbefe1b360044678469b9c01",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81981682024/8gzccnxp0qiaim1tsf5v4rkg4.jpg?watermark=824531b33bc8948ad8c990f83333a11d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81981682024/rp1y2nzlnx4igh4e7axhvvnt6.jpg?watermark=05f24cba0676a34f0e29aaac7e986a8a"
-    ],
-    "description": "Redefine tu camino como tú quieras, sus contornos deportivos y detalles refinados transmiten una fuerza y compostura que cobran vida en las calles. Un espacio interior intuitivo y de alta tecnología, los elementos de diseño horizontales enfatizan la amplitud. Preciso, suave y eficiente, Una combinación precisa de cualidades es esencial para un rendimiento fluido. Kia Seltos te ofrece un equilibrio preciso entre potencia y frenado. Es receptivo y rápido para un viaje silencioso.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 19990000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-83671322025",
     "slug": "kia-seltos-2025-ex-322025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Kia/Seltos/CL-JATO-ITM-83671322025",
@@ -7232,7 +5292,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 360000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Valparaíso",
+    "location": "Temuco",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83671322024/cm9xrleiae4t3t7hkfvvbmk93.jpg?watermark=d20a238282cff414adea1b4648bb4c8e",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83671322024/cm9xrleiae4t3t7hkfvvbmk93.jpg?watermark=d20a238282cff414adea1b4648bb4c8e",
@@ -7291,7 +5351,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 370000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Viña del Mar",
+    "location": "Rancagua",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81454842024/wvl8237t2w661hjnl6sfvwi1c.jpg?watermark=53ffe2397e0f5a652fb6d5e4d2d834b6",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81454842024/wvl8237t2w661hjnl6sfvwi1c.jpg?watermark=53ffe2397e0f5a652fb6d5e4d2d834b6",
@@ -7327,65 +5387,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-83450122025",
-    "slug": "hyundai-creta-2025-plus-122025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Hyundai/Creta/CL-JATO-ITM-83450122025",
-    "make": "Hyundai",
-    "model": "Creta",
-    "year": 2025,
-    "badge": "Plus",
-    "title": "Hyundai Creta 2025 Plus",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.5L",
-    "engineCc": 1497,
-    "fuelCombined": 15.6,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 20390000,
-    "reservationFeeClp": 410000,
-    "estimatedMonthlyClp": 370000,
-    "versionsAvailable": 6,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Puerto Montt",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83450122024/ejtrnvcuwib3yl1gny5d706rd.jpg?watermark=ff1e2a2d8f00e4c6a252b29b9255f4a4",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83450122024/ejtrnvcuwib3yl1gny5d706rd.jpg?watermark=ff1e2a2d8f00e4c6a252b29b9255f4a4",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83450122024/l9dl8kknzzgb9mpw2brsa8qu4.jpg?watermark=fc5eb7100193a6cfa4359c6eaadc5d1e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83450122024/lnew55xt59zb39iimzyay0uwc.png?watermark=1233653a9b72cfdbf4cfcbf3e7d9bf8a",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83450122024/465caczfz3d8orakyslvlitl1.png?watermark=00bd0063ecb71be345d689beb656be94",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83450122024/qiv6eanlt1hzcb45vpwnzfje7.jpg?watermark=939dcc3fbedf03f894a0f868460cf94b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83450122024/ah0d0ipocoeb9r866og8wf1x5.jpg?watermark=e77156c1474d1731f6924ff81f5fdc6a",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83450122024/ek3wok6y6zac7iz0du4g0ulrd.jpg?watermark=7540e905743ac3dfc83408d1f5a5e764",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83450122024/t77ykovlbgvzvqwpgexb11s94.jpg?watermark=c07b971a7ca85ddf7809de73bbfa1588",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83450122024/w1x47469wjqyz09qi1q37hx76.jpg?watermark=f1c5406b529d33f4e071c17df4a907f4",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83450122024/go5ff5qn8wap5lji5ossdyhc8.jpg?watermark=1aa49efadd41c1136d5e0724159b8b6f"
-    ],
-    "description": "Con una apariencia más fresca y moderna, el Hyundai New CRETA te sorprenderá con un rediseño exterior que se conecta con tu manera de vivir.⁠ Diseñado para aquellos que constantemente buscan superar todos sus desafíos, prepárate para el cambio, porque el New CRETA tiene una versatilidad que se mantiene fiel a sus raíces de crossover.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 20390000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-82481612025",
     "slug": "hyundai-creta-2025-design-612025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Hyundai/Creta/CL-JATO-ITM-82481612025",
@@ -7409,7 +5410,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 370000,
     "versionsAvailable": 6,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Talca",
+    "location": "Valparaíso",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82481612024/p6ac8pumi9ag14yuxdwsn4zma.jpg?watermark=cd13ad1e500064da40ac8409b52f72db",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82481612024/p6ac8pumi9ag14yuxdwsn4zma.jpg?watermark=cd13ad1e500064da40ac8409b52f72db",
@@ -7468,7 +5469,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 370000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Viña del Mar",
+    "location": "Rancagua",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127632024/8aki5otqadx7t40vmhr2raf6b.jpg?watermark=29d986fac328478b7c7c0dab4a5e0de5",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127632024/8aki5otqadx7t40vmhr2raf6b.jpg?watermark=29d986fac328478b7c7c0dab4a5e0de5",
@@ -7527,7 +5528,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 380000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Rancagua",
+    "location": "Iquique",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83533452023/k83ji3qe0zvkqjh3gbyy4tqha.jpg?watermark=2439ea1c9215b6f6a3b472a1bb538516",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83533452023/k83ji3qe0zvkqjh3gbyy4tqha.jpg?watermark=2439ea1c9215b6f6a3b472a1bb538516",
@@ -7586,7 +5587,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 380000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Valparaíso",
+    "location": "Viña del Mar",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83197502024/u8iymrovtao69ekjdme3at062.jpg?watermark=b1541415164b23af6a2bbd60a927d7a9",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83197502024/u8iymrovtao69ekjdme3at062.jpg?watermark=b1541415164b23af6a2bbd60a927d7a9",
@@ -7708,7 +5709,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 390000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Calama",
+    "location": "Rancagua",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83952982024/c1xr3lsrwb1dm7vj8nrsurj0d.jpg?watermark=3e198ca21167b380731344e450aa2387",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83952982024/c1xr3lsrwb1dm7vj8nrsurj0d.jpg?watermark=3e198ca21167b380731344e450aa2387",
@@ -7767,7 +5768,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 390000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Copiapó",
+    "location": "La Serena",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81981712024/9qfsysi8fwhflfzwa2yjljiz1.jpg?watermark=fbab508a2da333e928416fc1734024a1",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81981712024/9qfsysi8fwhflfzwa2yjljiz1.jpg?watermark=fbab508a2da333e928416fc1734024a1",
@@ -7826,7 +5827,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 390000,
     "versionsAvailable": 1,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Iquique",
+    "location": "Calama",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-72493302024/msrcha0fpn72etwwpt2ub0ta1.jpg?watermark=153c07c06a67fc703c10e23ca53f5a8b",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-72493302024/msrcha0fpn72etwwpt2ub0ta1.jpg?watermark=153c07c06a67fc703c10e23ca53f5a8b",
@@ -7866,132 +5867,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-81444972025",
-    "slug": "peugeot-rifter-2025-allure-972025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Furg%C3%B3n/Peugeot/Rifter/CL-JATO-ITM-81444972025",
-    "make": "Peugeot",
-    "model": "Rifter",
-    "year": 2025,
-    "badge": "Allure",
-    "title": "Peugeot Rifter 2025 Allure",
-    "bodyStyle": "Furgón",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.2L",
-    "engineCc": 1199,
-    "fuelCombined": 14.9,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 21690000,
-    "reservationFeeClp": 430000,
-    "estimatedMonthlyClp": 390000,
-    "versionsAvailable": 3,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Puerto Montt",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81444972024/fj6e7h4037em3s4eoc2bpbxu.jpg?watermark=e94ff8430a9092ad04991ef4e6c8c872",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81444972024/fj6e7h4037em3s4eoc2bpbxu.jpg?watermark=e94ff8430a9092ad04991ef4e6c8c872",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81444972024/s1aqjy91yhkcug0tg5luj3f0d.jpg?watermark=c901dc9c8f4ba71ea8d8fc9791a56e26",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81444972024/yxuu8ipk6v9ovab98sacf6lz8.png?watermark=1f152cc0b8c5a6a14b35d3345e4078bd",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81444972024/h6cl65wjh1dmd9hyliza58f36.png?watermark=9e0bedf9f86b7a84e440d86b39dee736",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81444972024/z9ud1ssumgjixs8kayr15nd1c.jpg?watermark=23e8e42c9bc121a370800eebc06cfb40",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81444972024/ixuke8r9nbgj6bs7juo7yi1d8.jpg?watermark=3a9b21135052910530dcb27d47e0eff0",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81444972024/sz38hnjd6yl25oyva9g8shgrc.jpg?watermark=3c0c2876f7f800f4d5f0f2173b042169",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81444972024/40vuwvfh6hpzeksmnoswebzra.jpg?watermark=d8751aaebb5685dfd6aac223d75e1daa",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81444972024/21rbp4pax0zw2fvxs3p7cyah7.jpg?watermark=be85bde94b8300d57a6a498371ebcf9d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81444972024/1bdfozr00fcb8xam5dsdrk9j4.jpg?watermark=784b5969f83d9a3978ef73cb77cb6dc3"
-    ],
-    "description": "El elegante, robusto, ágil y poderoso PEUGEOT Rifter es sinónimo de versatilidad. Adopta el acabado sólido de un vehículo que puede adaptarse a todas las condiciones de la carretera con su capó corto elevado y gran altura del suelo. Con un frontal consistente con los últimos modelos PEUGEOT y su distintivo cuadro de luces traseras, el monovolumen PEUGEOT Rifter se reafirma como uno de los modelos destacados de la marca que impresiona con su combinación de estilo y elegancia.",
-    "highlights": [
-      "Asientos - número de plazas 7",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)",
-      "Potencia - Potencia máxima HP"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 21690000
-      },
-      {
-        "type": "JATO",
-        "amount": 22790000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-80895002025",
-    "slug": "peugeot-rifter-2025-allure-002025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Furg%C3%B3n/Peugeot/Rifter/CL-JATO-ITM-80895002025",
-    "make": "Peugeot",
-    "model": "Rifter",
-    "year": 2025,
-    "badge": "Allure",
-    "title": "Peugeot Rifter 2025 Allure",
-    "bodyStyle": "Furgón",
-    "fuelType": "Diesel",
-    "transmission": "manual",
-    "drive": "delantera",
-    "engine": "1.5L",
-    "engineCc": 1499,
-    "fuelCombined": 22.8,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 21690000,
-    "reservationFeeClp": 430000,
-    "estimatedMonthlyClp": 390000,
-    "versionsAvailable": 3,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Iquique",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80895002024/4buyf6r4ayyeaki985mkukp21.jpg?watermark=37243636ccb839b00953267cdd3c26da",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80895002024/4buyf6r4ayyeaki985mkukp21.jpg?watermark=37243636ccb839b00953267cdd3c26da",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80895002024/d0cwfp0qunco5idhry92yxcc9.jpg?watermark=4bb98ba737bea562bbb7d2dc3dd25f6e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80895002024/mx7ccfbm9zaiwno2gpinsaew.png?watermark=7f31d67266d5ef5dbdd28d509ab78609",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80895002024/h986yfgxxmknv16ezjgkhyjq1.png?watermark=14038978759bcc4c53825eeea2f625f4",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80895002024/b9di5benxoozoa24o8ua11f58.jpg?watermark=1d2cc00c577494b3db06f0bff1c01426",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80895002024/ysk8ula714ns31kehsm0bsko9.jpg?watermark=ddfcd52469b436337e8d446820e96d05",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80895002024/5qf8t3ea4zdlh3i6t8zkmsup4.jpg?watermark=acd4ee391b5dbe6529c917e2572c375d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80895002024/0vyrprfox9wljdclnonlnx93c.jpg?watermark=dbdf14b419904b079b8d969770052223",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80895002024/cpkasx3xpp3sq4iq7ie0hu4ga.jpg?watermark=cf29e2d30954874fc3579afd5f3c3ae0",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80895002024/fwgul8816urqt2itp6vmhupoa.jpg?watermark=a4866ca426cebf76bb9ef06ebace4357"
-    ],
-    "description": "El elegante, robusto, ágil y poderoso PEUGEOT Rifter es sinónimo de versatilidad. Adopta el acabado sólido de un vehículo que puede adaptarse a todas las condiciones de la carretera con su capó corto elevado y gran altura del suelo. Con un frontal consistente con los últimos modelos PEUGEOT y su distintivo cuadro de luces traseras, el monovolumen PEUGEOT Rifter se reafirma como uno de los modelos destacados de la marca que impresiona con su combinación de estilo y elegancia.",
-    "highlights": [
-      "Asientos - número de plazas 7",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)",
-      "Potencia - Potencia máxima HP"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 22190000
-      },
-      {
-        "type": "JATO",
-        "amount": 23290000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-80895012025",
     "slug": "peugeot-rifter-2025-allure-012025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Furg%C3%B3n/Peugeot/Rifter/CL-JATO-ITM-80895012025",
@@ -8015,7 +5890,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 390000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Calama",
+    "location": "Concepción",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80895012024/k0at3rg3vyr42uknypqnrnyi5.jpg?watermark=399c6c123ff5bec6ddd4eb46fae55230",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80895012024/k0at3rg3vyr42uknypqnrnyi5.jpg?watermark=399c6c123ff5bec6ddd4eb46fae55230",
@@ -8055,124 +5930,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-84127642025",
-    "slug": "kia-k3-2025-ex-full-642025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Sed%C3%A1n/Kia/K3/CL-JATO-ITM-84127642025",
-    "make": "Kia",
-    "model": "K3",
-    "year": 2025,
-    "badge": "EX Full",
-    "title": "Kia K3 2025 EX Full",
-    "bodyStyle": "Sedán",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.6L",
-    "engineCc": 1591,
-    "fuelCombined": 14.6,
-    "doors": 4,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 21790000,
-    "reservationFeeClp": 440000,
-    "estimatedMonthlyClp": 390000,
-    "versionsAvailable": 5,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Concepción",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127642024/gzz85irwrtt5dwes9pqycnj97.jpg?watermark=4afe5a3259f7113fd8f14fcc0002d690",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127642024/gzz85irwrtt5dwes9pqycnj97.jpg?watermark=4afe5a3259f7113fd8f14fcc0002d690",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127642024/monp8gidr9eekh3mzeox8mh36.jpg?watermark=1ffeeac6ecb98ebde2f396744f40eebf",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127642024/5byonrz8d8de7kfqd8trf8cb3.png?watermark=540bfc12353a2d6d9c0e12f9a76e3987",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127642024/vteux2r2a6cgtltvfvpk1ewp5.png?watermark=9a3b90df2bae40154aaa7f72b1c5edee",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127642024/j7t1hplrv24x7pxyptmx7yt72.jpg?watermark=1185bed4c380a469230ca4da0de35321",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127642024/8gyub0mpqdhm1w8d0krhioni4.jpg?watermark=79d4bc100cd56eafe3c0f585b2aaa400",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127642024/njgxgp82u9ffumtenms5a6ro9.jpg?watermark=e80e3a53b4824b0e25660bc1688659fa",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127642024/s21kvz62xzcuucfco8eeugr53.jpg?watermark=e3efa375832947274ffad2bf53e2690d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127642024/pz76yzadfmrq7lo5r13rr79le.jpg?watermark=3efe612c8e6ee7fedcd6e35d8e0d5afb",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84127642024/zdk7sw2fs1lmmgatrewddt5a8.jpg?watermark=79bf18bd24f4b7670a51ea1b6acc248c"
-    ],
-    "description": "Diseñado para abrir nuevos horizontes, sus contornos deportivos y detalles refinados transmiten una fuerza y compostura que cobran vida en las calles. Los elementos de diseño horizontales enfatizan la amplitud. Las pantallas como sus equipamientos están ubicados de manera óptima para brindar alta visibilidad y fácil acceso. Una combinación precisa de cualidades es esencial para un rendimiento fluido. Haz que tus viajes sean silenciosos, espaciosos y muy cómodos.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal cuero sintético",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 21790000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-82481622025",
-    "slug": "hyundai-creta-2025-design-622025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Hyundai/Creta/CL-JATO-ITM-82481622025",
-    "make": "Hyundai",
-    "model": "Creta",
-    "year": 2025,
-    "badge": "Design",
-    "title": "Hyundai Creta 2025 Design",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.5L",
-    "engineCc": 1497,
-    "fuelCombined": 15.6,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 21890000,
-    "reservationFeeClp": 440000,
-    "estimatedMonthlyClp": 390000,
-    "versionsAvailable": 6,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Iquique",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82481622024/k3y0hap3o10ro1drvkty80zha.jpg?watermark=6441fc736868d8b4d3b7131526b8b5ec",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82481622024/k3y0hap3o10ro1drvkty80zha.jpg?watermark=6441fc736868d8b4d3b7131526b8b5ec",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82481622024/f0qewhs14bmf2sguehr9gp6h9.jpg?watermark=d5b36de072f9620d9e61ee7870c83c74",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82481622024/bfpcq0ldfu0n0qmwbrs0dlz39.png?watermark=2b0344758fd5f09ba13358b09fdf8c45",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82481622024/aoqxmked4g7zp0kgezezv6d9b.png?watermark=d179513d89c66eee0b5f18b7f5bd1211",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82481622024/7f9ng8ajdl0p8uwsnfgyov7zc.jpg?watermark=835a099df2a4a4ec561ebd34b2e9fd88",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82481622024/twhlodvd1ba1a94huwe2vmime.jpg?watermark=e20013191ede40894770b17b5f69863c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82481622024/xa9nbvvrt4j322rlzb9lucj3f.jpg?watermark=34d068f38795da3051601f505ba7a196",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82481622024/u2bbc6ibp8izzli0yccll30hc.jpg?watermark=8aa44f0ce74ead395ba5c8c606c377e3",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82481622024/q8v8doy0ync3t0v925rqtl0g9.jpg?watermark=d58b20d860c5f80360c777034a46b78d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82481622024/umdzma83dw7euhl8vbju2dylb.jpg?watermark=ecd8247569ff6047ed3165a06670c698"
-    ],
-    "description": "Con una apariencia más fresca y moderna, el Hyundai New CRETA te sorprenderá con un rediseño exterior que se conecta con tu manera de vivir.⁠ Diseñado para aquellos que constantemente buscan superar todos sus desafíos, prepárate para el cambio, porque el New CRETA tiene una versatilidad que se mantiene fiel a sus raíces de crossover.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal cuero sintético",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 21890000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-70781582025",
     "slug": "peugeot-boxer-2025-2-2-bluehdi-165-l2h2-582025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Furg%C3%B3n/Peugeot/Boxer/CL-JATO-ITM-70781582025",
@@ -8196,7 +5953,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 390000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Santiago",
+    "location": "Talca",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-70781582024/47r8y8v6xcq2ijed0wpprqga8.jpg?watermark=f362498e00ba80a79ba541508cb0207e",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-70781582024/47r8y8v6xcq2ijed0wpprqga8.jpg?watermark=f362498e00ba80a79ba541508cb0207e",
@@ -8259,7 +6016,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 390000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Valparaíso",
+    "location": "Puerto Montt",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78948612024/m6s0i6p3tgp3fe58uo32qzcs6.jpg?watermark=af1f03550feadcdce7772befce03d3ee",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78948612024/m6s0i6p3tgp3fe58uo32qzcs6.jpg?watermark=af1f03550feadcdce7772befce03d3ee",
@@ -8322,7 +6079,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 390000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Concepción",
+    "location": "Iquique",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78948622024/hytb9u7uyraiitjdrd8wqyuz8.jpg?watermark=1797accd6a475624e5ffe61473835e6e",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78948622024/hytb9u7uyraiitjdrd8wqyuz8.jpg?watermark=1797accd6a475624e5ffe61473835e6e",
@@ -8385,7 +6142,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 400000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Viña del Mar",
+    "location": "Talca",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83533432023/hj4tiycvzuv3n6rwduq7fd1w5.jpg?watermark=49ad81bd7371ed6006996d298794620e",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83533432023/hj4tiycvzuv3n6rwduq7fd1w5.jpg?watermark=49ad81bd7371ed6006996d298794620e",
@@ -8448,7 +6205,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 400000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Talca",
+    "location": "Valparaíso",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82874422024/ox0h73exfvod0lmex0bh2nglb.jpg?watermark=5b6416f400d811629bea79fe90e171f1",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82874422024/ox0h73exfvod0lmex0bh2nglb.jpg?watermark=5b6416f400d811629bea79fe90e171f1",
@@ -8507,7 +6264,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 400000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Valparaíso",
+    "location": "Viña del Mar",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77433592023/3bd8pdtyrcumgp64v15jvwxgb.jpg?watermark=0d7e021ba240762cb49b7110d478c762",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77433592023/3bd8pdtyrcumgp64v15jvwxgb.jpg?watermark=0d7e021ba240762cb49b7110d478c762",
@@ -8566,7 +6323,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 400000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Temuco",
+    "location": "Copiapó",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83464032023/jb6a75jj11yld3zsqpm7l6ft7.png?watermark=1142daa0edbca779577a2515111b8490",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83464032023/jb6a75jj11yld3zsqpm7l6ft7.png?watermark=1142daa0edbca779577a2515111b8490",
@@ -8629,7 +6386,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 400000,
     "versionsAvailable": 6,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Calama",
+    "location": "Temuco",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83993102024/19t1ob1t8lgtv70g1r02awup5.jpg?watermark=01c2ba932638fb3d195310cbfbaba85d",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83993102024/19t1ob1t8lgtv70g1r02awup5.jpg?watermark=01c2ba932638fb3d195310cbfbaba85d",
@@ -8688,7 +6445,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 400000,
     "versionsAvailable": 1,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Rancagua",
+    "location": "Temuco",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77589282024/1co59xsghyj7d4s12n2b43dvb.jpg?watermark=4aa355ab8528c0eb391d2526395fd4bf",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77589282024/1co59xsghyj7d4s12n2b43dvb.jpg?watermark=4aa355ab8528c0eb391d2526395fd4bf",
@@ -8747,7 +6504,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 410000,
     "versionsAvailable": 8,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Concepción",
+    "location": "Copiapó",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-6238642024/nj6lk4mplf360q9pq6xz3de64.jpg?watermark=c1201aa92be9ebafa9d68bb6b3e6fd53",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-6238642024/nj6lk4mplf360q9pq6xz3de64.jpg?watermark=c1201aa92be9ebafa9d68bb6b3e6fd53",
@@ -8783,65 +6540,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-81312112025",
-    "slug": "jac-t8-2025-advance-112025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Pick-up/JAC/T8/CL-JATO-ITM-81312112025",
-    "make": "JAC",
-    "model": "T8",
-    "year": 2025,
-    "badge": "Advance",
-    "title": "JAC T8 2025 Advance",
-    "bodyStyle": "Pick-up",
-    "fuelType": "Diesel",
-    "transmission": "manual",
-    "drive": "4x4",
-    "engine": "2.0L",
-    "engineCc": 1999,
-    "fuelCombined": 12.7,
-    "doors": 4,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 23191600,
-    "reservationFeeClp": 460000,
-    "estimatedMonthlyClp": 420000,
-    "versionsAvailable": 4,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Santiago",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81312112024/e90x38ohebw9aev8q45pi5vf5.jpg?watermark=b0fc7181a79ab15162d2f367e1e9000c",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81312112024/e90x38ohebw9aev8q45pi5vf5.jpg?watermark=b0fc7181a79ab15162d2f367e1e9000c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81312112024/l39cy581rwd44n32whx07dgo7.jpg?watermark=480d84e4484ffede49c2135dd5d95c23",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81312112024/lrrcy8t4ddo6d0nh5dismlaf3.jpg?watermark=ca0a8eb68c6d1e875e1a37e9c835609e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81312112024/ebenjo926n2exez0mej9l0fi2.jpg?watermark=6c99ac4898eb18fcfb3a2d2fc7937d23",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81312112024/t7zgv7lbehp9c56yuqi5umhz2.jpg?watermark=f32c3edad96e6b3f6f50f3ec6ace533c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81312112024/qszoxlcbiup8q01srag2n8yb5.jpg?watermark=26fd9698b626228053345aeeb0543263",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81312112024/6dika1hgz7i3l88icbr4rko59.jpg?watermark=cd94eca712c5e17485215e1360e857eb",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81312112024/lofu512j34mg1xn606lcemmi4.jpg?watermark=d5642fe99c0a45e4751531d8d73ca1ec",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81312112024/pnai24vabxqqyulfs7w7nklt4.jpg?watermark=b2244f893d9fec6198a4d00b87025555",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81312112024/rnbln7sq0z08p0d10znzybq28.jpg?watermark=744afea7b8a3bbe1e0b8054870ae6921"
-    ],
-    "description": "La JAC T8 , con su imponente diseño y máscara frontal robusta, está equipada con un motor turbo diésel de 2.0 litros y una capacidad de carga de 900 kg. Su doble cabina es ideal para trabajo y viajes familiares, ofreciendo comodidad para hasta 5 personas. El selector electrónico permite cambiar entre modos de tracción 4x2 y 4x4 sin detenerse; además, incluye Android Auto, Apple CarPlay, control crucero y monitoreo de presión de neumáticos para un viaje seguro y conectado.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal cuero sintético",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)",
-      "Potencia - Potencia máxima HP"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 23191600
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-83554182025",
     "slug": "peugeot-landtrek-2025-action4-182025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Pick-up/Peugeot/Landtrek/CL-JATO-ITM-83554182025",
@@ -8865,7 +6563,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 420000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Puerto Montt",
+    "location": "Arica",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83554182024/x5ctcz7oyqe5vjr3e156y57q2.jpg?watermark=abd93cc7b55fb388057069b4d8710ae4",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83554182024/x5ctcz7oyqe5vjr3e156y57q2.jpg?watermark=abd93cc7b55fb388057069b4d8710ae4",
@@ -8928,7 +6626,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 420000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Talca",
+    "location": "Copiapó",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83554172024/0d142mtfy02cfscq69hujx4td.jpg?watermark=17041db6b506d3e4a9bf414dc24a56a7",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83554172024/0d142mtfy02cfscq69hujx4td.jpg?watermark=17041db6b506d3e4a9bf414dc24a56a7",
@@ -8968,132 +6666,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-83554152025",
-    "slug": "peugeot-landtrek-2025-active-152025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Pick-up/Peugeot/Landtrek/CL-JATO-ITM-83554152025",
-    "make": "Peugeot",
-    "model": "Landtrek",
-    "year": 2025,
-    "badge": "Active",
-    "title": "Peugeot Landtrek 2025 Active",
-    "bodyStyle": "Pick-up",
-    "fuelType": "Diesel",
-    "transmission": "manual",
-    "drive": "delantera",
-    "engine": "2.2L",
-    "engineCc": 2179,
-    "fuelCombined": 12,
-    "doors": 4,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 23490000,
-    "reservationFeeClp": 470000,
-    "estimatedMonthlyClp": 420000,
-    "versionsAvailable": 4,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Iquique",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83554152024/b61m03on0pibqmb19lves5fp1.jpg?watermark=6306f9305df714e6e221151711ec1529",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83554152024/b61m03on0pibqmb19lves5fp1.jpg?watermark=6306f9305df714e6e221151711ec1529",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83554152024/f1jbj8otd4labzhedktrsn6h5.jpg?watermark=6aa8c575f6977e0aa668deead3b6821d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83554152024/zat15m5c8zrb1oav11mzkslw6.png?watermark=13f267f1c6ad086cb29b2449cb5ce543",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83554152024/pky6fyx1686ht114uhgbd60b1.png?watermark=1ce60382714a8fe26450888c30f2804c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83554152024/rqnyo1yyfld3dh34yn8wnu8hb.jpg?watermark=3ab8216d830d5479b562f321785f6d1d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83554152024/h4h9hvsr5eyo5gvmzw861w3yb.jpg?watermark=6bca6455a4e07e6e2c696c1e194c903e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83554152024/p9ss5kexlk09arv44bf22yh16.jpg?watermark=4faad5c92d18ba18f3d6146386975928",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83554152024/xw0duqdp5uwuoaxklkyignfh.jpg?watermark=d388d71fd2bcbaa4e7c29416dfac47a1",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83554152024/b4m8nlz9c2igb0vvjqtjkp4s8.jpg?watermark=1dd3a9a225e4baf7f5369311aabdd40c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83554152024/l2ox23qce6s87j94l5fdutz2d.jpg?watermark=976cf66c90aa61869e52811d2bea09f2"
-    ],
-    "description": "La nueva LANDTREK marca el regreso de PEUGEOT al mercado de las pick-up, con una versión doble cabina, de 5 asientos, motor diésel, así como una variedad de accesorios al servicio de tus actividades tanto profesionales como familiares. Ofrece lo mejor de ambos mundos: una habitabilidad sumamente generosa sin comprometer las dimensiones de la zona de carga. Los otros puntos fuertes de LANDTREK son su modularidad, su comportamiento en carretera, una característica distintiva y su diseño sólido.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 203890000
-      },
-      {
-        "type": "JATO",
-        "amount": 34736100
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-83541442025",
-    "slug": "opel-grandland-2025-gs-442025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Opel/Grandland/CL-JATO-ITM-83541442025",
-    "make": "Opel",
-    "model": "Grandland",
-    "year": 2025,
-    "badge": "GS",
-    "title": "Opel Grandland 2025 GS",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "manual",
-    "drive": "delantera",
-    "engine": "1.2L",
-    "engineCc": 1199,
-    "fuelCombined": 18.5,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 23590000,
-    "reservationFeeClp": 470000,
-    "estimatedMonthlyClp": 420000,
-    "versionsAvailable": 4,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Copiapó",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83541442024/093z9dqzydogci1hvhteypxx4.jpg?watermark=5de451f7ec7b386749550b2ec49cd67d",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83541442024/093z9dqzydogci1hvhteypxx4.jpg?watermark=5de451f7ec7b386749550b2ec49cd67d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83541442024/iermxxtqr7e6tx5dzqft1u0ta.jpg?watermark=196a81b892a1063da6dea7149df927e9",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83541442024/rr5bhsd79ni5z28s6gfte3mp2.png?watermark=193f6b05413a790f7509b0757add2a34",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83541442024/rquz1cw1yp5oe8fiqx87scj12.png?watermark=d3eca0af5223dbe9df4e8caf08514a46",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83541442024/gur198sttrml85p7ea0raajy8.jpg?watermark=1b5cb526ab9e7f5b67594c086cca95b3",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83541442024/c4hstkr93o83o5znt0jzt5lec.jpg?watermark=7aa3088c010fc0766599bfadce9bd4fc",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83541442024/rmw045oa9rcld7y79jiv2crxd.jpg?watermark=f04b8ff95ae30ae1fe55e1a08e3194ef",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83541442024/pmijnbw10y5dnioe9k087a2a.jpg?watermark=06ac73dc6436882bb8de23faf019c4da",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83541442024/i6nepyktoqehy3ehw9q3xv0de.jpg?watermark=e45a7f9fca35e897ec161ac4b90e9de7",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83541442024/bmcoyfvrswhe9kq7em5nfk1t4.jpg?watermark=f371ef73f9d740acfd8471f5c41addec"
-    ],
-    "description": "La nueva generación SUV ya está aquí, llega el nuevo Opel Grandland. Admira su distintivo diseño con el icónico frontal Vizor®. Contempla en su interior el futurista módulo digital pure panel® formado por dos pantallas. Siente el impulso de sus eficientes motores de gasolina y diésel. Y viaja con la seguridad de ideas tan brillantes como el sistema de estacionamiento semi-automático.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 23590000
-      },
-      {
-        "type": "JATO",
-        "amount": 24790000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-83541452025",
     "slug": "opel-grandland-2025-gs-452025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Opel/Grandland/CL-JATO-ITM-83541452025",
@@ -9117,7 +6689,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 420000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Arica",
+    "location": "Talca",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83541452024/a4iuz9qdcqta9j8mjx3m66s84.jpg?watermark=2e93ece2dd248d7251f0c3d0ec2db66b",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83541452024/a4iuz9qdcqta9j8mjx3m66s84.jpg?watermark=2e93ece2dd248d7251f0c3d0ec2db66b",
@@ -9157,69 +6729,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-83541462025",
-    "slug": "opel-grandland-2025-gs-462025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Opel/Grandland/CL-JATO-ITM-83541462025",
-    "make": "Opel",
-    "model": "Grandland",
-    "year": 2025,
-    "badge": "GS",
-    "title": "Opel Grandland 2025 GS",
-    "bodyStyle": "SUV",
-    "fuelType": "Diesel",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.5L",
-    "engineCc": 1499,
-    "fuelCombined": 22.9,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 23590000,
-    "reservationFeeClp": 470000,
-    "estimatedMonthlyClp": 420000,
-    "versionsAvailable": 4,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Santiago",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83541462024/0phbdu7m47iy2o5z90ysa1in9.jpg?watermark=9755d7c621df291fa032066bb62390f7",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83541462024/0phbdu7m47iy2o5z90ysa1in9.jpg?watermark=9755d7c621df291fa032066bb62390f7",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83541462024/no63s5gpfyw2ukjt5y50zh9m.jpg?watermark=394b66497c253a5b6cace12aca2d0009",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83541462024/t7wuqpsrtlu2wyfl9m8s2p6c5.png?watermark=0867945d478e1efe2ea439aa69ef3aba",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83541462024/ckoy815c9mmhnrtrdjf8wsqz1.png?watermark=86762adf93b579f4601b679366ff9477",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83541462024/sezm0o6vhpxlkytv3eut14ij8.jpg?watermark=858ff74fb3a4c561270c8e6b928901e3",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83541462024/j1qesl2h97vykrqfwiyocc034.jpg?watermark=8dc3b17ed65476c0267c7213e6a2a97b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83541462024/j17zzfiibgu0gij1tbeixqnea.jpg?watermark=a27e578fd67c525e3f2a6a9c0d2860ca",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83541462024/71ofgc35oic3qrrno1bfne3f8.jpg?watermark=cd29f80d2ed6f5b1b26321525a697615",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83541462024/78y3j7v30vc7q7gruk4vsu6zd.jpg?watermark=2987575087ac73e08a30e7f635bda266",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83541462024/cmmhhsuws2gkydrqm1w96ma6e.jpg?watermark=1d5c699913ef336c41b5026c6d6c1509"
-    ],
-    "description": "La nueva generación SUV ya está aquí, llega el nuevo Opel Grandland. Admira su distintivo diseño con el icónico frontal Vizor®. Contempla en su interior el futurista módulo digital pure panel® formado por dos pantallas. Siente el impulso de sus eficientes motores de gasolina y diésel. Y viaja con la seguridad de ideas tan brillantes como el sistema de estacionamiento semi-automático.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 27490000
-      },
-      {
-        "type": "JATO",
-        "amount": 28690000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-83541472025",
     "slug": "opel-grandland-2025-gs-line-472025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Opel/Grandland/CL-JATO-ITM-83541472025",
@@ -9243,7 +6752,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 420000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Valparaíso",
+    "location": "Iquique",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83541472024/uxxhx2rifgguiarpdhy49r3v4.jpg?watermark=133ce6c09a799498c68d835063d2e270",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83541472024/uxxhx2rifgguiarpdhy49r3v4.jpg?watermark=133ce6c09a799498c68d835063d2e270",
@@ -9283,124 +6792,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-81563342025",
-    "slug": "toyota-rav4-2025-le-342025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Toyota/Rav4/CL-JATO-ITM-81563342025",
-    "make": "Toyota",
-    "model": "Rav4",
-    "year": 2025,
-    "badge": "LE",
-    "title": "Toyota Rav4 2025 LE",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "2.0L",
-    "engineCc": 1987,
-    "fuelCombined": 13.7,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 23590000,
-    "reservationFeeClp": 470000,
-    "estimatedMonthlyClp": 420000,
-    "versionsAvailable": 8,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "La Serena",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81563342024/zko8p5i6lrf6et7zib6v2oc62.jpg?watermark=7392d9a8c8b14c894243d488f755dd9b",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81563342024/zko8p5i6lrf6et7zib6v2oc62.jpg?watermark=7392d9a8c8b14c894243d488f755dd9b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81563342024/zv1kdombz7qauqyq1ysxn0mia.jpg?watermark=c9099059f959f94b00eabf724477b0bb",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81563342024/qbe62rfssvmdq0bkirnhx2hm.png?watermark=0c0ebe9fc2e402d002e9349ab61f990c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81563342024/y91o5cqn80p93q1xkvnqfs4v9.jpg?watermark=07c929dc3807f4d895ddd77d64e7bda7",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81563342024/9u8vjss3oenr7ianj1m0twih2.jpg?watermark=251de702c09f5dd7dd2b468fae4cc614",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81563342024/agl03j6iiw8biychbi42iagsa.jpg?watermark=0ecd5ff885d9bb9388abcd233efbc500",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81563342024/pvaxxv0tg13asim5favhtkgk2.jpg?watermark=d3c92c9f2f8ff32f4e18809dba0474fe",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81563342024/akpuswsz89o0nu5on2zl9zqx9.jpg?watermark=8369adef18a5e82c7dfd1b8394cb491d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81563342024/pehyyj5fwmio5gsjdzp65e4q9.jpg?watermark=234862f0802d9660ceef9333ba2205b5",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81563342024/f5nm36go8ki02u0tiva0ur8dc.jpg?watermark=1a5475bca65cab692983a6365d124033"
-    ],
-    "description": "Toyota ALL NEW RAV4 fue rediseñada para presentar un estilo llamativo y robusto que proyecta fuerza y te inspira a desafiar cada parte de tu día. Su audaz delantera e imponente postura exhiben su lado agresivo característico de una todo terreno, mientras que sus líneas aerodinámicas y silueta elegante acentúan su sofisticación. Ya sea que te encuentres disfrutando de la ciudad o explorando el campo, ALL NEW RAV4 fortalece tus ambiciones y te abre un camino lleno de posibilidades.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 23590000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-6234602025",
-    "slug": "toyota-rav4-2025-le-602025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Toyota/Rav4/CL-JATO-ITM-6234602025",
-    "make": "Toyota",
-    "model": "Rav4",
-    "year": 2025,
-    "badge": "LE",
-    "title": "Toyota Rav4 2025 LE",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "manual",
-    "drive": "4x4",
-    "engine": "2.0L",
-    "engineCc": 1987,
-    "fuelCombined": 13.8,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 23590000,
-    "reservationFeeClp": 470000,
-    "estimatedMonthlyClp": 420000,
-    "versionsAvailable": 8,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Rancagua",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-6234602024/x19sjrgg2pq61cfse0f40jpj6.jpg?watermark=592334ca6bb80ffd6ce288595ad8d07c",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-6234602024/x19sjrgg2pq61cfse0f40jpj6.jpg?watermark=592334ca6bb80ffd6ce288595ad8d07c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-6234602024/zk91rmulu8d4tl8luoy1e3f8d.jpg?watermark=393147a02d0191df44a0bd8fcac50e93",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-6234602024/t73wg6iftoli4f18ec0o2p6yc.png?watermark=1f80ac6fd296f6a4ff99ce6a04bc02f5",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-6234602024/iyf5swq2t3b333rfxu4z46w42.jpg?watermark=413b74672cb0f729a52db3c5b84bdd8f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-6234602024/r3bmpmtu39r4f00o1itmxcwo9.jpg?watermark=62f11da65c695b64d03c6eb2483f2db6",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-6234602024/5a6hkmjrc906kp3i99q341as4.jpg?watermark=588fb5c534dd1a3f7c369bb21d546368",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-6234602024/ehf2ic949p30oxm4v1zqs2x2f.jpg?watermark=a2695310e24acaef1bceac77fac1f0c5",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-6234602024/3rsm13pp6aytrdihpl0i7ijg5.jpg?watermark=f58d85bcc37815c14d2adaa2b13158ee",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-6234602024/9kwok7848jpm3unkapi0y29s7.jpg?watermark=a692bbf019d6ea2a6d967b61cf796160",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-6234602024/t82x6yzihotnkxab7vedjknv5.jpg?watermark=cda65ee0325f94aa258aebafe7d55fed"
-    ],
-    "description": "Toyota ALL NEW RAV4 fue rediseñada para presentar un estilo llamativo y robusto que proyecta fuerza y te inspira a desafiar cada parte de tu día. Su audaz delantera e imponente postura exhiben su lado agresivo característico de una todo terreno, mientras que sus líneas aerodinámicas y silueta elegante acentúan su sofisticación. Ya sea que te encuentres disfrutando de la ciudad o explorando el campo, ALL NEW RAV4 fortalece tus ambiciones y te abre un camino lleno de posibilidades.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 23590000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-82773712025",
     "slug": "volkswagen-taos-2025-comfortline-712025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Volkswagen/Taos/CL-JATO-ITM-82773712025",
@@ -9424,7 +6815,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 430000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Valparaíso",
+    "location": "Concepción",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82773712023/i18f4rgbx16xfd0hrcfplnpw1.jpg?watermark=f62a61c14f44f1ee53e96f879457be04",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82773712023/i18f4rgbx16xfd0hrcfplnpw1.jpg?watermark=f62a61c14f44f1ee53e96f879457be04",
@@ -9487,7 +6878,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 430000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Concepción",
+    "location": "Temuco",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82773732023/6ck8enchml9omiu1ta7ht39l2.jpg?watermark=b473425cd783fa3355b59ae80b68956f",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82773732023/6ck8enchml9omiu1ta7ht39l2.jpg?watermark=b473425cd783fa3355b59ae80b68956f",
@@ -9550,7 +6941,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 430000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Santiago",
+    "location": "Rancagua",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83197512024/dzz82pu11u5dt1dgyqvdozc7d.jpg?watermark=4731550f6db33e4bf0e8a7845e7ea755",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83197512024/dzz82pu11u5dt1dgyqvdozc7d.jpg?watermark=4731550f6db33e4bf0e8a7845e7ea755",
@@ -9609,7 +7000,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 430000,
     "versionsAvailable": 9,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Iquique",
+    "location": "Calama",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82690802024/8gi8a1k7e364ednwxngmxc234.jpg?watermark=c28f818f94f2c4453217145a1579fadc",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82690802024/8gi8a1k7e364ednwxngmxc234.jpg?watermark=c28f818f94f2c4453217145a1579fadc",
@@ -9640,69 +7031,6 @@ export const c4rVehicles: C4RVehicle[] = [
       {
         "type": "JATO",
         "amount": 23890000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-81259922025",
-    "slug": "peugeot-308-2025-allure-922025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Hatchback/Peugeot/308/CL-JATO-ITM-81259922025",
-    "make": "Peugeot",
-    "model": "308",
-    "year": 2025,
-    "badge": "Allure",
-    "title": "Peugeot 308 2025 Allure",
-    "bodyStyle": "Hatchback",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.2L",
-    "engineCc": 1199,
-    "fuelCombined": 19,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 23890000,
-    "reservationFeeClp": 480000,
-    "estimatedMonthlyClp": 430000,
-    "versionsAvailable": 3,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Viña del Mar",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81259922024/wjxua4dz78jb799errbhdsm3a.jpg?watermark=57b4b3eaa5b170ff22e13b558ef56b42",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81259922024/wjxua4dz78jb799errbhdsm3a.jpg?watermark=57b4b3eaa5b170ff22e13b558ef56b42",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81259922024/isakwcfbcru4babwbb7m762id.jpg?watermark=776653ec9334aa8d35669f5dd3d0bce2",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81259922024/wxn06wwv8k2p2qqarz9wwfgwa.png?watermark=43dcdd189155c6cebf76bce0ca7c93d2",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81259922024/zfjpnbg969hyblqqy4uibd7t5.png?watermark=a09c7abf92ef4da9864dfdadafea03a1",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81259922024/2ael4gf1q2ajeemi7v7g9jih9.jpg?watermark=7c347884ebf4358b145e6ced28215791",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81259922024/evjkds23e9bdg9ippfzkczdu5.jpg?watermark=ccd395586cb1d3d4e60460c84b96030a",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81259922024/l8tplzfok36kgzmi5btrpof44.jpg?watermark=30db4fa47f08951059f6c228547528d1",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81259922024/379a5ur1le8949jax2roht8c9.jpg?watermark=19a6682adbf9c0229eebe85f1ea797af",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81259922024/zw8xpwl18zvnuxlia4zimbhib.jpg?watermark=92517d4956a5f26ab1f2b2cdb80d3bf1",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81259922024/wnhajw9obb95i2vi8qg4t8675.jpg?watermark=255125aeeffa84a32bd56e34b506d7ab"
-    ],
-    "description": "La intensa seducción del nuevo 308, un modelo de alta gama que no sacrifica la espontaneidad, cautiva por su marcado carácter y su dinamismo. Para que cada momento sea tuyo, puedes contar con las tecnologías innovadoras y enriquecedoras del nuevo Peugeot i-Cockpit®, que amplían tu experiencia a bordo. Para mayor comodidad de conducción, que combine mejor la eficiencia y las prestaciones, descubre nuestro compromiso Power of Choice y déjate llevar por la gama de motores de gasolina o diésel.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 23890000
-      },
-      {
-        "type": "JATO",
-        "amount": 25290000
       }
     ],
     "source": "Chileautos catalogo 0km"
@@ -9794,7 +7122,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 430000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Talca",
+    "location": "Puerto Montt",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82369142024/s6v4e9rn6yoxjmi24orjkqlw2.jpg?watermark=82522ce1c159268538f3e86db7a3b366",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82369142024/s6v4e9rn6yoxjmi24orjkqlw2.jpg?watermark=82522ce1c159268538f3e86db7a3b366",
@@ -9834,65 +7162,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-82874432025",
-    "slug": "jac-t8-pro-2025-luxury-432025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Pick-up/JAC/T8%20Pro/CL-JATO-ITM-82874432025",
-    "make": "JAC",
-    "model": "T8 Pro",
-    "year": 2025,
-    "badge": "Luxury",
-    "title": "JAC T8 Pro 2025 Luxury",
-    "bodyStyle": "Pick-up",
-    "fuelType": "Diesel",
-    "transmission": "manual",
-    "drive": "4x4",
-    "engine": "2.0L",
-    "engineCc": 1999,
-    "fuelCombined": 12.7,
-    "doors": 4,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 23905600,
-    "reservationFeeClp": 480000,
-    "estimatedMonthlyClp": 430000,
-    "versionsAvailable": 3,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Puerto Montt",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82874432024/b5mxtwsvnq2iyzk2hvzuiho43.jpg?watermark=f06cdd98ff6522ce7c4e66667df2d460",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82874432024/b5mxtwsvnq2iyzk2hvzuiho43.jpg?watermark=f06cdd98ff6522ce7c4e66667df2d460",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82874432024/sfjdsvprggz3krw2a1ziw4vf4.jpg?watermark=013d5ea7b82f4e634acd7423f3a5e4ff",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82874432024/48vr2o5nr8qn076mabfo3w7w1.jpg?watermark=f9955a75bf1459f29f114273029a625b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82874432024/n41hwz0kbsii2npwtdqa8dee2.jpg?watermark=d19a4608754b0577ba7bec97b2d93e30",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82874432024/4o52grqnx1oxoq06h7mebmfu8.jpg?watermark=d9c4b95b9bdfe7de7f37726cf0651c3d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82874432024/hiteotrh10huhkde65cod96j9.jpg?watermark=cf788fca17a6e3f49622c9528cc1d8fa",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82874432024/qlvb0zxv2bxh40j4chu0wtww1.jpg?watermark=fced9183c738569e5512ae5fcb286714",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82874432024/rl37oqumkv3psg0s4dacr7kc8.jpg?watermark=ea6b476cb7c7bdb6ea7869eb4c7063ab",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82874432024/biwubi141jzkcrqog59xt554.jpg?watermark=7f76c9ccff8b50b16c28b50de70dcb10",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82874432024/vxswuiy9gsjbzvz4jpunwlba5.jpg?watermark=fa720daf07fd8816a18056a2d851b133"
-    ],
-    "description": "La JAC T8PRO es una camioneta diseñada para ofrecer robustez y alto rendimiento en cualquier terreno, con capacidad de carga de hasta 900 kg. Con motor de 137 caballos de fuerza y 320 Nm de torque, es ideal para off-road y ciudad, ofreciendo opciones de transmisión 4x4 o 4x2 para una conducción versátil. En su interior proporciona un espacio confortable para 5 pasajeros, pantalla táctil de 10.4 pulgadas y volante multifunción. La JAC T8PRO combina fuerza, tecnología y estilo en un solo vehículo.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal cuero sintético",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)",
-      "Potencia - Potencia máxima HP"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 23905600
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-84203322025",
     "slug": "toyota-corolla-2025-xli-322025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Sed%C3%A1n/Toyota/Corolla/CL-JATO-ITM-84203322025",
@@ -9916,7 +7185,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 430000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Valparaíso",
+    "location": "Calama",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84203322024/05z01kwwppcbp1xosswhpq3x9.jpg?watermark=dbe0243b444397957c45ce473fd054f7",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84203322024/05z01kwwppcbp1xosswhpq3x9.jpg?watermark=dbe0243b444397957c45ce473fd054f7",
@@ -9952,65 +7221,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-84204182025",
-    "slug": "toyota-yaris-cross-2025-xi-182025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Toyota/Yaris%20Cross/CL-JATO-ITM-84204182025",
-    "make": "Toyota",
-    "model": "Yaris Cross",
-    "year": 2025,
-    "badge": "XI",
-    "title": "Toyota Yaris Cross 2025 XI",
-    "bodyStyle": "SUV",
-    "fuelType": "Híbrido",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.5L",
-    "engineCc": 1490,
-    "fuelCombined": 26.3,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 23990000,
-    "reservationFeeClp": 480000,
-    "estimatedMonthlyClp": 430000,
-    "versionsAvailable": 4,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Arica",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84204182024/2hvpup1ojkmps8vl5eq3q4i7c.jpg?watermark=33f873f19118dc9129e85ffb6191941c",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84204182024/2hvpup1ojkmps8vl5eq3q4i7c.jpg?watermark=33f873f19118dc9129e85ffb6191941c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84204182024/vqa7w8dxg8fgrcttdd4y9uhed.jpg?watermark=aa4b47abc9a20c1283ee61b79ae6e030",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84204182024/srd3gwtmcv67fvn4dxwouxg26.png?watermark=2dfea646ef004405483b658598c14b16",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84204182024/hvz5tiw8ibfpsm3y7yifi98qe.png?watermark=f73bbe52dfe5c3a24b6c83feda3c5057",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84204182024/1d6uwujro56gjhsisf731285d.jpg?watermark=d3df98976e6380a8a9c3d50d0956b0b6",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84204182024/t9s5jhvpdo7500ivol3wmh797.jpg?watermark=d5fcab114a105cc1d4ba649c0e963338",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84204182024/r054frke8l5jmw0iz8si7enrc.jpg?watermark=038af4bf8d17a88028da87d468aa4c75",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84204182024/gs8xa1z8gp9wv0apcxlppzl39.jpg?watermark=8317438ea3f349db80d6d6845e99d169",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84204182024/lnswgym8wol39l6qewcc6tv18.jpg?watermark=9ab60313904abffc3da998655930a6ae",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84204182024/7f6fjxed7zhbfm2v67s4ce4j3.jpg?watermark=2fa24f04c90dad3abbcfb67fb10a170c"
-    ],
-    "description": "Diseño moderno y llamativo con un concepto Sólido y Dinámico para captar la atención en las calles y destacar en el segmento SUV. Ángulos de ataque potentes y robustos para enfrentar plenamente caminos irregulares. La gran silueta trapezoidal, junto con las rejillas trapezoidales superior e inferior de diferentes tamaños, expresa una postura sólida y firmemente plantada. El volumen que se origina en la parrilla superior se enfatiza para dar una impresión de empuje hacia adelante.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 23990000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-81689212025",
     "slug": "peugeot-traveller-2025-2-0-bluehdi-180-l3-8p-auto-212025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Furg%C3%B3n/Peugeot/Traveller/CL-JATO-ITM-81689212025",
@@ -10034,7 +7244,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 430000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "La Serena",
+    "location": "Antofagasta",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81689212024/a8vfen2g6g17nryl3f5a24mq1.jpg?watermark=41a14302edce8e0cd07d72bd260bcd33",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81689212024/a8vfen2g6g17nryl3f5a24mq1.jpg?watermark=41a14302edce8e0cd07d72bd260bcd33",
@@ -10097,7 +7307,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 430000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Concepción",
+    "location": "Temuco",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78593732024/qjhpv7eyfgrc1dpohyscuweve.jpg?watermark=1217479ce1315c000661cce72c0c3ad7",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78593732024/qjhpv7eyfgrc1dpohyscuweve.jpg?watermark=1217479ce1315c000661cce72c0c3ad7",
@@ -10160,7 +7370,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 440000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Concepción",
+    "location": "Rancagua",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80814862023/wxa6ghvmbvn0xwaxem3j6mbv1.jpg?watermark=46e8fd9e0db71a5505d46415e7dd8273",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80814862023/wxa6ghvmbvn0xwaxem3j6mbv1.jpg?watermark=46e8fd9e0db71a5505d46415e7dd8273",
@@ -10219,7 +7429,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 440000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Santiago",
+    "location": "Antofagasta",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83879422024/4iefvwix2zttup0lksn8c05w8.jpg?watermark=60d268ddc008cf8d17f3652b4e16137b",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83879422024/4iefvwix2zttup0lksn8c05w8.jpg?watermark=60d268ddc008cf8d17f3652b4e16137b",
@@ -10278,7 +7488,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 440000,
     "versionsAvailable": 8,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Valparaíso",
+    "location": "Viña del Mar",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78828512024/mcxyj9oku5ql2gn0d1hqveenb.jpg?watermark=b83cf81f8c46a9dca3881e252aec383f",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78828512024/mcxyj9oku5ql2gn0d1hqveenb.jpg?watermark=b83cf81f8c46a9dca3881e252aec383f",
@@ -10337,7 +7547,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 440000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Santiago",
+    "location": "Iquique",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82055022024/sn90018xrymz41rwp07u3od96.jpg?watermark=caa683a58e9b9b2f8e75ceddaa4e3ab5",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82055022024/sn90018xrymz41rwp07u3od96.jpg?watermark=caa683a58e9b9b2f8e75ceddaa4e3ab5",
@@ -10396,7 +7606,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 440000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Talca",
+    "location": "Puerto Montt",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83533442023/lprp63yktufj2m21ke87olr23.jpg?watermark=fd344ea4f1dd7e75f20b09f4b355a452",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83533442023/lprp63yktufj2m21ke87olr23.jpg?watermark=fd344ea4f1dd7e75f20b09f4b355a452",
@@ -10455,7 +7665,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 440000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Temuco",
+    "location": "Calama",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82688462024/uezpmdtegsrzu6x90v8c88743.jpg?watermark=ee7ae071b9779bc0c4628c85ffa4f066",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82688462024/uezpmdtegsrzu6x90v8c88743.jpg?watermark=ee7ae071b9779bc0c4628c85ffa4f066",
@@ -10514,7 +7724,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 450000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Arica",
+    "location": "Copiapó",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84203332024/1o1213owspye9rf827qoi1ra1.jpg?watermark=f6c4c81591c58b51bdf5112bdd7f610c",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84203332024/1o1213owspye9rf827qoi1ra1.jpg?watermark=f6c4c81591c58b51bdf5112bdd7f610c",
@@ -10573,7 +7783,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 460000,
     "versionsAvailable": 9,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Calama",
+    "location": "Copiapó",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82690812024/3gkku0ad9rogi5smsedg4c73c.jpg?watermark=ad40b50ca9410882b96945149de61728",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82690812024/3gkku0ad9rogi5smsedg4c73c.jpg?watermark=ad40b50ca9410882b96945149de61728",
@@ -10609,65 +7819,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-78953742025",
-    "slug": "kia-sportage-2025-lx-742025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Kia/Sportage/CL-JATO-ITM-78953742025",
-    "make": "Kia",
-    "model": "Sportage",
-    "year": 2025,
-    "badge": "LX",
-    "title": "Kia Sportage 2025 LX",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "2.0L",
-    "engineCc": 1999,
-    "fuelCombined": 12.4,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 25990000,
-    "reservationFeeClp": 520000,
-    "estimatedMonthlyClp": 470000,
-    "versionsAvailable": 8,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Temuco",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78953742024/dphl8ohsuzbpfuturhmc2k3fa.jpg?watermark=c5e076389d1e5aa8490b95c89d1dccf2",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78953742024/dphl8ohsuzbpfuturhmc2k3fa.jpg?watermark=c5e076389d1e5aa8490b95c89d1dccf2",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78953742024/gwgqgb08yuo2puqoswaa6vb89.jpg?watermark=d4c98cbd3f3f3b32f7fae966f79d30e9",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78953742024/j8foyqhfpq8wgatj2dui23c67.png?watermark=8a78e6b0680d959d8c1b6c8d56f5956d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78953742024/lo2lky2w5bn4smpj7q2m812ue.png?watermark=2612c9cb33bea3a1a32569edb75df4d5",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78953742024/anxdey7gxnslq5l4stnamjlfc.jpg?watermark=0c5e3c9e12101a063390818d79dc31ef",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78953742024/muj7cg9ur6yhv7u8etlorc4s.jpg?watermark=0708315e68cf675d69339c99e6d3beb0",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78953742024/bq931gxxujmdvsmvgl9nijzb3.jpg?watermark=6b40b37ce26aa35962c6ba3d1bd06245",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78953742024/ugiuc0chbaasojos2kxjrn8a1.jpg?watermark=32b0dcf93babeaf4c4f5bd0109d2e7ce",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78953742024/qn7msvtroaj8yrxo690c1eyf3.jpg?watermark=83059643ff7828ada015061e3303f557",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78953742024/046l5t0mdguljzfuen0gibf45.jpg?watermark=d17efc71cd0a92bd39a22710f8100d19"
-    ],
-    "description": "El Kia Sportage 2024 es un SUV subcompacto líder que ofrece una experiencia premium en todo terreno. El Sportage presenta un diseño vanguardista y elegante con luces delanteras y diurnas LED, neblineros traseros y delanteros LED, y un sunroof panorámico. Sus llantas de aleación de hasta 19 pulgadas le dan un estilo moderno. La comodidad está en los detalles. Kia Sportage 2024 es un crossover compacto que apuesta por el espacio interior y compite eficazmente con sus rivales del mercado.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 25990000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-83301752025",
     "slug": "jac-t8-pro-2025-advance-752025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Pick-up/JAC/T8%20Pro/CL-JATO-ITM-83301752025",
@@ -10691,7 +7842,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 470000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Iquique",
+    "location": "La Serena",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83301752024/eqcw15islva5uaqh4vyp0hhsa.jpg?watermark=db6deefe2971adb613abb11b90263e5a",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83301752024/eqcw15islva5uaqh4vyp0hhsa.jpg?watermark=db6deefe2971adb613abb11b90263e5a",
@@ -10750,7 +7901,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 480000,
     "versionsAvailable": 10,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Valparaíso",
+    "location": "Antofagasta",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76365572024/mbhvosududizaak133w00agie.jpg?watermark=f201d55cc54d4a7f2e6088528d0f3879",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76365572024/mbhvosududizaak133w00agie.jpg?watermark=f201d55cc54d4a7f2e6088528d0f3879",
@@ -10809,7 +7960,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 480000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Calama",
+    "location": "Antofagasta",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78829722023/jzlu6gjblf6yftvzwor1tmwnb.jpg?watermark=07af521c6dd9ca619e3e8ae5d6276378",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78829722023/jzlu6gjblf6yftvzwor1tmwnb.jpg?watermark=07af521c6dd9ca619e3e8ae5d6276378",
@@ -10872,7 +8023,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 480000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Copiapó",
+    "location": "Viña del Mar",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78829732023/icvf9dv2wgt47pk1fwcnpfdj6.jpg?watermark=6317b806a945118d42f485192df3ee03",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78829732023/icvf9dv2wgt47pk1fwcnpfdj6.jpg?watermark=6317b806a945118d42f485192df3ee03",
@@ -10935,7 +8086,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 480000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Santiago",
+    "location": "Rancagua",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80126732023/8o69wuskn1cc1u34ac3tjpif2.jpg?watermark=1b06fe914f20d883cc190205e71347c0",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80126732023/8o69wuskn1cc1u34ac3tjpif2.jpg?watermark=1b06fe914f20d883cc190205e71347c0",
@@ -10994,7 +8145,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 480000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "La Serena",
+    "location": "Copiapó",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82688472024/wrffw2gebjnyi2a7k104rm5i2.jpg?watermark=397cab2d376b391a05c40eeb957e0c24",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82688472024/wrffw2gebjnyi2a7k104rm5i2.jpg?watermark=397cab2d376b391a05c40eeb957e0c24",
@@ -11053,7 +8204,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 480000,
     "versionsAvailable": 8,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Antofagasta",
+    "location": "La Serena",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81775182024/q6e8evkklfvnwwul5a1qy78td.jpg?watermark=2bef255add0fc507d716fd81c8815d64",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81775182024/q6e8evkklfvnwwul5a1qy78td.jpg?watermark=2bef255add0fc507d716fd81c8815d64",
@@ -11089,65 +8240,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-83335082025",
-    "slug": "hyundai-tucson-2025-plus-082025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Hyundai/Tucson/CL-JATO-ITM-83335082025",
-    "make": "Hyundai",
-    "model": "Tucson",
-    "year": 2025,
-    "badge": "Plus",
-    "title": "Hyundai Tucson 2025 Plus",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.6L",
-    "engineCc": 1598,
-    "fuelCombined": 14.9,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 27190000,
-    "reservationFeeClp": 540000,
-    "estimatedMonthlyClp": 490000,
-    "versionsAvailable": 9,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Arica",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83335082024/ql6n5nurn6ktybvr4t4uemxp6.jpg?watermark=f58234fd8cb3664baa3ef643df6916b3",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83335082024/ql6n5nurn6ktybvr4t4uemxp6.jpg?watermark=f58234fd8cb3664baa3ef643df6916b3",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83335082024/r95tfx6cb2mv3g7i5uy8lenza.jpg?watermark=8501545c4fffee38040440b53d24129c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83335082024/g0nozz45u9qahipx0utakgdl4.png?watermark=656024033d1a0e3a29b1d9058f920de3",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83335082024/2rrthr90sg9oe5uabxnkbiovc.png?watermark=d9b3d550d6e8acc7337bfd44952fa7aa",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83335082024/ugjbgmjry9ehy5g48knpio55.jpg?watermark=4a7a204c67958c6976767d00f71decd9",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83335082024/igwcvqfltseohwwkvbidcsfk2.jpg?watermark=3460d0d179610614561acb1696345914",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83335082024/o5gbk3yxumhefbvnorp0gomm6.jpg?watermark=a5fd3d8445908f36871cb489fc86592b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83335082024/c27b4yp2os9iaosppk54ib6s8.jpg?watermark=fff4d9bd762b38dfb616f026bc1b4eab",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83335082024/4a17z6l5yui1dxjxj0qrryvab.jpg?watermark=82555c5bcf4d0ec39448dabd0ae30e9c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83335082024/qdmb6zeawh81b9540i31mh80f.jpg?watermark=37a68965183d558bf62a0de263464f68"
-    ],
-    "description": "El nuevo TUCSON marca el comienzo de un nuevo día y una nueva forma de conducir. A su vez, el nuevo TUCSON empuja los límites del segmento para reinventar casi todo. En el exterior, el TUCSON está diseñado para impresionar, mientras que en el interior, descubrirás un nivel de amplitud, comodidad y versatilidad que supera todas las expectativas.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 27190000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-83773772025",
     "slug": "kia-sportage-2025-ex-772025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Kia/Sportage/CL-JATO-ITM-83773772025",
@@ -11171,7 +8263,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 490000,
     "versionsAvailable": 8,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Antofagasta",
+    "location": "Arica",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773772024/tvycwgiewxmjg6cxouaf7btk8.jpg?watermark=aa5d0f8a2d07357ac8fbd7a720eb52ba",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773772024/tvycwgiewxmjg6cxouaf7btk8.jpg?watermark=aa5d0f8a2d07357ac8fbd7a720eb52ba",
@@ -11207,65 +8299,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-82690822025",
-    "slug": "hyundai-tucson-2025-plus-822025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Hyundai/Tucson/CL-JATO-ITM-82690822025",
-    "make": "Hyundai",
-    "model": "Tucson",
-    "year": 2025,
-    "badge": "Plus",
-    "title": "Hyundai Tucson 2025 Plus",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "4x4",
-    "engine": "2.0L",
-    "engineCc": 1999,
-    "fuelCombined": 11.6,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 27390000,
-    "reservationFeeClp": 550000,
-    "estimatedMonthlyClp": 490000,
-    "versionsAvailable": 9,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Santiago",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82690822024/6nk8am4lajq7osfpo9fzif1la.jpg?watermark=23c34939a0ef6ac8880d0117ab6762b0",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82690822024/6nk8am4lajq7osfpo9fzif1la.jpg?watermark=23c34939a0ef6ac8880d0117ab6762b0",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82690822024/u1wtq86s1dw6snceb9x2yxlaa.jpg?watermark=8b9477daf4bf91ba7550f9c041957d0f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82690822024/favtajuh7fd56ty7ce9wb5c9b.png?watermark=f052e0add8f1a34c38754c2054992796",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82690822024/k9vry7wmyw7xwfzxzbvns0zla.png?watermark=17c12d89ca72cf164810f203d2de692d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82690822024/eq671hn9n4h9t17exa8wlpg64.jpg?watermark=abf7a92c263cc511e00c218e3e1a4d31",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82690822024/k3rgzti2lg81cov4lgpad5vv6.jpg?watermark=629b893de5d0addd90422df91d31f29f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82690822024/zfiio5xslcf1pv6ya89obyl16.jpg?watermark=f721f34f6319c3b7f660296fb3d1a2d8",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82690822024/05u4xgxw6izwskv8op2rh6iv6.jpg?watermark=460955e2aea6b18924286f8495fcbfb9",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82690822024/w2bbhwnbil1tha8yn8ozmyv11.jpg?watermark=861446276e3f2b0d637cd70aa05e6e17",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82690822024/2ft2bx67n73js1prli22642ne.jpg?watermark=a957edd007ac683618dfd17c0af6ba67"
-    ],
-    "description": "El nuevo TUCSON marca el comienzo de un nuevo día y una nueva forma de conducir. A su vez, el nuevo TUCSON empuja los límites del segmento para reinventar casi todo. En el exterior, el TUCSON está diseñado para impresionar, mientras que en el interior, descubrirás un nivel de amplitud, comodidad y versatilidad que supera todas las expectativas.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 27390000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-72177092025",
     "slug": "toyota-hilux-2025-dx-092025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Pick-up/Toyota/Hilux/CL-JATO-ITM-72177092025",
@@ -11289,7 +8322,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 490000,
     "versionsAvailable": 10,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "La Serena",
+    "location": "Santiago",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-72177092024/zc416xm880d2sud746sj5vzsb.jpg?watermark=49fac06dfb6f6627d6a203873cad6d03",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-72177092024/zc416xm880d2sud746sj5vzsb.jpg?watermark=49fac06dfb6f6627d6a203873cad6d03",
@@ -11407,7 +8440,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 510000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Copiapó",
+    "location": "Viña del Mar",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79037022024/q2nno2sdfn6k75qs5gqj24p7b.jpg?watermark=d665417f066cd8eceddf0145e49eeb1d",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79037022024/q2nno2sdfn6k75qs5gqj24p7b.jpg?watermark=d665417f066cd8eceddf0145e49eeb1d",
@@ -11470,7 +8503,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 510000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Arica",
+    "location": "Puerto Montt",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81763042024/fb3r7t1ifw70dt8hu7hicknf8.jpg?watermark=283bdc2b06e6b0dd95912c7e40e1b45f",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81763042024/fb3r7t1ifw70dt8hu7hicknf8.jpg?watermark=283bdc2b06e6b0dd95912c7e40e1b45f",
@@ -11533,7 +8566,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 510000,
     "versionsAvailable": 9,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Copiapó",
+    "location": "Santiago",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82690832024/2uagr1ffy3p0307wg5cjhs2b4.jpg?watermark=9bdb2ee7150b993a9c966c9e2e18b099",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82690832024/2uagr1ffy3p0307wg5cjhs2b4.jpg?watermark=9bdb2ee7150b993a9c966c9e2e18b099",
@@ -11564,301 +8597,6 @@ export const c4rVehicles: C4RVehicle[] = [
       {
         "type": "JATO",
         "amount": 28390000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-78832742025",
-    "slug": "hyundai-porter-hr-2025-gls-742025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Media%20Barandas/Hyundai/Porter%20Hr/CL-JATO-ITM-78832742025",
-    "make": "Hyundai",
-    "model": "Porter Hr",
-    "year": 2025,
-    "badge": "GLS",
-    "title": "Hyundai Porter Hr 2025 GLS",
-    "bodyStyle": "Media Barandas",
-    "fuelType": "Diesel",
-    "transmission": "manual",
-    "drive": "trasera",
-    "engine": "2.5L",
-    "engineCc": 2497,
-    "fuelCombined": 10.2,
-    "doors": 4,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 28786100,
-    "reservationFeeClp": 580000,
-    "estimatedMonthlyClp": 520000,
-    "versionsAvailable": 2,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "La Serena",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78832742024/t8i4x4gocr7vzw9sdn3fxipm.jpg?watermark=b80b59c231bb88ddba309292d494c11b",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78832742024/t8i4x4gocr7vzw9sdn3fxipm.jpg?watermark=b80b59c231bb88ddba309292d494c11b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78832742024/f0jji4ijjxldwv55ssy6zcfm7.jpg?watermark=c0fd54c1f72c4c146024db342f9f8bf2",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78832742024/o4iw8jble88mw0d6z7ra98y11.png?watermark=eea2d19bf31641b07e49f71690bd0d42",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78832742024/mwsbtmien6386nu6qxe3ofzu4.png?watermark=bd4b479e7093bc41256cd6a9663df93f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78832742024/juvi5nfo5mq0ldgamkurq1p.jpg?watermark=763675d87f668fe84b84603b8ae66df8",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78832742024/uqhukfnpb5spszo01yeoukgo8.jpg?watermark=c067a8a1706fac0c7264a6b42cbf4284",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78832742024/s4husr736qpo565lmxp0645q1.jpg?watermark=7a2fcfde80e1792de6e3ef8aa1274f8c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78832742024/v217rh53ld3zbb893e062kmwc.jpg?watermark=637feae9601d16fc1e2f88bfad21e67e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78832742024/vqkmg6cv5ccwuz7l104diptt5.jpg?watermark=b981f5d71037b8c2cd5be54f69827239",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78832742024/i23fl668a44qsznxymimnfnn6.jpg?watermark=4aa99b2fb5c0bbe6df707677439faac3"
-    ],
-    "description": "El área de carga sólo tiene 775 mm. de altura para cargar y descargar de forma eficiente y cómoda. Con capacidad de carga de hasta 1 tonelada. El motor ecológico del Porter hace recircular los gases del escape de vuelta a la máquina, reduciendo contaminantes como el óxido nitroso. Un sistema de frenos más seguro le brindará una menor distancia de frenado debido al poderoso rendimiento de los frenos de 15 pulgadas y el refuerzo de 8+9.",
-    "highlights": [
-      "Asientos - número de plazas 6",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 2",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)",
-      "Potencia - Potencia máxima HP",
-      "Torque"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 28786100
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-75626672025",
-    "slug": "toyota-hilux-2025-sr-672025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Pick-up/Toyota/Hilux/CL-JATO-ITM-75626672025",
-    "make": "Toyota",
-    "model": "Hilux",
-    "year": 2025,
-    "badge": "SR",
-    "title": "Toyota Hilux 2025 SR",
-    "bodyStyle": "Pick-up",
-    "fuelType": "Diesel",
-    "transmission": "manual",
-    "drive": "trasera",
-    "engine": "2.4L",
-    "engineCc": 2393,
-    "fuelCombined": 14,
-    "doors": 4,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 29090000,
-    "reservationFeeClp": 580000,
-    "estimatedMonthlyClp": 520000,
-    "versionsAvailable": 10,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Viña del Mar",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75626672024/g3n3ol0r5sxfy9gepwh1gd22b.jpg?watermark=1c8952772251940d36ac7ff8f7753db0",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75626672024/g3n3ol0r5sxfy9gepwh1gd22b.jpg?watermark=1c8952772251940d36ac7ff8f7753db0",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75626672024/gmzrdmaj7hy2n0tdydivae459.jpg?watermark=44496103a8231e9f37fe6e48fc25dbd0",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75626672024/dq8k8efeaghfprttszvjbydx7.jpg?watermark=b0028cd61a3fdd16536383088166ef5c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75626672024/54t11v7smckkedpj0s1svojwd.jpg?watermark=a68bcfd41e7ff6038c71d16462ebdb72",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75626672024/js25d56xpirmd52rb8evt9k9.jpg?watermark=7310c6ea96675598663f6867bbc1825a",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75626672024/bekj8d2l2s0ku1vynd2e5sps5.jpg?watermark=06b87f4b34ba5e3594f6ceddfa787020",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75626672024/nd70yxzuy9qo1q7zk0r0jxv08.jpg?watermark=6a7eded484ec513d682c81a967223b6b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75626672024/75z9a746c6sbuqv0loswogdm2.jpg?watermark=171b6705b1c19b3bfbeb4af4e5eff336",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75626672024/uc1e9xga8oy2h0rct8hgtsvqd.jpg?watermark=faccc25933eda156eeccce860c3fc7cc",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75626672024/x30mrm6cb2ek9yryi67vytyqe.jpg?watermark=91a2482edc79f4cf8996fe42ff3b0ffa"
-    ],
-    "description": "Hilux posee 3 y 7 airbags, la seguridad de serie más alta en su clase, obteniendo 5 estrellas Latin-Ncap en todas sus versiones. Mayor clasificación para un pick up en Chile, en adultos y niños. Nuevo Diseño, más moderno y agresivo para adaptarse al día a día, ya sea en el mundo de la ciudad como el de trabajo, incorporando un mayor confort interior y un look exterior renovado y atractivo.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 29090000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-79095362025",
-    "slug": "kia-sportage-2025-lx-362025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Kia/Sportage/CL-JATO-ITM-79095362025",
-    "make": "Kia",
-    "model": "Sportage",
-    "year": 2025,
-    "badge": "LX",
-    "title": "Kia Sportage 2025 LX",
-    "bodyStyle": "SUV",
-    "fuelType": "Diesel",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "2.0L",
-    "engineCc": 1999,
-    "fuelCombined": 0,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 29490000,
-    "reservationFeeClp": 590000,
-    "estimatedMonthlyClp": 530000,
-    "versionsAvailable": 8,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Arica",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79095362024/j3ask9ivs8kmg9s45hfpsbrme.jpg?watermark=a8efd4114815b27f295974a05ce5648c",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79095362024/j3ask9ivs8kmg9s45hfpsbrme.jpg?watermark=a8efd4114815b27f295974a05ce5648c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79095362024/r53zkzhxrl72b7ocnjyz16pab.jpg?watermark=ef609a63bb297eb0df334b9d944e0d74",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79095362024/mjoydployv8mbutsda3tlueja.png?watermark=d4100cb0564e4bd518f1f72bfe4ced4e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79095362024/23sbrrr5ms4303lrxxkmasl35.png?watermark=9f3afe749941beb1cea2488598a6c532",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79095362024/imlgcnsoxzomgwwupz33rv9p2.jpg?watermark=24c21e098ef6319a649c3202a408f12f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79095362024/pb8teqho1lyh52mfu4klqfflc.jpg?watermark=9476d3bc4938e8a18aa556d5bd681f8b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79095362024/qdjpetj1e3py3rhf1yu15m2l2.jpg?watermark=3363205ad9ec8d8e31cdd85f493d6120",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79095362024/h1m7ykigkjw3ito8ov0of8sne.jpg?watermark=758109cc25e955f06e66a66efa062cdf",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79095362024/3hkl35sfocs4akv0fs5q38wu2.jpg?watermark=ffde48fd5b0f93610893f8c014759eb5",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79095362024/eutppykmpvbgu1t82mdlhp511.jpg?watermark=66e9f525aee08c90d0d7ba145f98c587"
-    ],
-    "description": "El Kia Sportage 2024 es un SUV subcompacto líder que ofrece una experiencia premium en todo terreno. El Sportage presenta un diseño vanguardista y elegante con luces delanteras y diurnas LED, neblineros traseros y delanteros LED, y un sunroof panorámico. Sus llantas de aleación de hasta 19 pulgadas le dan un estilo moderno. La comodidad está en los detalles. Kia Sportage 2024 es un crossover compacto que apuesta por el espacio interior y compite eficazmente con sus rivales del mercado.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 29490000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-80236962025",
-    "slug": "kia-sportage-2025-ex-962025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Kia/Sportage/CL-JATO-ITM-80236962025",
-    "make": "Kia",
-    "model": "Sportage",
-    "year": 2025,
-    "badge": "EX",
-    "title": "Kia Sportage 2025 EX",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "4x4",
-    "engine": "2.0L",
-    "engineCc": 1999,
-    "fuelCombined": 12.3,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 29990000,
-    "reservationFeeClp": 600000,
-    "estimatedMonthlyClp": 540000,
-    "versionsAvailable": 8,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Viña del Mar",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80236962024/jyb188stl8bd1pc44ca30qura.jpg?watermark=aabc90bd075e1f1dce24ba9e8deb3b3e",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80236962024/jyb188stl8bd1pc44ca30qura.jpg?watermark=aabc90bd075e1f1dce24ba9e8deb3b3e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80236962024/19f3hwwkh8lqd7r0uxb4hrg8.jpg?watermark=8d47afe13ef3ac055bbbeaf39673e320",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80236962024/w0mdfl1n59kdrn2tvk8ry0de4.png?watermark=e4d0e91564c049220ebb590213908051",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80236962024/jt0xgoplf4f62nlyb9aslney8.png?watermark=406256a497d12bd196c4c2268a198cf8",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80236962024/2sl9n51gr82pjb5bqxh6n0ek.jpg?watermark=9bc7ddc94abf501332a2fcbdd5fb2323",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80236962024/aaz3co3fh0hasskn94iin43i8.jpg?watermark=bdbf229e3bd717cfe97f908acc20f1a9",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80236962024/hs41wjj4nksyxxo0r9lmn6yf5.jpg?watermark=804636f52862f26e2fe755d3b2f477c1",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80236962024/i7j9k273o6jkusga58vsarri4.jpg?watermark=d7a85d2fa84bab481be91e044b8e928c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80236962024/ina8e0fa1fqohur2p9y07z7w7.jpg?watermark=3399b6b2b2255c17d13a0ab671b87899",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80236962024/wqfge0hsnp7cnjznk5dn6qq4.jpg?watermark=7c7efb26d9b008e7654f4d2e68f10946"
-    ],
-    "description": "El Kia Sportage 2024 es un SUV subcompacto líder que ofrece una experiencia premium en todo terreno. El Sportage presenta un diseño vanguardista y elegante con luces delanteras y diurnas LED, neblineros traseros y delanteros LED, y un sunroof panorámico. Sus llantas de aleación de hasta 19 pulgadas le dan un estilo moderno. La comodidad está en los detalles. Kia Sportage 2024 es un crossover compacto que apuesta por el espacio interior y compite eficazmente con sus rivales del mercado.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal cuero sintético",
-      "Parlantes - número 8",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 29990000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-83155102025",
-    "slug": "kia-sportage-2025-ex-102025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Kia/Sportage/CL-JATO-ITM-83155102025",
-    "make": "Kia",
-    "model": "Sportage",
-    "year": 2025,
-    "badge": "EX",
-    "title": "Kia Sportage 2025 EX",
-    "bodyStyle": "SUV",
-    "fuelType": "Diesel",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "2.0L",
-    "engineCc": 1998,
-    "fuelCombined": 16.4,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 30490000,
-    "reservationFeeClp": 610000,
-    "estimatedMonthlyClp": 550000,
-    "versionsAvailable": 8,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "La Serena",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83155102024/6z89948s4g0a9xrt1bky3qal.jpg?watermark=e56683b32a3ccd5138ed391a285ece6f",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83155102024/6z89948s4g0a9xrt1bky3qal.jpg?watermark=e56683b32a3ccd5138ed391a285ece6f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83155102024/88yfu8wyi2al68bms7jf3itce.jpg?watermark=1b2c4f57c2d589236546bb909c106566",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83155102024/szo98lhjnt8b0m6cpkjzvvbx6.png?watermark=05fd513d2232fcafb2f4bb41e93d5aa0",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83155102024/9nj70um4bh2ta3uhj2lzkvwe.png?watermark=5741fac385b831d89d9dabdc88ebe8ee",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83155102024/o0y7iksjdl8gstnc58hqgwm28.jpg?watermark=79eed090cc4cc80b4737e254da7f55fc",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83155102024/ounoi9ci67ejaq8d4gsp2wyve.jpg?watermark=c80dd025ee7ee44e2fdb69ed1bdc6e1c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83155102024/az74vusu8ajsrl68k5dclelc.jpg?watermark=d0036fc4a5650137fd0e0eb0372fe33b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83155102024/ub2lat6b24lz6aa3q1hfbukv2.jpg?watermark=e1b3d76ad9d6a626ff47285b7328e107",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83155102024/e52nl8w6a6jyz1tp9qozxo7v4.jpg?watermark=7f8b98e93cb0bcdd20aff7e6a3d84046",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83155102024/3yyupymnyzjnhpijm5dkhnqrb.jpg?watermark=66e2cff50b3636064077bdaa77b0fe18"
-    ],
-    "description": "El Kia Sportage 2024 es un SUV subcompacto líder que ofrece una experiencia premium en todo terreno. El Sportage presenta un diseño vanguardista y elegante con luces delanteras y diurnas LED, neblineros traseros y delanteros LED, y un sunroof panorámico. Sus llantas de aleación de hasta 19 pulgadas le dan un estilo moderno. La comodidad está en los detalles. Kia Sportage 2024 es un crossover compacto que apuesta por el espacio interior y compite eficazmente con sus rivales del mercado.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 8",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 30490000
       }
     ],
     "source": "Chileautos catalogo 0km"
@@ -11946,7 +8684,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 560000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Viña del Mar",
+    "location": "Santiago",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82009812024/pvfwgnzzh67s69dn9q456ir5e.jpg?watermark=1bec5d127b2fecb9bd5515eead47d973",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82009812024/pvfwgnzzh67s69dn9q456ir5e.jpg?watermark=1bec5d127b2fecb9bd5515eead47d973",
@@ -12005,7 +8743,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 560000,
     "versionsAvailable": 10,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Concepción",
+    "location": "Temuco",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73171512024/yf7mhaastwono9y0a35gn0hrd.jpg?watermark=32f93599bc8817d9970bc5d3a0319a3c",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73171512024/yf7mhaastwono9y0a35gn0hrd.jpg?watermark=32f93599bc8817d9970bc5d3a0319a3c",
@@ -12041,246 +8779,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-80947742025",
-    "slug": "toyota-rav4-2025-xle-742025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Toyota/Rav4/CL-JATO-ITM-80947742025",
-    "make": "Toyota",
-    "model": "Rav4",
-    "year": 2025,
-    "badge": "XLE",
-    "title": "Toyota Rav4 2025 XLE",
-    "bodyStyle": "SUV",
-    "fuelType": "Híbrido",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "2.5L",
-    "engineCc": 2487,
-    "fuelCombined": 21.7,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 31790000,
-    "reservationFeeClp": 640000,
-    "estimatedMonthlyClp": 570000,
-    "versionsAvailable": 8,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Viña del Mar",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80947742024/q4h9x4t4tb7gfeboma4ejaouc.jpg?watermark=f61a475768c24540fd0ad13ce5d87647",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80947742024/q4h9x4t4tb7gfeboma4ejaouc.jpg?watermark=f61a475768c24540fd0ad13ce5d87647",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80947742024/cxe5mb60didhiku1ytwf2aur1.jpg?watermark=031da6ac14107937efe216a85b4936ee",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80947742024/jt3of7gld1olsoz36ybwfk3j7.png?watermark=f995cec9a5aedf5ea6caa1adf281c13a",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80947742024/720267suuxripdd68tudhq532.jpg?watermark=9c5cbbfd24052f3b4d8fbfe9c990e8be",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80947742024/ohevupid02r08kvac8rmo88mc.jpg?watermark=242165a830b0671bfcf1ba7e732d3776",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80947742024/oe9wtrettrvj37ki8y8grw75c.jpg?watermark=f2e8aa2841cb3cc58923435a4ee71788",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80947742024/be47259pl983tibv0yy1d2oi3.jpg?watermark=7cd38b9bf514ce4f537489e798f04255",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80947742024/9sqg0cg8iiz3o8twtiftci1h6.jpg?watermark=a597b0caafcf73fe257ad84d658024a5",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80947742024/008m8k28fu5cau41332phj1m4.jpg?watermark=49d5fb73eae8163a35e35826748e6b63",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80947742024/8hwgbkgznqrsrna0xmiv25u06.jpg?watermark=914166469572c0d59b8cb41154fd3755"
-    ],
-    "description": "Toyota ALL NEW RAV4 fue rediseñada para presentar un estilo llamativo y robusto que proyecta fuerza y te inspira a desafiar cada parte de tu día. Su audaz delantera e imponente postura exhiben su lado agresivo característico de una todo terreno, mientras que sus líneas aerodinámicas y silueta elegante acentúan su sofisticación. Ya sea que te encuentres disfrutando de la ciudad o explorando el campo, ALL NEW RAV4 fortalece tus ambiciones y te abre un camino lleno de posibilidades.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal cuero",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 31790000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-72177102025",
-    "slug": "toyota-hilux-2025-dx-102025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Pick-up/Toyota/Hilux/CL-JATO-ITM-72177102025",
-    "make": "Toyota",
-    "model": "Hilux",
-    "year": 2025,
-    "badge": "DX",
-    "title": "Toyota Hilux 2025 DX",
-    "bodyStyle": "Pick-up",
-    "fuelType": "Diesel",
-    "transmission": "manual",
-    "drive": "4x4",
-    "engine": "2.4L",
-    "engineCc": 2393,
-    "fuelCombined": 14,
-    "doors": 4,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 31990000,
-    "reservationFeeClp": 640000,
-    "estimatedMonthlyClp": 580000,
-    "versionsAvailable": 10,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Antofagasta",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-72177102024/77ampk4alwgz1bplthdfl7dm1.jpg?watermark=b00d5124b4a8e6d2e37dd0bbfed93937",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-72177102024/77ampk4alwgz1bplthdfl7dm1.jpg?watermark=b00d5124b4a8e6d2e37dd0bbfed93937",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-72177102024/hge0deof6brzwis9t69gm2la9.jpg?watermark=9ee3a364bc633e4d78b10a83877b8ab3",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-72177102024/u9ncnjzwuq4jkdzjuqxx920hc.jpg?watermark=125b42364dad7fcd1e723d371a9d8cf0",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-72177102024/tsi2aoz6hmikoajzq1ya7g7vd.jpg?watermark=ad301b307a3af5c2e60a5b2581342c43",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-72177102024/hvmqs1zrojzp90inwa3fs40x9.jpg?watermark=1b64e05794acf46c9f3343cf6ff39a0e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-72177102024/m2dm0qpal1i7uj2lw2384v90f.jpg?watermark=ed78de8318c56abbe0118ed3a9e8cdb4",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-72177102024/enbvplxw5wzryhlnq9afw19q4.jpg?watermark=64c1b5c6b42cd699ae83d7f462f10e53",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-72177102024/c2dw04a8hrtn4se4wbz5blg91.jpg?watermark=8c92c5e99860ac707016c7c0cd02b4aa",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-72177102024/uow25hk3vndwutqn7sg56rof8.jpg?watermark=6ea4f8ce5c6a21dbf7d4a6a5694241ae",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-72177102024/e9gzkak14761obor7p5om8pzb.jpg?watermark=b7b887175bb5b78a54fe3e724a571265"
-    ],
-    "description": "Hilux posee 3 y 7 airbags, la seguridad de serie más alta en su clase, obteniendo 5 estrellas Latin-Ncap en todas sus versiones. Mayor clasificación para un pick up en Chile, en adultos y niños. Nuevo Diseño, más moderno y agresivo para adaptarse al día a día, ya sea en el mundo de la ciudad como el de trabajo, incorporando un mayor confort interior y un look exterior renovado y atractivo.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 31990000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-83568212025",
-    "slug": "hyundai-tucson-2025-design-212025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Hyundai/Tucson/CL-JATO-ITM-83568212025",
-    "make": "Hyundai",
-    "model": "Tucson",
-    "year": 2025,
-    "badge": "Design",
-    "title": "Hyundai Tucson 2025 Design",
-    "bodyStyle": "SUV",
-    "fuelType": "Híbrido",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.6L",
-    "engineCc": 1598,
-    "fuelCombined": 20.4,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 31990900,
-    "reservationFeeClp": 640000,
-    "estimatedMonthlyClp": 580000,
-    "versionsAvailable": 9,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Talca",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83568212024/s4gxcb4jrkt2i2gcepfl4jjed.jpg?watermark=42c3df6eea46432e3267124a317d470d",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83568212024/s4gxcb4jrkt2i2gcepfl4jjed.jpg?watermark=42c3df6eea46432e3267124a317d470d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83568212024/a2eupzuaqqrj9k4var4ko8i66.jpg?watermark=090aaea02f75884739ac52f07aa0bab3",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83568212024/6w5fdr6h70nhd9mnib2u8j895.png?watermark=f9da278639f206e627439507f8c67b8d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83568212024/x5vu8nxm8hlr85ultgbgdvj99.png?watermark=07e056a6ef51761e354e77b0830fdd85",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83568212024/qwxb0lzgykr3tszodllkgj2q6.jpg?watermark=9ee70c7b03d8bfb374c101656451664c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83568212024/13ugmlr0w2guxyq44uvh1jy16.jpg?watermark=7c5d462709e5be1aabc4025b953b3f31",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83568212024/ldzrdi8ob20l620vmo1j0ru3c.jpg?watermark=44f23dd65a3acb9a2f8799f5ff21f90f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83568212024/46pl2iccw1s7uebic70fu6glb.jpg?watermark=9f84b0d461e61d37d8619f7ee70836ec",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83568212024/5wvw11s2jccr8bfy2mwfjqmka.jpg?watermark=71433954fc35c722c81e2409a372ac67",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83568212024/8dptf7sj760a4brtk5rmjmkq8.jpg?watermark=7484de6e26a22aed4803ae8bc1b1175c"
-    ],
-    "description": "El Nuevo TUCSON Híbrido utiliza energía eléctrica para que cada litro de gasolina te dure mucho más y llegues más lejos. Y todo ello, sin tener que cargar la batería o cambiar tus hábitos de conducción. Incorpora un motor de gasolina y uno eléctrico, proporcionando un excelente ahorro de combustible. Ambos funcionan juntos con una batería de polímero de iones de litio que ofrece una excelente economía de combustible y reduce las emisiones.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 31990900
-      },
-      {
-        "type": "JATO",
-        "amount": 36990000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-83568222025",
-    "slug": "hyundai-tucson-2025-limited-222025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Hyundai/Tucson/CL-JATO-ITM-83568222025",
-    "make": "Hyundai",
-    "model": "Tucson",
-    "year": 2025,
-    "badge": "Limited",
-    "title": "Hyundai Tucson 2025 Limited",
-    "bodyStyle": "SUV",
-    "fuelType": "Híbrido",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.6L",
-    "engineCc": 1598,
-    "fuelCombined": 20.4,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 31990900,
-    "reservationFeeClp": 640000,
-    "estimatedMonthlyClp": 580000,
-    "versionsAvailable": 9,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Valparaíso",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83568222024/xltrd0ddv4nyqeyth608y22ue.jpg?watermark=70bd0c938b69ace96ef0eb1402136882",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83568222024/xltrd0ddv4nyqeyth608y22ue.jpg?watermark=70bd0c938b69ace96ef0eb1402136882",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83568222024/p17ub9b9teazht2b0aam9vha8.jpg?watermark=3181a8833332ba30f82aa6971ad940e2",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83568222024/xlfrbo359tsiywmhd9iuerh63.png?watermark=fe6c0f9f8d1ea42ae7d19b3b5a73c7f2",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83568222024/p4fnejxvps3oyq1a1a17yizab.png?watermark=3fea594e1f24355825cb8c94faca8f71",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83568222024/wjl66iy0bx6zu5hyyxuvdvi6c.jpg?watermark=dbbf22264c9402c1ca1586c3601a75fc",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83568222024/kvg8tc9ohglb7m2k8ruk71dw.jpg?watermark=b1f80c82082d81a037d7f1aad17621b2",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83568222024/nsvw61w21om5hpwlhkgtr56j5.jpg?watermark=5218be5d5d98880a3d2a513b477d0f95",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83568222024/yw60anrqfxq8jiddjmm4ts8bc.jpg?watermark=2185d1df78122dad8c2317633f253331",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83568222024/oh8z945lznmrnn9mxo10z24ea.jpg?watermark=0a3a5f4333f9104e5e5658da2c69808e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83568222024/a1xvql4c7pfrkrcyje0enrib7.jpg?watermark=858c77df2756617cfb35d79bc6cf2107"
-    ],
-    "description": "El Nuevo TUCSON Híbrido utiliza energía eléctrica para que cada litro de gasolina te dure mucho más y llegues más lejos. Y todo ello, sin tener que cargar la batería o cambiar tus hábitos de conducción. Incorpora un motor de gasolina y uno eléctrico, proporcionando un excelente ahorro de combustible. Ambos funcionan juntos con una batería de polímero de iones de litio que ofrece una excelente economía de combustible y reduce las emisiones.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal cuero",
-      "Parlantes - número 8",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 39890000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-81514482025",
     "slug": "hyundai-tucson-2025-limited-482025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Hyundai/Tucson/CL-JATO-ITM-81514482025",
@@ -12304,7 +8802,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 580000,
     "versionsAvailable": 9,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Concepción",
+    "location": "Iquique",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81514482024/xcrclsvkt5pn6z5asjigu9fc7.jpg?watermark=cd6bd59c256749cb69752ab56338d98a",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81514482024/xcrclsvkt5pn6z5asjigu9fc7.jpg?watermark=cd6bd59c256749cb69752ab56338d98a",
@@ -12363,7 +8861,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 580000,
     "versionsAvailable": 6,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Rancagua",
+    "location": "Arica",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79178572024/ykxd3jx4463ty4jt3ci7imuu.jpg?watermark=f321be1b19d1b4521a1152ac6b0c0065",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79178572024/ykxd3jx4463ty4jt3ci7imuu.jpg?watermark=f321be1b19d1b4521a1152ac6b0c0065",
@@ -12422,7 +8920,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 590000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Antofagasta",
+    "location": "Valparaíso",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82009832024/1y756vlyecrnpzzug9mlf3zp2.jpg?watermark=f8dbde29a4ca3cfd2b656972ed7c98d8",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82009832024/1y756vlyecrnpzzug9mlf3zp2.jpg?watermark=f8dbde29a4ca3cfd2b656972ed7c98d8",
@@ -12481,7 +8979,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 600000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Viña del Mar",
+    "location": "Puerto Montt",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82869022024/t61adjt90tbu3z5hpd9ei17j8.jpg?watermark=1b55992a2ff62bc673fcd88db780c8f4",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82869022024/t61adjt90tbu3z5hpd9ei17j8.jpg?watermark=1b55992a2ff62bc673fcd88db780c8f4",
@@ -12576,65 +9074,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-7745112025",
-    "slug": "toyota-hilux-2025-sr-112025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Pick-up/Toyota/Hilux/CL-JATO-ITM-7745112025",
-    "make": "Toyota",
-    "model": "Hilux",
-    "year": 2025,
-    "badge": "SR",
-    "title": "Toyota Hilux 2025 SR",
-    "bodyStyle": "Pick-up",
-    "fuelType": "Diesel",
-    "transmission": "manual",
-    "drive": "4x4",
-    "engine": "2.4L",
-    "engineCc": 2393,
-    "fuelCombined": 14,
-    "doors": 4,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 33790000,
-    "reservationFeeClp": 680000,
-    "estimatedMonthlyClp": 610000,
-    "versionsAvailable": 10,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Concepción",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-7745112024/l6j51ysaiwzdm4aqr1axy6cjc.jpg?watermark=b71d2ffdc32826e5f686df356932a2d7",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-7745112024/l6j51ysaiwzdm4aqr1axy6cjc.jpg?watermark=b71d2ffdc32826e5f686df356932a2d7",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-7745112024/l5cbvfhfho57gkfrsjuqhnq56.jpg?watermark=79bac980ebf4ea465c9538afc869382f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-7745112024/nbt9ui145crfte6ahe7kmjylc.jpg?watermark=1452eb961038df75a4bbcb0ebf798e54",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-7745112024/0o9dbiqo4acj4m7c0bv0ezg83.jpg?watermark=4ae5caba8cd0366e3a66ec29e774f8a7",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-7745112024/k1l5t36rui32p5a4dxzwsi8la.jpg?watermark=47c9bd6ffd0d6dd4c2420f455dbac896",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-7745112024/rp266bhhf30miv09fe5e9dj09.jpg?watermark=7169fec0ac90c616b474f2b3d85183d4",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-7745112024/2w53etjdu60milp1ycsyxyox9.jpg?watermark=c02d70427ab070b402a72ecae8719656",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-7745112024/za2cd1icf4m9v6ynzu5whwqf.jpg?watermark=69d3130fa24fafbf66e397b787e0413b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-7745112024/di7t4hbt8s0nc6s5o19839gxe.jpg?watermark=f9686c343e98b581b0adc4c394a11b2c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-7745112024/oorspid5n1sulo0qo2cjlb3x2.jpg?watermark=77bc5c6708fc1f09f1ea5c57177c2066"
-    ],
-    "description": "Hilux posee 3 y 7 airbags, la seguridad de serie más alta en su clase, obteniendo 5 estrellas Latin-Ncap en todas sus versiones. Mayor clasificación para un pick up en Chile, en adultos y niños. Nuevo Diseño, más moderno y agresivo para adaptarse al día a día, ya sea en el mundo de la ciudad como el de trabajo, incorporando un mayor confort interior y un look exterior renovado y atractivo.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 33790000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-83287382025",
     "slug": "hyundai-kona-2025-value-382025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Hyundai/Kona/CL-JATO-ITM-83287382025",
@@ -12658,7 +9097,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 630000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Rancagua",
+    "location": "Calama",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83287382024/qafzrspj8qntc3ehk2c9rj8je.jpg?watermark=c43f7bda22e5333d35d3e7b64e41522d",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83287382024/qafzrspj8qntc3ehk2c9rj8je.jpg?watermark=c43f7bda22e5333d35d3e7b64e41522d",
@@ -12717,7 +9156,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 630000,
     "versionsAvailable": 8,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Concepción",
+    "location": "Copiapó",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83155112024/qud0isiixqlxm2q130s5dtf56.jpg?watermark=87a04abd01837a5fb8c958658bdd7167",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83155112024/qud0isiixqlxm2q130s5dtf56.jpg?watermark=87a04abd01837a5fb8c958658bdd7167",
@@ -12776,7 +9215,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 630000,
     "versionsAvailable": 1,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Temuco",
+    "location": "Valparaíso",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84020852024/xhskn2w9snwnotpdb7499ncq6.jpg?watermark=6d949ddddd6d81e36ffb7f56d9e82512",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84020852024/xhskn2w9snwnotpdb7499ncq6.jpg?watermark=6d949ddddd6d81e36ffb7f56d9e82512",
@@ -12816,124 +9255,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-79297212025",
-    "slug": "kia-sportage-2025-x-line-212025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Kia/Sportage/CL-JATO-ITM-79297212025",
-    "make": "Kia",
-    "model": "Sportage",
-    "year": 2025,
-    "badge": "X-Line",
-    "title": "Kia Sportage 2025 X-Line",
-    "bodyStyle": "SUV",
-    "fuelType": "Diesel",
-    "transmission": "automático",
-    "drive": "4x4",
-    "engine": "2.0L",
-    "engineCc": 1999,
-    "fuelCombined": 0,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 35990000,
-    "reservationFeeClp": 720000,
-    "estimatedMonthlyClp": 650000,
-    "versionsAvailable": 8,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Santiago",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79297212024/s8bmvl0fmlslsnm58qb28r8he.jpg?watermark=9adc0f91ca7d0465ccc33b47984c4ff5",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79297212024/s8bmvl0fmlslsnm58qb28r8he.jpg?watermark=9adc0f91ca7d0465ccc33b47984c4ff5",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79297212024/5qh2q99plr7qrt7lymfmo6ic4.jpg?watermark=244f2fdd0557e291a6ade4e2f55ed5a1",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79297212024/7jkpzlqdaoywjglo84muo7011.png?watermark=822f638ca86b6ac5c8598876e3433bbb",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79297212024/cfe8timih8zec1f9rv6zvik6a.png?watermark=b983c4841d1eeaa56a03a5013611f949",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79297212024/escxpemzvnrkjq5fpji7yyjx1.jpg?watermark=b6b84a0f3d10f73a42f85ee3a066e99d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79297212024/tq3wygv5dty9g95p9mb7n1yf6.jpg?watermark=af86fd3ce57274c2ca42e25c9117321c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79297212024/o66assi5fcky3w6qzs1x5hmzd.jpg?watermark=c01faf1fa6380a4d1b9f4f23a914ca4c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79297212024/xlnve2dwg4t6yt94tz0gsd4y6.jpg?watermark=24b500a9b2ad050bc5f49653cbef76e7",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79297212024/kgiqe8m1gyn3yqiiopf2h96la.jpg?watermark=4aef2ed435d62839cd1cfab510d40e9a",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79297212024/ue047zst4dqfts0kzahmetixc.jpg?watermark=c445eedd4c2b186c7f79b92762db508e"
-    ],
-    "description": "El Kia Sportage 2024 es un SUV subcompacto líder que ofrece una experiencia premium en todo terreno. El Sportage presenta un diseño vanguardista y elegante con luces delanteras y diurnas LED, neblineros traseros y delanteros LED, y un sunroof panorámico. Sus llantas de aleación de hasta 19 pulgadas le dan un estilo moderno. La comodidad está en los detalles. Kia Sportage 2024 es un crossover compacto que apuesta por el espacio interior y compite eficazmente con sus rivales del mercado.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal cuero sintético",
-      "Parlantes - número 8",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 35990000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-82047862025",
-    "slug": "toyota-fortuner-2025-sr5-862025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Toyota/Fortuner/CL-JATO-ITM-82047862025",
-    "make": "Toyota",
-    "model": "Fortuner",
-    "year": 2025,
-    "badge": "SR5",
-    "title": "Toyota Fortuner 2025 SR5",
-    "bodyStyle": "SUV",
-    "fuelType": "Diesel",
-    "transmission": "manual",
-    "drive": "4x4",
-    "engine": "2.8L",
-    "engineCc": 2755,
-    "fuelCombined": 11.8,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 36390000,
-    "reservationFeeClp": 730000,
-    "estimatedMonthlyClp": 660000,
-    "versionsAvailable": 6,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Viña del Mar",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82047862024/0upfg37eode4p4e4bhgl6qg85.jpg?watermark=81c2656d1bcb2a784cb306c94b0bb429",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82047862024/0upfg37eode4p4e4bhgl6qg85.jpg?watermark=81c2656d1bcb2a784cb306c94b0bb429",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82047862024/wx0c76kv4z95r1m9c4wobovw.jpg?watermark=e3f17d8fffd9c08021c8475a21b36a9c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82047862024/7wu2d7httl1g8h7ps4x0o01d1.png?watermark=340b26c84f922b79a7b30d9faad990e6",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82047862024/n7gn777m7d9xws8ppek1mbz7b.png?watermark=17e3e948d67873dd5571336079561e73",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82047862024/6juhylkjmv62sh20hzo40xx3f.jpg?watermark=d44172b66875ffd448750aebf860111d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82047862024/y5tvmyjjg7ubip777wmwrpp03.jpg?watermark=30141a32cb28e910cfd3507217c735ff",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82047862024/6pq7lvsv61zvw2o70fb6sbe36.jpg?watermark=6bec026da79809e33e06d868bb7753ff",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82047862024/tctxgbhp519036ndihwxda374.jpg?watermark=9697e833bcf70bbac4e8779aa7c30df7",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82047862024/lrfnqfz7tuy3rq8j0l2p8fha.jpg?watermark=26719f07ad2912e2afa1e53234f4546a",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82047862024/vetmh18125mz4yevm0nyherr4.jpg?watermark=618b127cf8a16dc50554a785ea01d454"
-    ],
-    "description": "Toyota All New Fortuner posee 7 airbags de serie para protegerte a ti y a toda tu familia. Control de balanceo de remolque All New Fortuner posee un sistema de control de balanceo de remolque permite remolcar con mayor estabilidad y seguridad cualquier tipo de carga. Monitor trasero Aparca de forma segura con la cámara de retroceso de serie de Toyota All New Fortuner.",
-    "highlights": [
-      "Asientos - número de plazas 7",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 36390000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-82009852025",
     "slug": "jac-sunray-2025-2-7td-16-1-852025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Van/JAC/Sunray/CL-JATO-ITM-82009852025",
@@ -12957,7 +9278,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 660000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Temuco",
+    "location": "Concepción",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82009852024/pxz6el63a3b884ov98xjdvek9.jpg?watermark=f6555dbda028b391a08147d2ceb7ce95",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82009852024/pxz6el63a3b884ov98xjdvek9.jpg?watermark=f6555dbda028b391a08147d2ceb7ce95",
@@ -13016,7 +9337,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 670000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Rancagua",
+    "location": "La Serena",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82009862024/wp41rzy3clun88pq8dmb2cs87.jpg?watermark=a187355e1d1a450b94a252bc31675dec",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82009862024/wp41rzy3clun88pq8dmb2cs87.jpg?watermark=a187355e1d1a450b94a252bc31675dec",
@@ -13075,7 +9396,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 670000,
     "versionsAvailable": 8,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Talca",
+    "location": "Temuco",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83182082024/65a9jb01vzsqfezuaf74pdbo3.jpg?watermark=5194ef5355ee75587cbb7516eb895a17",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83182082024/65a9jb01vzsqfezuaf74pdbo3.jpg?watermark=5194ef5355ee75587cbb7516eb895a17",
@@ -13111,65 +9432,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-79178672025",
-    "slug": "toyota-fortuner-2025-sr5-672025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Toyota/Fortuner/CL-JATO-ITM-79178672025",
-    "make": "Toyota",
-    "model": "Fortuner",
-    "year": 2025,
-    "badge": "SR5",
-    "title": "Toyota Fortuner 2025 SR5",
-    "bodyStyle": "SUV",
-    "fuelType": "Diesel",
-    "transmission": "automático",
-    "drive": "4x4",
-    "engine": "2.8L",
-    "engineCc": 2755,
-    "fuelCombined": 11.8,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 37890000,
-    "reservationFeeClp": 760000,
-    "estimatedMonthlyClp": 680000,
-    "versionsAvailable": 6,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Iquique",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79178672024/a6jlovzlvdqfvykysn4g98y4b.jpg?watermark=6c4005c007253a51cc8a23de14cfc335",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79178672024/a6jlovzlvdqfvykysn4g98y4b.jpg?watermark=6c4005c007253a51cc8a23de14cfc335",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79178672024/knxmmm1xz8ic52fsugsultb7c.jpg?watermark=c83165280c405d541011e2721c541104",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79178672024/aonepi8u78hihet4u7onrkga8.png?watermark=57fba09ba35dd4e318942d8978c9ff0d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79178672024/xaka74r287dlzo4g6clkf52b2.png?watermark=37f6232c5d33f1a52cbff66fb4639fb2",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79178672024/mr2hpaou2a361bzhx2aef393d.jpg?watermark=eeb97e3b1615adb3d54a7ea192aa2f21",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79178672024/10k4j261echq7lmghexoufqs7.jpg?watermark=7982e1737df3f1fbca9f52b071eb05bb",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79178672024/bry0ql38mhtjv75geiuhhc9ja.jpg?watermark=273a6c45b5557cfef815b9ffa7fd6227",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79178672024/p2lix8fssg1a9q3ubtcwf5515.jpg?watermark=b0d871994a1700dc51e862a575f4c99a",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79178672024/0rmwdjvfnr7bocafjwhi13fs3.jpg?watermark=2fe9af078f38d36d85081b54c4bd46a3",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79178672024/k2uk2c1a6zk1imiwf4ca7ffh6.jpg?watermark=25a9d1c79b700090ef680a4d96bb008b"
-    ],
-    "description": "Toyota All New Fortuner posee 7 airbags de serie para protegerte a ti y a toda tu familia. Control de balanceo de remolque All New Fortuner posee un sistema de control de balanceo de remolque permite remolcar con mayor estabilidad y seguridad cualquier tipo de carga. Monitor trasero Aparca de forma segura con la cámara de retroceso de serie de Toyota All New Fortuner.",
-    "highlights": [
-      "Asientos - número de plazas 7",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 37890000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-80947762025",
     "slug": "toyota-rav4-2025-limited-762025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Toyota/Rav4/CL-JATO-ITM-80947762025",
@@ -13193,7 +9455,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 690000,
     "versionsAvailable": 8,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Temuco",
+    "location": "Valparaíso",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80947762024/89zunkg41f9p06o0szgp6bk2b.jpg?watermark=34292f3ba816b311032603dfd26ba730",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80947762024/89zunkg41f9p06o0szgp6bk2b.jpg?watermark=34292f3ba816b311032603dfd26ba730",
@@ -13229,65 +9491,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-73729692025",
-    "slug": "toyota-hilux-2025-sr-692025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Pick-up/Toyota/Hilux/CL-JATO-ITM-73729692025",
-    "make": "Toyota",
-    "model": "Hilux",
-    "year": 2025,
-    "badge": "SR",
-    "title": "Toyota Hilux 2025 SR",
-    "bodyStyle": "Pick-up",
-    "fuelType": "Diesel",
-    "transmission": "manual",
-    "drive": "4x4",
-    "engine": "2.8L",
-    "engineCc": 2755,
-    "fuelCombined": 13.1,
-    "doors": 4,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 38590000,
-    "reservationFeeClp": 770000,
-    "estimatedMonthlyClp": 690000,
-    "versionsAvailable": 10,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Santiago",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73729692024/33xnl1ceh2sn4xz6c4b0gdqm4.jpg?watermark=58e76e6d755f43bacd18d9b55590776a",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73729692024/33xnl1ceh2sn4xz6c4b0gdqm4.jpg?watermark=58e76e6d755f43bacd18d9b55590776a",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73729692024/8lrucj5xb6m0g7u9meax25pxc.jpg?watermark=741e5f22a181efdde436ab4ef5a74025",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73729692024/naxmfg7yjleb79gj22mdgli8e.jpg?watermark=ebb7ec507345953aa8c23af1fbfeee33",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73729692024/85mpm9n4p90hi17zhhh61o73e.jpg?watermark=87eb72b203fcd246f4896e75471d8d8a",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73729692024/mgjl8wl7qp1tubt8cfhzikk0c.jpg?watermark=0e280eb348e7a9123c969da2a225439e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73729692024/6d2d4zxnw9x93pw4vjdpir4v6.jpg?watermark=a86274b233dc022fa6356ddb5027acd4",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73729692024/q0xe3pf7imie227swgqw9qzhb.jpg?watermark=ff0878074687708d120c00b1e597b11b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73729692024/z86p6bzhmcmoexvp0c6adht0e.jpg?watermark=09c748ce140b9f7498054a354e5c7c8a",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73729692024/atamro41cciw3iiuo4447lpa3.jpg?watermark=bdc1d42ae70f28b299a4d068d3393687",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73729692024/0xmbytlv7gdrfqsdpj51p7o2d.jpg?watermark=96fc8ed75cebb661dd747e86eecc1f07"
-    ],
-    "description": "Hilux posee 3 y 7 airbags, la seguridad de serie más alta en su clase, obteniendo 5 estrellas Latin-Ncap en todas sus versiones. Mayor clasificación para un pick up en Chile, en adultos y niños. Nuevo Diseño, más moderno y agresivo para adaptarse al día a día, ya sea en el mundo de la ciudad como el de trabajo, incorporando un mayor confort interior y un look exterior renovado y atractivo.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 38590000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-82688162025",
     "slug": "kia-carnival-2025-ex-162025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Furg%C3%B3n/Kia/Carnival/CL-JATO-ITM-82688162025",
@@ -13311,7 +9514,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 710000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Temuco",
+    "location": "Valparaíso",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82688162024/e1hyn5nyce5imz1rpllk7ecj6.jpg?watermark=d1db4f7d581819e0028897f1f6a38942",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82688162024/e1hyn5nyce5imz1rpllk7ecj6.jpg?watermark=d1db4f7d581819e0028897f1f6a38942",
@@ -13347,65 +9550,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-83336732025",
-    "slug": "kia-carnival-2025-ex-732025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Furg%C3%B3n/Kia/Carnival/CL-JATO-ITM-83336732025",
-    "make": "Kia",
-    "model": "Carnival",
-    "year": 2025,
-    "badge": "EX",
-    "title": "Kia Carnival 2025 EX",
-    "bodyStyle": "Furgón",
-    "fuelType": "Diesel",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "2.2L",
-    "engineCc": 2151,
-    "fuelCombined": 14.5,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 41390000,
-    "reservationFeeClp": 830000,
-    "estimatedMonthlyClp": 750000,
-    "versionsAvailable": 5,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Antofagasta",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83336732024/d4sr1mg5epyzqfie9q3v8ko6e.jpg?watermark=129b52532ff12ff1b4c99775a5814aa1",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83336732024/d4sr1mg5epyzqfie9q3v8ko6e.jpg?watermark=129b52532ff12ff1b4c99775a5814aa1",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83336732024/8phqfh5v7nzoqjbohyythzvhe.jpg?watermark=a80f4cd45b7d7095e64076bfc49211b1",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83336732024/3a2bjcy8r4xvktjmilwqghl69.png?watermark=ec8d41ebf2bf77eecfa13c07a515ae88",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83336732024/ip71nmvo4fksejdqx8c6n7j39.png?watermark=c7cb925f688c7671e2b6634b772fc422",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83336732024/iduy8g7xmte3madi45o8dyj4a.jpg?watermark=f0eb13fc71e72caff581b1a97082597f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83336732024/m5w638yhdutszcmayw7omkxk7.jpg?watermark=fe3338a9c3559b9bd925f91faf848eca",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83336732024/g2jjoz7ufefd7u7x6y2dxwxtc.jpg?watermark=abc1f4b1cf0c3b84eeb422625af416e9",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83336732024/o8sasrrmw8vf6nsniigb3b939.jpg?watermark=5f5dc6b0acf4cab9563849234c697728",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83336732024/fymwtihhtyyzxfts7p4nab04.jpg?watermark=96092fbf47f20619406ffa6c474df2a1",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83336732024/9nuwc2f90vefj3qwf5ksaium2.jpg?watermark=5184b384e0d177c6f8050a0b0c45d63f"
-    ],
-    "description": "El Carnival brilla con luces delanteras y diurnas LED, lo que le otorga un aspecto de alta tecnología y mejora la visibilidad en todo momento. El interior del Carnival está rodeado de pantallas y ofrece una experiencia cómoda para los ocupantes. Puedes explorar diferentes colores y opciones de personalización según tus preferencias. El Carnival 2024 está equipado con un motor V6 de 3.5 L que produce 290 hp y 262 lb/ft de torsión. Ofrece un equilibrio entre potencia y eficiencia de combustible.",
-    "highlights": [
-      "Asientos - número de plazas 8",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 8",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 41390000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-76564182025",
     "slug": "chevrolet-traverse-2025-lt-182025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Chevrolet/Traverse/CL-JATO-ITM-76564182025",
@@ -13429,7 +9573,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 750000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Copiapó",
+    "location": "Iquique",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76564182024/ozpqimr4qft3gkzxvoutpjf53.jpg?watermark=29e345f2bf08015ef763d666891b45f1",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76564182024/ozpqimr4qft3gkzxvoutpjf53.jpg?watermark=29e345f2bf08015ef763d666891b45f1",
@@ -13492,7 +9636,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 750000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Santiago",
+    "location": "Calama",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77665412024/qa7hubat921u7u74hcincp106.jpg?watermark=d408e5534933fc3ba87d15bf6802274d",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77665412024/qa7hubat921u7u74hcincp106.jpg?watermark=d408e5534933fc3ba87d15bf6802274d",
@@ -13555,7 +9699,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 750000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Arica",
+    "location": "Copiapó",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83324172024/eqnln6txg3mviyjpj3vkxcujd.jpg?watermark=6fb4e5cd2db62d8232f069dbf0fecfcf",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83324172024/eqnln6txg3mviyjpj3vkxcujd.jpg?watermark=6fb4e5cd2db62d8232f069dbf0fecfcf",
@@ -13618,7 +9762,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 750000,
     "versionsAvailable": 10,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Rancagua",
+    "location": "Temuco",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75832382024/vfehktlvfx0mwjkdlpwdip6t8.jpg?watermark=a5db3d42df568f9f40d2bdc0393fce9e",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75832382024/vfehktlvfx0mwjkdlpwdip6t8.jpg?watermark=a5db3d42df568f9f40d2bdc0393fce9e",
@@ -13677,7 +9821,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 760000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Temuco",
+    "location": "Valparaíso",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82906022024/7r06s6jy5yfvc9smid12xk591.jpg?watermark=1137bfc08bc186271563a47918b97608",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82906022024/7r06s6jy5yfvc9smid12xk591.jpg?watermark=1137bfc08bc186271563a47918b97608",
@@ -13736,7 +9880,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 770000,
     "versionsAvailable": 6,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Puerto Montt",
+    "location": "Concepción",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79178682024/7me49tqr6wlqtsfpmp5pl7nu5.jpg?watermark=2350d2e594c984e3bc7f61049a64443f",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79178682024/7me49tqr6wlqtsfpmp5pl7nu5.jpg?watermark=2350d2e594c984e3bc7f61049a64443f",
@@ -13795,7 +9939,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 800000,
     "versionsAvailable": 6,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Talca",
+    "location": "Temuco",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83334602024/r5u9p9b91oht73rfpgr3zl5ud.jpg?watermark=aa77a6b26a197477a949564448490489",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83334602024/r5u9p9b91oht73rfpgr3zl5ud.jpg?watermark=aa77a6b26a197477a949564448490489",
@@ -13854,7 +9998,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 810000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Viña del Mar",
+    "location": "Copiapó",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83287392024/4fz5c6ndfmadq4va4pcu7dsoe.jpg?watermark=26e1ea5da8b56b054dd9318c51971602",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83287392024/4fz5c6ndfmadq4va4pcu7dsoe.jpg?watermark=26e1ea5da8b56b054dd9318c51971602",
@@ -13913,7 +10057,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 850000,
     "versionsAvailable": 10,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Temuco",
+    "location": "Talca",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81297622024/18b6rnozr1ky8aftb0wsee7p5.jpg?watermark=dad82b004d2aecc52d017810025fd856",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81297622024/18b6rnozr1ky8aftb0wsee7p5.jpg?watermark=dad82b004d2aecc52d017810025fd856",
@@ -13972,7 +10116,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 850000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Calama",
+    "location": "Santiago",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81061312024/pu1lm0x2x1l8ufqji29tcqpd3.jpg?watermark=b1ff130f284665a65d0311ece896c37a",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81061312024/pu1lm0x2x1l8ufqji29tcqpd3.jpg?watermark=b1ff130f284665a65d0311ece896c37a",
@@ -14035,7 +10179,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 850000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Viña del Mar",
+    "location": "Antofagasta",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83336752024/v8g23qeaasjopvdea2vq8wkg6.jpg?watermark=db75a5f06607f7b7c13fde43dc3d401d",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83336752024/v8g23qeaasjopvdea2vq8wkg6.jpg?watermark=db75a5f06607f7b7c13fde43dc3d401d",
@@ -14094,7 +10238,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 870000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Antofagasta",
+    "location": "Calama",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82869042024/locejk1jkhosffx1mhcr9wp29.jpg?watermark=11c17b7518216046f8065712e78bcbdd",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82869042024/locejk1jkhosffx1mhcr9wp29.jpg?watermark=11c17b7518216046f8065712e78bcbdd",
@@ -14130,65 +10274,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-82869052025",
-    "slug": "hyundai-staria-2025-luxury-052025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Van/Hyundai/Staria/CL-JATO-ITM-82869052025",
-    "make": "Hyundai",
-    "model": "Staria",
-    "year": 2025,
-    "badge": "Luxury",
-    "title": "Hyundai Staria 2025 Luxury",
-    "bodyStyle": "Van",
-    "fuelType": "Diesel",
-    "transmission": "automático",
-    "drive": "4x4",
-    "engine": "2.2L",
-    "engineCc": 2199,
-    "fuelCombined": 11.9,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 48778100,
-    "reservationFeeClp": 980000,
-    "estimatedMonthlyClp": 880000,
-    "versionsAvailable": 4,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Temuco",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82869052024/m89sfz3ckgy7l0gmq1vdu6lk6.jpg?watermark=8f6032c34608d086b69635d39d8304b7",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82869052024/m89sfz3ckgy7l0gmq1vdu6lk6.jpg?watermark=8f6032c34608d086b69635d39d8304b7",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82869052024/it8rdb3bpjdgb1hwgq4n5ktf2.jpg?watermark=f338b8f4622766a9d063a67ee6255212",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82869052024/99il6wqf5l8ao3i2bmcq4o4da.png?watermark=8ec5f47f400e34257682932e164b1abd",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82869052024/hsrx82hghoc1b56leg0i1dt85.png?watermark=0e7a55aaa582f60d2d33993a61290e85",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82869052024/q32x3za3lydmnzfpnhqni7fge.jpg?watermark=94184afc272416a70a869652ee5d8820",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82869052024/so1wkei3fm3f4iway713kotk2.jpg?watermark=acf32bcb9d4b1011aca7a07d50a0bce3",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82869052024/t4lsd7l5mvl95lb0bdq5voi3d.jpg?watermark=e062c778b5295eeca9ee55e0b2efcca1",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82869052024/ivz2q3pi1aitnl9siah24r3ke.jpg?watermark=644a47927f2fe6593de8e9a21e3a6d9b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82869052024/dtj3g3zmc47e9hwdlzmbw0kv3.jpg?watermark=138a8bccc90bc80b9b7032bd66c25cea",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82869052024/tqooump12kmk3shjratukfr99.jpg?watermark=375710125a604c80a58d624aad5fae02"
-    ],
-    "description": "Prepárese para embarcarse en un nuevo viaje al espacio revolucionario del STARIA, donde viajará con la máxima comodidad, disfrutará del placer de la conversación cara a cara y pasará momentos enriquecedores. En este espacio, las posibilidades son tan ilimitadas como los diferentes estilos de vida de sus propietarios. Es un pequeño paso hacia STARIA, un gran salto hacia el futuro de la movilidad de los vehículos multiuso (MPV).",
-    "highlights": [
-      "Asientos - número de plazas 9",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal cuero premium",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 48778100
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-84122402025",
     "slug": "hyundai-santa-fe-2025-calligraphy-402025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Hyundai/Santa%20Fe/CL-JATO-ITM-84122402025",
@@ -14212,7 +10297,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 950000,
     "versionsAvailable": 10,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Valparaíso",
+    "location": "Talca",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84122402024/bs5t2er0onzyldix4vrbf89be.jpg?watermark=4f36db37086df577525da425e6da4d17",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-84122402024/bs5t2er0onzyldix4vrbf89be.jpg?watermark=4f36db37086df577525da425e6da4d17",
@@ -14271,7 +10356,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 950000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Iquique",
+    "location": "Talca",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83738502024/oqziywx23hagjha86yn5rzco2.jpg?watermark=23d616c6050f57374e9b03ac29874617",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83738502024/oqziywx23hagjha86yn5rzco2.jpg?watermark=23d616c6050f57374e9b03ac29874617",
@@ -14330,7 +10415,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 960000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Temuco",
+    "location": "Viña del Mar",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78722982023/o9jtb9w17gfdxsxiuy6orgq87.jpg?watermark=6ecb964104ced19a27e168815f63538e",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78722982023/o9jtb9w17gfdxsxiuy6orgq87.jpg?watermark=6ecb964104ced19a27e168815f63538e",
@@ -14393,7 +10478,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 980000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Antofagasta",
+    "location": "Rancagua",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78722992023/dqof92ifmq00ux3fw2qtlnh2d.jpg?watermark=c2f11d94f48ecdef14e2893cf898d901",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78722992023/dqof92ifmq00ux3fw2qtlnh2d.jpg?watermark=c2f11d94f48ecdef14e2893cf898d901",
@@ -14456,7 +10541,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 1000000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Temuco",
+    "location": "Talca",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-70295902024/3c4yvf92pziukr5anstk2hrc6.jpg?watermark=fc9e41adb7811e585cd5a3eeda646de9",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-70295902024/3c4yvf92pziukr5anstk2hrc6.jpg?watermark=fc9e41adb7811e585cd5a3eeda646de9",
@@ -14519,7 +10604,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 1040000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Viña del Mar",
+    "location": "Iquique",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81677972024/opu8whggcoqmvail2efo2w8z2.jpg?watermark=61c1085464a043ef4024864816491078",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81677972024/opu8whggcoqmvail2efo2w8z2.jpg?watermark=61c1085464a043ef4024864816491078",
@@ -14582,7 +10667,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 1040000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Antofagasta",
+    "location": "Puerto Montt",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-72520492024/z92upm2n6k3pizocfi3c5do1f.jpg?watermark=80ddb47b37e85a98a74799e414d1374b",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-72520492024/z92upm2n6k3pizocfi3c5do1f.jpg?watermark=80ddb47b37e85a98a74799e414d1374b",
@@ -14681,65 +10766,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-83738522025",
-    "slug": "hyundai-ioniq-5-2025-limited-522025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Hyundai/Ioniq%205/CL-JATO-ITM-83738522025",
-    "make": "Hyundai",
-    "model": "Ioniq 5",
-    "year": 2025,
-    "badge": "Limited",
-    "title": "Hyundai Ioniq 5 2025 Limited",
-    "bodyStyle": "SUV",
-    "fuelType": "Eléctrico",
-    "transmission": "automático",
-    "drive": "4x4",
-    "engine": null,
-    "engineCc": 0,
-    "fuelCombined": 0,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 62890000,
-    "reservationFeeClp": 1260000,
-    "estimatedMonthlyClp": 1130000,
-    "versionsAvailable": 3,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Talca",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83738522024/hbcq2c99gr4mj6918b0okx2ae.jpg?watermark=9accf89f9a3b33ea752972e81b54f3ec",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83738522024/hbcq2c99gr4mj6918b0okx2ae.jpg?watermark=9accf89f9a3b33ea752972e81b54f3ec",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83738522024/8c4dq2gh5fjh7xy3gv5dy3cl1.jpg?watermark=6b54cc6c52607c1b672dc07d6307e07c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83738522024/xav12bvvgw6gl1vhcitohvqa2.png?watermark=a074fb2908665ccf42069ab379f7e647",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83738522024/col0weo8c4akrh9ge19k0vxm9.png?watermark=7881f3d81a5c200ecf304571b994bfca",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83738522024/p3rneeader4cq9hgibrrpjtfa.jpg?watermark=3e6f66b85b8000ad6242bb5ce36f0d4b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83738522024/0rhfzhcxa1l5u26rlsb0p5qjc.jpg?watermark=7feb9ff76d6d86cd43be7da4eca90db6",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83738522024/k8xg7lf48qk8sesyehmszvyo5.jpg?watermark=4333ed8157d24062a10257e9d5065b01",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83738522024/ehob7bi14hdg7x7yrydabugh8.jpg?watermark=be5dc6b421903ebf49e226d85515415b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83738522024/kb6woyskesb4bmy1sdldpws3d.jpg?watermark=3e820c6309e993894948b00af2139ed5",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83738522024/vmtufx2khiq5s8qehdwsml562.jpg?watermark=e74b03340eb97d09a2f500d24ecd3e1e"
-    ],
-    "description": "IONIQ 5 redefine la percepción que tiene la gente de los autos eléctricos. Este SUV totalmente eléctrico que combina la elegancia y el innovador diseño de un prototipo con unas asombrosas prestaciones, materiales respetuosos con el medio ambiente y un increíble despliegue de tecnología inteligente, ha llegado para cambiar las reglas de juego. Equipado con un sistema de baterías de última generación que permite la carga ultrarrápida que logra una autonomía de hasta 481 km.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal cuero sintético",
-      "Parlantes - número 8",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Potencia - Potencia máxima HP",
-      "Torque",
-      "Dimensiones exteriores - alto"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 62890000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-81106152025",
     "slug": "chevrolet-tahoe-2025-z71-152025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Chevrolet/Tahoe/CL-JATO-ITM-81106152025",
@@ -14763,7 +10789,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 1180000,
     "versionsAvailable": 1,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "La Serena",
+    "location": "Antofagasta",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81106152024/dqdm6enw1kz30ti12zd32p975.jpg?watermark=d0cd6465ccfc61283f761330f74391ac",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81106152024/dqdm6enw1kz30ti12zd32p975.jpg?watermark=d0cd6465ccfc61283f761330f74391ac",
@@ -14826,7 +10852,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 1260000,
     "versionsAvailable": 1,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Antofagasta",
+    "location": "Temuco",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-70039162024/ausodkr172pt350vhp3zt19za.jpg?watermark=b2106a3e3d307a69167f23fdfb50a61e",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-70039162024/ausodkr172pt350vhp3zt19za.jpg?watermark=b2106a3e3d307a69167f23fdfb50a61e",
@@ -14866,65 +10892,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-83965672025",
-    "slug": "kia-ev9-2025-gt-line-672025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Kia/Ev9/CL-JATO-ITM-83965672025",
-    "make": "Kia",
-    "model": "Ev9",
-    "year": 2025,
-    "badge": "GT-Line",
-    "title": "Kia Ev9 2025 GT-Line",
-    "bodyStyle": "SUV",
-    "fuelType": "Eléctrico",
-    "transmission": "automático",
-    "drive": "4x4",
-    "engine": null,
-    "engineCc": 0,
-    "fuelCombined": 0,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 94990000,
-    "reservationFeeClp": 1900000,
-    "estimatedMonthlyClp": 1710000,
-    "versionsAvailable": 4,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Rancagua",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965672024/qg9if50x76sisvnzdk4iaxlv3.jpg?watermark=d8d9f8a0af2ae45fb36c9a74bd06e847",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965672024/qg9if50x76sisvnzdk4iaxlv3.jpg?watermark=d8d9f8a0af2ae45fb36c9a74bd06e847",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965672024/0592aqerdvwjwtbp5m6kwm0y.jpg?watermark=c311d30924a712119695aa7500f4f4b8",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965672024/dibn3aptsp9dv8kvo8kidvwo1.png?watermark=c929e0d7f384b14f8cd3d109c1e4f298",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965672024/uxn8pyppzdi6u9jl7062a0v38.png?watermark=d933db1581fb05f16ee86383b3ba863f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965672024/uvwtwe86tepg4p8gapxzf4j3a.jpg?watermark=0b73718edde63b6a7da19656cb0fc577",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965672024/zrv9m3nyjg207czx338pk0ye6.jpg?watermark=f465211a0c028c7bebc2a760ef70659e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965672024/0uy4val5upnyfpfo2smydq7jd.jpg?watermark=2e802f16d7368e36e989be6fd4f54ef3",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965672024/6w0c5wztog7fdkerahp4hnc55.jpg?watermark=1c190d8e733c20fef2e7ef20bfb45c53",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965672024/qwcir6tvonb0tmvy4qm82e6ad.jpg?watermark=debb02d3f5fa2aa957b7b62beddb10b9",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965672024/bjl95rv300wn7qv2tz1m2g8z8.jpg?watermark=c2e4e484295bf90999586cdfe002ee6a"
-    ],
-    "description": "El totalmente eléctrico EV9 establece un nuevo estándar en el mundo de los vehículos totalmente eléctricos, combinando un estilo innovador con impresionantes capacidades de carga rápida para que puedas aprovechar al máximo la conducción. El EV9 está diseñado para energizar tu espíritu desde el momento en que entras en él. Con tecnología avanzada y espaciosa capacidad de SUV de tres filas de asientos, las comodidades modernas del EV9 te mantendrán cautivado, conectado y en control.",
-    "highlights": [
-      "Asientos - número de plazas 6",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal cuero sintético",
-      "Parlantes - número 14",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Potencia - Potencia máxima HP",
-      "Torque",
-      "Dimensiones exteriores - alto"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 94990000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-83965662025",
     "slug": "kia-ev9-2025-gt-line-662025",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Kia/Ev9/CL-JATO-ITM-83965662025",
@@ -14948,7 +10915,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 1710000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Talca",
+    "location": "Calama",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965662024/9mapagsk6vxjzlfdrifvl8zz7.jpg?watermark=840503e786ce89cce469cd3954d94c63",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965662024/9mapagsk6vxjzlfdrifvl8zz7.jpg?watermark=840503e786ce89cce469cd3954d94c63",
@@ -14965,124 +10932,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "description": "El totalmente eléctrico EV9 establece un nuevo estándar en el mundo de los vehículos totalmente eléctricos, combinando un estilo innovador con impresionantes capacidades de carga rápida para que puedas aprovechar al máximo la conducción. El EV9 está diseñado para energizar tu espíritu desde el momento en que entras en él. Con tecnología avanzada y espaciosa capacidad de SUV de tres filas de asientos, las comodidades modernas del EV9 te mantendrán cautivado, conectado y en control.",
     "highlights": [
       "Asientos - número de plazas 7",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal cuero sintético",
-      "Parlantes - número 14",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Potencia - Potencia máxima HP",
-      "Torque",
-      "Dimensiones exteriores - alto"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 94990000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-83965692025",
-    "slug": "kia-ev9-2025-gt-line-692025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Kia/Ev9/CL-JATO-ITM-83965692025",
-    "make": "Kia",
-    "model": "Ev9",
-    "year": 2025,
-    "badge": "GT-Line",
-    "title": "Kia Ev9 2025 GT-Line",
-    "bodyStyle": "SUV",
-    "fuelType": "Eléctrico",
-    "transmission": "automático",
-    "drive": "4x4",
-    "engine": null,
-    "engineCc": 0,
-    "fuelCombined": 0,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 94990000,
-    "reservationFeeClp": 1900000,
-    "estimatedMonthlyClp": 1710000,
-    "versionsAvailable": 4,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Puerto Montt",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965692024/vjahfc69mn40da3gmmooh4i7.jpg?watermark=3e809ca716a9decf2874f353ebcce0e0",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965692024/vjahfc69mn40da3gmmooh4i7.jpg?watermark=3e809ca716a9decf2874f353ebcce0e0",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965692024/3xzufab9ngs6a8w09wesyyjac.jpg?watermark=e4b795ac12f8d906cb0c9fbfeb14fbcc",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965692024/nv0qfv46o89v60x8xuyf8erke.png?watermark=c6f0f8a21ec6d91d37b3984d14a88193",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965692024/qvgavcz92lgsrnjz8iaitgyf6.png?watermark=5445c093f8ba442a55a9167723176e9e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965692024/pq560twwbjx6s0p9fnamh9pe6.jpg?watermark=70d218724343c923e7500da44eb35253",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965692024/009avv3q07mur964rgq8zlat5.jpg?watermark=09b80809bb38db1b44d4b883a39ebdc6",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965692024/nldol7hrnble0bo07wr2yok7.jpg?watermark=bde2f5d7b84093906f97ccd588c8d996",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965692024/pls77og9khv1felks6ybwwcid.jpg?watermark=2dcaf9d87e7e211239d2ebd80985d867",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965692024/m8asabj9zot2nke3hovze93z9.jpg?watermark=8fc3c70367dddc0d4d5c8f943dbe2f0d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965692024/ulezocikyaf1s0x3cdqqi8d52.jpg?watermark=6041885d378b5f3c3f44d5e740748771"
-    ],
-    "description": "El totalmente eléctrico EV9 establece un nuevo estándar en el mundo de los vehículos totalmente eléctricos, combinando un estilo innovador con impresionantes capacidades de carga rápida para que puedas aprovechar al máximo la conducción. El EV9 está diseñado para energizar tu espíritu desde el momento en que entras en él. Con tecnología avanzada y espaciosa capacidad de SUV de tres filas de asientos, las comodidades modernas del EV9 te mantendrán cautivado, conectado y en control.",
-    "highlights": [
-      "Asientos - número de plazas 6",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal cuero sintético",
-      "Parlantes - número 14",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Potencia - Potencia máxima HP",
-      "Torque",
-      "Dimensiones exteriores - alto"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 94990000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-83965682025",
-    "slug": "kia-ev9-2025-gt-line-682025",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Kia/Ev9/CL-JATO-ITM-83965682025",
-    "make": "Kia",
-    "model": "Ev9",
-    "year": 2025,
-    "badge": "GT-Line",
-    "title": "Kia Ev9 2025 GT-Line",
-    "bodyStyle": "SUV",
-    "fuelType": "Eléctrico",
-    "transmission": "automático",
-    "drive": "4x4",
-    "engine": null,
-    "engineCc": 0,
-    "fuelCombined": 0,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 94990000,
-    "reservationFeeClp": 1900000,
-    "estimatedMonthlyClp": 1710000,
-    "versionsAvailable": 4,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Iquique",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965682024/0xe4lbqdabiqxcm1ft9cvwrx1.jpg?watermark=4088f8f917a9e68d5d77d40cd2aa8b13",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965682024/0xe4lbqdabiqxcm1ft9cvwrx1.jpg?watermark=4088f8f917a9e68d5d77d40cd2aa8b13",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965682024/ckbk9061sxbipn5kbynf0tzn5.jpg?watermark=b53cdc505c8caeab3bc41d8a87573e01",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965682024/6599obn4sjgj08d4xsrzo6wbd.png?watermark=9d08da67e3065c88057b0b3e57f7c682",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965682024/rciu9ln7yilw1m2veqbb28qx2.png?watermark=c5398de641ee11228d2d5528cb6c38a6",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965682024/7tsu9331qttcclwq9h3a6a82d.jpg?watermark=3d8eca83eef9caa69812d557b9bc2d59",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965682024/diz6f4essl0xd7ufpofmx0ee.jpg?watermark=9bcf74b5dea4f74f0c65c33d7d37b574",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965682024/q4l1fx2yfbd27zcjqxyk8fgp1.jpg?watermark=8e46534b037395efa176d9bf278a2562",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965682024/mxg5akh3a39rp8bkdtyyqv8we.jpg?watermark=3f52b81ccb7e4ebdf6b211c9db7407ad",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965682024/b630xkrimkbc49viqpsloet5a.jpg?watermark=5fb339196998ee4ff2ea6dde0622f1f2",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83965682024/gn21w5er3gcyhqjrz5ww3jt31.jpg?watermark=a30252538f17df64c114aa395f3631b3"
-    ],
-    "description": "El totalmente eléctrico EV9 establece un nuevo estándar en el mundo de los vehículos totalmente eléctricos, combinando un estilo innovador con impresionantes capacidades de carga rápida para que puedas aprovechar al máximo la conducción. El EV9 está diseñado para energizar tu espíritu desde el momento en que entras en él. Con tecnología avanzada y espaciosa capacidad de SUV de tres filas de asientos, las comodidades modernas del EV9 te mantendrán cautivado, conectado y en control.",
-    "highlights": [
-      "Asientos - número de plazas 6",
       "Asientos delanteros - ajustables eléctricamente",
       "Tapicería de los asientos - material principal cuero sintético",
       "Parlantes - número 14",
@@ -15125,7 +10974,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 200000,
     "versionsAvailable": 6,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Rancagua",
+    "location": "Viña del Mar",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73729382024/bfqzar8b81ig5r32ovsvu94r5.jpg?watermark=ba90e84a28f4671a32633eea82261406",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73729382024/bfqzar8b81ig5r32ovsvu94r5.jpg?watermark=ba90e84a28f4671a32633eea82261406",
@@ -15184,7 +11033,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 200000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "La Serena",
+    "location": "Arica",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81243552024/zjsruao0bedkgv7d94tqjlgq1.jpg?watermark=ab641812da9fe173f239bbe0a93c1136",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81243552024/zjsruao0bedkgv7d94tqjlgq1.jpg?watermark=ab641812da9fe173f239bbe0a93c1136",
@@ -15243,7 +11092,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 210000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Concepción",
+    "location": "Puerto Montt",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77093502024/yzrg6ul6rza0txz6slx2y0034.jpg?watermark=9042f11bd9bfd5275d86e75013389fe0",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77093502024/yzrg6ul6rza0txz6slx2y0034.jpg?watermark=9042f11bd9bfd5275d86e75013389fe0",
@@ -15279,65 +11128,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-77830422024",
-    "slug": "jac-js2-2024-comfort-422024",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/JAC/Js2/CL-JATO-ITM-77830422024",
-    "make": "JAC",
-    "model": "Js2",
-    "year": 2024,
-    "badge": "Comfort",
-    "title": "JAC Js2 2024 Comfort",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "manual",
-    "drive": "delantera",
-    "engine": "1.5L",
-    "engineCc": 1499,
-    "fuelCombined": 17.6,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 11890000,
-    "reservationFeeClp": 240000,
-    "estimatedMonthlyClp": 210000,
-    "versionsAvailable": 5,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "La Serena",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77830422024/tcltlouyuje86nqyel97xmk9b.jpg?watermark=e013d1527af611f5893f7d26fcb3418e",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77830422024/tcltlouyuje86nqyel97xmk9b.jpg?watermark=e013d1527af611f5893f7d26fcb3418e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77830422024/oxjfcba1pn9uem5u9oe7jfbm6.jpg?watermark=b7cd42fbb8176e69f54380cd6440015c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77830422024/gj8e7efbf71va400y7gczq4dd.jpg?watermark=bb8d581c2bf6558b1993546c90548fa6",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77830422024/gc14i7gghoum2fg9x07dlfml1.jpg?watermark=69d1c2c2447656d37bdd21bb38f888e2",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77830422024/msaxonvyo6gu4sa1mnot81fha.jpg?watermark=d424dff8db48c3324b9adaef930d9f56",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77830422024/5tzzpsevw4qvx0qdkyz5uauzc.jpg?watermark=512e684a8b965255f2c59d1cff053a1a",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77830422024/zmzl9ayh74oaweznmy4vdhc9a.jpg?watermark=56b5071f65592d66ac0853eec6a02374",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77830422024/vmxn7s4gtpa44252xlp6a2cic.jpg?watermark=572cbbbb9b8dba61443b910da46305a2",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77830422024/n8ld6df3k0fv3mq7hib0k9d71.jpg?watermark=ab8ee626666aa6453673f1750c055bb2",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77830422024/yl2jnunxz6sit00pzpv28omt4.jpg?watermark=861a219bd569b2229940e93b49983d95"
-    ],
-    "description": "Descubre el JAC JS2, el SUV ideal como primer auto. Equipado con un motor de 1.5 litros VVT que entrega 111 caballos de fuerza y 146 Nm de torque, disponible en transmisión manual y CVT. Su interior sofisticado ofrece espacio para 5 pasajeros y una pantalla táctil compatible con Android Auto y Apple CarPlay. Además, cuenta con luces LED diurnas y neblineros alargados que realzan su aspecto aerodinámico, mientras que su maletero de 450 litros asegura espacio más que suficiente para tus viajes.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)",
-      "Potencia - Potencia máxima HP"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 11890000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-83773742024",
     "slug": "kia-soluto-2024-lx-full-742024",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Sed%C3%A1n/Kia/Soluto/CL-JATO-ITM-83773742024",
@@ -15361,7 +11151,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 220000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Concepción",
+    "location": "Valparaíso",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773742024/zf9cz2ec0efp2omihgd23yp97.jpg?watermark=214260b7d4429097e75c2e3802ef2ee6",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773742024/zf9cz2ec0efp2omihgd23yp97.jpg?watermark=214260b7d4429097e75c2e3802ef2ee6",
@@ -15479,7 +11269,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 240000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Valparaíso",
+    "location": "Arica",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79118602024/31synlzz9pb2eo56ntrtnvx6b.jpg?watermark=223b816be48e6615f2ff706826eee6af",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79118602024/31synlzz9pb2eo56ntrtnvx6b.jpg?watermark=223b816be48e6615f2ff706826eee6af",
@@ -15538,7 +11328,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 250000,
     "versionsAvailable": 8,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Arica",
+    "location": "Valparaíso",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498212024/5syxrpd26e9qxqz76gznodihc.jpg?watermark=4720a48e90df6b2994e413ff695ba416",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498212024/5syxrpd26e9qxqz76gznodihc.jpg?watermark=4720a48e90df6b2994e413ff695ba416",
@@ -15597,7 +11387,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 250000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Talca",
+    "location": "Viña del Mar",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82574302024/h7539blv22ooontxr9gsoi5pc.jpg?watermark=bf859dd7ee389da30f434a0fc23bd943",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82574302024/h7539blv22ooontxr9gsoi5pc.jpg?watermark=bf859dd7ee389da30f434a0fc23bd943",
@@ -15719,7 +11509,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 260000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Viña del Mar",
+    "location": "Santiago",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77652922024/nuajstzz21dfb7ty422ddzoea.jpg?watermark=b2e7e713ec5b3d893a1123c46fab534f",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77652922024/nuajstzz21dfb7ty422ddzoea.jpg?watermark=b2e7e713ec5b3d893a1123c46fab534f",
@@ -15759,65 +11549,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-77652932024",
-    "slug": "nissan-kicks-2024-advance-932024",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Nissan/Kicks/CL-JATO-ITM-77652932024",
-    "make": "Nissan",
-    "model": "Kicks",
-    "year": 2024,
-    "badge": "Advance",
-    "title": "Nissan Kicks 2024 Advance",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "manual",
-    "drive": "delantera",
-    "engine": "1.6L",
-    "engineCc": 1598,
-    "fuelCombined": 15.6,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 14590000,
-    "reservationFeeClp": 290000,
-    "estimatedMonthlyClp": 260000,
-    "versionsAvailable": 3,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Rancagua",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77652932023/xp80wouh6motjc7nloiyasyw.jpg?watermark=1f1c0cea77753dd8eff7e53188459276",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77652932023/xp80wouh6motjc7nloiyasyw.jpg?watermark=1f1c0cea77753dd8eff7e53188459276",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77652932023/6oo647m2mgphvhu6td6dlk40a.png?watermark=8a187891aa018df84c7fcfd4454f53dc",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77652932023/28jb3oqkobcu4xr1768by2vx1.jpg?watermark=e65ae55f0c7c20759e5c481d4e305cb6",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77652932023/d6xsw3qtxjssiay785g3zvf6a.jpg?watermark=b4ac263eab4313c72c41833f34f106ae",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77652932023/vco0v7nw9wkey6p1k96dxf8g8.jpg?watermark=1fdf80754d29c099cdb49ad5c090c835",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77652932023/ly1dim5vjm48zzh6l7hdcp2y4.jpg?watermark=dee7b1a5561b3905e58cec241752400b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77652932023/fapll8cu5dqshga875tlq564c.jpg?watermark=e530beeb3b585aca4bd61fc720a0b62b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77652932023/gm5ft99vi0yo2bj4hin7v0wf9.jpg?watermark=eaeb9a9eb6cac8c727b6096e404e583d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77652932023/8t82qd2y8iuanqtlmx9ju2u05.jpg?watermark=466a461c6a3337852c1ffdca54ccfb86",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77652932023/srt0g40g1ex3fo9fo9jng4g87.jpg?watermark=d75597db2e35486c863c239ba5d4b5e8"
-    ],
-    "description": "El diseño audaz, deportivo y elegante del Nissan Kicks se fusiona perfectamente con tu estilo, atrayendo miradas en cualquier entorno. Explora la ciudad con confianza, respaldado por la avanzada tecnología del Nissan Kicks, que añade una dosis extra de actitud a tus días. Disfruta de tu música preferida y aprovecha al máximo las comodidades interiores que ofrece su tecnología. Descubre la comodidad, gracias al amplio espacio, los asientos Zero Gravity y la cabina tranquila del Nissan Kicks.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 18478779
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-77652942024",
     "slug": "nissan-kicks-2024-sense-942024",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Nissan/Kicks/CL-JATO-ITM-77652942024",
@@ -15841,7 +11572,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 260000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Antofagasta",
+    "location": "Concepción",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77652942024/no9n7gboxp5j6yb8crfya3tw7.jpg?watermark=e5c9f903aa0006e315cb9a219afece9a",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77652942024/no9n7gboxp5j6yb8crfya3tw7.jpg?watermark=e5c9f903aa0006e315cb9a219afece9a",
@@ -15881,69 +11612,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-70610232024",
-    "slug": "nissan-versa-2024-sense-232024",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Sed%C3%A1n/Nissan/Versa/CL-JATO-ITM-70610232024",
-    "make": "Nissan",
-    "model": "Versa",
-    "year": 2024,
-    "badge": "Sense",
-    "title": "Nissan Versa 2024 Sense",
-    "bodyStyle": "Sedán",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.6L",
-    "engineCc": 1598,
-    "fuelCombined": 15.4,
-    "doors": 4,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 14590000,
-    "reservationFeeClp": 290000,
-    "estimatedMonthlyClp": 260000,
-    "versionsAvailable": 5,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Santiago",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-70610232023/1eppa55k1kqnvlwp26w2ccbo5.jpg?watermark=8fc55066c4c4b39471136527a1d97589",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-70610232023/1eppa55k1kqnvlwp26w2ccbo5.jpg?watermark=8fc55066c4c4b39471136527a1d97589",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-70610232023/t6qhzyqwfp6ysxbefxp5mwzd9.jpg?watermark=1f771a139d734112985ac5c6d1a2bcb7",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-70610232023/nfx1s3gpau0ic7fasc1558n9c.jpg?watermark=1603bd0a0e6502b0d7dde6284de73724",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-70610232023/4cjhzboukoyluuhey9np2l2cb.jpg?watermark=fbdda4ae04b77f749733ebbc67fc9f50",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-70610232023/1rw9w8qnc9xswghznzt7dgtde.jpg?watermark=6694dab36311e9a3f8cf946ce8dc6773",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-70610232023/ivdidy39dt1duh8bt1c16x2z5.jpg?watermark=b2389fc108932cf6d0da098365b7cd62",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-70610232023/gbc3pyrx89zrdg75fn4nl0xge.jpg?watermark=93f980aebb2dbaf8639707da9f8f77fe",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-70610232023/8tj5g1d98u0ty2rmeu0a0f2ld.jpg?watermark=9f33164a01e9ab3cdd828806c01d79e3",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-70610232023/02supj2xj5022ymm2h10itz59.jpg?watermark=7f306f78a600649c2ada9766cd0d8c2f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-70610232023/q5ae75e7x6sb4o7orxy3imusc.jpg?watermark=998c00913e0bf71066c5772d6e8035f5"
-    ],
-    "description": "El Nissan Versa tiene una presencia imponente que expresa energía y dinamismo desde todos sus ángulos. Creado desde el lenguaje de diseño Nissan Emotional Geometry Design, logra un balance entre formas y volúmenes que refleja una personalidad vibrante. Las tecnologías de asistencia a la conducción de Nissan Intelligent Mobility te permitirán realizar viajes más seguros y emocionantes. Amplio y confortable, el interior del Nuevo Nissan Versa está cuidado al detalle.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 14590000
-      },
-      {
-        "type": "JATO",
-        "amount": 15781495
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-7746402024",
     "slug": "kia-rio-4-2024-lx-402024",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Sed%C3%A1n/Kia/Rio%204/CL-JATO-ITM-7746402024",
@@ -15967,7 +11635,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 270000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Puerto Montt",
+    "location": "Calama",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-7746402024/jrwp2hloc3o9k48l9itjpja95.jpg?watermark=1268db22c70cf08bc5d47e99ab727e8b",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-7746402024/jrwp2hloc3o9k48l9itjpja95.jpg?watermark=1268db22c70cf08bc5d47e99ab727e8b",
@@ -16026,7 +11694,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 270000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Valparaíso",
+    "location": "Viña del Mar",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76632202023/9m5stggzrjflquoxah4ntebjc.jpg?watermark=525772a76273b15bca32e1667adbf8b6",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76632202023/9m5stggzrjflquoxah4ntebjc.jpg?watermark=525772a76273b15bca32e1667adbf8b6",
@@ -16148,7 +11816,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 290000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Puerto Montt",
+    "location": "Viña del Mar",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-72198722024/61l3imscogyquioksttgxxbwe.jpg?watermark=0b78441d9cd64963ec41371a8c1cdac1",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-72198722024/61l3imscogyquioksttgxxbwe.jpg?watermark=0b78441d9cd64963ec41371a8c1cdac1",
@@ -16211,7 +11879,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 290000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Viña del Mar",
+    "location": "Puerto Montt",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-72483242024/ba1f4ktonal0ib5oz5mda3nq3.jpg?watermark=4e8cfd21f6c4d1f20c229e1f59fca7c6",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-72483242024/ba1f4ktonal0ib5oz5mda3nq3.jpg?watermark=4e8cfd21f6c4d1f20c229e1f59fca7c6",
@@ -16247,132 +11915,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-76632192024",
-    "slug": "nissan-versa-2024-advance-192024",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Sed%C3%A1n/Nissan/Versa/CL-JATO-ITM-76632192024",
-    "make": "Nissan",
-    "model": "Versa",
-    "year": 2024,
-    "badge": "Advance",
-    "title": "Nissan Versa 2024 Advance",
-    "bodyStyle": "Sedán",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.6L",
-    "engineCc": 1598,
-    "fuelCombined": 15.4,
-    "doors": 4,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 15990000,
-    "reservationFeeClp": 320000,
-    "estimatedMonthlyClp": 290000,
-    "versionsAvailable": 5,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Concepción",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76632192023/s1j8t948hn4z9tvmicp819924.jpg?watermark=1ac745863186ada224b313dd18ae8221",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76632192023/s1j8t948hn4z9tvmicp819924.jpg?watermark=1ac745863186ada224b313dd18ae8221",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76632192023/qk5kdlzkg3kshim3yi7gpoe3e.jpg?watermark=9200dc4e78782f7d825966dd7348eea4",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76632192023/gc8xswryfquldae4mwlv8k532.jpg?watermark=934e5fef941c4489d8853e9922559559",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76632192023/z2wtida1e6t8p8mkvf9dgysk7.jpg?watermark=398dac0677b3b8b495527fc55d783d6e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76632192023/3x2ca1b41ip2188yytq91nbmb.jpg?watermark=2edb835394408c3a0ac199db3a243b78",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76632192023/gg84bm9en6lukigkj0opme0i3.jpg?watermark=49c5ab84ac1865e2c08b6c136407a2df",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76632192023/srin34r38rc18n2reigiazpub.jpg?watermark=fda1e889e4e8e442249ba90e56ee0a2e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76632192023/hv1m2uiujo8jn90lzdmfxtyx8.jpg?watermark=5f388da6bfbbcdacd09f8c67719aa090",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76632192023/x0vzxim1444c4xf80xfh4jrma.jpg?watermark=2347467cbe62abe2c0993a6044d38cf6",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76632192023/bup1cqq16n320kdnzf0h9adha.jpg?watermark=043e51fd9187e780d08777ffb6fc9a59"
-    ],
-    "description": "El Nissan Versa tiene una presencia imponente que expresa energía y dinamismo desde todos sus ángulos. Creado desde el lenguaje de diseño Nissan Emotional Geometry Design, logra un balance entre formas y volúmenes que refleja una personalidad vibrante. Las tecnologías de asistencia a la conducción de Nissan Intelligent Mobility te permitirán realizar viajes más seguros y emocionantes. Amplio y confortable, el interior del Nuevo Nissan Versa está cuidado al detalle.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 15990000
-      },
-      {
-        "type": "JATO",
-        "amount": 16933743
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-80997852024",
-    "slug": "volkswagen-t-cross-2024-comfortline-852024",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Volkswagen/T-Cross/CL-JATO-ITM-80997852024",
-    "make": "Volkswagen",
-    "model": "T-Cross",
-    "year": 2024,
-    "badge": "Comfortline",
-    "title": "Volkswagen T-Cross 2024 Comfortline",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "manual",
-    "drive": "delantera",
-    "engine": "1.0L",
-    "engineCc": 999,
-    "fuelCombined": 15.9,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 15990000,
-    "reservationFeeClp": 320000,
-    "estimatedMonthlyClp": 290000,
-    "versionsAvailable": 4,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Valparaíso",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80997852023/dv2k0kq2hu9jba3pn9qlunn55.jpg?watermark=25debf5c0c5d99ea213051a902e1d936",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80997852023/dv2k0kq2hu9jba3pn9qlunn55.jpg?watermark=25debf5c0c5d99ea213051a902e1d936",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80997852023/fpo383i81wfes9o81wt3am2z9.jpg?watermark=7320a380826e7b9fc40aaa4126b802eb",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80997852023/88m36zufmfsdkpfsxqr23kx1.png?watermark=f1337a59acdc3e954923e4d87bb410fb",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80997852023/yqxouwkwel6g1ara5u5kr35hc.png?watermark=f01b00115e1b6d8da27c53ee161f6d1c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80997852023/417nqnia6ywpahpkif9gxq8ne.jpg?watermark=6b1dc24920d75785cf6925137f5e829f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80997852023/0ciwjnmjjf7jabpqt9vhpia2e.jpg?watermark=b982062801fc8b23f4c258c0e0daa19d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80997852023/xhatjz3i9238134wo3myo7vj5.jpg?watermark=948e38be9676f0439196c732ed07ad01",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80997852023/yiaq988ob47n524cp90z324o7.jpg?watermark=82e171b5cb2e878ec984ed5b80ebb5ff",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80997852023/c4j2dr0hustozplrnptob9z49.jpg?watermark=c9338fb674f3b801355e852f321e0ca5",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80997852023/41h7dihjq5cd2bilfwj3trlw4.jpg?watermark=c1889e37a4d2113b428bd3a1aa0e064d"
-    ],
-    "description": "¡Tan único como tú! Disfruta de Volkswagen T-Cross, un SUV práctico, cool, intuitivo, seguro y urbano inspirado en personas únicas que no pueden definirse de un solo modo, tan versátil y original como tú. Déjate inspirar por un automóvil único, auténtico y versátil.T-Cross tiene 5 estrellas de seguridad en LatinNCAP. Cuenta con seis airbags y Control Electrónico de Estabilidad (ESC) en todas las versiones.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 16990000
-      },
-      {
-        "type": "JATO",
-        "amount": 20590000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-80997862024",
     "slug": "volkswagen-t-cross-2024-comfortline-862024",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Volkswagen/T-Cross/CL-JATO-ITM-80997862024",
@@ -16396,7 +11938,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 290000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Concepción",
+    "location": "Santiago",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80997862023/eb74bewnhfwyvc4psmdz69ic.jpg?watermark=1300647a63359fb91d84e6bb1c15ca5a",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80997862023/eb74bewnhfwyvc4psmdz69ic.jpg?watermark=1300647a63359fb91d84e6bb1c15ca5a",
@@ -16459,7 +12001,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 290000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "La Serena",
+    "location": "Valparaíso",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80997872023/yvfy4chno0yq411hc6hvv41z1.jpg?watermark=21221a696aeeacc56625e70eb414d5f1",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80997872023/yvfy4chno0yq411hc6hvv41z1.jpg?watermark=21221a696aeeacc56625e70eb414d5f1",
@@ -16522,7 +12064,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 290000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Santiago",
+    "location": "Copiapó",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80997842023/yyhoa776s8rmf4sjfkgyv8609.jpg?watermark=cbe190d93805990623e3104673003e20",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80997842023/yyhoa776s8rmf4sjfkgyv8609.jpg?watermark=cbe190d93805990623e3104673003e20",
@@ -16585,7 +12127,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 290000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Calama",
+    "location": "Arica",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82580282024/lxrpd5h62g4y572xki36ihcu6.jpg?watermark=17e6793e1ed5fe31d9f8c6596309e745",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82580282024/lxrpd5h62g4y572xki36ihcu6.jpg?watermark=17e6793e1ed5fe31d9f8c6596309e745",
@@ -16644,7 +12186,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 300000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Copiapó",
+    "location": "Talca",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83554022024/dsu5p47yvgjfjlkpl1dymbthd.jpg?watermark=ff27ddf128802ba0aefe2f5b80e6ae3a",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83554022024/dsu5p47yvgjfjlkpl1dymbthd.jpg?watermark=ff27ddf128802ba0aefe2f5b80e6ae3a",
@@ -16707,7 +12249,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 300000,
     "versionsAvailable": 8,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Concepción",
+    "location": "La Serena",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498232024/wj8k9oivn141gre3g07cy7ac.jpg?watermark=46d51bee6df24e4b5fd833891d24dd36",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498232024/wj8k9oivn141gre3g07cy7ac.jpg?watermark=46d51bee6df24e4b5fd833891d24dd36",
@@ -16766,7 +12308,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 300000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Copiapó",
+    "location": "Santiago",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83801692024/vm0ngs3pa69tsu84cokk7xxta.jpg?watermark=1ecfe85b7995da32a6904ed09687527e",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83801692024/vm0ngs3pa69tsu84cokk7xxta.jpg?watermark=1ecfe85b7995da32a6904ed09687527e",
@@ -16797,65 +12339,6 @@ export const c4rVehicles: C4RVehicle[] = [
       {
         "type": "JATO",
         "amount": 16790000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-83773712024",
-    "slug": "kia-rio-4-2024-ex-full-712024",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Sed%C3%A1n/Kia/Rio%204/CL-JATO-ITM-83773712024",
-    "make": "Kia",
-    "model": "Rio 4",
-    "year": 2024,
-    "badge": "EX Full",
-    "title": "Kia Rio 4 2024 EX Full",
-    "bodyStyle": "Sedán",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.4L",
-    "engineCc": 1368,
-    "fuelCombined": 16.2,
-    "doors": 4,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 17190000,
-    "reservationFeeClp": 340000,
-    "estimatedMonthlyClp": 310000,
-    "versionsAvailable": 4,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Talca",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773712024/zbyb80xhsanus68ohxl0vgxt4.jpg?watermark=ac141d884482390f6f3d8b65d492c430",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773712024/zbyb80xhsanus68ohxl0vgxt4.jpg?watermark=ac141d884482390f6f3d8b65d492c430",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773712024/3zs7g1vbxbykfto7vum0wkgp4.jpg?watermark=511622c90cf99efab12b8f4d5c41718f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773712024/7aqxtudsgw856cku62yvs6t76.png?watermark=bf9c3aca20825ab7cc82463575f3a69d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773712024/hvp57zl2wzwt9txj0335uc7tb.png?watermark=b93877b4e87e79d63d0fa7a6d3072a20",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773712024/zy2iyfso6ey5j6c1zrg5cnvu1.jpg?watermark=9a2ad4c68a41825ef035c189b0df763c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773712024/6kiyd3p51w5bg0so9885hea5d.jpg?watermark=467197bf8f7dff26cffd31e0318cf685",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773712024/exlyxwtaki34vl2lj2bmps2m5.jpg?watermark=7a357f7fde1b22321913acb7b2ace861",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773712024/vujasiap7rkezv8y1h8y382z7.jpg?watermark=5951a4cf650f8a1407e22d73f52c3956",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773712024/8nitoha59dcovyka4l3xzy873.jpg?watermark=a572cc4c89b39ec72f7c1773697a54ab",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83773712024/5ehans2o2mg536v6dul9dmuf6.jpg?watermark=e538fddc3e3fd9e76d3f2875ea38e672"
-    ],
-    "description": "El Kia Rio4 2024 es un sedán compacto que ofrece una combinación de diseño atractivo, rendimiento eficiente y características tecnológicas. El Kia Rio4 presenta un diseño renovado con luces delanteras halógenas que incluyen luz de posicionamiento LED y la funcionalidad Static Bending para una mejor visibilidad en giros o curvas. Cuenta con espejos abatibles, neblineros delanteros y llantas de aleación. La protección es clave en el Rio4. Viene con control de estabilidad y hasta 6 airbags.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 17190000
       }
     ],
     "source": "Chileautos catalogo 0km"
@@ -16943,7 +12426,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 310000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Rancagua",
+    "location": "Iquique",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75572182024/4lrtgkw8d0a2br6uvv0dz3jg8.jpg?watermark=86fa6cff9dc029b398abf2b1817c7851",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75572182024/4lrtgkw8d0a2br6uvv0dz3jg8.jpg?watermark=86fa6cff9dc029b398abf2b1817c7851",
@@ -17038,65 +12521,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-81498252024",
-    "slug": "jac-js4-2024-luxury-252024",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/JAC/Js4/CL-JATO-ITM-81498252024",
-    "make": "JAC",
-    "model": "Js4",
-    "year": 2024,
-    "badge": "Luxury",
-    "title": "JAC Js4 2024 Luxury",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.5L",
-    "engineCc": 1499,
-    "fuelCombined": 12.4,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 18090000,
-    "reservationFeeClp": 360000,
-    "estimatedMonthlyClp": 330000,
-    "versionsAvailable": 8,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Valparaíso",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498252024/x1hf1rm97l9b7l5enam7qvac2.jpg?watermark=4b931befdd78b5069f12f3a200045e88",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498252024/x1hf1rm97l9b7l5enam7qvac2.jpg?watermark=4b931befdd78b5069f12f3a200045e88",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498252024/ebjra00xze6hd0uz5ejzg43u1.jpg?watermark=df358d2d437872b81b67622fa31b96f6",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498252024/0rxyen58la4pwdd5cv9w4970b.jpg?watermark=c6b61e103ab49e51bd396ede23faf4f7",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498252024/q2vkvcdm299bzpfvoqkgcqev1.jpg?watermark=9fd27d5f4a7a3e5041c16cbf021aace0",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498252024/o0347kfo73jk4ck0146dn44gb.jpg?watermark=95f9d8e66b6b58acda64c7ae9b765600",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498252024/c0494sau0yckm3hl8pl6j335b.jpg?watermark=e6725366b19c5947eeb07fd67af98148",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498252024/xeqbfj8feys3s9puocrjxyqu3.jpg?watermark=2b8c9e4a56fbfe0c6f9ef694464fa695",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498252024/9f1qjxzn9vgmefnukwt1r8kkd.jpg?watermark=297060c16927757efc533b487e7b01aa",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498252024/qhp7wmyatu6gvth8ba285nwu9.jpg?watermark=ffa76c2adbdc1c058a5a781326f589cb",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81498252024/ife3awrlnc6j5asz25fqjc7u1.jpg?watermark=f584f1b7958288d53b39b0075e52ce77"
-    ],
-    "description": "Conoce el JAC JS4 y su diseño vanguardista, un SUV ideal para tus aventuras diarias. Equipado con un motor de 1.6 litros que entrega 118 caballos de fuerza y 150 Nm de torque, disponible en transmisión manual y CVT. Su interior combina confort, tecnología y seguridad, ofreciendo espacio para 5 ocupantes, un volante multifunción deportivo, aire acondicionado touch, una pantalla táctil compatible con Android Auto y Apple CarPlay, y hasta 6 airbags para asegurar tu tranquilidad en cada viaje.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal cuero sintético",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 18090000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-76204102024",
     "slug": "toyota-corolla-2024-xei-102024",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Sed%C3%A1n/Toyota/Corolla/CL-JATO-ITM-76204102024",
@@ -17120,7 +12544,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 330000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Copiapó",
+    "location": "Puerto Montt",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76204102024/wgky5ksyhr088nr22xeogp0j.jpg?watermark=3274e1906175a5e8c169527d2c11437a",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76204102024/wgky5ksyhr088nr22xeogp0j.jpg?watermark=3274e1906175a5e8c169527d2c11437a",
@@ -17179,7 +12603,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 330000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Temuco",
+    "location": "Antofagasta",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81454822024/esj8umoigidxd0g49h53q4sg6.jpg?watermark=83f93adb66fce419270762cd9b4fbc6f",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81454822024/esj8umoigidxd0g49h53q4sg6.jpg?watermark=83f93adb66fce419270762cd9b4fbc6f",
@@ -17238,7 +12662,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 330000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "La Serena",
+    "location": "Rancagua",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81444002023/0eukusadd45zf9smmceal1xy4.jpg?watermark=484e21600e5c8565f4fbdd41f0889a35",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81444002023/0eukusadd45zf9smmceal1xy4.jpg?watermark=484e21600e5c8565f4fbdd41f0889a35",
@@ -17301,7 +12725,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 340000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Antofagasta",
+    "location": "La Serena",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80316452023/9p80bu5lfftq83j5e1yqj4gs7.jpg?watermark=c26b0735fda4ea7d21328b808a626507",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80316452023/9p80bu5lfftq83j5e1yqj4gs7.jpg?watermark=c26b0735fda4ea7d21328b808a626507",
@@ -17341,69 +12765,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-74849122024",
-    "slug": "volkswagen-jetta-2024-comfortline-122024",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Sed%C3%A1n/Volkswagen/Jetta/CL-JATO-ITM-74849122024",
-    "make": "Volkswagen",
-    "model": "Jetta",
-    "year": 2024,
-    "badge": "Comfortline",
-    "title": "Volkswagen Jetta 2024 Comfortline",
-    "bodyStyle": "Sedán",
-    "fuelType": "Bencina",
-    "transmission": "manual",
-    "drive": "delantera",
-    "engine": "1.4L",
-    "engineCc": 1395,
-    "fuelCombined": 16.1,
-    "doors": 4,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 18990000,
-    "reservationFeeClp": 380000,
-    "estimatedMonthlyClp": 340000,
-    "versionsAvailable": 4,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Viña del Mar",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-74849122023/5et2dmktjuth7spuil9ke64ve.jpg?watermark=1d7de2c2f2c1604aa38a27cc40f74797",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-74849122023/5et2dmktjuth7spuil9ke64ve.jpg?watermark=1d7de2c2f2c1604aa38a27cc40f74797",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-74849122023/1eb9h1945qapk5xqaeg5rbk77.jpg?watermark=be5bb6a3fc1c74282b7861839cc34e1f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-74849122023/kd4j17q09ciz0ikazkvach5e5.png?watermark=90c5cfd4b60f3824b466f71b444ad6a6",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-74849122023/krwluoi5ekv736424hi1xzup1.png?watermark=3ef98e10a0324ad0b95484fba98c958c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-74849122023/jyz7x3jb7sknorhs9ktudu15.jpg?watermark=00163a6d430337981ee4e52865df82be",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-74849122023/ngqh00x9rg62pi223v9mfrvm3.jpg?watermark=080364f672ce17ceb841f85826f46714",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-74849122023/7u4su6axwyg86bftuvdl1qui3.jpg?watermark=a5c3d8591df988ecffea3e39aed3149c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-74849122023/kobl7kxsuky2v278bfaghzib4.jpg?watermark=480bc1d0a1131053c8bf2dbc9b349ef0",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-74849122023/jg52ppn1lvy1h0jnhasbjzoo4.jpg?watermark=1bac803b16e569c1da9c3b1b2b2a47c5",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-74849122023/g0tpnzqn012e8ynw9oo4nflge.jpg?watermark=2d2b6e119152d497646d4084e537093d"
-    ],
-    "description": "Jetta tiene un diseño elegante y moderno, un interior que enamora y un desempeño sobresaliente. Su amplia gama de tecnologías te entregarán conectividad y seguridad. Tecnologías como App Connect inalámbrica, radio touchscreen y el cuadro de mandos Active Info Display, brindan máxima conectividad y confort para que todos disfruten del camino. Pantalla touch de 10” con APP Connect, cámara de retroceso, 6 airbags de serie y mucho más descubre en un Jetta.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal cuero sintético",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 19990000
-      },
-      {
-        "type": "JATO",
-        "amount": 19990000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-83811112024",
     "slug": "jac-js4-2024-advance-112024",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/JAC/Js4/CL-JATO-ITM-83811112024",
@@ -17427,7 +12788,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 350000,
     "versionsAvailable": 8,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Santiago",
+    "location": "Rancagua",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83811112024/uq00zyvfhz9ubgrte3tb6v8ie.jpg?watermark=3f651a1919dbe4e61e134e40fe207f81",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83811112024/uq00zyvfhz9ubgrte3tb6v8ie.jpg?watermark=3f651a1919dbe4e61e134e40fe207f81",
@@ -17486,7 +12847,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 350000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Santiago",
+    "location": "Concepción",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78453112024/9ww7qipptjutr9fpr8vqsjqob.jpg?watermark=cfb6d03fc1e25d7617948dbba6be0030",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-78453112024/9ww7qipptjutr9fpr8vqsjqob.jpg?watermark=cfb6d03fc1e25d7617948dbba6be0030",
@@ -17522,65 +12883,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-81454832024",
-    "slug": "hyundai-venue-2024-value-832024",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Hyundai/Venue/CL-JATO-ITM-81454832024",
-    "make": "Hyundai",
-    "model": "Venue",
-    "year": 2024,
-    "badge": "Value",
-    "title": "Hyundai Venue 2024 Value",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.6L",
-    "engineCc": 1591,
-    "fuelCombined": 13.4,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 19890000,
-    "reservationFeeClp": 400000,
-    "estimatedMonthlyClp": 360000,
-    "versionsAvailable": 5,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "La Serena",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81454832024/lhpgpd8xgczyl1vp5plh5yyla.jpg?watermark=1a3a68c096196a9752cbfcb7feba837e",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81454832024/lhpgpd8xgczyl1vp5plh5yyla.jpg?watermark=1a3a68c096196a9752cbfcb7feba837e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81454832024/h1kydwje0rduezspz0ip4p0k5.jpg?watermark=722ec30b52c34c544dc13b4409094115",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81454832024/k0shcc7tqbp786z3qcbuuetyb.png?watermark=ed720a61c033e6710e0953ec5be1f2f0",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81454832024/add8b6ak6gtrjh8lpfu3oxz6a.png?watermark=d977a0131b86426093f477a220949161",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81454832024/wm5dju60yqjgajohkr8kwb463.jpg?watermark=ef13d669bfab502cf8fb87ec11e43569",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81454832024/bht13s6u06wk0grgqr3xdfa09.jpg?watermark=a8b8ee093a3c66bd1f658c8110856203",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81454832024/293xq7he1xmoi5lkb3u58r24b.jpg?watermark=08ef0655ff3f9bbcbc0cd69c217ee4fb",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81454832024/l8gr3dcqozp5fh1pe1fnh8e4a.jpg?watermark=466e9c99b943d2c9ceed7c6a1e13cce9",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81454832024/nkay2n571se3mhoydujxzjz47.jpg?watermark=b4a94e3b3bedf574b02035aaa33beb35",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81454832024/uboipgkv7jk19p5loqaktkrbc.jpg?watermark=7e3db9cac745709323149d24e1b3d73d"
-    ],
-    "description": "Es momento de que te muevas a tu propio ritmo. Los días en la ciudad rebosan de ritmos y solo un vehículo que sea capaz de moverse a ese pulso logrará revelar tu verdadero potencial. Explora tu potencial en cada nota de los ritmos urbanos. Con Venue crearás nuevas experiencias y revitalizarás tu vida urbana. Aquí presentamos la primera versión de Venue, un vehículo utilitario urbano con personalidad y estilo sin igual.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 19890000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-81981702024",
     "slug": "kia-seltos-2024-ex-full-702024",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Kia/Seltos/CL-JATO-ITM-81981702024",
@@ -17604,7 +12906,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 360000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Calama",
+    "location": "Concepción",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81981702024/tj9i821iahoh5e281rbr3nwv1.jpg?watermark=18894ec674600e207b617b16c41c0338",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81981702024/tj9i821iahoh5e281rbr3nwv1.jpg?watermark=18894ec674600e207b617b16c41c0338",
@@ -17640,65 +12942,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-5734162024",
-    "slug": "toyota-corolla-2024-xei-162024",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Sed%C3%A1n/Toyota/Corolla/CL-JATO-ITM-5734162024",
-    "make": "Toyota",
-    "model": "Corolla",
-    "year": 2024,
-    "badge": "XEI",
-    "title": "Toyota Corolla 2024 XEI",
-    "bodyStyle": "Sedán",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "2.0L",
-    "engineCc": 1987,
-    "fuelCombined": 16.4,
-    "doors": 4,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 20090000,
-    "reservationFeeClp": 400000,
-    "estimatedMonthlyClp": 360000,
-    "versionsAvailable": 5,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Calama",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-5734162024/j6gul4owylylgyizlimmg4b73.jpg?watermark=40f042dc0489d38ac1bea76d54ccd2e9",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-5734162024/j6gul4owylylgyizlimmg4b73.jpg?watermark=40f042dc0489d38ac1bea76d54ccd2e9",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-5734162024/r6otjagtqnfa809ei8l0l3rf.jpg?watermark=d79458a2c53da216ad20ff0d6c9b383c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-5734162024/jh2zfcekton9vn50hdx0v7xf.png?watermark=8fe12d57c835b24e7f9ab4c37a0e6818",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-5734162024/3b7f8sgxzkq0zgbe78rgcm189.jpg?watermark=a5e5bbc89d049d78bf5402a164859dd4",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-5734162024/vvcfn56klrmocuz1it0mao3h6.jpg?watermark=f347eee9363b223de1f07fdfe2d95011",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-5734162024/78ko0g0y9sfxlo1aeegvfwn98.jpg?watermark=262d3d13d7ddb7eb955bc870c8189992",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-5734162024/slur1hnyv1v3sr7f8kzu5hl4f.jpg?watermark=7d0e951c20b8bb3722de7a7c1fe9ab6f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-5734162024/3ac7jiol9qcs5nk2pogu9951b.jpg?watermark=2462b9b28ed88cc07b4f9f46815a0de1",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-5734162024/xfrss4yao53nb6bxbwgxzi9t2.jpg?watermark=20222b740dcb994aeb9307dc8bd3bd99",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-5734162024/88eddtcvn84izv6vtm7e2p94c.jpg?watermark=b1679d5ade1e690c201c839f32d64b91"
-    ],
-    "description": "All New Corolla está equipado con 2 airbags frontales, 2 laterales, airbags de cortina delanteros y traseros y airbag de rodilla para conductor brindando un ambiente seguro para todos los ocupantes, esto de serie en todas sus versiones.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela superior/ velour",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 20090000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-80231622024",
     "slug": "kia-cerato-2024-ex-full-622024",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Sed%C3%A1n/Kia/Cerato/CL-JATO-ITM-80231622024",
@@ -17722,7 +12965,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 390000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Valparaíso",
+    "location": "La Serena",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80231622024/sk8gur6ecth3k0osoxxtlndfa.jpg?watermark=39424787df65884bd67a2095c7d5f5cd",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80231622024/sk8gur6ecth3k0osoxxtlndfa.jpg?watermark=39424787df65884bd67a2095c7d5f5cd",
@@ -17844,7 +13087,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 400000,
     "versionsAvailable": 3,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Concepción",
+    "location": "Iquique",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82688442024/n5ut4n1ec1jzm1dw6zfxpao77.jpg?watermark=9e22dbf675f6de1db0081abe1aa07919",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82688442024/n5ut4n1ec1jzm1dw6zfxpao77.jpg?watermark=9e22dbf675f6de1db0081abe1aa07919",
@@ -17903,7 +13146,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 400000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Rancagua",
+    "location": "Calama",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83554162024/ohidrlnfv2xblflx1wxtfnqu7.jpg?watermark=37962ba1daf5720afa116a225cf9cea2",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83554162024/ohidrlnfv2xblflx1wxtfnqu7.jpg?watermark=37962ba1daf5720afa116a225cf9cea2",
@@ -17966,7 +13209,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 420000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Concepción",
+    "location": "Arica",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73935712024/cpzpeptxxbujgyusb955uzbbe.jpg?watermark=2545316dac7dc80a1a4e1c7ea31a812c",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73935712024/cpzpeptxxbujgyusb955uzbbe.jpg?watermark=2545316dac7dc80a1a4e1c7ea31a812c",
@@ -18088,7 +13331,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 460000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Santiago",
+    "location": "Rancagua",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83453202023/wdyybd89i9nu5s4anihy1u0a.jpg?watermark=1befaa96c11eadc549fa3f19c3b28425",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83453202023/wdyybd89i9nu5s4anihy1u0a.jpg?watermark=1befaa96c11eadc549fa3f19c3b28425",
@@ -18147,7 +13390,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 460000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Calama",
+    "location": "Puerto Montt",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83453222023/tbciivlhysxgc7u47kdgzzjd.jpg?watermark=2b8d809b99a475e4927ee9283b345e43",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83453222023/tbciivlhysxgc7u47kdgzzjd.jpg?watermark=2b8d809b99a475e4927ee9283b345e43",
@@ -18210,7 +13453,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 480000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Arica",
+    "location": "Talca",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83306802023/0bj2fmknka0dha6keq1fqp3n8.jpg?watermark=4c5a9263589d6dd626b461db12af9b2a",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83306802023/0bj2fmknka0dha6keq1fqp3n8.jpg?watermark=4c5a9263589d6dd626b461db12af9b2a",
@@ -18250,65 +13493,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-83453212024",
-    "slug": "nissan-qashqai-2024-advance-212024",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Nissan/Qashqai/CL-JATO-ITM-83453212024",
-    "make": "Nissan",
-    "model": "Qashqai",
-    "year": 2024,
-    "badge": "Advance",
-    "title": "Nissan Qashqai 2024 Advance",
-    "bodyStyle": "SUV",
-    "fuelType": "Híbrido",
-    "transmission": "manual",
-    "drive": "delantera",
-    "engine": "1.3L",
-    "engineCc": 1332,
-    "fuelCombined": 17.8,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 26968892,
-    "reservationFeeClp": 540000,
-    "estimatedMonthlyClp": 490000,
-    "versionsAvailable": 5,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Valparaíso",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83453212023/ugtlqdxhsk23h88gb7d2ynhnb.jpg?watermark=361e98702ae16d0dcfafca9fb6c6a4cf",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83453212023/ugtlqdxhsk23h88gb7d2ynhnb.jpg?watermark=361e98702ae16d0dcfafca9fb6c6a4cf",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83453212023/0f2m2n29qtf2ohvhkt56k42l6.jpg?watermark=1c30a994ce3ce4de748b5146a8e282c3",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83453212023/g145hoz54qjllr3mawr86skm2.jpg?watermark=6f2d42d8a1b0cbeb8666f97a8724413e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83453212023/g9u3mahknuhx1r1vliv3wg5a3.jpg?watermark=453b1c6bb9893fdde17f87b3416d713f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83453212023/1p0zi8iq0il2o92ttkqow6mp7.jpg?watermark=82e93bbc86daaa5d869197c6be935235",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83453212023/fiqzvddfedyyj6h3nz61u1xf8.jpg?watermark=47d4a6cf8b642d5ab43db6ee5c7eef19",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83453212023/rylo80mjbhzxbv35hw3l0lpn8.jpg?watermark=d9dc11a4628dca8c80976a65e436415f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83453212023/0otalyaqrwcpfxgyjvxep77s7.jpg?watermark=a9ca0491593d6210e0340a94f17afcbf",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83453212023/fssjj2fdx2j8po35rpemo2dxb.jpg?watermark=0a85010e17053e389a451d18ccf90e64",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83453212023/ux7e863hj8j4dl0jfdscqyis3.jpg?watermark=743c8b39d280813304815bff90172512"
-    ],
-    "description": "Diseñada bajo el concepto de Emotional Geometry Design, esta SUV está hecha para las personas que siguen su propio camino y les gusta destacar a donde sea que lleguen. Con un amplio espacio interior para que puedas cargar todas tus metas, Nissan Qashqai cuenta también con avanzadas tecnologías de asistencia al conductor, Nissan Intelligent Mobility, para que te mantengas en sincronía con la ruta y lleves la experiencia de manejo a otro nivel.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela superior/ velour",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 26968892
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-83453242024",
     "slug": "nissan-qashqai-2024-advance-plus-242024",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Nissan/Qashqai/CL-JATO-ITM-83453242024",
@@ -18332,7 +13516,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 500000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Copiapó",
+    "location": "Calama",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83453242023/g44a4ueywkhwibyfcxuw17sa7.jpg?watermark=03bd1ea62def38561be9e11184861d1c",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83453242023/g44a4ueywkhwibyfcxuw17sa7.jpg?watermark=03bd1ea62def38561be9e11184861d1c",
@@ -18395,7 +13579,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 500000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "La Serena",
+    "location": "Santiago",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73935722024/b6sli9hnf1f9ovzs2qut2nay7.jpg?watermark=a2bcd1e1ebe674f766ba5d4fb90bc7ce",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-73935722024/b6sli9hnf1f9ovzs2qut2nay7.jpg?watermark=a2bcd1e1ebe674f766ba5d4fb90bc7ce",
@@ -18458,7 +13642,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 500000,
     "versionsAvailable": 6,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Talca",
+    "location": "Temuco",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75617222024/2irk62oo2rhvxlut6hbvt3f6d.jpg?watermark=5fa921fdf10e33a1071c3517955d9ae1",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75617222024/2irk62oo2rhvxlut6hbvt3f6d.jpg?watermark=5fa921fdf10e33a1071c3517955d9ae1",
@@ -18521,7 +13705,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 500000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "La Serena",
+    "location": "Arica",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82009802024/8xyxr6t3yclc0ujuqcieo7zj2.jpg?watermark=6d8257941ec8d9a263675222415d0379",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82009802024/8xyxr6t3yclc0ujuqcieo7zj2.jpg?watermark=6d8257941ec8d9a263675222415d0379",
@@ -18557,69 +13741,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-80857452024",
-    "slug": "peugeot-5008-2024-gt-452024",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Peugeot/5008/CL-JATO-ITM-80857452024",
-    "make": "Peugeot",
-    "model": "5008",
-    "year": 2024,
-    "badge": "GT",
-    "title": "Peugeot 5008 2024 GT",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "1.6L",
-    "engineCc": 1598,
-    "fuelCombined": 15.7,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 28190000,
-    "reservationFeeClp": 560000,
-    "estimatedMonthlyClp": 510000,
-    "versionsAvailable": 4,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Santiago",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80857452024/ka2n99rdhxa2jg71kkhqq39vb.jpg?watermark=9ed8f83e49ff47ff9e0688e47078aa37",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80857452024/ka2n99rdhxa2jg71kkhqq39vb.jpg?watermark=9ed8f83e49ff47ff9e0688e47078aa37",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80857452024/hnda6gkic4s93w9rb70d0st34.jpg?watermark=7c85014b28181cf5e88b1b364e3de443",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80857452024/2k6o7zy3lbl9sph6qrj4xny21.png?watermark=3d0ac5a332657b6f5001e8f81740832c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80857452024/90hey9zvk9kbfveoebodr6naa.png?watermark=89d6174dbdb94ad69dfa3f16b8840c26",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80857452024/6y6lxorxdt0lecm81y0f9uhq9.jpg?watermark=fea790fb398f2bf0856a83966c17fb53",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80857452024/1bp0h5i4p19lfhxo1k7dj18d6.jpg?watermark=d3921145ce8571f956ecd6f42ba02b4e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80857452024/h8xygcldczdpvvpvn8p2pg5b4.jpg?watermark=30064dcb6c8ff637f576adef5ebb2c78",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80857452024/efodxril41t31zn2qc6gvd20a.jpg?watermark=4f6e9ea0eb926d5913157a5f744c650a",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80857452024/71lyckfzz6z0hxpscpbtbtfb.jpg?watermark=b0826046d4d81a7e81e68aae3ee51da9",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80857452024/h5r44tob784843to1sbrh6ry1.jpg?watermark=ddfa894ba3669921b81cbdacd6b379c2"
-    ],
-    "description": "Entra y déjate envolver por un nuevo estilo imponente, lleno de espacio y audacia. Con una línea deportiva y una sorprendente fluidez para un SUV de 7 plazas, el nuevo SUV PEUGEOT 5008 renueva la modernidad de sus líneas e inaugura los códigos de diseño del mañana. Su renovado puesto de conducción y sus prestaciones de alta gama te ofrecerán mejores sensaciones más intensas y el rendimiento de un gran vehículo de carretera.",
-    "highlights": [
-      "Asientos - número de plazas 7",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal cuero",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 32690000
-      },
-      {
-        "type": "JATO",
-        "amount": 34390000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-80492452024",
     "slug": "peugeot-5008-2024-gt-452024",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Peugeot/5008/CL-JATO-ITM-80492452024",
@@ -18643,7 +13764,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 510000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Valparaíso",
+    "location": "Rancagua",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80492452024/z45xthft4ix0dg51tpio3dq81.jpg?watermark=60fd1a770c854fc9e071af4dadd692ae",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80492452024/z45xthft4ix0dg51tpio3dq81.jpg?watermark=60fd1a770c854fc9e071af4dadd692ae",
@@ -18683,65 +13804,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-77611532024",
-    "slug": "nissan-x-trail-2024-sense-532024",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Nissan/X-Trail/CL-JATO-ITM-77611532024",
-    "make": "Nissan",
-    "model": "X-Trail",
-    "year": 2024,
-    "badge": "Sense",
-    "title": "Nissan X-Trail 2024 Sense",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "2.5L",
-    "engineCc": 2500,
-    "fuelCombined": 12.3,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 28323949,
-    "reservationFeeClp": 570000,
-    "estimatedMonthlyClp": 510000,
-    "versionsAvailable": 4,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Antofagasta",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77611532024/8j9w2goalos1b1iifb70ksczb.jpg?watermark=d5f0f25f4cb20463f526f3dcf0d095ba",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77611532024/8j9w2goalos1b1iifb70ksczb.jpg?watermark=d5f0f25f4cb20463f526f3dcf0d095ba",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77611532024/k5xmk7hptre701mxnyovruxu6.jpg?watermark=8fe0154d8a2ff4c2e28fbc9aca4f6c70",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77611532024/fql8aqe7jzj286wzy7it4smo5.jpg?watermark=a69b4e909e6eef0812cc2fb75e4d0e59",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77611532024/59jrterm9cbtsgnbhmvrgop33.jpg?watermark=d25c09410a7af6ecd3c365c3f6b8ee19",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77611532024/h59v6rq73ip7o9sdg9ca1sj6d.jpg?watermark=92d19a98c35fe7f2a97e36568f11e99d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77611532024/xvbzm4c8zpncnmnn088zw3dl6.jpg?watermark=0b10597437e4eea24e165386bdd09647",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77611532024/ib6287q8157iyj806otzkmvt6.jpg?watermark=83e30be430a7c623094d8da5222e3efd",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77611532024/3i8srzuyky6tyc1bnr472tq7c.jpg?watermark=9e78b9fa6a68399c9ccde9c100e643b9",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77611532024/6zgarv01p66zdc1d6uk2r33ud.jpg?watermark=3ad1397c12e9c13e74fa7aec40705724",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77611532024/r7p145hnxt9kwu5ppefnryy66.jpg?watermark=f970db817dae9451754b50f6627b0cef"
-    ],
-    "description": "Renueva tu curiosidad por la aventura y descubre una experiencia única arriba de Nissan X-Trail. Con espacio para adaptarse al tamaño de cualquier aventura, ahora podrás desafiar cualquier camino con la seguridad de contar con tu propio asistente en la ruta con las tecnologías de Nissan Intelligent Mobility. Ve tan lejos como quieras con la seguridad que te entrega Nissan X-Trail.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal cuero sintético",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 28323949
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-66551242024",
     "slug": "hyundai-santa-fe-2024-plus-242024",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Hyundai/Santa%20Fe/CL-JATO-ITM-66551242024",
@@ -18765,7 +13827,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 510000,
     "versionsAvailable": 10,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Arica",
+    "location": "Concepción",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-66551242024/pqrwci0ypm4l5qg392766jw1.jpg?watermark=2b34830130e1d8b17f8c8066248cc68a",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-66551242024/pqrwci0ypm4l5qg392766jw1.jpg?watermark=2b34830130e1d8b17f8c8066248cc68a",
@@ -18801,65 +13863,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-76551242024",
-    "slug": "hyundai-santa-fe-2024-plus-242024",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Hyundai/Santa%20Fe/CL-JATO-ITM-76551242024",
-    "make": "Hyundai",
-    "model": "Santa Fe",
-    "year": 2024,
-    "badge": "Plus",
-    "title": "Hyundai Santa Fe 2024 Plus",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "2.5L",
-    "engineCc": 2497,
-    "fuelCombined": 11.8,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 28790000,
-    "reservationFeeClp": 580000,
-    "estimatedMonthlyClp": 520000,
-    "versionsAvailable": 10,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Rancagua",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76551242024/d7ej192dg0l88g8dyw18dlwq4.jpg?watermark=8ea955d82de18bca4e718769a176deee",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76551242024/d7ej192dg0l88g8dyw18dlwq4.jpg?watermark=8ea955d82de18bca4e718769a176deee",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76551242024/wamh8471g3cus9a9aix2prqr2.jpg?watermark=55b10a358c014fd64b8b18e59eebd56c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76551242024/zgq31qn52q7kvayvw0nm3yw7e.png?watermark=4a9078393f25299ad8153301e4af922d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76551242024/s2p5gjdr8e7ochtpkpanqjw48.png?watermark=831ac41cafa82ab7bffb961c995bbb54",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76551242024/89lblj00ef5j117eu8pho3dcb.jpg?watermark=02035561df4f3941764fe69ce401cdb1",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76551242024/ug55frqettu4pb9y5tmv5mw9b.jpg?watermark=703c92d00b2c74ed4bc0900cf6d612c1",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76551242024/h46k615rygs8b8rqec3uq9cq7.jpg?watermark=ebb1c1147e0d3f73ae5be9c5c0a519e7",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76551242024/k7rag4tlae2l51othwpuq2r2f.jpg?watermark=96cf633dd70215062c34efcd16266a7b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76551242024/39jk2rmeu8odwox4arade3mwc.jpg?watermark=d61540b9786d31581904132701511681",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76551242024/wbvys2zr6qt2o828hpeiqh4g2.jpg?watermark=84873c260d82e6b63eb22ead6ba671d1"
-    ],
-    "description": "El interior del Santa Fe no es solo más grande, tiene más contemplaciones para toda la familia. La superficie de cuero suave de la consola central alta ofrece la comodidad de un sillón en el momento en que te sientas, al mismo tiempo que los botones perfectamente alineados permiten un control sin complicaciones de varias funciones. El tablero digital de 12,3” de última generación y la pantalla touch son visualmente atractivos a la vista, ya que te brindan un cuidado meticuloso mientras manejas.",
-    "highlights": [
-      "Asientos - número de plazas 7",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela superior/ velour",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 28790000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-76365582024",
     "slug": "toyota-hilux-2024-dx-582024",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Pick-up/Toyota/Hilux/CL-JATO-ITM-76365582024",
@@ -18883,7 +13886,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 530000,
     "versionsAvailable": 10,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Arica",
+    "location": "Viña del Mar",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76365582024/unqultq2lwhlr0xrypr8ll9l5.jpg?watermark=5e18f2b491f8b25d402115d178612601",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76365582024/unqultq2lwhlr0xrypr8ll9l5.jpg?watermark=5e18f2b491f8b25d402115d178612601",
@@ -18942,7 +13945,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 540000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Arica",
+    "location": "Iquique",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83453232023/bncjf6chmskjvd96a6wvuoyse.jpg?watermark=59dcad33535afb5aa5378bca11fe469b",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83453232023/bncjf6chmskjvd96a6wvuoyse.jpg?watermark=59dcad33535afb5aa5378bca11fe469b",
@@ -19005,7 +14008,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 570000,
     "versionsAvailable": 10,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Iquique",
+    "location": "Valparaíso",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-63171512024/r7dnx62yqj3ztzltnpprvkynb.jpg?watermark=e35068f25be4dc9d8431961121a040f3",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-63171512024/r7dnx62yqj3ztzltnpprvkynb.jpg?watermark=e35068f25be4dc9d8431961121a040f3",
@@ -19064,7 +14067,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 580000,
     "versionsAvailable": 1,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Talca",
+    "location": "Iquique",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82006762024/pswmkqmoypvz7ca4nckvq3aga.jpg?watermark=337843c1ecd1b67c16d5e84268ea7c2b",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82006762024/pswmkqmoypvz7ca4nckvq3aga.jpg?watermark=337843c1ecd1b67c16d5e84268ea7c2b",
@@ -19123,7 +14126,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 580000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Temuco",
+    "location": "Copiapó",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-70241832024/857nqcetu35fmkbu6y4cazdr2.jpg?watermark=febda4bfd819e7424ef049fc2b2e102a",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-70241832024/857nqcetu35fmkbu6y4cazdr2.jpg?watermark=febda4bfd819e7424ef049fc2b2e102a",
@@ -19163,65 +14166,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-36237552024",
-    "slug": "hyundai-santa-fe-2024-value-552024",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Hyundai/Santa%20Fe/CL-JATO-ITM-36237552024",
-    "make": "Hyundai",
-    "model": "Santa Fe",
-    "year": 2024,
-    "badge": "Value",
-    "title": "Hyundai Santa Fe 2024 Value",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "4x4",
-    "engine": "2.5L",
-    "engineCc": 2497,
-    "fuelCombined": 11.5,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 32290000,
-    "reservationFeeClp": 650000,
-    "estimatedMonthlyClp": 580000,
-    "versionsAvailable": 10,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Calama",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-36237552024/pn0lkh469vjpjk7f2p12lh152.jpg?watermark=3c4048a2ce1bdf9aa1da6e8d44fc2b2b",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-36237552024/pn0lkh469vjpjk7f2p12lh152.jpg?watermark=3c4048a2ce1bdf9aa1da6e8d44fc2b2b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-36237552024/ululxfyikc90r0gyixnqxtwe5.jpg?watermark=1b8dc2093ffd4de09f4c84abb010c30a",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-36237552024/qsyu01fu5cm4sfcukx2occ9q9.png?watermark=c8a15c8bc3877f305753835d07f8413e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-36237552024/sgrl40rud755lm7jg0dm5acz7.png?watermark=3933e08c46b2d7fdd971f923b2ae6ec0",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-36237552024/z9gr325d0ckoa62qu6eiuntn2.jpg?watermark=8b2d1d74d1fb48a533d61fcbb21c6e1c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-36237552024/9if2yhicisjq6v78ldrtvw211.jpg?watermark=f5b4d21bc8f20959c3ae565b85de30ec",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-36237552024/6vfaec4z0md1dyra6oni4fpr.jpg?watermark=0abc66eadf27c4586f479cfca46b3614",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-36237552024/fz2y8xvhxjs6310z7jd00tsq.jpg?watermark=71a6c623fdcd457fdbcf791c14a8baa2",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-36237552024/wo59zvq9ftrkzck1tac7gyl7c.jpg?watermark=03a69e47386506892dadf4e812d57474",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-36237552024/6ovkktwy70kfyq4syfvutauq1.jpg?watermark=6821a8d0752a6faf125b266ad5b71230"
-    ],
-    "description": "El interior del Santa Fe no es solo más grande, tiene más contemplaciones para toda la familia. La superficie de cuero suave de la consola central alta ofrece la comodidad de un sillón en el momento en que te sientas, al mismo tiempo que los botones perfectamente alineados permiten un control sin complicaciones de varias funciones. El tablero digital de 12,3” de última generación y la pantalla touch son visualmente atractivos a la vista, ya que te brindan un cuidado meticuloso mientras manejas.",
-    "highlights": [
-      "Asientos - número de plazas 7",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela superior/ velour",
-      "Parlantes - número 8",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 32290000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-82869032024",
     "slug": "hyundai-staria-2024-2-2-crdi-11p-032024",
     "sourceUrl": "https://www.chileautos.cl/catalogo/Van/Hyundai/Staria/CL-JATO-ITM-82869032024",
@@ -19245,7 +14189,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 590000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "La Serena",
+    "location": "Iquique",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82869032024/gilafaqtjhfdp4bxssfphb9m6.jpg?watermark=da413075f537feab5a0538bd63ba1351",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82869032024/gilafaqtjhfdp4bxssfphb9m6.jpg?watermark=da413075f537feab5a0538bd63ba1351",
@@ -19281,187 +14225,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-83698472024",
-    "slug": "toyota-hilux-2024-dx-472024",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Pick-up/Toyota/Hilux/CL-JATO-ITM-83698472024",
-    "make": "Toyota",
-    "model": "Hilux",
-    "year": 2024,
-    "badge": "DX",
-    "title": "Toyota Hilux 2024 DX",
-    "bodyStyle": "Pick-up",
-    "fuelType": "Diesel",
-    "transmission": "manual",
-    "drive": "4x4",
-    "engine": "2.4L",
-    "engineCc": 2393,
-    "fuelCombined": 14,
-    "doors": 4,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 32990000,
-    "reservationFeeClp": 660000,
-    "estimatedMonthlyClp": 590000,
-    "versionsAvailable": 10,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Copiapó",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83698472024/c758429zzy2gifw51cyldk3ea.jpg?watermark=48b2636ebe2e11d9ebf8a3f0bc3ec493",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83698472024/c758429zzy2gifw51cyldk3ea.jpg?watermark=48b2636ebe2e11d9ebf8a3f0bc3ec493",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83698472024/vuyfkhv23miabijiz8m6oan52.jpg?watermark=f4397d7a13a36465cfd24128077e3303",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83698472024/xbcpmylu7laf0wmbzg175ove1.jpg?watermark=266486f9ec7fecb6798bf8cfe9845ba2",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83698472024/gxe8hxdjrc41rirzj16bqtpj1.jpg?watermark=ab2cc8c8585e63d5ac63e0361eebb35e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83698472024/8o2kaiuih4jmvakvh5ipfr1o7.jpg?watermark=45aca5da8e13ec36c4cdf34e7a424377",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83698472024/x0h82kf3yw9u3qt7ziwgnw9f2.jpg?watermark=9a2b884f55f7af357531c4440981e3fc",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83698472024/la3ffyyeaql7upwr5cfiavp08.jpg?watermark=7f3dfd639a232ed8116a99e5dfea487f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83698472024/x1usrqtzsec27wnvnalz7a3ua.jpg?watermark=574cb43034c804799b0eec0bee511f49",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83698472024/nrerk5fkfvbvcl4sx3whu46r3.jpg?watermark=cbd18262c965f2135b07bd7960e58a34",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83698472024/sexld86uga7kstp2aht81de09.jpg?watermark=a3416a8548d2f2f24a35c7e2bc59fd38"
-    ],
-    "description": "Hilux posee 3 y 7 airbags, la seguridad de serie más alta en su clase, obteniendo 5 estrellas Latin-Ncap en todas sus versiones. Mayor clasificación para un pick up en Chile, en adultos y niños. Nuevo Diseño, más moderno y agresivo para adaptarse al día a día, ya sea en el mundo de la ciudad como el de trabajo, incorporando un mayor confort interior y un look exterior renovado y atractivo.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 4",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 32990000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-81314772024",
-    "slug": "nissan-navara-2024-se-772024",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Pick-up/Nissan/Navara/CL-JATO-ITM-81314772024",
-    "make": "Nissan",
-    "model": "Navara",
-    "year": 2024,
-    "badge": "SE",
-    "title": "Nissan Navara 2024 SE",
-    "bodyStyle": "Pick-up",
-    "fuelType": "Diesel",
-    "transmission": "manual",
-    "drive": "4x4",
-    "engine": "2.3L",
-    "engineCc": 2298,
-    "fuelCombined": 14.4,
-    "doors": 4,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 33299357,
-    "reservationFeeClp": 670000,
-    "estimatedMonthlyClp": 600000,
-    "versionsAvailable": 6,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Puerto Montt",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81314772024/ccsztqxg2p68dxcxrvmc3qlk6.jpg?watermark=6a3a8a18a53dd466c3dd597bedd94bc4",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81314772024/ccsztqxg2p68dxcxrvmc3qlk6.jpg?watermark=6a3a8a18a53dd466c3dd597bedd94bc4",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81314772024/pmjsq9umawjuo4cb4p6dxjo5e.jpg?watermark=3c401a1bb707489a5c615cf7bb9ba492",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81314772024/82loqf9y22kitga1dov07qo6.jpg?watermark=b502ac77966ce5bd545bf77458eadbf9",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81314772024/j8lrdwifgdmhuhuwx2llcioh7.jpg?watermark=e971563f9f4a8ce8f3edb36ff28f72ec",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81314772024/f64jtm1q04g2vu4y1b9c4swj3.jpg?watermark=126be9982f09a2ba4e7c04facd34548d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81314772024/57oqda8unpc1p8v0fxynxryx3.jpg?watermark=da47b9f51c3ac10d781768875bdef9f7",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81314772024/8wsvwt09k8yl5agao4a6ov37.jpg?watermark=5c01e40bc269fe3318f51bde7b6f5346",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81314772024/1yjcd4wzd68mld16z54ow98fd.jpg?watermark=52c978f87e62885d2402ec6c10c453f7",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81314772024/5dxx3in1qb70fitjxs32epy54.jpg?watermark=0cd500a5386e6849f4cb510b0ee1967d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81314772024/twvl4ly9o6x8xzwhv5x86le09.jpg?watermark=3598bc5097e6a41088267363fe3a85ed"
-    ],
-    "description": "Hecha para ayudarte a hacer más y cumplir con todas tus metas, Nissan Navara logra desafiar y superar cualquier camino. Con un diseño robusto e imponente, está equipada con la ingeniería japonesa que te hace sentir en control en los terrenos más complicados. Las maniobras más difíciles las haces con tranquilidad gracias a las tecnologías Nissan Intelligent Mobility que te protegen durante todas tus aventuras. Haz que el camino sea más fácil y ve por todo con Nissan Navara.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 35208508
-      },
-      {
-        "type": "JATO",
-        "amount": 33299357
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-71560262024",
-    "slug": "hyundai-santa-fe-2024-plus-262024",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Hyundai/Santa%20Fe/CL-JATO-ITM-71560262024",
-    "make": "Hyundai",
-    "model": "Santa Fe",
-    "year": 2024,
-    "badge": "Plus",
-    "title": "Hyundai Santa Fe 2024 Plus",
-    "bodyStyle": "SUV",
-    "fuelType": "Diesel",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "2.2L",
-    "engineCc": 2199,
-    "fuelCombined": 14.7,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 33490000,
-    "reservationFeeClp": 670000,
-    "estimatedMonthlyClp": 600000,
-    "versionsAvailable": 10,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Copiapó",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-71560262024/kz9djz01gl988z9wdh8iocntd.jpg?watermark=404300faf34fce69bf2a99e021450352",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-71560262024/kz9djz01gl988z9wdh8iocntd.jpg?watermark=404300faf34fce69bf2a99e021450352",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-71560262024/yrgu20aqdb63mgx63w8j8qtzc.jpg?watermark=74f4dcdc481c7c8c3813a87624c54a36",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-71560262024/qbkbycxvf21vlxke29woi14w2.png?watermark=2d5fc61c509f4f0ec71ec6e59759b18d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-71560262024/rlmvn6aasppifh66ktqsrnep7.png?watermark=1082077a1d0e6617c8f24d61a4d7dac7",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-71560262024/zu1uf38ky9c6tvl8q1xl7ira2.jpg?watermark=120e7f0c954bad0202f1fd879e33439b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-71560262024/b1d4lvo59km4xim5krf8tiucd.jpg?watermark=f202f44e5371d94aeb14fa1e88eb382a",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-71560262024/woz4a9g5i3baxbc6w7v27scx1.jpg?watermark=b0b7432eae801e57ca4e76ee01ba667e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-71560262024/t08yahanmdfem6v7gmn45q41f.jpg?watermark=d6ef27af47a4f3fe8dc85bcef6396e98",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-71560262024/yntwjycomx92f3yqyrucqgd2.jpg?watermark=8b2ee1bec94b8131a42fccea5fdf1dfa",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-71560262024/umititrq215yw0sxt00uroab5.jpg?watermark=04d811a8d6c75c960e9ae6fe42cb75a4"
-    ],
-    "description": "El interior del Santa Fe no es solo más grande, tiene más contemplaciones para toda la familia. La superficie de cuero suave de la consola central alta ofrece la comodidad de un sillón en el momento en que te sientas, al mismo tiempo que los botones perfectamente alineados permiten un control sin complicaciones de varias funciones. El tablero digital de 12,3” de última generación y la pantalla touch son visualmente atractivos a la vista, ya que te brindan un cuidado meticuloso mientras manejas.",
-    "highlights": [
-      "Asientos - número de plazas 7",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela superior/ velour",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 33490000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-79178592024",
     "slug": "toyota-fortuner-2024-srx-592024",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Toyota/Fortuner/CL-JATO-ITM-79178592024",
@@ -19485,7 +14248,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 630000,
     "versionsAvailable": 6,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Antofagasta",
+    "location": "Santiago",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79178592024/spjqevgh656tpjxcyt4igmgxe.jpg?watermark=1d6cda68807784daf5152075f8110dc4",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79178592024/spjqevgh656tpjxcyt4igmgxe.jpg?watermark=1d6cda68807784daf5152075f8110dc4",
@@ -19544,7 +14307,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 640000,
     "versionsAvailable": 6,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Iquique",
+    "location": "Rancagua",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75617292024/qynpymzfxo1vckvb6923xopu5.jpg?watermark=2141bc43dfd8894acdf6ecfe96851e6d",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75617292024/qynpymzfxo1vckvb6923xopu5.jpg?watermark=2141bc43dfd8894acdf6ecfe96851e6d",
@@ -19607,7 +14370,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 650000,
     "versionsAvailable": 8,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Valparaíso",
+    "location": "Arica",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-72252342024/fv9k3myi07vr1q8tjejb8y24d.jpg?watermark=546cf5e1b89f06924ed7a67cd0f375bd",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-72252342024/fv9k3myi07vr1q8tjejb8y24d.jpg?watermark=546cf5e1b89f06924ed7a67cd0f375bd",
@@ -19666,7 +14429,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 660000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Puerto Montt",
+    "location": "Temuco",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77614712024/x2crx3d24yar990pyllwxhj1a.jpg?watermark=c380beceb5c1b8643f5b9db3592affe6",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-77614712024/x2crx3d24yar990pyllwxhj1a.jpg?watermark=c380beceb5c1b8643f5b9db3592affe6",
@@ -19702,187 +14465,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-76330262024",
-    "slug": "hyundai-santa-fe-2024-value-262024",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Hyundai/Santa%20Fe/CL-JATO-ITM-76330262024",
-    "make": "Hyundai",
-    "model": "Santa Fe",
-    "year": 2024,
-    "badge": "Value",
-    "title": "Hyundai Santa Fe 2024 Value",
-    "bodyStyle": "SUV",
-    "fuelType": "Diesel",
-    "transmission": "automático",
-    "drive": "4x4",
-    "engine": "2.2L",
-    "engineCc": 2199,
-    "fuelCombined": 14.7,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 37790000,
-    "reservationFeeClp": 760000,
-    "estimatedMonthlyClp": 680000,
-    "versionsAvailable": 10,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Talca",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76330262024/0m8fri2v23fo230vaf1o66r9e.jpg?watermark=199253fa83d60e23e52446ae1f427f17",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76330262024/0m8fri2v23fo230vaf1o66r9e.jpg?watermark=199253fa83d60e23e52446ae1f427f17",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76330262024/y963ett7hl6qjm68b7pg5qin5.jpg?watermark=fb58059fc95810da3c6f754216c7ab21",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76330262024/4nvvh72r4276zbb5hozolnb4c.png?watermark=acfb2779183840fd4246892d461f6df3",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76330262024/7517e5hhqx5vv4012zsn33g58.png?watermark=880cbea6a2e2478554532fc1664663c4",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76330262024/stkpf16amlmnzshz2byxkoicc.jpg?watermark=7d4478b0c185ebf18b9317ff0ca48fdc",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76330262024/qdtxw8jadstq18enb8t0d7iqb.jpg?watermark=b853594994f78bb08a65b4325f00390e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76330262024/i9f5xigep69h76zb9rg5imyp1.jpg?watermark=405e9993a1cb571a7054b812c15c8f27",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76330262024/1qk2ycd4wpfiwpxuky0o9zcg3.jpg?watermark=24ba58cc1db982c0d14dc44da379a3b7",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76330262024/xoogi5vs2q7ss5015cs6m3kie.jpg?watermark=b0df28f0953047393499e9b299f55a25",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-76330262024/93n5dihjedcxgwmhk4hiodbqd.jpg?watermark=ba878c71a5d75a807af0d5fbfb5439f9"
-    ],
-    "description": "El interior del Santa Fe no es solo más grande, tiene más contemplaciones para toda la familia. La superficie de cuero suave de la consola central alta ofrece la comodidad de un sillón en el momento en que te sientas, al mismo tiempo que los botones perfectamente alineados permiten un control sin complicaciones de varias funciones. El tablero digital de 12,3” de última generación y la pantalla touch son visualmente atractivos a la vista, ya que te brindan un cuidado meticuloso mientras manejas.",
-    "highlights": [
-      "Asientos - número de plazas 7",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela superior/ velour",
-      "Parlantes - número 8",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 37790000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-82476762024",
-    "slug": "nissan-navara-2024-xe-762024",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Pick-up/Nissan/Navara/CL-JATO-ITM-82476762024",
-    "make": "Nissan",
-    "model": "Navara",
-    "year": 2024,
-    "badge": "XE",
-    "title": "Nissan Navara 2024 XE",
-    "bodyStyle": "Pick-up",
-    "fuelType": "Diesel",
-    "transmission": "automático",
-    "drive": "4x4",
-    "engine": "2.3L",
-    "engineCc": 2298,
-    "fuelCombined": 12.9,
-    "doors": 4,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 38267257,
-    "reservationFeeClp": 770000,
-    "estimatedMonthlyClp": 690000,
-    "versionsAvailable": 6,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Calama",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82476762024/6qre7pni3zysei76zh8j1hwyd.jpg?watermark=529be8377660e7cdef23fceee91d8d3d",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82476762024/6qre7pni3zysei76zh8j1hwyd.jpg?watermark=529be8377660e7cdef23fceee91d8d3d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82476762024/ncl3kuw34wdqwvbwbfvkgj8i9.jpg?watermark=fb2a1556f43c89ab8c6cf4503218f2f8",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82476762024/p7xz4sog9vq1ydkytsl8wndjd.jpg?watermark=4bbaa4718ef228184f5302360eb0664b",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82476762024/5hz35vw7seo2philue94zl523.jpg?watermark=fafc7165ff8378a6e2250a4dc297c0d4",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82476762024/gurv5u9c8bxnvl69o4qxj91a5.jpg?watermark=f8971e7b75422626c422e3d39ddd2fd3",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82476762024/0ckt3kwkdofjb6pt8tbw5h2v1.jpg?watermark=55423bb00173b9a2bfb4548c7245ab94",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82476762024/31tljw2jvs9ntioh8nond4wk5.jpg?watermark=55c68c4d50149825caee796fc6c4d3e1",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82476762024/p011u8u3vkbimm6wjs5odx6fa.jpg?watermark=9a7d678812ede6e766275efb03b85ffc",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82476762024/as9bt42hsmfm1krg409onfkq4.jpg?watermark=384ec01bbbeffe655ab65ed713354108",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82476762024/wzdcmyjau7ydfvezqezho6ci6.jpg?watermark=b2c8863f701b57854961726dedce217f"
-    ],
-    "description": "Hecha para ayudarte a hacer más y cumplir con todas tus metas, Nissan Navara logra desafiar y superar cualquier camino. Con un diseño robusto e imponente, está equipada con la ingeniería japonesa que te hace sentir en control en los terrenos más complicados. Las maniobras más difíciles las haces con tranquilidad gracias a las tecnologías Nissan Intelligent Mobility que te protegen durante todas tus aventuras. Haz que el camino sea más fácil y ve por todo con Nissan Navara.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "ShowRoom",
-        "amount": 41007987
-      },
-      {
-        "type": "JATO",
-        "amount": 38267257
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-80947862024",
-    "slug": "toyota-hiace-2024-gl-862024",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Van/Toyota/Hiace/CL-JATO-ITM-80947862024",
-    "make": "Toyota",
-    "model": "Hiace",
-    "year": 2024,
-    "badge": "GL",
-    "title": "Toyota Hiace 2024 GL",
-    "bodyStyle": "Van",
-    "fuelType": "Diesel",
-    "transmission": "manual",
-    "drive": "trasera",
-    "engine": "2.8L",
-    "engineCc": 2755,
-    "fuelCombined": 11.1,
-    "doors": 4,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 38990000,
-    "reservationFeeClp": 780000,
-    "estimatedMonthlyClp": 700000,
-    "versionsAvailable": 2,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Iquique",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80947862024/cigpao9iq2aehh9wld3ksw8r1.jpg?watermark=df25bc3e1746d721186617ff6b6e8180",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80947862024/cigpao9iq2aehh9wld3ksw8r1.jpg?watermark=df25bc3e1746d721186617ff6b6e8180",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80947862024/i997qmea40rkjalr61qz2lea5.png?watermark=f04ec462e13c327ddabd00c0294064ce",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80947862024/8wshouctcbefbueg3gfdux0q3.png?watermark=2e1f3522d73e39bbcb09633b69e0bc1e",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80947862024/6fjk96rxisbgnbqf5wmmm3oie.png?watermark=d1b02f127a795b99ae26f90ada5bcdf9",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80947862024/r08zgmcz27r4ns1onriiren2f.jpg?watermark=bb093f59dcb983918331c279d710a119",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80947862024/haejhbpb47rpbh38by74y5b2b.jpg?watermark=4edec6f96f719ffc1a7d408eacb36956",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80947862024/69oshoz160nntk82p6y42nst3.jpg?watermark=ad49c06c915b62fa4519531dfd8f5f18",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80947862024/m7rndu8hk07uanzkgep26xtb4.jpg?watermark=e336df2c2a3192c2ff9f06f60a8cf1b9",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80947862024/iaq3ozf4iwof7qrgqalmxuoc6.jpg?watermark=ac3f72d9675059027deb35538481162d",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-80947862024/hutjm2h1cglz2c1b8wiok45i6.jpg?watermark=0b63f8fb435e8ed5dc968b29980f610f"
-    ],
-    "description": "Toyota HIACE Turismo se destaca por su comodidad para todos los pasajeros desde el principio hasta el final de su viaje, haciendo del recorrido una experiencia reconfortante. Este modelo fue rediseñado para mejorar la comodidad de los ocupantes, cuenta con una abertura más amplia de la puerta corredera y un amplio peldaño con una lámpara instalada para aumentar la seguridad al entrar y salir del vehículo.",
-    "highlights": [
-      "Asientos - número de plazas 10",
-      "Tapicería de los asientos - material principal tela",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)",
-      "Consumo combustible - urbano (km/l)",
-      "Potencia - Potencia máxima HP"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 38990000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-83592192024",
     "slug": "nissan-x-trail-e-power-2024-exclusive-192024",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Nissan/X-Trail%20E-Power/CL-JATO-ITM-83592192024",
@@ -19906,7 +14488,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 710000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Antofagasta",
+    "location": "La Serena",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83592192024/m7q0neom3r0a1v37bnfyj4yma.jpg?watermark=bc4a5d59be5b370a58d9fa5247436ac6",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83592192024/m7q0neom3r0a1v37bnfyj4yma.jpg?watermark=bc4a5d59be5b370a58d9fa5247436ac6",
@@ -19969,7 +14551,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 710000,
     "versionsAvailable": 6,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Copiapó",
+    "location": "Viña del Mar",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75617282024/iybldkallu6oz2g3xvl2f1bw2.jpg?watermark=7ac35d6bffe4d83e69af77f464ee5f41",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75617282024/iybldkallu6oz2g3xvl2f1bw2.jpg?watermark=7ac35d6bffe4d83e69af77f464ee5f41",
@@ -20032,7 +14614,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 710000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Viña del Mar",
+    "location": "Concepción",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83592182024/c9sqh0t5azkogvuowmmejw3v4.jpg?watermark=cee8cdd12642cb827557c065934c3670",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83592182024/c9sqh0t5azkogvuowmmejw3v4.jpg?watermark=cee8cdd12642cb827557c065934c3670",
@@ -20091,7 +14673,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 730000,
     "versionsAvailable": 5,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "La Serena",
+    "location": "Concepción",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82688172024/g0d8eipfkshrqvzr7v42r7op4.jpg?watermark=5d89e6c837d1a79deafe1d39644d13c6",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-82688172024/g0d8eipfkshrqvzr7v42r7op4.jpg?watermark=5d89e6c837d1a79deafe1d39644d13c6",
@@ -20127,124 +14709,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-83336742024",
-    "slug": "kia-carnival-2024-full-742024",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Furg%C3%B3n/Kia/Carnival/CL-JATO-ITM-83336742024",
-    "make": "Kia",
-    "model": "Carnival",
-    "year": 2024,
-    "badge": "Full",
-    "title": "Kia Carnival 2024 Full",
-    "bodyStyle": "Furgón",
-    "fuelType": "Diesel",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "2.2L",
-    "engineCc": 2151,
-    "fuelCombined": 14.5,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 42490000,
-    "reservationFeeClp": 850000,
-    "estimatedMonthlyClp": 760000,
-    "versionsAvailable": 5,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Concepción",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83336742024/ppxbnoet4ep5ahcz7je19uda5.jpg?watermark=121f6bd69e76914a3dcf73043c7c98df",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83336742024/ppxbnoet4ep5ahcz7je19uda5.jpg?watermark=121f6bd69e76914a3dcf73043c7c98df",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83336742024/473jvgtc0yzwkoz09dcs405o6.jpg?watermark=70d19a9847009959ddf66a03e78677e3",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83336742024/0t4w73l2mao3j3abh829p5tf8.png?watermark=9e66c42be267396d7efdc5d8f1fa8ad7",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83336742024/nb7l4snfxjs6vhlvde62iwa46.png?watermark=dbc74ff4647883d66be5fa334aacd1d4",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83336742024/zzt06lppjnqstdymdi4v0kzye.jpg?watermark=b81256397ddb8bafef481c14b231215c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83336742024/32aergvqgvoy6j4urvz5xxg81.jpg?watermark=5a092292c69ad64af1bc795d5abeea24",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83336742024/iqb4xved029qz89o6p9up5xm3.jpg?watermark=ddd50ac6420bc66f0ec69188adbae2a7",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83336742024/9wplxf7leuj3mbvozsskp42h.jpg?watermark=b4714e610068ee8a10fca2197818d6fc",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83336742024/jif16jxkwylyykweqfjmp7jmb.jpg?watermark=fdebbeabc6f986bcc6b6cd1d5dbdbac8",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83336742024/duh431ndlmto0dbzml1z0o0jd.jpg?watermark=e6278d2fb54a33c5b0c647675ead5e06"
-    ],
-    "description": "El Carnival brilla con luces delanteras y diurnas LED, lo que le otorga un aspecto de alta tecnología y mejora la visibilidad en todo momento. El interior del Carnival está rodeado de pantallas y ofrece una experiencia cómoda para los ocupantes. Puedes explorar diferentes colores y opciones de personalización según tus preferencias. El Carnival 2024 está equipado con un motor V6 de 3.5 L que produce 290 hp y 262 lb/ft de torsión. Ofrece un equilibrio entre potencia y eficiencia de combustible.",
-    "highlights": [
-      "Asientos - número de plazas 8",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal cuero",
-      "Parlantes - número 8",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 42490000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
-    "id": "CL-JATO-ITM-75617272024",
-    "slug": "nissan-navara-2024-platinum-272024",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/Pick-up/Nissan/Navara/CL-JATO-ITM-75617272024",
-    "make": "Nissan",
-    "model": "Navara",
-    "year": 2024,
-    "badge": "Platinum",
-    "title": "Nissan Navara 2024 Platinum",
-    "bodyStyle": "Pick-up",
-    "fuelType": "Diesel",
-    "transmission": "automático",
-    "drive": "4x4",
-    "engine": "2.3L",
-    "engineCc": 2298,
-    "fuelCombined": 12.9,
-    "doors": 4,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 42643534,
-    "reservationFeeClp": 850000,
-    "estimatedMonthlyClp": 770000,
-    "versionsAvailable": 6,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Arica",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75617272024/nz12730m7agny8n8h26my0ulb.jpg?watermark=ba7a0ab3097c78f53ec780b17c547b08",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75617272024/nz12730m7agny8n8h26my0ulb.jpg?watermark=ba7a0ab3097c78f53ec780b17c547b08",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75617272024/we0zk6gvc1mggvxrk1y616ulc.jpg?watermark=a5c33705fe1714dfdffb0c909172218a",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75617272024/67ec60k07oddazsr58k2de6qd.jpg?watermark=41ad86551cdd8a48b2cf6d27d3ef90e1",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75617272024/l27xhkygqfzdiip7r3zsxp8ac.jpg?watermark=1e6cae01d56881ce39eed9ecb6ce1f32",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75617272024/pzkv1p7u2uzgc64zl5xdd27sb.jpg?watermark=957351b93c0933cce381e8e263df8239",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75617272024/dkol82bho0q74o64dsy8hlds5.jpg?watermark=a0c66978de7a469663afcb551fbe4be2",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75617272024/jfx5fnet8z0nbpb8aw1rjbag3.jpg?watermark=bd2955159212860c876ccd727f173e32",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75617272024/jszluwv2q08emikdcmycw65t7.jpg?watermark=e318873051ef5c4421dda15797e3cc2f",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75617272024/ffdbg95vf7jj75d9cyae99eye.jpg?watermark=b85c3ce22cc859b1be90e02bc4893400",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75617272024/4qb76alg7hdfpmo9qxdvlqqo9.jpg?watermark=edbf5b5029dced890ac8bd81130909f1"
-    ],
-    "description": "Hecha para ayudarte a hacer más y cumplir con todas tus metas, Nissan Navara logra desafiar y superar cualquier camino. Con un diseño robusto e imponente, está equipada con la ingeniería japonesa que te hace sentir en control en los terrenos más complicados. Las maniobras más difíciles las haces con tranquilidad gracias a las tecnologías Nissan Intelligent Mobility que te protegen durante todas tus aventuras. Haz que el camino sea más fácil y ve por todo con Nissan Navara.",
-    "highlights": [
-      "Asientos - número de plazas 5",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal cuero",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 42643534
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-75567762024",
     "slug": "hyundai-santa-fe-2024-limited-762024",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Hyundai/Santa%20Fe/CL-JATO-ITM-75567762024",
@@ -20268,7 +14732,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 810000,
     "versionsAvailable": 10,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Puerto Montt",
+    "location": "Antofagasta",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75567762024/sv3wxdg7r3scwlpecmh9rvcm2.jpg?watermark=b1cfd6574109821ff250930184c4795a",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-75567762024/sv3wxdg7r3scwlpecmh9rvcm2.jpg?watermark=b1cfd6574109821ff250930184c4795a",
@@ -20327,7 +14791,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 830000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Talca",
+    "location": "Viña del Mar",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79083212024/mm8elnmpl9gomntv9uhpqnp8b.jpg?watermark=977ec588e93576b6f0d45ce1c177016a",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-79083212024/mm8elnmpl9gomntv9uhpqnp8b.jpg?watermark=977ec588e93576b6f0d45ce1c177016a",
@@ -20386,7 +14850,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 860000,
     "versionsAvailable": 1,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Iquique",
+    "location": "Santiago",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83299362024/5082hpghjir9flfglvgagrx74.jpg?watermark=3b47798029ea929e68c2202b064d8107",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83299362024/5082hpghjir9flfglvgagrx74.jpg?watermark=3b47798029ea929e68c2202b064d8107",
@@ -20445,7 +14909,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 970000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Puerto Montt",
+    "location": "Antofagasta",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-7745562024/gp7oql7lolxj7dvyxff5xhcs1.jpg?watermark=3d393ded3d87df4f404ce3d62f25e964",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-7745562024/gp7oql7lolxj7dvyxff5xhcs1.jpg?watermark=3d393ded3d87df4f404ce3d62f25e964",
@@ -20504,7 +14968,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 730000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Rancagua",
+    "location": "La Serena",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83571132023/xpd93ixrbh9nsi4h5p81bw6h.jpg?watermark=1fad797126fa7a9c9ecec7e9c1a23ae6",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83571132023/xpd93ixrbh9nsi4h5p81bw6h.jpg?watermark=1fad797126fa7a9c9ecec7e9c1a23ae6",
@@ -20567,7 +15031,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 790000,
     "versionsAvailable": 2,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Iquique",
+    "location": "Arica",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81061312023/1kh7v9u7zzxl7gl1k4qrlidqa.jpg?watermark=21c339980e100be9a173c3c38c133735",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-81061312023/1kh7v9u7zzxl7gl1k4qrlidqa.jpg?watermark=21c339980e100be9a173c3c38c133735",
@@ -20630,7 +15094,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 840000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Talca",
+    "location": "Antofagasta",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83571152023/tpbltzd1bfdbshaj3v2vk455c.jpg?watermark=69b31652862655c1b223237483300da3",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83571152023/tpbltzd1bfdbshaj3v2vk455c.jpg?watermark=69b31652862655c1b223237483300da3",
@@ -20670,65 +15134,6 @@ export const c4rVehicles: C4RVehicle[] = [
     "source": "Chileautos catalogo 0km"
   },
   {
-    "id": "CL-JATO-ITM-83571142023",
-    "slug": "nissan-pathfinder-2023-advance-142023",
-    "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Nissan/Pathfinder/CL-JATO-ITM-83571142023",
-    "make": "Nissan",
-    "model": "Pathfinder",
-    "year": 2023,
-    "badge": "Advance",
-    "title": "Nissan Pathfinder 2023 Advance",
-    "bodyStyle": "SUV",
-    "fuelType": "Bencina",
-    "transmission": "automático",
-    "drive": "delantera",
-    "engine": "3.5L",
-    "engineCc": 3498,
-    "fuelCombined": 10.4,
-    "doors": 5,
-    "condition": "Nuevo",
-    "km": 0,
-    "priceClp": 47790000,
-    "reservationFeeClp": 960000,
-    "estimatedMonthlyClp": 860000,
-    "versionsAvailable": 4,
-    "dealer": "Concesionario oficial Chileautos",
-    "location": "Iquique",
-    "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83571142023/hilsbff8h15uy1elmryl5b7e1.jpg?watermark=9043005f336f29170a9329bdda969f2c",
-    "gallery": [
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83571142023/hilsbff8h15uy1elmryl5b7e1.jpg?watermark=9043005f336f29170a9329bdda969f2c",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83571142023/6h4f2bosgiwegphdl51dq37b8.jpg?watermark=6ae9946180e538fb0003f63f65afc332",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83571142023/doczk014tvd46h4miew3wj5z4.jpg?watermark=2bbcd67aaf7a28570dcbfd0ddea38bee",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83571142023/lc57xtngkdsg9tob8zxkvy211.jpg?watermark=8c5e543c172ccdcac350d71fff4057a7",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83571142023/q1euce4o6mawpsnlinzqj3j82.jpg?watermark=f553c81e56d6ca5f7193da79c0f6ad09",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83571142023/06gljsfhbf2pkvt7dgkvqbltc.jpg?watermark=650e2d3816832dd9da1eb9cb60da7fba",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83571142023/zo20ftc4fl9y9r6vlqhem1545.jpg?watermark=c15ccf6f87ec4be4ea87dda991b3b9a6",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83571142023/r0trkeegq6rglsek4ocov4ar5.jpg?watermark=5f2b3905c49b9c7dfb3975dbef665d16",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83571142023/1hxxirujs3xcay5av8xak69fa.jpg?watermark=6e39cc77e0e8cfcae75e9f6495757957",
-      "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83571142023/5w35q40ixmpp1v7a4vggub157.jpg?watermark=07c4a0322d84ee7813f5b402acab7462"
-    ],
-    "description": "Súbete a un diseño que habla por sí solo y descubre un carácter exclusivo. Preparado para estar a la altura de cualquier escenario, ahora tus aventuras se llenarán de estilo. Cargado con la potencia para seguir adelante en cualquier camino, también cuenta con las tecnologías de Nissan Intelligent Mobility para darte seguridad a ti y a todos los que te importan, permitiéndote abrirte paso a través en cualquier desafío con confianza y estilo.",
-    "highlights": [
-      "Asientos - número de plazas 8",
-      "Asientos delanteros - ajustables eléctricamente",
-      "Tapicería de los asientos - material principal cuero",
-      "Parlantes - número 6",
-      "Depósito de combustible - capacidad",
-      "Bluetooth - estándar",
-      "Control de crucero - estándar",
-      "Smart card / smart key - incluye encendido sin llave",
-      "Consumo combustible - extraurbano (km/l)",
-      "Consumo combustible - mixto (km/l)"
-    ],
-    "priceBreakdown": [
-      {
-        "type": "JATO",
-        "amount": 47790000
-      }
-    ],
-    "source": "Chileautos catalogo 0km"
-  },
-  {
     "id": "CL-JATO-ITM-83571162023",
     "slug": "nissan-pathfinder-2023-exclusive-162023",
     "sourceUrl": "https://www.chileautos.cl/catalogo/SUV/Nissan/Pathfinder/CL-JATO-ITM-83571162023",
@@ -20752,7 +15157,7 @@ export const c4rVehicles: C4RVehicle[] = [
     "estimatedMonthlyClp": 930000,
     "versionsAvailable": 4,
     "dealer": "Concesionario oficial Chileautos",
-    "location": "Puerto Montt",
+    "location": "Viña del Mar",
     "coverImage": "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83571162023/svqocgte5n82sz4krg0294srb.jpg?watermark=c614c6e9c2005d22a7f9dace939c41be",
     "gallery": [
       "https://chileautos.pxcrush.net/showroom/details/CL-JATO-ITM-83571162023/svqocgte5n82sz4krg0294srb.jpg?watermark=c614c6e9c2005d22a7f9dace939c41be",
