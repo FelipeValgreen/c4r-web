@@ -2,6 +2,7 @@ import "server-only";
 
 import fs from "node:fs/promises";
 import path from "node:path";
+import { BlobNotFoundError, get as getBlob, put as putBlob } from "@vercel/blob";
 import {
   dealerContracts as seedContracts,
   dealerCustomers as seedCustomers,
@@ -22,11 +23,14 @@ import {
 } from "@/app/dealers/_data";
 
 const STORE_VERSION = 1;
+const STORE_BLOB_PATH = normalizeText(process.env.DEALERS_STORE_BLOB_PATH) || "dealers/dealers-store.json";
+const STORE_BLOB_TOKEN = normalizeText(process.env.BLOB_READ_WRITE_TOKEN);
 const STORE_FILE =
   normalizeText(process.env.DEALERS_STORE_FILE) ||
   (process.env.VERCEL
     ? path.join("/tmp", "c4r", "dealers-store.json")
     : path.join(process.cwd(), "data", "dealers-store.json"));
+const USE_BLOB_STORE = STORE_BLOB_TOKEN.length > 0;
 
 export const DEFAULT_DEALER_ID = "DLR-C4R-DEMO";
 
@@ -259,6 +263,17 @@ function createInitialStoreState(): DealerStoreState {
 }
 
 async function ensureStore(): Promise<DealerStoreState> {
+  if (USE_BLOB_STORE) {
+    const blobState = await readStoreFromBlob();
+    if (blobState) {
+      return cloneState(blobState);
+    }
+
+    const initial = createInitialStoreState();
+    await persistStore(initial);
+    return cloneState(initial);
+  }
+
   try {
     const raw = await fs.readFile(STORE_FILE, "utf8");
     const parsed = JSON.parse(raw) as DealerStoreState;
@@ -273,8 +288,47 @@ async function ensureStore(): Promise<DealerStoreState> {
   }
 }
 
+async function readStoreFromBlob(): Promise<DealerStoreState | null> {
+  try {
+    const blob = await getBlob(STORE_BLOB_PATH, {
+      access: "private",
+      useCache: false,
+      token: STORE_BLOB_TOKEN,
+    });
+
+    if (!blob || blob.statusCode !== 200 || !blob.stream) {
+      return null;
+    }
+
+    const raw = await new Response(blob.stream).text();
+    const parsed = JSON.parse(raw) as DealerStoreState;
+    if (parsed.version !== STORE_VERSION) {
+      throw new Error("Unsupported store version");
+    }
+
+    return cloneState(parsed);
+  } catch (error) {
+    if (error instanceof BlobNotFoundError) {
+      return null;
+    }
+    throw error;
+  }
+}
+
 async function persistStore(nextState: DealerStoreState): Promise<void> {
   const currentWrite = writeLock.catch(() => undefined).then(async () => {
+    if (USE_BLOB_STORE) {
+      await putBlob(STORE_BLOB_PATH, JSON.stringify(nextState, null, 2), {
+        access: "private",
+        addRandomSuffix: false,
+        allowOverwrite: true,
+        contentType: "application/json",
+        token: STORE_BLOB_TOKEN,
+        cacheControlMaxAge: 60,
+      });
+      return;
+    }
+
     await fs.mkdir(path.dirname(STORE_FILE), { recursive: true });
     await fs.writeFile(STORE_FILE, JSON.stringify(nextState, null, 2), "utf8");
   });
