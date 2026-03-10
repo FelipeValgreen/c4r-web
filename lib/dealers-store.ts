@@ -378,7 +378,7 @@ async function persistStore(nextState: DealerStoreState): Promise<void> {
     if (USE_BLOB_STORE) {
       await putBlob(`${STORE_BLOB_PREFIX}${Date.now()}.json`, JSON.stringify(nextState, null, 2), {
         access: STORE_BLOB_ACCESS,
-        addRandomSuffix: false,
+        addRandomSuffix: true,
         contentType: "application/json",
         token: STORE_BLOB_TOKEN,
         cacheControlMaxAge: 60,
