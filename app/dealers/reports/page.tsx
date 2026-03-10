@@ -1,5 +1,6 @@
 import { formatClp } from "@/app/dealers/_data";
 import { getDealerSnapshot } from "@/lib/dealers-store";
+import { requireDealerSession } from "@/lib/dealer-session-server";
 
 export const metadata = {
   title: "Reportes Dealers | C4R",
@@ -9,7 +10,8 @@ export const metadata = {
 export const dynamic = "force-dynamic";
 
 export default async function DealersReportsPage() {
-  const snapshot = await getDealerSnapshot();
+  const session = await requireDealerSession();
+  const snapshot = await getDealerSnapshot(session.dealerId);
 
   const totalStock = snapshot.vehicles.filter((vehicle) => vehicle.status !== "vendido").length;
   const sold = snapshot.vehicles.filter((vehicle) => vehicle.status === "vendido");

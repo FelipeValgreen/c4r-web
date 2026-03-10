@@ -3,6 +3,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { formatClp, formatDate } from "@/app/dealers/_data";
 import { getDealerSnapshot } from "@/lib/dealers-store";
+import { requireDealerSession } from "@/lib/dealer-session-server";
 
 type PageProps = {
   params: Promise<{ id: string }>;
@@ -21,7 +22,8 @@ export const dynamic = "force-dynamic";
 
 export default async function DealerRequestDetailPage({ params }: PageProps) {
   const { id } = await params;
-  const snapshot = await getDealerSnapshot();
+  const session = await requireDealerSession();
+  const snapshot = await getDealerSnapshot(session.dealerId);
 
   const leadById = snapshot.leads.find((item) => item.id === id);
   const leadByRequest = snapshot.leads.find((item) => item.requestId === id);

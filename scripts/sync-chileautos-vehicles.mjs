@@ -453,6 +453,11 @@ function dedupeVehicleCollection(vehicles) {
   const dedupedByVisualKey = new Map();
 
   for (const vehicle of dedupedById.values()) {
+    const isInvalidCover = /noimage|placeholder/i.test(String(vehicle.coverImage ?? ""));
+    if (isInvalidCover) {
+      continue;
+    }
+
     const visualFingerprint = normalizeImageFingerprint(vehicle.coverImage);
     const key = [
       normalizeKey(vehicle.make),
@@ -471,7 +476,20 @@ function dedupeVehicleCollection(vehicles) {
     dedupedByVisualKey.set(key, pickPreferredVehicle(current, vehicle));
   }
 
-  return Array.from(dedupedByVisualKey.values());
+  const dedupedBySlug = new Map();
+
+  for (const vehicle of dedupedByVisualKey.values()) {
+    const slugKey = normalizeKey(vehicle.slug);
+    const current = dedupedBySlug.get(slugKey);
+    if (!current) {
+      dedupedBySlug.set(slugKey, vehicle);
+      continue;
+    }
+
+    dedupedBySlug.set(slugKey, pickPreferredVehicle(current, vehicle));
+  }
+
+  return Array.from(dedupedBySlug.values());
 }
 
 async function mapWithConcurrency(items, concurrency, mapper) {

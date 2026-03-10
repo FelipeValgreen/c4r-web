@@ -1,7 +1,13 @@
 import { type NextRequest, NextResponse } from "next/server";
+import { applyRateLimit, rateLimitResponse } from "@/lib/api-guard";
 import { getVehicleByPlate } from "@/lib/vehicle-check-data";
 
 export async function POST(request: NextRequest) {
+  const rateLimit = applyRateLimit(request, "api:check:post", { limit: 20, windowMs: 60_000 });
+  if (!rateLimit.allowed) {
+    return rateLimitResponse("Demasiadas consultas de check en un minuto.", rateLimit.retryAfterSeconds);
+  }
+
   try {
     const body = (await request.json()) as { plate?: string };
     const plate = body.plate?.trim();
@@ -25,6 +31,11 @@ export async function POST(request: NextRequest) {
 }
 
 export async function GET(request: NextRequest) {
+  const rateLimit = applyRateLimit(request, "api:check:get", { limit: 30, windowMs: 60_000 });
+  if (!rateLimit.allowed) {
+    return rateLimitResponse("Demasiadas consultas de check en un minuto.", rateLimit.retryAfterSeconds);
+  }
+
   const plate = request.nextUrl.searchParams.get("plate");
 
   if (!plate) {

@@ -9,6 +9,7 @@ import {
   selectFinancingOffer,
   sendFinancingRequestToNetwork,
 } from "@/lib/dealers-store";
+import { requireDealerSession } from "@/lib/dealer-session-server";
 
 export const metadata = {
   title: "Credito Flow Dealers | C4R",
@@ -86,6 +87,8 @@ function toInt(entry: FormDataEntryValue | null, fallback: number): number {
 async function createFinancingAction(formData: FormData) {
   "use server";
 
+  const session = await requireDealerSession();
+
   const customer = String(formData.get("customer") ?? "").trim();
   const rut = String(formData.get("rut") ?? "").trim();
   const email = String(formData.get("email") ?? "").trim();
@@ -114,7 +117,7 @@ async function createFinancingAction(formData: FormData) {
     termMonths,
     productType,
     assignedExecutive,
-  });
+  }, session.dealerId);
 
   revalidatePath("/dealers");
   revalidatePath("/dealers/financing");
@@ -124,24 +127,28 @@ async function createFinancingAction(formData: FormData) {
 async function completePaperworkAction(formData: FormData) {
   "use server";
 
+  const session = await requireDealerSession();
+
   const requestId = String(formData.get("requestId") ?? "").trim();
   if (!requestId) {
     return;
   }
 
-  await completeFinancingPaperwork(requestId);
+  await completeFinancingPaperwork(requestId, session.dealerId);
   revalidatePath("/dealers/financing");
 }
 
 async function sendToNetworkAction(formData: FormData) {
   "use server";
 
+  const session = await requireDealerSession();
+
   const requestId = String(formData.get("requestId") ?? "").trim();
   if (!requestId) {
     return;
   }
 
-  await sendFinancingRequestToNetwork(requestId);
+  await sendFinancingRequestToNetwork(requestId, session.dealerId);
   revalidatePath("/dealers/financing");
   revalidatePath("/dealers/tasks");
 }
@@ -149,13 +156,15 @@ async function sendToNetworkAction(formData: FormData) {
 async function selectOfferAction(formData: FormData) {
   "use server";
 
+  const session = await requireDealerSession();
+
   const requestId = String(formData.get("requestId") ?? "").trim();
   const offerId = String(formData.get("offerId") ?? "").trim();
   if (!requestId || !offerId) {
     return;
   }
 
-  await selectFinancingOffer(requestId, offerId);
+  await selectFinancingOffer(requestId, offerId, session.dealerId);
   revalidatePath("/dealers");
   revalidatePath("/dealers/financing");
   revalidatePath("/dealers/reports");
@@ -164,17 +173,20 @@ async function selectOfferAction(formData: FormData) {
 async function rejectRequestAction(formData: FormData) {
   "use server";
 
+  const session = await requireDealerSession();
+
   const requestId = String(formData.get("requestId") ?? "").trim();
   if (!requestId) {
     return;
   }
 
-  await rejectFinancingRequest(requestId);
+  await rejectFinancingRequest(requestId, session.dealerId);
   revalidatePath("/dealers/financing");
 }
 
 export default async function DealersFinancingPage() {
-  const snapshot = await getDealerSnapshot();
+  const session = await requireDealerSession();
+  const snapshot = await getDealerSnapshot(session.dealerId);
   const financingRequests = snapshot.financingRequests;
 
   const statusCounts: Record<FinancingStatus, number> = {

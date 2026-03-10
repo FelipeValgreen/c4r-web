@@ -2,6 +2,7 @@ import { revalidatePath } from "next/cache";
 import Link from "next/link";
 import { formatDate, type LeadStage } from "@/app/dealers/_data";
 import { getDealerSnapshot, updateDealerLeadStage } from "@/lib/dealers-store";
+import { requireDealerSession } from "@/lib/dealer-session-server";
 
 export const metadata = {
   title: "Leads Dealers | C4R",
@@ -29,6 +30,8 @@ function stagePill(stage: string) {
 async function updateLeadStageAction(formData: FormData) {
   "use server";
 
+  const session = await requireDealerSession();
+
   const leadId = String(formData.get("leadId") ?? "").trim();
   const stage = String(formData.get("stage") ?? "").trim() as LeadStage;
 
@@ -36,7 +39,7 @@ async function updateLeadStageAction(formData: FormData) {
     return;
   }
 
-  await updateDealerLeadStage(leadId, stage);
+  await updateDealerLeadStage(leadId, stage, session.dealerId);
 
   revalidatePath("/dealers");
   revalidatePath("/dealers/leads");
@@ -46,7 +49,8 @@ async function updateLeadStageAction(formData: FormData) {
 }
 
 export default async function DealersLeadsPage() {
-  const snapshot = await getDealerSnapshot();
+  const session = await requireDealerSession();
+  const snapshot = await getDealerSnapshot(session.dealerId);
   const dealerLeads = snapshot.leads;
 
   return (

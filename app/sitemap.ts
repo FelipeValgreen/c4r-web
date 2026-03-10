@@ -1,27 +1,16 @@
 import type { MetadataRoute } from "next";
 import { marketingRoutes, siteUrl } from "@/lib/site";
 import { blogPosts } from "@/lib/blog-posts";
-import { c4rVehicles } from "@/lib/chileautos-vehicles";
+import { getMarketplaceVehicles } from "@/lib/marketplace-catalog";
 
 const coreRoutes = ["/", "/app/explorar", "/c4r-check", "/c4r-score", "/comunidad-c4r"];
-const dealersRoutes = [
-  "/dealers",
-  "/dealers/dashboard",
-  "/dealers/inventory",
-  "/dealers/leads",
-  "/dealers/customers",
-  "/dealers/tasks",
-  "/dealers/financing",
-  "/dealers/payments",
-  "/dealers/contracts",
-  "/dealers/reports",
-  "/dealers/registro",
-];
 const blogPostRoutes = blogPosts.map((post) => `/blog/${post.slug}`);
-const vehicleDetailRoutes = c4rVehicles.map((vehicle) => `/app/explorar/${vehicle.slug}`);
-const allRoutes = [...coreRoutes, ...dealersRoutes, ...marketingRoutes, ...blogPostRoutes, ...vehicleDetailRoutes];
+const staticRoutes = [...coreRoutes, ...marketingRoutes, ...blogPostRoutes];
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const vehicles = await getMarketplaceVehicles();
+  const vehicleDetailRoutes = vehicles.map((vehicle) => `/app/explorar/${vehicle.slug}`);
+  const allRoutes = [...staticRoutes, ...vehicleDetailRoutes];
   const now = new Date();
 
   return allRoutes.map((route) => ({

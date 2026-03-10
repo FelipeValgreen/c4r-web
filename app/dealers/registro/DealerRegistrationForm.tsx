@@ -7,6 +7,7 @@ import { Phone } from "lucide-react";
 type RegistrationResponse = {
   message: string;
   registrationId: string;
+  portalUsername?: string;
   createdAt: string;
 };
 
@@ -16,6 +17,8 @@ type FormState = {
   email: string;
   phone: string;
   address: string;
+  portalUsername: string;
+  portalPassword: string;
 };
 
 const initialState: FormState = {
@@ -24,6 +27,8 @@ const initialState: FormState = {
   email: "",
   phone: "",
   address: "",
+  portalUsername: "",
+  portalPassword: "",
 };
 
 export default function DealerRegistrationForm() {
@@ -68,8 +73,11 @@ export default function DealerRegistrationForm() {
         <div className="mb-5 rounded-2xl border border-success/30 bg-success/10 p-4">
           <p className="text-sm font-semibold text-success">{success.message}</p>
           <p className="mt-1 text-xs text-ink/80">ID: {success.registrationId}</p>
+          {success.portalUsername ? (
+            <p className="mt-1 text-xs text-ink/80">Usuario: {success.portalUsername}</p>
+          ) : null}
           <p className="mt-1 text-xs text-ink/80">
-            Estado inicial: pendiente de validacion comercial y legal.
+            Cuenta activa. Ya puedes ingresar en /dealer-login con tus credenciales.
           </p>
         </div>
       ) : null}
@@ -143,6 +151,34 @@ export default function DealerRegistrationForm() {
             placeholder="Av. Apoquindo 1234, Las Condes"
           />
         </label>
+
+        <div className="grid gap-4 md:grid-cols-2">
+          <label className="text-sm font-medium text-ink">
+            Usuario portal
+            <input
+              type="email"
+              name="portalUsername"
+              required
+              value={form.portalUsername}
+              onChange={(event) => setForm((prev) => ({ ...prev, portalUsername: event.target.value }))}
+              className="mt-2 w-full rounded-lg border border-platinum px-4 py-3 outline-none ring-khaki/40 focus:ring-2"
+              placeholder="acceso@automotora.cl"
+            />
+          </label>
+          <label className="text-sm font-medium text-ink">
+            Contrasena portal
+            <input
+              type="password"
+              name="portalPassword"
+              required
+              minLength={8}
+              value={form.portalPassword}
+              onChange={(event) => setForm((prev) => ({ ...prev, portalPassword: event.target.value }))}
+              className="mt-2 w-full rounded-lg border border-platinum px-4 py-3 outline-none ring-khaki/40 focus:ring-2"
+              placeholder="Minimo 8 caracteres"
+            />
+          </label>
+        </div>
 
         <div className="rounded-xl border border-platinum bg-platinum/30 p-4 text-sm text-ink/80">
           <p className="font-semibold text-ink">Documentos requeridos</p>

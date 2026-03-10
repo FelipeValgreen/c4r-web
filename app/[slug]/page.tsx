@@ -461,7 +461,7 @@ const pages: Record<MarketingSlug, PageContent> = {
       eventName: "dealers_hub_primary_cta",
     },
     secondaryCta: {
-      href: "/dealers/registro",
+      href: "/dealer-registro",
       label: "Iniciar registro dealer",
       eventName: "dealers_hub_secondary_cta",
     },
@@ -566,7 +566,7 @@ const pages: Record<MarketingSlug, PageContent> = {
       eventName: "dealers_hub_final_primary",
     },
     finalSecondary: {
-      href: "/dealers/registro",
+      href: "/dealer-registro",
       label: "Crear cuenta dealer",
       eventName: "dealers_hub_final_secondary",
     },

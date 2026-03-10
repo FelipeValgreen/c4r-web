@@ -1,4 +1,5 @@
 import { type NextRequest, NextResponse } from "next/server";
+import { applyRateLimit, rateLimitResponse, requireAdminAccess } from "@/lib/api-guard";
 
 type ContactReason =
   | "soporte"
@@ -52,6 +53,14 @@ function isValidPhone(value: string): boolean {
 }
 
 export async function POST(request: NextRequest) {
+  const rateLimit = applyRateLimit(request, "api:contact", {
+    limit: 6,
+    windowMs: 60_000,
+  });
+  if (!rateLimit.allowed) {
+    return rateLimitResponse("Demasiados intentos de contacto. Intenta nuevamente en un minuto.", rateLimit.retryAfterSeconds);
+  }
+
   try {
     const body = (await request.json()) as ContactInput;
 
@@ -112,7 +121,12 @@ export async function POST(request: NextRequest) {
   }
 }
 
-export async function GET() {
+export async function GET(request: NextRequest) {
+  const unauthorized = requireAdminAccess(request);
+  if (unauthorized) {
+    return unauthorized;
+  }
+
   return NextResponse.json({
     count: submissions.length,
     submissions: submissions.slice(0, 20),

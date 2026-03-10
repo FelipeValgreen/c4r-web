@@ -2,12 +2,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { revalidatePath } from "next/cache";
 import { Filter, Plus, Search } from "lucide-react";
-import { formatClp, formatDate, type VehicleStatus } from "@/app/dealers/_data";
+import { dealerSalesChannels, formatClp, formatDate, type SalesChannel, type VehicleStatus } from "@/app/dealers/_data";
 import {
   createDealerVehicle,
   getDealerSnapshot,
   updateDealerVehicleStatus,
+  updateDealerVehicleChannel,
 } from "@/lib/dealers-store";
+import { requireDealerSession } from "@/lib/dealer-session-server";
 
 export const metadata = {
   title: "Inventario Dealers | C4R",
@@ -65,12 +67,33 @@ function toPositiveNumber(value: FormDataEntryValue | null): number {
 async function createInventoryVehicleAction(formData: FormData) {
   "use server";
 
+  const session = await requireDealerSession();
+
   const brand = String(formData.get("brand") ?? "").trim();
   const model = String(formData.get("model") ?? "").trim();
   const year = toPositiveNumber(formData.get("year"));
   const km = toPositiveNumber(formData.get("km"));
   const price = toPositiveNumber(formData.get("price"));
   const image = String(formData.get("image") ?? "").trim();
+  const bodyStyle = String(formData.get("bodyStyle") ?? "").trim();
+  const fuelType = String(formData.get("fuelType") ?? "").trim();
+  const transmission = String(formData.get("transmission") ?? "").trim();
+  const location = String(formData.get("location") ?? "").trim();
+  const description = String(formData.get("description") ?? "").trim();
+  const galleryRaw = String(formData.get("gallery") ?? "").trim();
+  const enabledChannels = new Set(formData.getAll("channels").map((value) => String(value)));
+  const channels = dealerSalesChannels.reduce(
+    (accumulator, channel) => ({
+      ...accumulator,
+      [channel.key]: enabledChannels.has(channel.key),
+    }),
+    {} as Record<SalesChannel, boolean>,
+  );
+
+  const gallery = galleryRaw
+    .split(/[\n,]/g)
+    .map((entry) => entry.trim())
+    .filter((entry) => entry.length > 0);
 
   if (!brand || !model || year < 1990 || year > 2030 || price <= 0) {
     return;
@@ -83,15 +106,27 @@ async function createInventoryVehicleAction(formData: FormData) {
     km,
     price,
     image,
+    bodyStyle,
+    fuelType,
+    transmission,
+    location,
+    description,
+    gallery,
+    channels,
     status: "disponible",
-  });
+  }, session.dealerId);
 
   revalidatePath("/dealers");
   revalidatePath("/dealers/inventory");
+  revalidatePath("/dealers/channels");
+  revalidatePath("/app/explorar");
+  revalidatePath("/");
 }
 
 async function updateInventoryVehicleStatusAction(formData: FormData) {
   "use server";
+
+  const session = await requireDealerSession();
 
   const vehicleId = String(formData.get("vehicleId") ?? "").trim();
   const status = String(formData.get("status") ?? "").trim() as VehicleStatus;
@@ -100,16 +135,42 @@ async function updateInventoryVehicleStatusAction(formData: FormData) {
     return;
   }
 
-  await updateDealerVehicleStatus(vehicleId, status);
+  await updateDealerVehicleStatus(vehicleId, status, session.dealerId);
 
   revalidatePath("/dealers");
   revalidatePath("/dealers/inventory");
+  revalidatePath("/dealers/channels");
   revalidatePath("/dealers/leads");
   revalidatePath(`/dealers/solicitud/${vehicleId}`);
+  revalidatePath("/app/explorar");
+  revalidatePath("/");
+}
+
+async function toggleInventoryVehicleChannelAction(formData: FormData) {
+  "use server";
+
+  const session = await requireDealerSession();
+
+  const vehicleId = String(formData.get("vehicleId") ?? "").trim();
+  const channel = String(formData.get("channel") ?? "").trim() as SalesChannel;
+  const enabled = String(formData.get("enabled") ?? "").trim() === "true";
+
+  if (!vehicleId || !dealerSalesChannels.some((entry) => entry.key === channel)) {
+    return;
+  }
+
+  await updateDealerVehicleChannel(vehicleId, channel, enabled, session.dealerId);
+
+  revalidatePath("/dealers");
+  revalidatePath("/dealers/inventory");
+  revalidatePath("/dealers/channels");
+  revalidatePath("/app/explorar");
+  revalidatePath("/");
 }
 
 export default async function DealersInventoryPage({ searchParams }: PageProps) {
-  const snapshot = await getDealerSnapshot();
+  const session = await requireDealerSession();
+  const snapshot = await getDealerSnapshot(session.dealerId);
   const dealerVehicles = snapshot.vehicles;
 
   const resolvedSearchParams = await searchParams;
@@ -155,57 +216,128 @@ export default async function DealersInventoryPage({ searchParams }: PageProps) 
           </span>
         </div>
 
-        <form action={createInventoryVehicleAction} className="mt-5 grid gap-3 rounded-xl border border-platinum p-4 md:grid-cols-2 xl:grid-cols-6">
-          <input
-            name="brand"
-            required
-            placeholder="Marca"
-            className="h-10 rounded-lg border border-platinum px-3 text-sm text-ink outline-none ring-khaki/40 focus:ring-2"
-          />
-          <input
-            name="model"
-            required
-            placeholder="Modelo"
-            className="h-10 rounded-lg border border-platinum px-3 text-sm text-ink outline-none ring-khaki/40 focus:ring-2"
-          />
-          <input
-            name="year"
-            required
-            type="number"
-            min={1990}
-            max={2030}
-            placeholder="Ano"
-            className="h-10 rounded-lg border border-platinum px-3 text-sm text-ink outline-none ring-khaki/40 focus:ring-2"
-          />
-          <input
-            name="km"
-            required
-            type="number"
-            min={0}
-            placeholder="Kilometraje"
-            className="h-10 rounded-lg border border-platinum px-3 text-sm text-ink outline-none ring-khaki/40 focus:ring-2"
-          />
-          <input
-            name="price"
-            required
-            type="number"
-            min={1}
-            placeholder="Precio CLP"
-            className="h-10 rounded-lg border border-platinum px-3 text-sm text-ink outline-none ring-khaki/40 focus:ring-2"
-          />
-          <div className="flex gap-2">
+        <form action={createInventoryVehicleAction} className="mt-5 space-y-3 rounded-xl border border-platinum p-4">
+          <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+            <input
+              name="brand"
+              required
+              placeholder="Marca"
+              className="h-10 rounded-lg border border-platinum px-3 text-sm text-ink outline-none ring-khaki/40 focus:ring-2"
+            />
+            <input
+              name="model"
+              required
+              placeholder="Modelo"
+              className="h-10 rounded-lg border border-platinum px-3 text-sm text-ink outline-none ring-khaki/40 focus:ring-2"
+            />
+            <input
+              name="year"
+              required
+              type="number"
+              min={1990}
+              max={2030}
+              placeholder="Ano"
+              className="h-10 rounded-lg border border-platinum px-3 text-sm text-ink outline-none ring-khaki/40 focus:ring-2"
+            />
+            <input
+              name="km"
+              required
+              type="number"
+              min={0}
+              placeholder="Kilometraje"
+              className="h-10 rounded-lg border border-platinum px-3 text-sm text-ink outline-none ring-khaki/40 focus:ring-2"
+            />
+            <input
+              name="price"
+              required
+              type="number"
+              min={1}
+              placeholder="Precio CLP"
+              className="h-10 rounded-lg border border-platinum px-3 text-sm text-ink outline-none ring-khaki/40 focus:ring-2"
+            />
+            <select
+              name="bodyStyle"
+              defaultValue="Automovil"
+              className="h-10 rounded-lg border border-platinum px-3 text-sm text-ink outline-none ring-khaki/40 focus:ring-2"
+            >
+              <option value="Automovil">Automovil</option>
+              <option value="SUV">SUV</option>
+              <option value="Sedan">Sedan</option>
+              <option value="Hatchback">Hatchback</option>
+              <option value="Pick-up">Pick-up</option>
+              <option value="Coupe">Coupe</option>
+              <option value="Van">Van</option>
+            </select>
+            <select
+              name="fuelType"
+              defaultValue="Bencina"
+              className="h-10 rounded-lg border border-platinum px-3 text-sm text-ink outline-none ring-khaki/40 focus:ring-2"
+            >
+              <option value="Bencina">Bencina</option>
+              <option value="Diesel">Diesel</option>
+              <option value="Hibrido">Hibrido</option>
+              <option value="Electrico">Electrico</option>
+            </select>
+            <select
+              name="transmission"
+              defaultValue="automatico"
+              className="h-10 rounded-lg border border-platinum px-3 text-sm text-ink outline-none ring-khaki/40 focus:ring-2"
+            >
+              <option value="automatico">Automatico</option>
+              <option value="manual">Manual</option>
+            </select>
+            <input
+              name="location"
+              placeholder="Comuna / ciudad"
+              className="h-10 rounded-lg border border-platinum px-3 text-sm text-ink outline-none ring-khaki/40 focus:ring-2"
+            />
             <input
               name="image"
-              placeholder="URL imagen (opcional)"
-              className="h-10 min-w-0 flex-1 rounded-lg border border-platinum px-3 text-sm text-ink outline-none ring-khaki/40 focus:ring-2"
+              placeholder="URL imagen principal"
+              className="h-10 rounded-lg border border-platinum px-3 text-sm text-ink outline-none ring-khaki/40 focus:ring-2 xl:col-span-3"
             />
-            <button
-              type="submit"
-              className="inline-flex h-10 items-center justify-center rounded-lg bg-khaki px-4 text-sm font-semibold text-ink transition-colors hover:bg-khaki-dark"
-            >
-              Publicar
-            </button>
+            <input
+              name="gallery"
+              placeholder="URLs galeria (separa por coma)"
+              className="h-10 rounded-lg border border-platinum px-3 text-sm text-ink outline-none ring-khaki/40 focus:ring-2 xl:col-span-4"
+            />
+            <textarea
+              name="description"
+              placeholder="Descripcion comercial de la unidad"
+              className="min-h-20 rounded-lg border border-platinum px-3 py-2 text-sm text-ink outline-none ring-khaki/40 focus:ring-2 xl:col-span-4"
+            />
           </div>
+
+          <div className="flex flex-col gap-3 rounded-lg border border-platinum p-3 md:flex-row md:items-center md:justify-between">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-wide text-ink/65">Canales de publicacion</p>
+              <p className="text-xs text-ink/60">Activa donde se distribuira esta unidad en modo omnicanal.</p>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {dealerSalesChannels.map((channel) => (
+                <label
+                  key={channel.key}
+                  className="inline-flex items-center gap-2 rounded-full border border-platinum px-3 py-1 text-xs font-medium text-ink"
+                >
+                  <input
+                    type="checkbox"
+                    name="channels"
+                    value={channel.key}
+                    defaultChecked
+                    className="h-3.5 w-3.5 rounded border-platinum text-khaki focus:ring-khaki"
+                  />
+                  {channel.label}
+                </label>
+              ))}
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            className="inline-flex h-10 items-center justify-center rounded-lg bg-khaki px-4 text-sm font-semibold text-ink transition-colors hover:bg-khaki-dark"
+          >
+            Publicar vehiculo
+          </button>
         </form>
       </section>
 
@@ -325,6 +457,33 @@ export default async function DealersInventoryPage({ searchParams }: PageProps) 
                         </button>
                       </form>
                     ))}
+                  </div>
+
+                  <div className="space-y-2 pt-1">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-ink/60">Canales activos</p>
+                    <div className="flex flex-wrap gap-2">
+                      {dealerSalesChannels.map((channel) => {
+                        const enabled = vehicle.channels?.[channel.key] ?? true;
+
+                        return (
+                          <form key={`${vehicle.id}-${channel.key}`} action={toggleInventoryVehicleChannelAction}>
+                            <input type="hidden" name="vehicleId" value={vehicle.id} />
+                            <input type="hidden" name="channel" value={channel.key} />
+                            <input type="hidden" name="enabled" value={enabled ? "false" : "true"} />
+                            <button
+                              type="submit"
+                              className={`rounded-full border px-2.5 py-1 text-[11px] font-semibold transition-colors ${
+                                enabled
+                                  ? "border-khaki bg-khaki-light text-ink"
+                                  : "border-platinum bg-white text-ink/70 hover:bg-platinum"
+                              }`}
+                            >
+                              {channel.label}
+                            </button>
+                          </form>
+                        );
+                      })}
+                    </div>
                   </div>
 
                   <div className="flex gap-2 pt-2">

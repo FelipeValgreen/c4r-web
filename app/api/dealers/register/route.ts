@@ -1,4 +1,5 @@
 import { type NextRequest, NextResponse } from "next/server";
+import { applyRateLimit, rateLimitResponse, requireAdminAccess } from "@/lib/api-guard";
 import { registerDealer, getDealerSnapshot } from "@/lib/dealers-store";
 
 export const dynamic = "force-dynamic";
@@ -9,6 +10,8 @@ type DealerRegistrationInput = {
   email?: string;
   phone?: string;
   address?: string;
+  portalUsername?: string;
+  portalPassword?: string;
 };
 
 function normalizeText(value?: string): string {
@@ -33,6 +36,17 @@ function isValidPhone(value: string): boolean {
 }
 
 export async function POST(request: NextRequest) {
+  const rateLimit = applyRateLimit(request, "api:dealers:register", {
+    limit: 5,
+    windowMs: 60_000,
+  });
+  if (!rateLimit.allowed) {
+    return rateLimitResponse(
+      "Demasiadas solicitudes de registro dealer. Intenta nuevamente en un minuto.",
+      rateLimit.retryAfterSeconds,
+    );
+  }
+
   try {
     const body = (await request.json()) as DealerRegistrationInput;
 
@@ -41,6 +55,8 @@ export async function POST(request: NextRequest) {
     const email = normalizeText(body.email).toLowerCase();
     const phone = normalizeText(body.phone);
     const address = normalizeText(body.address);
+    const portalUsername = normalizeText(body.portalUsername).toLowerCase();
+    const portalPassword = normalizeText(body.portalPassword);
 
     if (!companyName || companyName.length < 3) {
       return NextResponse.json({ error: "Nombre de empresa invalido." }, { status: 400 });
@@ -62,18 +78,29 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Direccion invalida." }, { status: 400 });
     }
 
+    if (!isValidEmail(portalUsername)) {
+      return NextResponse.json({ error: "Usuario de acceso invalido." }, { status: 400 });
+    }
+
+    if (!portalPassword || portalPassword.length < 8) {
+      return NextResponse.json({ error: "Contrasena invalida. Usa al menos 8 caracteres." }, { status: 400 });
+    }
+
     const registration = await registerDealer({
       companyName,
       companyRut,
       email,
       phone,
       address,
+      portalUsername,
+      portalPassword,
     });
 
     return NextResponse.json(
       {
-        message: "Solicitud enviada correctamente.",
+        message: "Dealer creado y habilitado correctamente.",
         registrationId: registration.id,
+        portalUsername: registration.portalUsername,
         createdAt: registration.createdAt,
       },
       { status: 201 },
@@ -85,7 +112,12 @@ export async function POST(request: NextRequest) {
   }
 }
 
-export async function GET() {
+export async function GET(request: NextRequest) {
+  const unauthorized = requireAdminAccess(request);
+  if (unauthorized) {
+    return unauthorized;
+  }
+
   try {
     const snapshot = await getDealerSnapshot();
     return NextResponse.json({

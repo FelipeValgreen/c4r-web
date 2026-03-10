@@ -1,5 +1,6 @@
 import { formatClp, formatDate } from "@/app/dealers/_data";
 import { getDealerSnapshot } from "@/lib/dealers-store";
+import { requireDealerSession } from "@/lib/dealer-session-server";
 
 export const metadata = {
   title: "Pagos Dealers | C4R",
@@ -17,7 +18,8 @@ function statusPill(status: string) {
 }
 
 export default async function DealersPaymentsPage() {
-  const snapshot = await getDealerSnapshot();
+  const session = await requireDealerSession();
+  const snapshot = await getDealerSnapshot(session.dealerId);
   const dealerPayments = snapshot.payments;
 
   return (

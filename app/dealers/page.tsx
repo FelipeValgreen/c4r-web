@@ -5,12 +5,14 @@ import {
   Car,
   CircleDollarSign,
   ClipboardList,
+  Globe2,
   Plus,
   Users,
   Wrench,
 } from "lucide-react";
 import { formatClp, formatDate } from "@/app/dealers/_data";
 import { getDealerSnapshot } from "@/lib/dealers-store";
+import { requireDealerSession } from "@/lib/dealer-session-server";
 
 export const metadata = {
   title: "Dashboard Dealers | C4R",
@@ -40,7 +42,8 @@ function statusPill(status: string) {
 }
 
 export default async function DealersDashboardPage() {
-  const snapshot = await getDealerSnapshot();
+  const session = await requireDealerSession();
+  const snapshot = await getDealerSnapshot(session.dealerId);
   const dealerVehicles = snapshot.vehicles;
   const dealerLeads = snapshot.leads;
   const dealerTasks = snapshot.tasks;
@@ -100,13 +103,15 @@ export default async function DealersDashboardPage() {
             >
               Ver inventario
             </Link>
-            <Link
-              href="/dealers/registro"
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-khaki px-4 py-2 text-sm font-semibold text-ink transition-colors hover:bg-khaki-dark"
-            >
-              <Plus className="h-4 w-4" />
-              Nuevo dealer
-            </Link>
+            {session.role === "admin" ? (
+              <Link
+                href="/dealers/registro"
+                className="inline-flex items-center justify-center gap-2 rounded-lg bg-khaki px-4 py-2 text-sm font-semibold text-ink transition-colors hover:bg-khaki-dark"
+              >
+                <Plus className="h-4 w-4" />
+                Nuevo dealer
+              </Link>
+            ) : null}
           </div>
         </div>
         <p className="mt-4 text-xs text-ink/65">
@@ -199,11 +204,16 @@ export default async function DealersDashboardPage() {
 
       <section className="rounded-2xl border border-platinum bg-white p-6">
         <h2 className="mb-4 font-heading text-xl font-semibold text-ink">Acciones rapidas</h2>
-        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-5">
           <Link href="/dealers/tasks" className="rounded-xl border border-platinum p-4 transition-colors hover:bg-khaki-light/40">
             <ClipboardList className="mb-3 h-5 w-5 text-khaki" />
             <p className="font-semibold text-ink">Tareas</p>
             <p className="text-sm text-ink/70">{dealerTasks.length} actividades asignadas</p>
+          </Link>
+          <Link href="/dealers/channels" className="rounded-xl border border-platinum p-4 transition-colors hover:bg-khaki-light/40">
+            <Globe2 className="mb-3 h-5 w-5 text-khaki" />
+            <p className="font-semibold text-ink">Canales</p>
+            <p className="text-sm text-ink/70">Distribucion omnicanal por unidad</p>
           </Link>
           <Link href="/dealers/financing" className="rounded-xl border border-platinum p-4 transition-colors hover:bg-khaki-light/40">
             <CircleDollarSign className="mb-3 h-5 w-5 text-khaki" />

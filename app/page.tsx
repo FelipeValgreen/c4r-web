@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { ArrowRight, CheckCircle2, CreditCard, Shield } from "lucide-react";
 import TrackedLink from "@/components/TrackedLink";
-import { c4rVehicles, formatCurrencyClp, formatKm } from "@/lib/chileautos-vehicles";
+import { formatCurrencyClp, formatKm } from "@/lib/chileautos-vehicles";
+import { getMarketplaceVehicles, type MarketplaceVehicle } from "@/lib/marketplace-catalog";
 
-type VehicleItem = (typeof c4rVehicles)[number];
+type VehicleItem = MarketplaceVehicle;
 
 const trustPillars = [
   {
@@ -134,23 +135,6 @@ function pickFeaturedVehicles(vehicles: VehicleItem[], limit: number) {
   return selected;
 }
 
-const heroPool = c4rVehicles.filter((vehicle) => !blockedHeroBodyStyles.has(vehicle.bodyStyle));
-const sortedHeroPool = [...(heroPool.length > 0 ? heroPool : c4rVehicles)].sort((left, right) => {
-  const scoreDiff = getHeroScore(right) - getHeroScore(left);
-  if (scoreDiff !== 0) {
-    return scoreDiff;
-  }
-
-  if (right.year !== left.year) {
-    return right.year - left.year;
-  }
-
-  return right.priceClp - left.priceClp;
-});
-
-const heroVehicle = sortedHeroPool[0] ?? c4rVehicles[0];
-const featuredCatalog = pickFeaturedVehicles(sortedHeroPool, 6);
-
 const testimonials = [
   {
     quote:
@@ -167,7 +151,32 @@ const testimonials = [
   },
 ];
 
-export default function Home() {
+export const dynamic = "force-dynamic";
+
+export default async function Home() {
+  const marketplaceVehicles = await getMarketplaceVehicles();
+  const fallbackVehicle = marketplaceVehicles[0] ?? null;
+  const heroPool = marketplaceVehicles.filter((vehicle) => !blockedHeroBodyStyles.has(vehicle.bodyStyle));
+  const sortedHeroPool = [...(heroPool.length > 0 ? heroPool : marketplaceVehicles)].sort((left, right) => {
+    const scoreDiff = getHeroScore(right) - getHeroScore(left);
+    if (scoreDiff !== 0) {
+      return scoreDiff;
+    }
+
+    if (right.year !== left.year) {
+      return right.year - left.year;
+    }
+
+    return right.priceClp - left.priceClp;
+  });
+
+  const heroVehicle = sortedHeroPool[0] ?? fallbackVehicle;
+  const featuredCatalog = pickFeaturedVehicles(sortedHeroPool, 6);
+
+  if (!heroVehicle) {
+    return null;
+  }
+
   return (
     <div className="min-h-screen bg-white">
       <main>

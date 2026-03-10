@@ -1,4 +1,5 @@
 import { getDealerSnapshot } from "@/lib/dealers-store";
+import { requireDealerSession } from "@/lib/dealer-session-server";
 
 export const metadata = {
   title: "Tareas Dealers | C4R",
@@ -20,7 +21,8 @@ function taskPill(status: string) {
 }
 
 export default async function DealersTasksPage() {
-  const snapshot = await getDealerSnapshot();
+  const session = await requireDealerSession();
+  const snapshot = await getDealerSnapshot(session.dealerId);
   const dealerTasks = snapshot.tasks;
 
   return (

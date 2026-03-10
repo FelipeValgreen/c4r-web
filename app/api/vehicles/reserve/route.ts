@@ -1,10 +1,12 @@
-import { NextResponse } from "next/server";
-import { c4rVehicles } from "@/lib/chileautos-vehicles";
+import { type NextRequest, NextResponse } from "next/server";
+import { applyRateLimit, rateLimitResponse } from "@/lib/api-guard";
 import { createLeadFromWebIntent } from "@/lib/dealers-store";
+import { getMarketplaceVehicleByIdOrSlug } from "@/lib/marketplace-catalog";
 
 type ReserveRequest = {
   vehicleId?: string;
   vehicleSlug?: string;
+  dealerId?: string;
   fullName?: string;
   email?: string;
   phone?: string;
@@ -25,7 +27,15 @@ function generateReference(prefix: "RSV"): string {
   return `${prefix}-${Date.now().toString(36).toUpperCase()}-${random}`;
 }
 
-export async function POST(request: Request) {
+export async function POST(request: NextRequest) {
+  const rateLimit = applyRateLimit(request, "api:vehicles:reserve", {
+    limit: 8,
+    windowMs: 60_000,
+  });
+  if (!rateLimit.allowed) {
+    return rateLimitResponse("Demasiadas solicitudes de reserva. Intenta nuevamente en un minuto.", rateLimit.retryAfterSeconds);
+  }
+
   let body: ReserveRequest;
 
   try {
@@ -51,7 +61,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ success: false, message: "El correo ingresado no es valido." }, { status: 400 });
   }
 
-  const vehicle = c4rVehicles.find((item) => item.id === body.vehicleId || item.slug === body.vehicleSlug);
+  const vehicle = await getMarketplaceVehicleByIdOrSlug(body.vehicleId, body.vehicleSlug);
 
   if (!vehicle) {
     return NextResponse.json({ success: false, message: "No encontramos el vehiculo solicitado." }, { status: 404 });
@@ -65,6 +75,7 @@ export async function POST(request: Request) {
     email,
     phone,
     source: "reserva",
+    dealerId: sanitizeText(body.dealerId) || vehicle.ownerDealerId || undefined,
   });
 
   return NextResponse.json(

@@ -2,7 +2,8 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { ArrowRight, Search, SlidersHorizontal, Sparkles } from "lucide-react";
 import TrackedLink from "@/components/TrackedLink";
-import { c4rVehicles, formatCurrencyClp, formatKm, vehicleCategories } from "@/lib/chileautos-vehicles";
+import { formatCurrencyClp, formatKm } from "@/lib/chileautos-vehicles";
+import { getMarketplaceVehicles, type MarketplaceVehicle } from "@/lib/marketplace-catalog";
 
 type SearchParams = {
   q?: string | string[];
@@ -51,6 +52,8 @@ const sortModes: Record<SortMode, string> = {
 };
 
 const CLEAR_FILTERS_URL = "/app/explorar";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Explorar autos verificados | C4R",
@@ -177,7 +180,7 @@ function createExploreUrl(base: ExploreFilters, patch: Partial<ExploreFilters>):
   return buildExploreUrl(next);
 }
 
-function matchesVehicle(vehicle: (typeof c4rVehicles)[number], filters: ExploreFilters, normalizedQuery: string): boolean {
+function matchesVehicle(vehicle: MarketplaceVehicle, filters: ExploreFilters, normalizedQuery: string): boolean {
   if (filters.body !== "all" && vehicle.bodyStyle !== filters.body) {
     return false;
   }
@@ -238,7 +241,7 @@ function matchesVehicle(vehicle: (typeof c4rVehicles)[number], filters: ExploreF
   return searchable.includes(normalizedQuery);
 }
 
-function sortVehicles(sortMode: SortMode, vehicles: typeof c4rVehicles) {
+function sortVehicles(sortMode: SortMode, vehicles: MarketplaceVehicle[]) {
   const cloned = [...vehicles];
 
   switch (sortMode) {
@@ -285,11 +288,15 @@ function formatCompactNumber(value: number): string {
   }).format(value);
 }
 
-function findCategoryByKeyword(keyword: string): string {
-  return vehicleCategories.find((category) => category.toLowerCase().includes(keyword)) ?? "all";
+function findCategoryByKeyword(categories: string[], keyword: string): string {
+  return categories.find((category) => category.toLowerCase().includes(keyword)) ?? "all";
 }
 
 export default async function ExplorePage({ searchParams }: PageProps) {
+  const marketplaceVehicles = await getMarketplaceVehicles();
+  const vehicleCategories = Array.from(new Set(marketplaceVehicles.map((vehicle) => vehicle.bodyStyle))).sort((left, right) =>
+    left.localeCompare(right, "es"),
+  );
   const params = await searchParams;
 
   const filters: ExploreFilters = {
@@ -309,7 +316,7 @@ export default async function ExplorePage({ searchParams }: PageProps) {
 
   const normalizedQuery = filters.query.toLowerCase();
 
-  const filteredVehicles = c4rVehicles.filter((vehicle) => matchesVehicle(vehicle, filters, normalizedQuery));
+  const filteredVehicles = marketplaceVehicles.filter((vehicle) => matchesVehicle(vehicle, filters, normalizedQuery));
   const sortedVehicles = sortVehicles(filters.sort, filteredVehicles);
 
   const total = sortedVehicles.length;
@@ -320,21 +327,21 @@ export default async function ExplorePage({ searchParams }: PageProps) {
   const firstVisible = paginatedVehicles.length > 0 ? pageStart + 1 : 0;
   const lastVisible = pageStart + paginatedVehicles.length;
 
-  const fuelOptions = Array.from(new Set(c4rVehicles.map((vehicle) => vehicle.fuelType))).sort((left, right) =>
+  const fuelOptions = Array.from(new Set(marketplaceVehicles.map((vehicle) => vehicle.fuelType))).sort((left, right) =>
     left.localeCompare(right, "es"),
   );
-  const transmissionOptions = Array.from(new Set(c4rVehicles.map((vehicle) => vehicle.transmission))).sort((left, right) =>
+  const transmissionOptions = Array.from(new Set(marketplaceVehicles.map((vehicle) => vehicle.transmission))).sort(
+    (left, right) => left.localeCompare(right, "es"),
+  );
+  const locationOptions = Array.from(new Set(marketplaceVehicles.map((vehicle) => vehicle.location))).sort((left, right) =>
     left.localeCompare(right, "es"),
   );
-  const locationOptions = Array.from(new Set(c4rVehicles.map((vehicle) => vehicle.location))).sort((left, right) =>
-    left.localeCompare(right, "es"),
-  );
-  const conditionOptions = Array.from(new Set(c4rVehicles.map((vehicle) => vehicle.condition))).sort((left, right) =>
+  const conditionOptions = Array.from(new Set(marketplaceVehicles.map((vehicle) => vehicle.condition))).sort((left, right) =>
     left.localeCompare(right, "es"),
   );
 
   const bodyCounts = vehicleCategories.map((category) => {
-    const count = c4rVehicles.filter((vehicle) =>
+    const count = marketplaceVehicles.filter((vehicle) =>
       matchesVehicle(vehicle, { ...filters, body: category, page: 1 }, normalizedQuery),
     ).length;
 
@@ -348,9 +355,9 @@ export default async function ExplorePage({ searchParams }: PageProps) {
 
   const automaticOption = transmissionOptions.find((option) => option.toLowerCase().includes("automatic")) ?? "all";
   const hybridOption = fuelOptions.find((option) => option.toLowerCase().includes("hibr")) ?? "all";
-  const suvCategory = findCategoryByKeyword("suv");
-  const pickupCategory = findCategoryByKeyword("barandas");
-  const hatchbackCategory = findCategoryByKeyword("hatch");
+  const suvCategory = findCategoryByKeyword(vehicleCategories, "suv");
+  const pickupCategory = findCategoryByKeyword(vehicleCategories, "barandas");
+  const hatchbackCategory = findCategoryByKeyword(vehicleCategories, "hatch");
 
   const quickFilters = [
     { label: "0 km", patch: { condition: "Nuevo" } },
@@ -440,7 +447,9 @@ export default async function ExplorePage({ searchParams }: PageProps) {
             <div className="grid gap-3 sm:grid-cols-3 xl:grid-cols-1">
               <article className="rounded-2xl border border-platinum bg-platinum/30 p-4">
                 <p className="text-xs font-semibold uppercase tracking-wide text-ink/60">Stock total</p>
-                <p className="mt-2 font-heading text-3xl font-bold text-ink">{new Intl.NumberFormat("es-CL").format(c4rVehicles.length)}</p>
+                <p className="mt-2 font-heading text-3xl font-bold text-ink">
+                  {new Intl.NumberFormat("es-CL").format(marketplaceVehicles.length)}
+                </p>
                 <p className="mt-1 text-sm text-ink/70">autos verificados</p>
               </article>
               <article className="rounded-2xl border border-platinum bg-platinum/30 p-4">
@@ -712,7 +721,7 @@ export default async function ExplorePage({ searchParams }: PageProps) {
                       : "border-platinum bg-white text-ink/75 hover:border-khaki/45"
                   }`}
                 >
-                  Todos ({c4rVehicles.length})
+                  Todos ({marketplaceVehicles.length})
                 </TrackedLink>
                 {bodyCounts.map((entry) => (
                   <TrackedLink
@@ -883,7 +892,7 @@ export default async function ExplorePage({ searchParams }: PageProps) {
         </section>
 
         <p className="mt-10 text-sm text-ink/60">
-          Datos referenciales sincronizados desde Chileautos y FullMotor. Valida disponibilidad, version y condiciones con el dealer antes de cerrar.
+          Inventario unificado desde dealers C4R, Chileautos y FullMotor. Valida disponibilidad, version y condiciones con el vendedor antes de cerrar.
         </p>
       </div>
     </main>

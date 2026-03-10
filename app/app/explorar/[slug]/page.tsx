@@ -4,19 +4,18 @@ import { ArrowLeft, CircleDollarSign, Fuel, Gauge, MapPin, ShieldCheck } from "l
 import TrackedLink from "@/components/TrackedLink";
 import VehicleActionPanel from "@/components/c4r/VehicleActionPanel";
 import VehicleGallery from "@/components/c4r/VehicleGallery";
-import { c4rVehicles, formatCurrencyClp, formatKm, getVehicleBySlug } from "@/lib/chileautos-vehicles";
+import { formatCurrencyClp, formatKm } from "@/lib/chileautos-vehicles";
+import { getMarketplaceVehicleBySlug } from "@/lib/marketplace-catalog";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
-export function generateStaticParams() {
-  return c4rVehicles.map((vehicle) => ({ slug: vehicle.slug }));
-}
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const vehicle = getVehicleBySlug(slug);
+  const vehicle = await getMarketplaceVehicleBySlug(slug);
 
   if (!vehicle) {
     return {
@@ -56,7 +55,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function VehicleDetailPage({ params }: PageProps) {
   const { slug } = await params;
-  const vehicle = getVehicleBySlug(slug);
+  const vehicle = await getMarketplaceVehicleBySlug(slug);
 
   if (!vehicle) {
     notFound();
@@ -76,7 +75,12 @@ export default async function VehicleDetailPage({ params }: PageProps) {
     { label: "Kilometraje", value: formatKm(vehicle.km) },
   ];
 
-  const sourceLabel = vehicle.source.toLowerCase().includes("fullmotor") ? "FullMotor" : "Chileautos";
+  const sourceLabel = vehicle.source.toLowerCase().includes("fullmotor")
+    ? "FullMotor"
+    : vehicle.source.toLowerCase().includes("chileautos")
+      ? "Chileautos"
+      : "Dealer";
+  const isExternalSource = /^https?:\/\//i.test(vehicle.sourceUrl);
 
   return (
     <main className="min-h-screen bg-white pb-16">
@@ -187,8 +191,8 @@ export default async function VehicleDetailPage({ params }: PageProps) {
                 eventName="vehicle_open_source"
                 eventParams={{ location: "vehicle_detail", vehicleId: vehicle.id }}
                 className="mt-4 inline-flex h-10 items-center justify-center rounded-md border border-ink px-4 text-sm font-semibold text-ink transition-colors hover:bg-ink hover:text-white"
-                target="_blank"
-                rel="noopener noreferrer"
+                target={isExternalSource ? "_blank" : undefined}
+                rel={isExternalSource ? "noopener noreferrer" : undefined}
               >
                 Ver en {sourceLabel}
               </TrackedLink>

@@ -7,7 +7,7 @@ import { formatCurrencyClp } from "@/lib/chileautos-vehicles";
 type ActionMode = "reservar" | "comprar";
 
 type ActionPanelProps = {
-  vehicle: C4RVehicle;
+  vehicle: C4RVehicle & { ownerDealerId?: string | null };
 };
 
 type ReservePayload = {
@@ -106,6 +106,7 @@ export default function VehicleActionPanel({ vehicle }: ActionPanelProps) {
               vehicleTitle: vehicle.title,
               priceClp: vehicle.priceClp,
               reservationFeeClp: vehicle.reservationFeeClp,
+              dealerId: vehicle.ownerDealerId ?? undefined,
               ...reserveForm,
             }
           : {
@@ -114,6 +115,7 @@ export default function VehicleActionPanel({ vehicle }: ActionPanelProps) {
               vehicleSlug: vehicle.slug,
               vehicleTitle: vehicle.title,
               priceClp: vehicle.priceClp,
+              dealerId: vehicle.ownerDealerId ?? undefined,
               ...buyForm,
             };
 

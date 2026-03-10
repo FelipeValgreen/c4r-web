@@ -7,6 +7,7 @@ import {
   type DealerRegistrationStatus,
   updateDealerRegistrationStatus,
 } from "@/lib/dealers-store";
+import { requireDealerSession } from "@/lib/dealer-session-server";
 
 export const metadata = {
   title: "Registro Dealer | C4R",
@@ -17,6 +18,11 @@ export const dynamic = "force-dynamic";
 
 async function updateRegistrationStatusAction(formData: FormData) {
   "use server";
+
+  const session = await requireDealerSession();
+  if (session.role !== "admin") {
+    return;
+  }
 
   const registrationId = String(formData.get("registrationId") ?? "").trim();
   const status = String(formData.get("status") ?? "").trim() as DealerRegistrationStatus;
@@ -44,7 +50,9 @@ function statusPill(status: DealerRegistrationStatus) {
 }
 
 export default async function DealerRegistrationPage() {
-  const snapshot = await getDealerSnapshot();
+  const session = await requireDealerSession();
+  const snapshot = await getDealerSnapshot(session.dealerId);
+  const canManageRegistrations = session.role === "admin";
 
   return (
     <div className="space-y-6">
@@ -57,17 +65,22 @@ export default async function DealerRegistrationPage() {
         <p className="mt-2 text-sm text-ink/70">Completa la informacion para activar tu cuenta comercial en C4R.</p>
       </section>
 
-      <section className="rounded-2xl border border-platinum bg-white p-6">
-        <div className="mb-6 text-center">
-          <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-khaki-light text-ink">
-            <Building2 className="h-6 w-6" />
-          </span>
-          <h2 className="mt-3 font-heading text-2xl font-semibold text-ink">Informacion de la empresa</h2>
-        </div>
-      </section>
+      {canManageRegistrations ? (
+        <>
+          <section className="rounded-2xl border border-platinum bg-white p-6">
+            <div className="mb-6 text-center">
+              <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-khaki-light text-ink">
+                <Building2 className="h-6 w-6" />
+              </span>
+              <h2 className="mt-3 font-heading text-2xl font-semibold text-ink">Informacion de la empresa</h2>
+            </div>
+          </section>
 
-      <DealerRegistrationForm />
+          <DealerRegistrationForm />
+        </>
+      ) : null}
 
+      {canManageRegistrations ? (
       <section className="rounded-2xl border border-platinum bg-white p-6">
         <h2 className="font-heading text-2xl font-semibold text-ink">Solicitudes recibidas</h2>
         <p className="mt-2 text-sm text-ink/70">Aprueba o rechaza onboarding comercial de nuevos dealers.</p>
@@ -94,6 +107,7 @@ export default async function DealerRegistrationPage() {
                   <td className="px-4 py-3 text-ink/80">
                     <p>{registration.email}</p>
                     <p className="text-xs text-ink/60">{registration.phone}</p>
+                    <p className="text-xs text-ink/60">Usuario: {registration.portalUsername}</p>
                   </td>
                   <td className="px-4 py-3">
                     <span className={`rounded-full px-3 py-1 text-xs font-semibold capitalize ${statusPill(registration.status)}`}>
@@ -130,6 +144,14 @@ export default async function DealerRegistrationPage() {
           </table>
         </div>
       </section>
+      ) : (
+        <section className="rounded-2xl border border-platinum bg-white p-6">
+          <h2 className="font-heading text-2xl font-semibold text-ink">Registro enviado</h2>
+          <p className="mt-2 text-sm text-ink/70">
+            La gestion de altas y aprobaciones la realiza el equipo administrador de C4R.
+          </p>
+        </section>
+      )}
     </div>
   );
 }

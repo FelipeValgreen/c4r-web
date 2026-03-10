@@ -1,4 +1,5 @@
 import { type NextRequest, NextResponse } from "next/server";
+import { applyRateLimit, rateLimitResponse } from "@/lib/api-guard";
 import { getVehicleByPlate } from "@/lib/vehicle-check-data";
 
 type CheckState = "green" | "yellow" | "red";
@@ -104,6 +105,11 @@ function buildHighlights(vehicle: NonNullable<ReturnType<typeof getVehicleByPlat
 }
 
 export async function POST(request: NextRequest) {
+  const rateLimit = applyRateLimit(request, "api:score:post", { limit: 20, windowMs: 60_000 });
+  if (!rateLimit.allowed) {
+    return rateLimitResponse("Demasiadas consultas de score en un minuto.", rateLimit.retryAfterSeconds);
+  }
+
   try {
     const body = (await request.json()) as { plate?: string };
     const plate = body.plate?.trim();
@@ -142,6 +148,11 @@ export async function POST(request: NextRequest) {
 }
 
 export async function GET(request: NextRequest) {
+  const rateLimit = applyRateLimit(request, "api:score:get", { limit: 30, windowMs: 60_000 });
+  if (!rateLimit.allowed) {
+    return rateLimitResponse("Demasiadas consultas de score en un minuto.", rateLimit.retryAfterSeconds);
+  }
+
   const plate = request.nextUrl.searchParams.get("plate")?.trim();
 
   if (!plate) {

@@ -1,4 +1,5 @@
 import { getDealerSnapshot } from "@/lib/dealers-store";
+import { requireDealerSession } from "@/lib/dealer-session-server";
 
 export const metadata = {
   title: "Clientes Dealers | C4R",
@@ -8,7 +9,8 @@ export const metadata = {
 export const dynamic = "force-dynamic";
 
 export default async function DealersCustomersPage() {
-  const snapshot = await getDealerSnapshot();
+  const session = await requireDealerSession();
+  const snapshot = await getDealerSnapshot(session.dealerId);
   const dealerCustomers = snapshot.customers;
 
   return (

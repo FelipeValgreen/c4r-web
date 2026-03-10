@@ -6,6 +6,7 @@ export type DealerNavLink = {
 export const dealerNavLinks: DealerNavLink[] = [
   { href: "/dealers", label: "Dashboard" },
   { href: "/dealers/inventory", label: "Inventario" },
+  { href: "/dealers/channels", label: "Canales" },
   { href: "/dealers/leads", label: "Leads" },
   { href: "/dealers/customers", label: "Clientes" },
   { href: "/dealers/tasks", label: "Tareas" },
@@ -18,6 +19,18 @@ export const dealerNavLinks: DealerNavLink[] = [
 
 export type VehicleStatus = "disponible" | "reservado" | "vendido";
 
+export type SalesChannel = "c4r" | "chileautos" | "mercadolibre" | "facebook" | "yapo";
+
+export type DealerVehicleChannels = Record<SalesChannel, boolean>;
+
+export const dealerSalesChannels: Array<{ key: SalesChannel; label: string }> = [
+  { key: "c4r", label: "C4R" },
+  { key: "chileautos", label: "Chileautos" },
+  { key: "mercadolibre", label: "Mercado Libre" },
+  { key: "facebook", label: "Facebook Marketplace" },
+  { key: "yapo", label: "Yapo" },
+];
+
 export type DealerVehicle = {
   id: string;
   brand: string;
@@ -28,6 +41,13 @@ export type DealerVehicle = {
   status: VehicleStatus;
   image: string;
   publishedAt: string;
+  bodyStyle?: string;
+  fuelType?: string;
+  transmission?: string;
+  location?: string;
+  description?: string;
+  gallery?: string[];
+  channels?: DealerVehicleChannels;
 };
 
 export const dealerVehicles: DealerVehicle[] = [

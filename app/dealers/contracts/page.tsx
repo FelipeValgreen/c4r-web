@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getDealerSnapshot } from "@/lib/dealers-store";
+import { requireDealerSession } from "@/lib/dealer-session-server";
 
 export const metadata = {
   title: "Contratos Dealers | C4R",
@@ -21,7 +22,8 @@ function statusPill(status: string) {
 }
 
 export default async function DealersContractsPage() {
-  const snapshot = await getDealerSnapshot();
+  const session = await requireDealerSession();
+  const snapshot = await getDealerSnapshot(session.dealerId);
   const dealerContracts = snapshot.contracts;
 
   return (

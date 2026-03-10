@@ -1,5 +1,6 @@
 import "server-only";
 
+import { createHash } from "node:crypto";
 import fs from "node:fs/promises";
 import path from "node:path";
 import {
@@ -15,12 +16,14 @@ import {
   dealerCustomers as seedCustomers,
   dealerLeads as seedLeads,
   dealerPayments as seedPayments,
+  dealerSalesChannels,
   dealerTasks as seedTasks,
   dealerVehicles as seedVehicles,
   financingRequests as seedFinancing,
   type DealerContract,
   type DealerCustomer,
   type DealerLead,
+  type DealerVehicleChannels,
   type DealerPayment,
   type DealerTask,
   type DealerVehicle,
@@ -31,6 +34,7 @@ import {
   type FinancingRequest,
   type FinancingStatus,
   type LeadStage,
+  type SalesChannel,
   type VehicleStatus,
 } from "@/app/dealers/_data";
 
@@ -47,6 +51,10 @@ const STORE_FILE =
     ? path.join("/tmp", "c4r", "dealers-store.json")
     : path.join(process.cwd(), "data", "dealers-store.json"));
 const USE_BLOB_STORE = STORE_BLOB_TOKEN.length > 0;
+const DEFAULT_PORTAL_USERNAME =
+  normalizeText(process.env.DEALERS_DEMO_PORTAL_USER) || "demo@dealer.c4r.cl";
+const DEFAULT_PORTAL_PASSWORD =
+  normalizeText(process.env.DEALERS_DEMO_PORTAL_PASSWORD) || "C4RDealerDemo2026!";
 
 export const DEFAULT_DEALER_ID = "DLR-C4R-DEMO";
 
@@ -59,14 +67,37 @@ export type DealerRegistration = {
   email: string;
   phone: string;
   address: string;
+  portalUsername: string;
+  portalPasswordHash: string;
   status: DealerRegistrationStatus;
   createdAt: string;
   reviewedAt: string | null;
 };
 
+export type DealerRegistrationPublic = Omit<DealerRegistration, "portalPasswordHash">;
+
 export type DealerStoreVehicle = DealerVehicle & {
   dealerId: string;
   updatedAt: string;
+};
+
+export type DealerVehicleChannelStatus = "publicado" | "pendiente" | "pausado" | "error";
+
+export type DealerVehicleChannelState = {
+  channel: SalesChannel;
+  enabled: boolean;
+  status: DealerVehicleChannelStatus;
+  message: string;
+};
+
+export type DealerNetworkSnapshot = {
+  registrations: DealerRegistrationPublic[];
+  vehicles: DealerStoreVehicle[];
+};
+
+export type DealerChannelSnapshotItem = {
+  vehicle: DealerStoreVehicle;
+  channels: DealerVehicleChannelState[];
 };
 
 export type DealerStoreLead = DealerLead & {
@@ -115,7 +146,7 @@ export type DealerStoreState = {
 };
 
 export type DealerSnapshot = {
-  registrations: DealerRegistration[];
+  registrations: DealerRegistrationPublic[];
   vehicles: DealerStoreVehicle[];
   leads: DealerStoreLead[];
   customers: DealerStoreCustomer[];
@@ -131,6 +162,8 @@ type RegisterDealerInput = {
   email: string;
   phone: string;
   address: string;
+  portalUsername: string;
+  portalPassword: string;
 };
 
 type CreateDealerVehicleInput = {
@@ -140,6 +173,13 @@ type CreateDealerVehicleInput = {
   km: number;
   price: number;
   image?: string;
+  gallery?: string[];
+  bodyStyle?: string;
+  fuelType?: string;
+  transmission?: string;
+  location?: string;
+  description?: string;
+  channels?: Partial<DealerVehicleChannels>;
   status?: VehicleStatus;
 };
 
@@ -149,6 +189,7 @@ type WebLeadInput = {
   fullName: string;
   email: string;
   phone: string;
+  dealerId?: string;
   source: "reserva" | "compra";
 };
 
@@ -207,6 +248,74 @@ function normalizeText(value: unknown): string {
 
 function normalizeRut(value: string): string {
   return value.replace(/[^0-9Kk.-]/g, "").toUpperCase();
+}
+
+function normalizePortalUsername(value: string): string {
+  return normalizeText(value).toLowerCase();
+}
+
+function hashPortalPassword(value: string): string {
+  return createHash("sha256").update(normalizeText(value)).digest("hex");
+}
+
+function verifyPortalPassword(password: string, expectedHash: string): boolean {
+  const incomingHash = hashPortalPassword(password);
+  return incomingHash === expectedHash;
+}
+
+function defaultVehicleChannels(): DealerVehicleChannels {
+  return {
+    c4r: true,
+    chileautos: true,
+    mercadolibre: true,
+    facebook: true,
+    yapo: true,
+  };
+}
+
+function normalizeVehicleChannels(input?: Partial<DealerVehicleChannels> | null): DealerVehicleChannels {
+  const defaults = defaultVehicleChannels();
+  if (!input || typeof input !== "object") {
+    return defaults;
+  }
+
+  return {
+    c4r: typeof input.c4r === "boolean" ? input.c4r : defaults.c4r,
+    chileautos: typeof input.chileautos === "boolean" ? input.chileautos : defaults.chileautos,
+    mercadolibre: typeof input.mercadolibre === "boolean" ? input.mercadolibre : defaults.mercadolibre,
+    facebook: typeof input.facebook === "boolean" ? input.facebook : defaults.facebook,
+    yapo: typeof input.yapo === "boolean" ? input.yapo : defaults.yapo,
+  };
+}
+
+function normalizeImageUrl(value: string): string {
+  const normalized = normalizeText(value);
+  if (!normalized) {
+    return "/car-placeholder.svg";
+  }
+
+  if (normalized.startsWith("/")) {
+    return normalized;
+  }
+
+  if (/^https?:\/\//i.test(normalized)) {
+    return normalized;
+  }
+
+  return "/car-placeholder.svg";
+}
+
+function hasValidImage(url: string): boolean {
+  const value = normalizeText(url).toLowerCase();
+  if (!value) {
+    return false;
+  }
+
+  if (value.includes("noimage") || value.includes("placeholder")) {
+    return false;
+  }
+
+  return value.startsWith("/") || /^https?:\/\//.test(value);
 }
 
 function normalizeVehicleStatus(value: string): VehicleStatus {
@@ -372,6 +481,90 @@ function byNewestVehicle(left: DealerStoreVehicle, right: DealerStoreVehicle): n
   return `${left.brand} ${left.model}`.localeCompare(`${right.brand} ${right.model}`, "es");
 }
 
+function channelMessage(channel: SalesChannel, status: DealerVehicleChannelStatus): string {
+  if (status === "pausado") {
+    return "Publicacion pausada";
+  }
+
+  if (status === "error") {
+    return "Falta imagen valida para sincronizar";
+  }
+
+  if (status === "pendiente") {
+    return "En cola de publicacion";
+  }
+
+  if (channel === "c4r") {
+    return "Publicado en C4R";
+  }
+
+  return "Publicado y sincronizado";
+}
+
+function computeChannelStatus(
+  vehicle: DealerStoreVehicle,
+  channel: SalesChannel,
+  enabled: boolean,
+): DealerVehicleChannelStatus {
+  if (!enabled) {
+    return "pausado";
+  }
+
+  if (vehicle.status === "vendido") {
+    return "pausado";
+  }
+
+  if (!hasValidImage(vehicle.image)) {
+    return "error";
+  }
+
+  if (channel === "c4r") {
+    return "publicado";
+  }
+
+  if (vehicle.status === "reservado") {
+    return "pendiente";
+  }
+
+  return "publicado";
+}
+
+function resolveVehicleChannelStates(vehicle: DealerStoreVehicle): DealerVehicleChannelState[] {
+  const channels = normalizeVehicleChannels(vehicle.channels);
+
+  return dealerSalesChannels.map(({ key }) => {
+    const enabled = channels[key];
+    const status = computeChannelStatus(vehicle, key, enabled);
+    return {
+      channel: key,
+      enabled,
+      status,
+      message: channelMessage(key, status),
+    };
+  });
+}
+
+function normalizeRegistrationPortalAccess(registration: DealerRegistration): DealerRegistration {
+  const normalizedPortalUsername = normalizePortalUsername(registration.portalUsername || registration.email);
+  const normalizedPortalPasswordHash = normalizeText(registration.portalPasswordHash);
+
+  return {
+    ...registration,
+    email: normalizeText(registration.email).toLowerCase(),
+    portalUsername: normalizedPortalUsername,
+    portalPasswordHash: normalizedPortalPasswordHash || hashPortalPassword(DEFAULT_PORTAL_PASSWORD),
+  };
+}
+
+function toPublicRegistration(registration: DealerRegistration): DealerRegistrationPublic {
+  const normalized = normalizeRegistrationPortalAccess(registration);
+  const publicRegistration = {
+    ...normalized,
+  };
+  delete (publicRegistration as { portalPasswordHash?: string }).portalPasswordHash;
+  return publicRegistration;
+}
+
 function createInitialStoreState(): DealerStoreState {
   const now = toIsoNow();
 
@@ -385,6 +578,8 @@ function createInitialStoreState(): DealerStoreState {
         email: "dealers@c4r.cl",
         phone: "+56 9 1111 1111",
         address: "Av. Apoquindo 3000, Las Condes",
+        portalUsername: DEFAULT_PORTAL_USERNAME,
+        portalPasswordHash: hashPortalPassword(DEFAULT_PORTAL_PASSWORD),
         status: "activo",
         createdAt: now,
         reviewedAt: now,
@@ -392,6 +587,11 @@ function createInitialStoreState(): DealerStoreState {
     ],
     vehicles: seedVehicles.map((vehicle) => ({
       ...vehicle,
+      image: normalizeImageUrl(vehicle.image),
+      gallery: Array.isArray(vehicle.gallery)
+        ? vehicle.gallery.map((image) => normalizeImageUrl(image)).filter(Boolean)
+        : [normalizeImageUrl(vehicle.image)],
+      channels: normalizeVehicleChannels(vehicle.channels),
       dealerId: DEFAULT_DEALER_ID,
       updatedAt: now,
     })),
@@ -433,14 +633,32 @@ function createInitialStoreState(): DealerStoreState {
   };
 }
 
+function normalizeStoreState(state: DealerStoreState): DealerStoreState {
+  state.registrations = state.registrations.map((registration) =>
+    normalizeRegistrationPortalAccess(registration),
+  );
+
+  state.vehicles = state.vehicles.map((vehicle) => ({
+    ...vehicle,
+    image: normalizeImageUrl(vehicle.image),
+    gallery: Array.isArray(vehicle.gallery)
+      ? vehicle.gallery.map((image) => normalizeImageUrl(image)).filter(Boolean)
+      : [normalizeImageUrl(vehicle.image)],
+    channels: normalizeVehicleChannels(vehicle.channels),
+  }));
+
+  return state;
+}
+
 async function ensureStore(): Promise<DealerStoreState> {
   if (USE_BLOB_STORE) {
     const blobState = await readStoreFromBlob();
     if (blobState) {
-      return cloneState(blobState);
+      const normalized = normalizeStoreState(blobState);
+      return cloneState(normalized);
     }
 
-    const initial = createInitialStoreState();
+    const initial = normalizeStoreState(createInitialStoreState());
     await persistStore(initial);
     return cloneState(initial);
   }
@@ -451,9 +669,10 @@ async function ensureStore(): Promise<DealerStoreState> {
     if (!isStoreState(parsed)) {
       throw new Error("Unsupported store version");
     }
-    return cloneState(parsed);
+    const normalized = normalizeStoreState(parsed);
+    return cloneState(normalized);
   } catch {
-    const initial = createInitialStoreState();
+    const initial = normalizeStoreState(createInitialStoreState());
     await persistStore(initial);
     return cloneState(initial);
   }
@@ -615,7 +834,7 @@ export async function getDealerSnapshot(dealerId: string = DEFAULT_DEALER_ID): P
     registrations: state.registrations
       .slice()
       .sort(byMostRecentDate)
-      .map((registration) => ({ ...registration })),
+      .map((registration) => toPublicRegistration(registration)),
     vehicles: state.vehicles
       .filter((vehicle) => vehicle.dealerId === dealerId)
       .slice()
@@ -648,12 +867,42 @@ export async function getDealerSnapshot(dealerId: string = DEFAULT_DEALER_ID): P
   };
 }
 
+export async function getDealerNetworkSnapshot(): Promise<DealerNetworkSnapshot> {
+  const state = await ensureStore();
+
+  return {
+    registrations: state.registrations.slice().sort(byMostRecentDate).map((registration) => toPublicRegistration(registration)),
+    vehicles: state.vehicles.slice().sort(byNewestVehicle),
+  };
+}
+
+export async function getDealerChannelSnapshot(
+  dealerId: string = DEFAULT_DEALER_ID,
+): Promise<DealerChannelSnapshotItem[]> {
+  const state = await ensureStore();
+
+  return state.vehicles
+    .filter((vehicle) => vehicle.dealerId === dealerId)
+    .slice()
+    .sort(byNewestVehicle)
+    .map((vehicle) => ({
+      vehicle: { ...vehicle, channels: normalizeVehicleChannels(vehicle.channels) },
+      channels: resolveVehicleChannelStates(vehicle),
+    }));
+}
+
 export async function registerDealer(input: RegisterDealerInput): Promise<DealerRegistration> {
   const companyName = normalizeText(input.companyName);
   const companyRut = normalizeRut(normalizeText(input.companyRut));
   const email = normalizeText(input.email).toLowerCase();
   const phone = normalizeText(input.phone);
   const address = normalizeText(input.address);
+  const portalUsername = normalizePortalUsername(input.portalUsername || email);
+  const portalPassword = normalizeText(input.portalPassword);
+  if (!portalUsername || !portalPassword) {
+    throw new Error("Credenciales de acceso incompletas.");
+  }
+  const portalPasswordHash = hashPortalPassword(portalPassword);
 
   const nextState = await mutateStore((state) => {
     const rutExists = state.registrations.some((registration) => registration.companyRut === companyRut);
@@ -666,6 +915,13 @@ export async function registerDealer(input: RegisterDealerInput): Promise<Dealer
       throw new Error("Ya existe una solicitud con ese correo.");
     }
 
+    const userExists = state.registrations.some(
+      (registration) => normalizePortalUsername(registration.portalUsername) === portalUsername,
+    );
+    if (userExists) {
+      throw new Error("El usuario de acceso ya esta registrado.");
+    }
+
     const registration: DealerRegistration = {
       id: createId("DLR"),
       companyName,
@@ -673,9 +929,11 @@ export async function registerDealer(input: RegisterDealerInput): Promise<Dealer
       email,
       phone,
       address,
-      status: "pendiente",
+      portalUsername,
+      portalPasswordHash,
+      status: "activo",
       createdAt: toIsoNow(),
-      reviewedAt: null,
+      reviewedAt: toIsoNow(),
     };
 
     state.registrations.unshift(registration);
@@ -704,6 +962,33 @@ export async function updateDealerRegistrationStatus(
   return nextState.registrations.find((registration) => registration.id === registrationId) ?? null;
 }
 
+export async function authenticateDealerPortalCredentials(
+  username: string,
+  password: string,
+): Promise<DealerRegistration | null> {
+  const normalizedUser = normalizePortalUsername(username);
+  const normalizedPassword = normalizeText(password);
+  if (!normalizedUser || !normalizedPassword) {
+    return null;
+  }
+
+  const state = await ensureStore();
+  const registration = state.registrations.find(
+    (entry) =>
+      entry.status === "activo" && normalizePortalUsername(entry.portalUsername) === normalizedUser,
+  );
+
+  if (!registration) {
+    return null;
+  }
+
+  if (!verifyPortalPassword(normalizedPassword, registration.portalPasswordHash)) {
+    return null;
+  }
+
+  return { ...registration };
+}
+
 export async function createDealerVehicle(
   input: CreateDealerVehicleInput,
   dealerId: string = DEFAULT_DEALER_ID,
@@ -713,7 +998,17 @@ export async function createDealerVehicle(
   const year = Number(input.year);
   const km = Number(input.km);
   const price = Number(input.price);
-  const image = normalizeText(input.image) || "/car-placeholder.svg";
+  const image = normalizeImageUrl(input.image ?? "");
+  const galleryRaw = Array.isArray(input.gallery) ? input.gallery : [];
+  const gallery = [image, ...galleryRaw.map((entry) => normalizeImageUrl(entry))]
+    .filter((entry, index, source) => source.indexOf(entry) === index)
+    .slice(0, 20);
+  const bodyStyle = normalizeText(input.bodyStyle) || "Automovil";
+  const fuelType = normalizeText(input.fuelType) || "Bencina";
+  const transmission = normalizeText(input.transmission) || "Por confirmar";
+  const location = normalizeText(input.location) || "Santiago";
+  const description = normalizeText(input.description) || "Unidad publicada por dealer en C4R.";
+  const channels = normalizeVehicleChannels(input.channels);
   const status = normalizeVehicleStatus(input.status ?? "disponible");
 
   const vehicleId = createId("sol");
@@ -729,6 +1024,13 @@ export async function createDealerVehicle(
       price,
       status,
       image,
+      gallery,
+      bodyStyle,
+      fuelType,
+      transmission,
+      location,
+      description,
+      channels,
       publishedAt: toYmdNow(),
       updatedAt: toIsoNow(),
     };
@@ -748,11 +1050,14 @@ export async function createDealerVehicle(
 export async function updateDealerVehicleStatus(
   vehicleId: string,
   status: VehicleStatus,
+  dealerId: string = DEFAULT_DEALER_ID,
 ): Promise<DealerStoreVehicle | null> {
   const normalizedStatus = normalizeVehicleStatus(status);
 
   const nextState = await mutateStore((state) => {
-    const vehicle = state.vehicles.find((entry) => entry.id === vehicleId);
+    const vehicle = state.vehicles.find(
+      (entry) => entry.id === vehicleId && entry.dealerId === dealerId,
+    );
     if (!vehicle) {
       return state;
     }
@@ -762,17 +1067,54 @@ export async function updateDealerVehicleStatus(
     return state;
   });
 
-  return nextState.vehicles.find((vehicle) => vehicle.id === vehicleId) ?? null;
+  return (
+    nextState.vehicles.find(
+      (vehicle) => vehicle.id === vehicleId && vehicle.dealerId === dealerId,
+    ) ?? null
+  );
+}
+
+export async function updateDealerVehicleChannel(
+  vehicleId: string,
+  channel: SalesChannel,
+  enabled: boolean,
+  dealerId: string = DEFAULT_DEALER_ID,
+): Promise<DealerStoreVehicle | null> {
+  const nextState = await mutateStore((state) => {
+    const vehicle = state.vehicles.find(
+      (entry) => entry.id === vehicleId && entry.dealerId === dealerId,
+    );
+    if (!vehicle) {
+      return state;
+    }
+
+    const currentChannels = normalizeVehicleChannels(vehicle.channels);
+    vehicle.channels = {
+      ...currentChannels,
+      [channel]: enabled,
+    };
+    vehicle.updatedAt = toIsoNow();
+    return state;
+  });
+
+  return (
+    nextState.vehicles.find(
+      (vehicle) => vehicle.id === vehicleId && vehicle.dealerId === dealerId,
+    ) ?? null
+  );
 }
 
 export async function updateDealerLeadStage(
   leadId: string,
   stage: LeadStage,
+  dealerId: string = DEFAULT_DEALER_ID,
 ): Promise<DealerStoreLead | null> {
   const normalizedStage = normalizeLeadStage(stage);
 
   const nextState = await mutateStore((state) => {
-    const lead = state.leads.find((entry) => entry.id === leadId);
+    const lead = state.leads.find(
+      (entry) => entry.id === leadId && entry.dealerId === dealerId,
+    );
     if (!lead) {
       return state;
     }
@@ -825,7 +1167,7 @@ export async function updateDealerLeadStage(
     return state;
   });
 
-  return nextState.leads.find((lead) => lead.id === leadId) ?? null;
+  return nextState.leads.find((lead) => lead.id === leadId && lead.dealerId === dealerId) ?? null;
 }
 
 export async function createFinancingRequest(
@@ -881,9 +1223,14 @@ export async function createFinancingRequest(
   return ensureFinancingRequestShape(created);
 }
 
-export async function completeFinancingPaperwork(requestId: string): Promise<DealerStoreFinancingRequest | null> {
+export async function completeFinancingPaperwork(
+  requestId: string,
+  dealerId: string = DEFAULT_DEALER_ID,
+): Promise<DealerStoreFinancingRequest | null> {
   const nextState = await mutateStore((state) => {
-    const existing = state.financingRequests.find((request) => request.id === requestId);
+    const existing = state.financingRequests.find(
+      (request) => request.id === requestId && request.dealerId === dealerId,
+    );
     if (!existing) {
       return state;
     }
@@ -905,13 +1252,20 @@ export async function completeFinancingPaperwork(requestId: string): Promise<Dea
     return state;
   });
 
-  const updated = nextState.financingRequests.find((request) => request.id === requestId);
+  const updated = nextState.financingRequests.find(
+    (request) => request.id === requestId && request.dealerId === dealerId,
+  );
   return updated ? ensureFinancingRequestShape(updated) : null;
 }
 
-export async function sendFinancingRequestToNetwork(requestId: string): Promise<DealerStoreFinancingRequest | null> {
+export async function sendFinancingRequestToNetwork(
+  requestId: string,
+  dealerId: string = DEFAULT_DEALER_ID,
+): Promise<DealerStoreFinancingRequest | null> {
   const nextState = await mutateStore((state) => {
-    const existing = state.financingRequests.find((request) => request.id === requestId);
+    const existing = state.financingRequests.find(
+      (request) => request.id === requestId && request.dealerId === dealerId,
+    );
     if (!existing) {
       return state;
     }
@@ -955,16 +1309,21 @@ export async function sendFinancingRequestToNetwork(requestId: string): Promise<
     return state;
   });
 
-  const updated = nextState.financingRequests.find((request) => request.id === requestId);
+  const updated = nextState.financingRequests.find(
+    (request) => request.id === requestId && request.dealerId === dealerId,
+  );
   return updated ? ensureFinancingRequestShape(updated) : null;
 }
 
 export async function selectFinancingOffer(
   requestId: string,
   offerId: string,
+  dealerId: string = DEFAULT_DEALER_ID,
 ): Promise<DealerStoreFinancingRequest | null> {
   const nextState = await mutateStore((state) => {
-    const existing = state.financingRequests.find((request) => request.id === requestId);
+    const existing = state.financingRequests.find(
+      (request) => request.id === requestId && request.dealerId === dealerId,
+    );
     if (!existing) {
       return state;
     }
@@ -997,13 +1356,20 @@ export async function selectFinancingOffer(
     return state;
   });
 
-  const updated = nextState.financingRequests.find((request) => request.id === requestId);
+  const updated = nextState.financingRequests.find(
+    (request) => request.id === requestId && request.dealerId === dealerId,
+  );
   return updated ? ensureFinancingRequestShape(updated) : null;
 }
 
-export async function rejectFinancingRequest(requestId: string): Promise<DealerStoreFinancingRequest | null> {
+export async function rejectFinancingRequest(
+  requestId: string,
+  dealerId: string = DEFAULT_DEALER_ID,
+): Promise<DealerStoreFinancingRequest | null> {
   const nextState = await mutateStore((state) => {
-    const existing = state.financingRequests.find((request) => request.id === requestId);
+    const existing = state.financingRequests.find(
+      (request) => request.id === requestId && request.dealerId === dealerId,
+    );
     if (!existing) {
       return state;
     }
@@ -1019,7 +1385,9 @@ export async function rejectFinancingRequest(requestId: string): Promise<DealerS
     return state;
   });
 
-  const updated = nextState.financingRequests.find((request) => request.id === requestId);
+  const updated = nextState.financingRequests.find(
+    (request) => request.id === requestId && request.dealerId === dealerId,
+  );
   return updated ? ensureFinancingRequestShape(updated) : null;
 }
 
@@ -1029,11 +1397,19 @@ export async function createLeadFromWebIntent(input: WebLeadInput): Promise<Deal
   const phone = normalizeText(input.phone);
   const vehicleTitle = normalizeText(input.vehicleTitle);
   const requestId = input.vehicleId.startsWith("sol-") ? input.vehicleId : undefined;
+  const explicitDealerId = normalizeText(input.dealerId ?? "");
 
   const nextState = await mutateStore((state) => {
+    const dealerFromInventory = state.vehicles.find((vehicle) => vehicle.id === input.vehicleId)?.dealerId ?? "";
+    const requestedDealer =
+      explicitDealerId || dealerFromInventory || (requestId ? dealerFromInventory : DEFAULT_DEALER_ID);
+    const dealerId = state.registrations.some((registration) => registration.id === requestedDealer)
+      ? requestedDealer
+      : DEFAULT_DEALER_ID;
+
     const lead: DealerStoreLead = {
       id: createId("lead"),
-      dealerId: DEFAULT_DEALER_ID,
+      dealerId,
       requestId,
       customer: fullName,
       phone,
@@ -1051,7 +1427,7 @@ export async function createLeadFromWebIntent(input: WebLeadInput): Promise<Deal
 
     state.tasks.unshift({
       id: createId("task"),
-      dealerId: DEFAULT_DEALER_ID,
+      dealerId,
       title: `Contactar ${fullName} por ${vehicleTitle}`,
       dueLabel: "Hoy 18:00",
       owner: "Equipo C4R",
