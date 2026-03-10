@@ -1594,7 +1594,7 @@ function renderPricingPage(page: PricingPageContent) {
           {page.plans.map((plan) => (
             <article
               key={plan.name}
-              className={`relative rounded-2xl border bg-white p-6 shadow-sm ${
+              className={`relative flex h-full flex-col rounded-2xl border bg-white p-6 shadow-sm ${
                 plan.popular ? "border-khaki ring-2 ring-khaki/30" : "border-platinum"
               }`}
             >
@@ -1603,10 +1603,12 @@ function renderPricingPage(page: PricingPageContent) {
                   Mas elegido
                 </span>
               ) : null}
-              <h2 className="font-heading text-xl font-semibold text-ink">{plan.name}</h2>
-              <p className="mt-1 text-sm text-gray-500">{plan.subtitle}</p>
-              <p className="mt-4 font-heading text-3xl font-bold text-khaki">{plan.price}</p>
-              <ul className="mt-6 space-y-3">
+              <h2 className="min-h-[2rem] font-heading text-xl font-semibold text-ink">{plan.name}</h2>
+              <p className="mt-1 min-h-[2.25rem] text-sm text-gray-500">{plan.subtitle}</p>
+              <div className="mt-4 min-h-[3.75rem]">
+                <p className="font-heading text-3xl font-bold leading-tight text-khaki">{plan.price}</p>
+              </div>
+              <ul className="mt-6 flex-1 space-y-3">
                 {plan.features.map((feature) => (
                   <li key={`${plan.name}-${feature}`} className="flex items-start gap-2 text-sm text-gray-600">
                     <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-khaki" />
@@ -1614,7 +1616,7 @@ function renderPricingPage(page: PricingPageContent) {
                   </li>
                 ))}
               </ul>
-              <CtaButton cta={plan.cta} className="mt-7 w-full" />
+              <CtaButton cta={plan.cta} className="mt-7 h-12 w-full" />
             </article>
           ))}
         </div>
