@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ArrowRight, CheckCircle2, CreditCard, Shield } from "lucide-react";
 import TrackedLink from "@/components/TrackedLink";
+import { c4rVehicles, formatCurrencyClp, formatKm } from "@/lib/chileautos-vehicles";
 
 const trustPillars = [
   {
@@ -23,44 +24,8 @@ const trustPillars = [
   },
 ];
 
-const catalog = [
-  {
-    model: "Toyota Corolla 2020",
-    price: "$12.500.000",
-    km: "45.000 km",
-    image: "https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
-  },
-  {
-    model: "Kia Sportage 2021",
-    price: "$16.900.000",
-    km: "38.000 km",
-    image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
-  },
-  {
-    model: "Mazda CX-5 2019",
-    price: "$15.200.000",
-    km: "59.000 km",
-    image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
-  },
-  {
-    model: "Hyundai Tucson 2020",
-    price: "$14.750.000",
-    km: "51.000 km",
-    image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
-  },
-  {
-    model: "Peugeot 3008 2021",
-    price: "$18.300.000",
-    km: "28.000 km",
-    image: "https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
-  },
-  {
-    model: "Subaru XV 2019",
-    price: "$13.990.000",
-    km: "63.000 km",
-    image: "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
-  },
-];
+const featuredCatalog = c4rVehicles.slice(0, 6);
+const heroVehicle = featuredCatalog[1] ?? c4rVehicles[0];
 
 const testimonials = [
   {
@@ -115,8 +80,8 @@ export default function Home() {
             <div className="reveal reveal-delay-1 flex items-center justify-center">
               <div className="relative">
                 <Image
-                  src="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800&q=80"
-                  alt="Auto verificado con sello C4R Shield"
+                  src={heroVehicle.coverImage}
+                  alt={`${heroVehicle.title} verificado con sello C4R Shield`}
                   width={620}
                   height={420}
                   priority
@@ -212,31 +177,38 @@ export default function Home() {
             </div>
 
             <div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {catalog.map((car, index) => (
+              {featuredCatalog.map((vehicle, index) => (
                 <article
-                  key={car.model}
+                  key={vehicle.id}
                   className={`reveal overflow-hidden rounded-2xl border border-platinum bg-white shadow-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg reveal-delay-${Math.min(index % 3, 2)}`}
                 >
-                  <div className="relative aspect-[4/3] bg-[linear-gradient(145deg,#f7f7f4,#e6e4db)]">
-                    <Image
-                      src={car.image}
-                      alt={car.model}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 33vw"
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="space-y-3 p-6">
-                    <div className="flex items-center justify-between gap-3">
-                      <h3 className="font-heading text-lg font-semibold text-ink">{car.model}</h3>
-                      <span className="rounded-full bg-success px-3 py-1 text-xs font-semibold text-white">
-                        Verificado
-                      </span>
+                  <TrackedLink
+                    href={`/app/explorar/${vehicle.slug}`}
+                    eventName="home_featured_vehicle_open"
+                    eventParams={{ location: "home_catalog", vehicleId: vehicle.id }}
+                    className="group block"
+                  >
+                    <div className="relative aspect-[4/3] bg-[linear-gradient(145deg,#f7f7f4,#e6e4db)]">
+                      <Image
+                        src={vehicle.coverImage}
+                        alt={vehicle.title}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                      />
                     </div>
-                    <p className="text-sm text-gray-600">
-                      {car.price} • {car.km}
-                    </p>
-                  </div>
+                    <div className="space-y-3 p-6">
+                      <div className="flex items-center justify-between gap-3">
+                        <h3 className="font-heading text-lg font-semibold text-ink">{vehicle.title}</h3>
+                        <span className="rounded-full bg-success px-3 py-1 text-xs font-semibold text-white">
+                          Verificado
+                        </span>
+                      </div>
+                      <p className="text-sm text-gray-600">
+                        {formatCurrencyClp(vehicle.priceClp)} • {formatKm(vehicle.km)}
+                      </p>
+                    </div>
+                  </TrackedLink>
                 </article>
               ))}
             </div>

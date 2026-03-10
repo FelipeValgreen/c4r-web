@@ -10,6 +10,14 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "images.unsplash.com",
       },
+      {
+        protocol: "https",
+        hostname: "chileautos.pxcrush.net",
+      },
+      {
+        protocol: "https",
+        hostname: "latam-editorial.pxcrush.net",
+      },
     ],
   },
 };

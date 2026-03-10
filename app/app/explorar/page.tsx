@@ -1,61 +1,17 @@
 import Image from "next/image";
 import type { Metadata } from "next";
 import TrackedLink from "@/components/TrackedLink";
-
-const vehicles = [
-  {
-    model: "Toyota Corolla 2020",
-    price: "$12.500.000",
-    city: "Santiago",
-    km: "45.000 km",
-    image: "https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
-  },
-  {
-    model: "Kia Sportage 2021",
-    price: "$16.900.000",
-    city: "Concepción",
-    km: "38.000 km",
-    image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
-  },
-  {
-    model: "Mazda CX-5 2019",
-    price: "$15.200.000",
-    city: "Valparaíso",
-    km: "59.000 km",
-    image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
-  },
-  {
-    model: "Hyundai Tucson 2020",
-    price: "$14.750.000",
-    city: "Viña del Mar",
-    km: "51.000 km",
-    image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
-  },
-  {
-    model: "Peugeot 3008 2021",
-    price: "$18.300.000",
-    city: "La Serena",
-    km: "28.000 km",
-    image: "https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
-  },
-  {
-    model: "Subaru XV 2019",
-    price: "$13.990.000",
-    city: "Temuco",
-    km: "63.000 km",
-    image: "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
-  },
-];
+import { c4rVehicles, formatCurrencyClp, formatKm } from "@/lib/chileautos-vehicles";
 
 export const metadata: Metadata = {
   title: "Explorar autos verificados | C4R",
-  description: "Catálogo de vehículos verificados con chequeo oficial y pago protegido.",
+  description: "Catalogo de vehiculos reales con chequeo oficial, ficha completa y opciones de reserva o compra.",
   alternates: {
     canonical: "/app/explorar",
   },
   openGraph: {
     title: "Explorar autos verificados | C4R",
-    description: "Catálogo de vehículos verificados con chequeo oficial y pago protegido.",
+    description: "Catalogo de vehiculos reales con chequeo oficial, ficha completa y opciones de reserva o compra.",
     url: "/app/explorar",
     type: "website",
     images: [
@@ -70,12 +26,15 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     title: "Explorar autos verificados | C4R",
-    description: "Catálogo de vehículos verificados con chequeo oficial y pago protegido.",
+    description: "Catalogo de vehiculos reales con chequeo oficial, ficha completa y opciones de reserva o compra.",
     images: ["/og-c4r.svg"],
   },
 };
 
 export default function ExplorePage() {
+  const vehicles = [...c4rVehicles].sort((left, right) => left.priceClp - right.priceClp);
+  const categories = Array.from(new Set(vehicles.map((vehicle) => vehicle.bodyStyle))).slice(0, 4);
+
   return (
     <main className="min-h-screen bg-white py-14 sm:py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -83,7 +42,7 @@ export default function ExplorePage() {
           <div>
             <h1 className="font-heading text-4xl font-bold text-ink sm:text-5xl">Autos verificados</h1>
             <p className="mt-4 max-w-2xl text-lg leading-8 text-gray-600">
-              Cada publicación en C4R incluye validación técnica y legal para que compres con confianza.
+              Inventario con modelos reales, precios de referencia y ficha completa para reservar o comprar.
             </p>
           </div>
           <TrackedLink
@@ -97,48 +56,80 @@ export default function ExplorePage() {
         </div>
 
         <div className="mt-8 flex flex-wrap gap-3">
-          <span className="rounded-full border border-platinum bg-white px-4 py-1.5 text-sm font-medium text-gray-700">
-            Todos
-          </span>
-          <span className="rounded-full border border-platinum bg-white px-4 py-1.5 text-sm font-medium text-gray-700">
-            Sedan
-          </span>
-          <span className="rounded-full border border-platinum bg-white px-4 py-1.5 text-sm font-medium text-gray-700">
-            SUV
-          </span>
-          <span className="rounded-full border border-platinum bg-white px-4 py-1.5 text-sm font-medium text-gray-700">
-            Bajo 60.000 km
-          </span>
+          <span className="rounded-full border border-khaki bg-khaki-light px-4 py-1.5 text-sm font-semibold text-ink">Todos</span>
+          {categories.map((category) => (
+            <span
+              key={category}
+              className="rounded-full border border-platinum bg-white px-4 py-1.5 text-sm font-medium text-gray-700"
+            >
+              {category}
+            </span>
+          ))}
         </div>
 
         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {vehicles.map((vehicle) => (
             <article
-              key={`${vehicle.model}-${vehicle.city}`}
+              key={vehicle.id}
               className="overflow-hidden rounded-2xl border border-platinum bg-white shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg"
             >
-              <div className="relative aspect-[4/3] bg-[linear-gradient(145deg,#f7f7f4,#e6e4db)]">
-                <Image
-                  src={vehicle.image}
-                  alt={vehicle.model}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <div className="flex items-center justify-between gap-3">
-                  <h2 className="font-heading text-xl font-semibold text-ink">{vehicle.model}</h2>
-                  <span className="rounded-full bg-success px-3 py-1 text-xs font-semibold text-white">Verificado</span>
+              <TrackedLink
+                href={`/app/explorar/${vehicle.slug}`}
+                eventName="explore_vehicle_open"
+                eventParams={{ location: "explore_card", vehicleId: vehicle.id }}
+                className="group block"
+              >
+                <div className="relative aspect-[4/3] bg-[linear-gradient(145deg,#f7f7f4,#e6e4db)]">
+                  <Image
+                    src={vehicle.coverImage}
+                    alt={vehicle.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                  />
                 </div>
-                <p className="mt-3 text-base text-gray-700">{vehicle.price}</p>
-                <p className="mt-1 text-sm text-gray-500">
-                  {vehicle.km} • {vehicle.city}
-                </p>
+                <div className="p-6">
+                  <div className="flex items-start justify-between gap-3">
+                    <h2 className="font-heading text-xl font-semibold text-ink">{vehicle.title}</h2>
+                    <span className="rounded-full bg-success px-3 py-1 text-xs font-semibold text-white">Verificado</span>
+                  </div>
+                  <p className="mt-3 text-base font-semibold text-ink">{formatCurrencyClp(vehicle.priceClp)}</p>
+                  <p className="mt-1 text-sm text-gray-500">
+                    {formatKm(vehicle.km)} • {vehicle.location}
+                  </p>
+                  <p className="mt-1 text-xs font-medium uppercase tracking-wide text-gray-500">
+                    {vehicle.bodyStyle} • {vehicle.fuelType} • {vehicle.transmission}
+                  </p>
+                </div>
+              </TrackedLink>
+
+              <div className="border-t border-platinum px-6 py-4">
+                <div className="grid grid-cols-2 gap-3">
+                  <TrackedLink
+                    href={`/app/explorar/${vehicle.slug}#reservar`}
+                    eventName="explore_vehicle_reserve"
+                    eventParams={{ location: "explore_card", vehicleId: vehicle.id }}
+                    className="inline-flex h-10 items-center justify-center rounded-md border border-ink text-sm font-semibold text-ink transition-colors hover:bg-ink hover:text-white"
+                  >
+                    Reservar
+                  </TrackedLink>
+                  <TrackedLink
+                    href={`/app/explorar/${vehicle.slug}#comprar`}
+                    eventName="explore_vehicle_buy"
+                    eventParams={{ location: "explore_card", vehicleId: vehicle.id }}
+                    className="inline-flex h-10 items-center justify-center rounded-md bg-khaki text-sm font-semibold text-ink transition-colors hover:bg-khaki-dark"
+                  >
+                    Comprar
+                  </TrackedLink>
+                </div>
               </div>
             </article>
           ))}
         </div>
+
+        <p className="mt-8 text-sm text-gray-500">
+          Datos referenciales extraidos de {c4rVehicles[0]?.source ?? "Chileautos"}. Verifica disponibilidad y condiciones en la ficha de cada auto.
+        </p>
       </div>
     </main>
   );
