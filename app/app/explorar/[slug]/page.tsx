@@ -79,7 +79,9 @@ export default async function VehicleDetailPage({ params }: PageProps) {
     ? "FullMotor"
     : vehicle.source.toLowerCase().includes("chileautos")
       ? "Chileautos"
-      : "Dealer";
+      : vehicle.source.toLowerCase().includes("particular")
+        ? "C4R"
+        : "Dealer";
   const isExternalSource = /^https?:\/\//i.test(vehicle.sourceUrl);
 
   return (

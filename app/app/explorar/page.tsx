@@ -434,7 +434,7 @@ export default async function ExplorePage({ searchParams }: PageProps) {
                   Explorar inventario
                 </TrackedLink>
                 <TrackedLink
-                  href="/vende-rapido"
+                  href="/publicar-auto"
                   eventName="explore_cta_publish"
                   eventParams={{ location: "explore_hero" }}
                   className="inline-flex h-11 items-center justify-center rounded-md border border-ink px-5 text-sm font-semibold text-ink transition-colors hover:bg-ink hover:text-white"

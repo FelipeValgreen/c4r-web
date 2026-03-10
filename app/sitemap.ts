@@ -3,7 +3,7 @@ import { marketingRoutes, siteUrl } from "@/lib/site";
 import { blogPosts } from "@/lib/blog-posts";
 import { getMarketplaceVehicles } from "@/lib/marketplace-catalog";
 
-const coreRoutes = ["/", "/app/explorar", "/c4r-check", "/c4r-score", "/comunidad-c4r"];
+const coreRoutes = ["/", "/app/explorar", "/publicar-auto", "/c4r-check", "/c4r-score", "/comunidad-c4r"];
 const blogPostRoutes = blogPosts.map((post) => `/blog/${post.slug}`);
 const staticRoutes = [...coreRoutes, ...marketingRoutes, ...blogPostRoutes];
 

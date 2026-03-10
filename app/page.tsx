@@ -407,7 +407,7 @@ export default async function Home() {
             </p>
             <div className="mt-10">
               <TrackedLink
-                href="/vende-rapido"
+                href="/publicar-auto"
                 eventName="home_cta_sell"
                 eventParams={{ location: "sell_section" }}
                 className="inline-flex h-11 items-center justify-center rounded-md bg-khaki px-8 text-sm font-semibold text-ink transition-colors hover:bg-khaki-dark"

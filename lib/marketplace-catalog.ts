@@ -4,15 +4,30 @@ import type { C4RVehicle } from "@/lib/chileautos-vehicles";
 import { c4rVehicles } from "@/lib/chileautos-vehicles";
 import type { DealerStoreVehicle } from "@/lib/dealers-store";
 import { getDealerNetworkSnapshot } from "@/lib/dealers-store";
+import { listPublishedSellerListings, type PublishedSellerListing } from "@/lib/seller-publish-store";
 
 export type MarketplaceVehicle = C4RVehicle & {
   ownerDealerId: string | null;
-  listingSource: "catalog" | "dealer";
+  listingSource: "catalog" | "dealer" | "seller";
   inventoryStatus: "disponible" | "reservado" | "vendido" | null;
 };
 
 const IMAGE_PLACEHOLDER = "/car-placeholder.svg";
 const BLOCKED_IMAGE_KEYWORDS = ["noimage", "placeholder", "sin-foto", "notfound"];
+const ALLOWED_EXTERNAL_IMAGE_HOSTS = new Set([
+  "images.unsplash.com",
+  "chileautos.pxcrush.net",
+  "latam-editorial.pxcrush.net",
+  "www.fullmotor.cl",
+  "www.rtautomotriz.com",
+  "rtautomotriz.com",
+  "res.cloudinary.com",
+  "images.ctfassets.net",
+  "cdn.pixabay.com",
+  "i.imgur.com",
+  "imgur.com",
+  "lh3.googleusercontent.com",
+]);
 
 function normalizeText(value: unknown): string {
   return String(value ?? "")
@@ -48,6 +63,16 @@ function normalizeImage(url: string): string {
   }
 
   if (!/^https?:\/\//i.test(cleaned)) {
+    return IMAGE_PLACEHOLDER;
+  }
+
+  try {
+    const parsed = new URL(cleaned);
+    const host = parsed.hostname.toLowerCase();
+    if (!ALLOWED_EXTERNAL_IMAGE_HOSTS.has(host)) {
+      return IMAGE_PLACEHOLDER;
+    }
+  } catch {
     return IMAGE_PLACEHOLDER;
   }
 
@@ -97,7 +122,7 @@ function qualityScore(vehicle: MarketplaceVehicle): number {
 
   score += Math.min(vehicle.gallery.length, 20);
   score += vehicle.description.length > 140 ? 3 : vehicle.description.length > 80 ? 2 : 0;
-  score += vehicle.listingSource === "dealer" ? 2 : 0;
+  score += vehicle.listingSource === "catalog" ? 0 : 2;
   score += vehicle.priceBreakdown.length > 0 ? 1 : 0;
 
   return score;
@@ -300,8 +325,69 @@ function mapDealerVehicle(
   };
 }
 
+function mapPublishedSellerListing(listing: PublishedSellerListing): MarketplaceVehicle {
+  const normalizedGallery = [listing.coverImage, ...listing.gallery]
+    .map((image) => normalizeImage(image))
+    .filter((image, index, source) => source.indexOf(image) === index);
+
+  const coverImage = normalizedGallery[0] ?? IMAGE_PLACEHOLDER;
+  const km = Math.max(0, Number(listing.mileage) || 0);
+  const currentYear = new Date().getFullYear();
+  const condition: "Nuevo" | "Usado" = listing.year >= currentYear && km <= 150 ? "Nuevo" : "Usado";
+  const sellerName = normalizeText(listing.contactName) || "Particular C4R";
+  const listingSlug = slugify(listing.slug || `${listing.make}-${listing.model}-${listing.year}-${listing.id}`);
+
+  return {
+    id: `SLR-${listing.id}`,
+    slug: listingSlug,
+    sourceUrl: `/app/explorar/${listingSlug}`,
+    make: normalizeText(listing.make),
+    model: normalizeText(listing.model),
+    year: listing.year,
+    badge: "Particular verificado C4R",
+    title: normalizeText(listing.title) || `${listing.make} ${listing.model} ${listing.year}`,
+    bodyStyle: normalizeCategory(listing.bodyStyle),
+    fuelType: normalizeText(listing.fuelType) || "Bencina",
+    transmission: normalizeText(listing.transmission) || "Por confirmar",
+    drive: "Por confirmar",
+    engine: null,
+    engineCc: null,
+    fuelCombined: null,
+    doors: null,
+    condition,
+    km,
+    priceClp: Math.max(1, Number(listing.priceClp) || 1),
+    reservationFeeClp: Math.max(120000, Math.round((listing.priceClp * 0.02) / 10000) * 10000),
+    estimatedMonthlyClp: Math.max(120000, Math.round((listing.priceClp * 0.018) / 10000) * 10000),
+    versionsAvailable: 1,
+    dealer: sellerName,
+    location: normalizeText(listing.location) || "Santiago",
+    coverImage,
+    gallery: normalizedGallery.length > 0 ? normalizedGallery : [IMAGE_PLACEHOLDER],
+    description: normalizeText(listing.description) || "Publicación particular en C4R.",
+    highlights: [
+      "Publicación de particular validada en C4R",
+      "Contacto directo con vendedor",
+      "Pago protegido disponible",
+    ],
+    priceBreakdown: [
+      {
+        type: "Publicación particular",
+        amount: Math.max(1, Number(listing.priceClp) || 1),
+      },
+    ],
+    source: "Particular C4R",
+    ownerDealerId: null,
+    listingSource: "seller",
+    inventoryStatus: "disponible",
+  };
+}
+
 export async function getMarketplaceVehicles(): Promise<MarketplaceVehicle[]> {
-  const [networkSnapshot] = await Promise.all([getDealerNetworkSnapshot()]);
+  const [networkSnapshot, publishedSellerListings] = await Promise.all([
+    getDealerNetworkSnapshot(),
+    listPublishedSellerListings(300),
+  ]);
 
   const dealerNameById = new Map(
     networkSnapshot.registrations.map((registration) => [registration.id, normalizeText(registration.companyName)]),
@@ -317,7 +403,9 @@ export async function getMarketplaceVehicles(): Promise<MarketplaceVehicle[]> {
     .filter((vehicle) => (vehicle.channels?.c4r ?? true) === true)
     .map((vehicle) => mapDealerVehicle(vehicle, dealerNameById, dealerLocationById));
 
-  const allVehicles = dedupeVehicles([...dealerVehicles, ...catalogVehicles]).sort((left, right) => {
+  const sellerVehicles = publishedSellerListings.map((listing) => mapPublishedSellerListing(listing));
+
+  const allVehicles = dedupeVehicles([...sellerVehicles, ...dealerVehicles, ...catalogVehicles]).sort((left, right) => {
     if (right.year !== left.year) {
       return right.year - left.year;
     }

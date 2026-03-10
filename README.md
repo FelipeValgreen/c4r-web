@@ -25,17 +25,28 @@ NEXT_PUBLIC_SITE_URL=https://tu-dominio.com
 NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
 DEALERS_STORE_PROVIDER=auto
 SUPABASE_URL=https://xxxx.supabase.co
+NEXT_PUBLIC_SUPABASE_URL=https://xxxx.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=tu-anon-key
 SUPABASE_SERVICE_ROLE_KEY=tu-service-role-key
 DEALERS_STORE_SUPABASE_TABLE=dealer_store_state
 DEALERS_STORE_SUPABASE_ROW_ID=primary
+MERCADOPAGO_ACCESS_TOKEN=APP_USR-xxxxxxxxxxxx
+C4R_PUBLICATION_FEE_CLP=19990
+C4R_SELLER_SUBSCRIPTION_DAYS=30
+C4R_SELLER_SUBSCRIPTION_PLAN_CODE=publicador_mensual
 ```
 
 - `NEXT_PUBLIC_SITE_URL`: base URL para canonical, OpenGraph, sitemap y robots.
 - `NEXT_PUBLIC_GA_MEASUREMENT_ID`: habilita Google Analytics 4 y activa el envío de eventos de CTA.
 - `DEALERS_STORE_PROVIDER`: `auto` (default), `supabase`, `blob` o `file`.
 - `SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY`: habilitan persistencia del portal dealers en Supabase.
+- `NEXT_PUBLIC_SUPABASE_URL` + `NEXT_PUBLIC_SUPABASE_ANON_KEY`: autenticación para `/publicar-auto` (correo + Google).
 - `DEALERS_STORE_SUPABASE_TABLE`: tabla JSON para estado dealer (default `dealer_store_state`).
 - `DEALERS_STORE_SUPABASE_ROW_ID`: clave primaria lógica del estado (default `primary`).
+- `MERCADOPAGO_ACCESS_TOKEN`: token privado para crear checkouts y validar pagos de publicación.
+- `C4R_PUBLICATION_FEE_CLP`: precio en CLP para publicar cuando no hay suscripción activa.
+- `C4R_SELLER_SUBSCRIPTION_DAYS`: vigencia de la suscripción después de pago aprobado.
+- `C4R_SELLER_SUBSCRIPTION_PLAN_CODE`: código de plan que se guarda en la tabla de suscripciones.
 
 ### Supabase (tabla mínima)
 
@@ -48,6 +59,19 @@ create table if not exists public.dealer_store_state (
   updated_at timestamptz not null default now()
 );
 ```
+
+Para habilitar flujo operativo de publicación (`/publicar-auto`) ejecuta además:
+
+```sql
+-- copiar/pegar contenido de data/seller-publish-schema.sql
+```
+
+Además en Supabase Auth:
+
+- habilita proveedor Google en `Authentication > Providers`.
+- agrega URL de callback autorizada:
+  - `https://TU_DOMINIO/publicar-auto`
+  - `http://localhost:3000/publicar-auto`
 
 ## Scripts
 

@@ -332,7 +332,7 @@ const pages: Record<MarketingSlug, PageContent> = {
       "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800&q=80",
     heroAlt: "Vehiculo listo para publicarse y venderse rapido",
     primaryCta: {
-      href: "/contacto",
+      href: "/publicar-auto",
       label: "Publicar mi auto",
       eventName: "vende_rapido_primary_cta",
     },
@@ -391,7 +391,7 @@ const pages: Record<MarketingSlug, PageContent> = {
         description: "Sedan 2020 publicado con reporte C4R y cierre en una semana.",
         image:
           "https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
-        href: "/contacto",
+        href: "/publicar-auto",
         cta: "Quiero replicar este resultado",
       },
       {
@@ -399,7 +399,7 @@ const pages: Record<MarketingSlug, PageContent> = {
         description: "Publicaciones optimizadas para destacar en busquedas internas.",
         image:
           "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=650&q=80",
-        href: "/contacto",
+        href: "/publicar-auto",
         cta: "Solicitar asesoria",
       },
       {
@@ -436,7 +436,7 @@ const pages: Record<MarketingSlug, PageContent> = {
     finalDescription:
       "Activa tu publicacion hoy y recibe apoyo comercial para cerrar de forma segura y transparente.",
     finalPrimary: {
-      href: "/contacto",
+      href: "/publicar-auto",
       label: "Empezar mi publicacion",
       eventName: "vende_rapido_final_primary",
     },
@@ -709,7 +709,7 @@ const pages: Record<MarketingSlug, PageContent> = {
           "Panel basico de seguimiento",
         ],
         cta: {
-          href: "/contacto",
+          href: "/publicar-auto",
           label: "Comenzar gratis",
           eventName: "pricing_plan_gratis",
         },
